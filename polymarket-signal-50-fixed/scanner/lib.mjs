@@ -407,6 +407,22 @@ export function isTradeableMarket(metadata) {
   );
 }
 
+export function distinctMarketKey(candidate, metadata = null) {
+  const metadataEvents = Array.isArray(metadata?.events) ? metadata.events : [];
+  const metadataEventSlug = metadataEvents.find((event) => event?.slug)?.slug || metadata?.eventSlug || "";
+  const eventSlug = String(metadataEventSlug || candidate?.eventSlug || "").trim().toLowerCase();
+
+  // A Polymarket event can contain several binary child markets, such as one
+  // Yes/No market for each possible winner. Treat those child markets as one
+  // recommendation family so the final five cards represent five different events.
+  if (eventSlug) return `event:${eventSlug}`;
+
+  const conditionId = String(candidate?.conditionId || "").trim().toLowerCase();
+  if (conditionId) return `condition:${conditionId}`;
+
+  return `slug:${String(candidate?.slug || candidate?.title || "unknown").trim().toLowerCase()}`;
+}
+
 export function enrichCandidate(candidate, metadata) {
   const outcomes = parseJsonArray(metadata?.outcomes);
   const outcomePrices = parseJsonArray(metadata?.outcomePrices).map((value) => number(value, NaN));
@@ -435,6 +451,7 @@ export async function selectRecommendations(eligible, options = {}) {
   const fetchImpl = options.fetchImpl ?? globalThis.fetch;
   const candidates = buildMarketCandidates(eligible, config);
   const recommendations = [];
+  const selectedMarketKeys = new Set();
   let marketsChecked = 0;
 
   for (let index = 0; index < candidates.length && marketsChecked < config.maxMarketChecks; ) {
@@ -454,7 +471,15 @@ export async function selectRecommendations(eligible, options = {}) {
     for (let i = 0; i < chunk.length; i += 1) {
       marketsChecked += 1;
       if (isTradeableMarket(metadataRows[i])) {
-        recommendations.push(enrichCandidate(chunk[i], metadataRows[i]));
+        const marketKey = distinctMarketKey(chunk[i], metadataRows[i]);
+
+        // Keep only the strongest-ranked child market from each Polymarket event.
+        // This prevents the five cards from being the same event expressed through
+        // several outcome-specific binary markets.
+        if (!selectedMarketKeys.has(marketKey)) {
+          selectedMarketKeys.add(marketKey);
+          recommendations.push(enrichCandidate(chunk[i], metadataRows[i]));
+        }
       }
       if (recommendations.length >= config.recommendationCount) break;
     }
