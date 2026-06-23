@@ -59,7 +59,9 @@ async function main() {
       ranking:
         "Supporter count first, then same-side consensus rate, rank-weighted support, and combined current position value.",
       activeMarketRule:
-        "Only Gamma markets that are active, not closed or archived, and accepting orders are shown."
+        "Only Gamma markets that are active, not closed or archived, and accepting orders are shown.",
+      distinctMarketRule:
+        "Only one recommendation is shown per Polymarket event; the highest-ranked qualifying child market is kept."
     },
     stats: {
       ...stats,
