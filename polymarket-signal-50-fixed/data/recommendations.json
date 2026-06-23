@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "status": "not_generated",
-  "generatedAt": null,
-  "durationSeconds": 0,
+  "status": "ok",
+  "generatedAt": "2026-06-23T21:34:27.048Z",
+  "durationSeconds": 76,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderTarget": 50,
@@ -13,15 +13,779 @@
     "activeMarketRule": "Only Gamma markets that are active, not closed or archived, and accepting orders are shown."
   },
   "stats": {
-    "leaderboardUsersInspected": 0,
-    "skippedNoPositions": 0,
-    "excludedBothOutcomes": 0,
+    "leaderboardUsersInspected": 176,
+    "skippedNoPositions": 101,
+    "excludedBothOutcomes": 25,
     "positionFetchErrors": 0,
-    "eligibleTraders": 0,
-    "candidateMarkets": 0,
-    "marketsChecked": 0,
-    "recommendationsReturned": 0
+    "eligibleTraders": 50,
+    "candidateMarkets": 356,
+    "marketsChecked": 5,
+    "recommendationsReturned": 5
   },
-  "eligibleTraders": [],
-  "recommendations": []
+  "eligibleTraders": [
+    {
+      "rank": 21,
+      "name": "0x006cc834Cc092684F1B56626E23BEdB3835c16ea-1729683673397",
+      "wallet": "0x006cc834cc092684f1b56626e23bedb3835c16ea",
+      "pnl": 4693529.216081875,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 22,
+      "name": "beachboy4",
+      "wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+      "pnl": 4674049.112885162,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 25,
+      "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
+      "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+      "pnl": 4233802.923487915,
+      "activePositionCount": 37
+    },
+    {
+      "rank": 26,
+      "name": "BreakTheBank",
+      "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+      "pnl": 4102792.8578275703,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 27,
+      "name": "surfandturf",
+      "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
+      "pnl": 4091678.828374221,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 30,
+      "name": "Inaccuratestake",
+      "wallet": "0xf8831548531d56ad6a4331493243c447a827cd1f",
+      "pnl": 3987825.147795874,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 31,
+      "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
+      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+      "pnl": 3881263.3148276396,
+      "activePositionCount": 70
+    },
+    {
+      "rank": 37,
+      "name": "GCottrell93",
+      "wallet": "0x94a428cfa4f84b264e01f70d93d02bc96cb36356",
+      "pnl": 3442689.162279122,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 39,
+      "name": "0x5966Db1fE50763C9e3C014d756369BAd07E1F804-1777648534241",
+      "wallet": "0x5966db1fe50763c9e3c014d756369bad07e1f804",
+      "pnl": 3198311.865134801,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 44,
+      "name": "LaBradfordSmith22",
+      "wallet": "0x9495425feeb0c250accb89275c97587011b19a27",
+      "pnl": 2788828.0328353206,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 48,
+      "name": "S-Works",
+      "wallet": "0xee00ba338c59557141789b127927a55f5cc5cea1",
+      "pnl": 2566180.263550244,
+      "activePositionCount": 80
+    },
+    {
+      "rank": 49,
+      "name": "tdrhrhhd",
+      "wallet": "0xd7f85d0eb0fe0732ca38d9107ad0d4d01b1289e4",
+      "pnl": 2457846.5867475974,
+      "activePositionCount": 10
+    },
+    {
+      "rank": 51,
+      "name": "denizz",
+      "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
+      "pnl": 2415840.1354650906,
+      "activePositionCount": 53
+    },
+    {
+      "rank": 56,
+      "name": "0x7fB7Ad0d194D7123e711e7db6C9D418fAc14E33d-1750343282446",
+      "wallet": "0x7fb7ad0d194d7123e711e7db6c9d418fac14e33d",
+      "pnl": 2282134.4592162594,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 59,
+      "name": "geniusMC",
+      "wallet": "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44",
+      "pnl": 2169263.3688835413,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 60,
+      "name": "0xd4aa6f8e91cfea29b66a48ebff52814",
+      "wallet": "0x709e8dcb133555794decc598e07f2c923b8366f5",
+      "pnl": 2155866.676708923,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 66,
+      "name": "The Spirit of Ukraine>UMA",
+      "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
+      "pnl": 2025336.3003025537,
+      "activePositionCount": 150
+    },
+    {
+      "rank": 72,
+      "name": "0xf705…3ca7",
+      "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
+      "pnl": 1950776.3205325042,
+      "activePositionCount": 91
+    },
+    {
+      "rank": 77,
+      "name": "justdance",
+      "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+      "pnl": 1811618.4204941124,
+      "activePositionCount": 52
+    },
+    {
+      "rank": 78,
+      "name": "frankfrankfrank",
+      "wallet": "0xea2b4224411e723499a803ce3f4758779fb31fc6",
+      "pnl": 1777266.0914903248,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 80,
+      "name": "edenmoon",
+      "wallet": "0x3d1ecf16942939b3603c2539a406514a40b504d0",
+      "pnl": 1746537.9907564172,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 86,
+      "name": "scottilicious",
+      "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+      "pnl": 1629652.403873685,
+      "activePositionCount": 41
+    },
+    {
+      "rank": 89,
+      "name": "Countryside",
+      "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
+      "pnl": 1555413.7167792602,
+      "activePositionCount": 30
+    },
+    {
+      "rank": 91,
+      "name": "gopfan2",
+      "wallet": "0xf2f6af4f27ec2dcf4072095ab804016e14cd5817",
+      "pnl": 1544585.9084778957,
+      "activePositionCount": 78
+    },
+    {
+      "rank": 92,
+      "name": "influenz.eth",
+      "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
+      "pnl": 1541659.026633897,
+      "activePositionCount": 15
+    },
+    {
+      "rank": 94,
+      "name": "niuniu1234",
+      "wallet": "0x97cb27132b9dd66a2ef49390893cbeb26c3fe4d0",
+      "pnl": 1515364.1462215136,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 97,
+      "name": "jtwyslljy",
+      "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
+      "pnl": 1490502.3237565078,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 101,
+      "name": "0x4c6a…0f47",
+      "wallet": "0x4c6a21c3c9ba8a4c0a79abe7b32b204cfe150f47",
+      "pnl": 1462499.9442564,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 102,
+      "name": "Kickstand7",
+      "wallet": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
+      "pnl": 1458735.7328798922,
+      "activePositionCount": 8
+    },
+    {
+      "rank": 114,
+      "name": "Joe-Biden",
+      "wallet": "0x8b5a7da2fdf239b51b9c68a2a1a35bb156d200f2",
+      "pnl": 1215665.5276197258,
+      "activePositionCount": 10
+    },
+    {
+      "rank": 116,
+      "name": "athelstan",
+      "wallet": "0xcfb69f94b3764e75228515ad9d169570d5f906da",
+      "pnl": 1198204.01018195,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 117,
+      "name": "Crystiano",
+      "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
+      "pnl": 1192515.7724007964,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 119,
+      "name": "coinman2",
+      "wallet": "0x55be7aa03ecfbe37aa5460db791205f7ac9ddca3",
+      "pnl": 1179543.526143478,
+      "activePositionCount": 37
+    },
+    {
+      "rank": 122,
+      "name": "Wickier",
+      "wallet": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
+      "pnl": 1163468.0920083618,
+      "activePositionCount": 3
+    },
+    {
+      "rank": 123,
+      "name": "gatorr",
+      "wallet": "0x93abbc022ce98d6f45d4444b594791cc4b7a9723",
+      "pnl": 1162167.6181742605,
+      "activePositionCount": 6
+    },
+    {
+      "rank": 124,
+      "name": "matanovik",
+      "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
+      "pnl": 1156321.8220192506,
+      "activePositionCount": 6
+    },
+    {
+      "rank": 129,
+      "name": "theo5",
+      "wallet": "0x8a4c788f043023b8b28a762216d037e9f148532b",
+      "pnl": 1094809.4588417793,
+      "activePositionCount": 43
+    },
+    {
+      "rank": 137,
+      "name": "0x8cb4…1057",
+      "wallet": "0x8cb4ca5af7d9361322340bb307a828d288c91057",
+      "pnl": 1040854.1256269333,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 138,
+      "name": "VPenguin",
+      "wallet": "0xfbf3d501e88815464642d0e913f15379c3eeb218",
+      "pnl": 1036517.125551032,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 140,
+      "name": "Airpods123",
+      "wallet": "0xb90494d9a5d8f71f1930b2aa4b599f95c344c255",
+      "pnl": 1023249.6323495524,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 144,
+      "name": "alwayslatetotheparty",
+      "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
+      "pnl": 996375.669062901,
+      "activePositionCount": 279
+    },
+    {
+      "rank": 147,
+      "name": "Apsalar",
+      "wallet": "0xd42f6a1634a3707e27cbae14ca966068e5d1047d",
+      "pnl": 983053.3740745604,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 152,
+      "name": "CANTSTANDIT",
+      "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
+      "pnl": 969587.1363512579,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 153,
+      "name": "RJW1",
+      "wallet": "0x85f031d069de300055900c4055c1baeb6bde3f67",
+      "pnl": 969200.9046433117,
+      "activePositionCount": 4
+    },
+    {
+      "rank": 155,
+      "name": "DLEK",
+      "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
+      "pnl": 952631.4749572234,
+      "activePositionCount": 11
+    },
+    {
+      "rank": 157,
+      "name": "BowlOfPunch",
+      "wallet": "0x889e7f0464c72eb8cda1525ebc12b6aaba9d09e0",
+      "pnl": 939960.4191455888,
+      "activePositionCount": 4
+    },
+    {
+      "rank": 168,
+      "name": "Sharky6999",
+      "wallet": "0x751a2b86cab503496efd325c8344e10159349ea1",
+      "pnl": 926327.0929584526,
+      "activePositionCount": 15
+    },
+    {
+      "rank": 171,
+      "name": "Anointed-Connect",
+      "wallet": "0x8f037a2e4fd49d11267f4ab874ab7ba745ac64d6",
+      "pnl": 921475.0159960228,
+      "activePositionCount": 15
+    },
+    {
+      "rank": 174,
+      "name": "wokerjoesleeper",
+      "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+      "pnl": 912648.2953480785,
+      "activePositionCount": 1308
+    },
+    {
+      "rank": 176,
+      "name": "ndb1",
+      "wallet": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
+      "pnl": 888806.8440364476,
+      "activePositionCount": 119
+    }
+  ],
+  "recommendations": [
+    {
+      "conditionId": "0x7976b8dbacf9077eb1453a62bcefd6ab2df199acd28aad276ff0d920d6992892",
+      "title": "Will Spain win the 2026 FIFA World Cup?",
+      "slug": "will-spain-win-the-2026-fifa-world-cup-963",
+      "eventSlug": "world-cup-winner",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/world-cup-winner-spain-flag-20260603-192743.png",
+      "endDate": "2026-07-20",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 8,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 295644.6821,
+      "avgEntryPrice": 0.08059849656694545,
+      "currentPrice": 0.1385,
+      "rankWeight": 0.9062346777254497,
+      "supporters": [
+        {
+          "rank": 25,
+          "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
+          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+          "currentValue": 47114.0323,
+          "size": 340173.5185,
+          "avgPrice": 0.0166,
+          "pnl": 41444.7004
+        },
+        {
+          "rank": 31,
+          "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
+          "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+          "currentValue": 110800,
+          "size": 800000,
+          "avgPrice": 0.0166,
+          "pnl": 97467.2
+        },
+        {
+          "rank": 89,
+          "name": "Countryside",
+          "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
+          "currentValue": 0.1604,
+          "size": 1.1585,
+          "avgPrice": 0.1589,
+          "pnl": -0.0238
+        },
+        {
+          "rank": 114,
+          "name": "Joe-Biden",
+          "wallet": "0x8b5a7da2fdf239b51b9c68a2a1a35bb156d200f2",
+          "currentValue": 76076.0703,
+          "size": 549285.7063,
+          "avgPrice": 0.1626,
+          "pnl": -13267.9962
+        },
+        {
+          "rank": 117,
+          "name": "Crystiano",
+          "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
+          "currentValue": 13849.9898,
+          "size": 99999.9264,
+          "avgPrice": 0.159,
+          "pnl": -2049.9985
+        },
+        {
+          "rank": 144,
+          "name": "alwayslatetotheparty",
+          "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
+          "currentValue": 1619.2045,
+          "size": 11691.0072,
+          "avgPrice": 0.0166,
+          "pnl": 1424.3621
+        },
+        {
+          "rank": 174,
+          "name": "wokerjoesleeper",
+          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+          "currentValue": 7.6174,
+          "size": 54.9999,
+          "avgPrice": 0.014,
+          "pnl": 6.8437
+        },
+        {
+          "rank": 176,
+          "name": "ndb1",
+          "wallet": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
+          "currentValue": 46177.6074,
+          "size": 333412.3284,
+          "avgPrice": 0.1431,
+          "pnl": -1566.7046
+        }
+      ],
+      "category": "Other",
+      "liquidity": 8798012.84969,
+      "volume24hr": 1274155.321302001,
+      "marketUrl": "https://polymarket.com/event/world-cup-winner"
+    },
+    {
+      "conditionId": "0x30d55d8124ee1e12dabe89201badc45669b81dff69e4ce44d961f32878ec178a",
+      "title": "Will Brazil win the 2026 FIFA World Cup?",
+      "slug": "will-brazil-win-the-2026-fifa-world-cup-183",
+      "eventSlug": "world-cup-winner",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/world-cup-winner-brazil-flag-20260603-192743.png",
+      "endDate": "2026-07-20",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 7,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 340331.213,
+      "avgEntryPrice": 0.0626515049703512,
+      "currentPrice": 0.0515,
+      "rankWeight": 0.942828731316216,
+      "supporters": [
+        {
+          "rank": 25,
+          "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
+          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+          "currentValue": 23461.0825,
+          "size": 455555,
+          "avgPrice": 0.0166,
+          "pnl": 15868.8028
+        },
+        {
+          "rank": 26,
+          "name": "BreakTheBank",
+          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+          "currentValue": 21112.9592,
+          "size": 409960.3737,
+          "avgPrice": 0.0586,
+          "pnl": -2920.9677
+        },
+        {
+          "rank": 31,
+          "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
+          "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+          "currentValue": 41200,
+          "size": 800000,
+          "avgPrice": 0.0166,
+          "pnl": 27867.2
+        },
+        {
+          "rank": 89,
+          "name": "Countryside",
+          "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
+          "currentValue": 66687.0825,
+          "size": 1294894.8059,
+          "avgPrice": 0.048,
+          "pnl": 4485.5155
+        },
+        {
+          "rank": 116,
+          "name": "athelstan",
+          "wallet": "0xcfb69f94b3764e75228515ad9d169570d5f906da",
+          "currentValue": 180604.839,
+          "size": 3506890.0793,
+          "avgPrice": 0.0841,
+          "pnl": -114377.22
+        },
+        {
+          "rank": 117,
+          "name": "Crystiano",
+          "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
+          "currentValue": 7264.0906,
+          "size": 141050.3044,
+          "avgPrice": 0.0856,
+          "pnl": -4822.651
+        },
+        {
+          "rank": 174,
+          "name": "wokerjoesleeper",
+          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+          "currentValue": 1.1592,
+          "size": 22.51,
+          "avgPrice": 0.014,
+          "pnl": 0.8425
+        }
+      ],
+      "category": "Other",
+      "liquidity": 2455868.63055,
+      "volume24hr": 2260996.497776993,
+      "marketUrl": "https://polymarket.com/event/world-cup-winner"
+    },
+    {
+      "conditionId": "0x375409bc5eeeff961e82b479caeccc20f33d15738e5bce1186d628aa3d9dfb1f",
+      "title": "Will England win the 2026 FIFA World Cup?",
+      "slug": "will-england-win-the-2026-fifa-world-cup-937",
+      "eventSlug": "world-cup-winner",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/world-cup-winner-england-flag-20260603-192743.png",
+      "endDate": "2026-07-20",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 6,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 398403.9573,
+      "avgEntryPrice": 0.06607575701310521,
+      "currentPrice": 0.1245,
+      "rankWeight": 0.8480667755660038,
+      "supporters": [
+        {
+          "rank": 25,
+          "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
+          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+          "currentValue": 42537.4493,
+          "size": 341666.26,
+          "avgPrice": 0.0166,
+          "pnl": 36843.2394
+        },
+        {
+          "rank": 26,
+          "name": "BreakTheBank",
+          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+          "currentValue": 93374.939,
+          "size": 749999.5107,
+          "avgPrice": 0.1268,
+          "pnl": -1797.7489
+        },
+        {
+          "rank": 31,
+          "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
+          "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+          "currentValue": 99600,
+          "size": 800000,
+          "avgPrice": 0.0166,
+          "pnl": 86267.2
+        },
+        {
+          "rank": 89,
+          "name": "Countryside",
+          "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
+          "currentValue": 160270.488,
+          "size": 1287313.1566,
+          "avgPrice": 0.0736,
+          "pnl": 65409.6687
+        },
+        {
+          "rank": 122,
+          "name": "Wickier",
+          "wallet": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
+          "currentValue": 2614.5,
+          "size": 21000,
+          "avgPrice": 0.126,
+          "pnl": -31.5
+        },
+        {
+          "rank": 174,
+          "name": "wokerjoesleeper",
+          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+          "currentValue": 6.581,
+          "size": 52.8599,
+          "avgPrice": 0.0128,
+          "pnl": 5.9008
+        }
+      ],
+      "category": "Other",
+      "liquidity": 1060795.48661,
+      "volume24hr": 2001608.3841829977,
+      "marketUrl": "https://polymarket.com/event/world-cup-winner"
+    },
+    {
+      "conditionId": "0x1595b4818eeb1ea1e0bec5de6f057218e557feee9b405a0e930d290384fa1d16",
+      "title": "Will Germany win the 2026 FIFA World Cup?",
+      "slug": "will-germany-win-the-2026-fifa-world-cup-467",
+      "eventSlug": "world-cup-winner",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/world-cup-winner-germany-flag-20260603-192743.png",
+      "endDate": "2026-07-20",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 6,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 92929.4588,
+      "avgEntryPrice": 0.038333744044326955,
+      "currentPrice": 0.0545,
+      "rankWeight": 0.8455761201560477,
+      "supporters": [
+        {
+          "rank": 25,
+          "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
+          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+          "currentValue": 17851.7409,
+          "size": 327554.88,
+          "avgPrice": 0.0166,
+          "pnl": 12392.7112
+        },
+        {
+          "rank": 26,
+          "name": "BreakTheBank",
+          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+          "currentValue": 49466.5559,
+          "size": 907643.2275,
+          "avgPrice": 0.054,
+          "pnl": 395.7324
+        },
+        {
+          "rank": 31,
+          "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
+          "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+          "currentValue": 20943.5646,
+          "size": 384285.59,
+          "avgPrice": 0.0166,
+          "pnl": 14539.0609
+        },
+        {
+          "rank": 89,
+          "name": "Countryside",
+          "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
+          "currentValue": 0.1106,
+          "size": 2.0297,
+          "avgPrice": 0.0166,
+          "pnl": 0.0767
+        },
+        {
+          "rank": 129,
+          "name": "theo5",
+          "wallet": "0x8a4c788f043023b8b28a762216d037e9f148532b",
+          "currentValue": 4632.5,
+          "size": 85000,
+          "avgPrice": 0.0533,
+          "pnl": 97.5799
+        },
+        {
+          "rank": 174,
+          "name": "wokerjoesleeper",
+          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+          "currentValue": 34.9868,
+          "size": 641.96,
+          "avgPrice": 0.0064,
+          "pnl": 30.8288
+        }
+      ],
+      "category": "Other",
+      "liquidity": 4466537.73922,
+      "volume24hr": 1213825.4054919994,
+      "marketUrl": "https://polymarket.com/event/world-cup-winner"
+    },
+    {
+      "conditionId": "0x6972edb1b3f8cd8192651a665fc424dff846efe1c4a2376f628d4b20c704144c",
+      "title": "Will Senegal win the 2026 FIFA World Cup?",
+      "slug": "will-senegal-win-the-2026-fifa-world-cup",
+      "eventSlug": "world-cup-winner",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/world-cup-winner-senegal-flag-20260603-192743.png",
+      "endDate": "2026-07-20",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 6,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 24601.0335,
+      "avgEntryPrice": 0.007125136516066118,
+      "currentPrice": 0.0025,
+      "rankWeight": 0.7590910471460189,
+      "supporters": [
+        {
+          "rank": 25,
+          "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
+          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+          "currentValue": 1138.8875,
+          "size": 455555,
+          "avgPrice": 0.0166,
+          "pnl": -6453.3921
+        },
+        {
+          "rank": 31,
+          "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
+          "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+          "currentValue": 2000,
+          "size": 800000,
+          "avgPrice": 0.0166,
+          "pnl": -11332.8
+        },
+        {
+          "rank": 89,
+          "name": "Countryside",
+          "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
+          "currentValue": 14325.4063,
+          "size": 5730162.5446,
+          "avgPrice": 0.005,
+          "pnl": -14325.4064
+        },
+        {
+          "rank": 91,
+          "name": "gopfan2",
+          "wallet": "0xf2f6af4f27ec2dcf4072095ab804016e14cd5817",
+          "currentValue": 2374.7552,
+          "size": 949902.1063,
+          "avgPrice": 0.0077,
+          "pnl": -4973.6874
+        },
+        {
+          "rank": 116,
+          "name": "athelstan",
+          "wallet": "0xcfb69f94b3764e75228515ad9d169570d5f906da",
+          "currentValue": 4749.6978,
+          "size": 1899879.1409,
+          "avgPrice": 0.007,
+          "pnl": -8549.4561
+        },
+        {
+          "rank": 174,
+          "name": "wokerjoesleeper",
+          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+          "currentValue": 12.2867,
+          "size": 4914.6899,
+          "avgPrice": 0.0016,
+          "pnl": 4.1479
+        }
+      ],
+      "category": "Other",
+      "liquidity": 5876451.50747,
+      "volume24hr": 4886011.350385998,
+      "marketUrl": "https://polymarket.com/event/world-cup-winner"
+    }
+  ]
 }
