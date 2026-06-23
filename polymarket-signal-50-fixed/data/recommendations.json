@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "status": "ok",
-  "generatedAt": "2026-06-23T21:34:27.048Z",
-  "durationSeconds": 76,
+  "generatedAt": "2026-06-23T21:53:13.864Z",
+  "durationSeconds": 15,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderTarget": 50,
@@ -10,16 +10,17 @@
     "minSharedSupporters": 2,
     "dualOutcomeRule": "A trader is excluded if they currently hold more than one outcome in the same conditionId.",
     "ranking": "Supporter count first, then same-side consensus rate, rank-weighted support, and combined current position value.",
-    "activeMarketRule": "Only Gamma markets that are active, not closed or archived, and accepting orders are shown."
+    "activeMarketRule": "Only Gamma markets that are active, not closed or archived, and accepting orders are shown.",
+    "distinctMarketRule": "Only one recommendation is shown per Polymarket event; the highest-ranked qualifying child market is kept."
   },
   "stats": {
     "leaderboardUsersInspected": 176,
-    "skippedNoPositions": 101,
-    "excludedBothOutcomes": 25,
+    "skippedNoPositions": 100,
+    "excludedBothOutcomes": 26,
     "positionFetchErrors": 0,
     "eligibleTraders": 50,
-    "candidateMarkets": 356,
-    "marketsChecked": 5,
+    "candidateMarkets": 348,
+    "marketsChecked": 18,
     "recommendationsReturned": 5
   },
   "eligibleTraders": [
@@ -34,29 +35,22 @@
       "rank": 22,
       "name": "beachboy4",
       "wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
-      "pnl": 4674049.112885162,
+      "pnl": 4674049.021976072,
       "activePositionCount": 2
     },
     {
       "rank": 25,
       "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
       "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-      "pnl": 4233802.923487915,
+      "pnl": 4235396.956374957,
       "activePositionCount": 37
     },
     {
-      "rank": 26,
+      "rank": 27,
       "name": "BreakTheBank",
       "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-      "pnl": 4102792.8578275703,
+      "pnl": 4105522.737970472,
       "activePositionCount": 5
-    },
-    {
-      "rank": 27,
-      "name": "surfandturf",
-      "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
-      "pnl": 4091678.828374221,
-      "activePositionCount": 1
     },
     {
       "rank": 30,
@@ -67,23 +61,23 @@
     },
     {
       "rank": 31,
-      "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
-      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-      "pnl": 3881263.3148276396,
-      "activePositionCount": 70
+      "name": "surfandturf",
+      "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
+      "pnl": 3879184.9780711685,
+      "activePositionCount": 1
     },
     {
       "rank": 37,
       "name": "GCottrell93",
       "wallet": "0x94a428cfa4f84b264e01f70d93d02bc96cb36356",
-      "pnl": 3442689.162279122,
+      "pnl": 3442556.7314382144,
       "activePositionCount": 5
     },
     {
       "rank": 39,
       "name": "0x5966Db1fE50763C9e3C014d756369BAd07E1F804-1777648534241",
       "wallet": "0x5966db1fe50763c9e3c014d756369bad07e1f804",
-      "pnl": 3198311.865134801,
+      "pnl": 3166917.2062072014,
       "activePositionCount": 1
     },
     {
@@ -97,14 +91,14 @@
       "rank": 48,
       "name": "S-Works",
       "wallet": "0xee00ba338c59557141789b127927a55f5cc5cea1",
-      "pnl": 2566180.263550244,
+      "pnl": 2565772.8630010122,
       "activePositionCount": 80
     },
     {
       "rank": 49,
       "name": "tdrhrhhd",
       "wallet": "0xd7f85d0eb0fe0732ca38d9107ad0d4d01b1289e4",
-      "pnl": 2457846.5867475974,
+      "pnl": 2457841.0830306076,
       "activePositionCount": 10
     },
     {
@@ -133,6 +127,13 @@
       "name": "0xd4aa6f8e91cfea29b66a48ebff52814",
       "wallet": "0x709e8dcb133555794decc598e07f2c923b8366f5",
       "pnl": 2155866.676708923,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 61,
+      "name": "0x6db5…e279",
+      "wallet": "0x6db568e61e5e3de7d87f831431b673f38ce2e279",
+      "pnl": 2126082.2723045195,
       "activePositionCount": 1
     },
     {
@@ -308,7 +309,7 @@
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
       "pnl": 996375.669062901,
-      "activePositionCount": 279
+      "activePositionCount": 284
     },
     {
       "rank": 147,
@@ -384,13 +385,13 @@
       "endDate": "2026-07-20",
       "outcome": "Yes",
       "outcomeKey": "0",
-      "supporterCount": 8,
+      "supporterCount": 7,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 295644.6821,
-      "avgEntryPrice": 0.08059849656694545,
+      "totalCurrentValue": 184844.6821,
+      "avgEntryPrice": 0.11896061404349542,
       "currentPrice": 0.1385,
-      "rankWeight": 0.9062346777254497,
+      "rankWeight": 0.7266293756986748,
       "supporters": [
         {
           "rank": 25,
@@ -400,15 +401,6 @@
           "size": 340173.5185,
           "avgPrice": 0.0166,
           "pnl": 41444.7004
-        },
-        {
-          "rank": 31,
-          "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
-          "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-          "currentValue": 110800,
-          "size": 800000,
-          "avgPrice": 0.0166,
-          "pnl": 97467.2
         },
         {
           "rank": 89,
@@ -466,326 +458,254 @@
         }
       ],
       "category": "Other",
-      "liquidity": 8798012.84969,
-      "volume24hr": 1274155.321302001,
+      "liquidity": 8815321.90934,
+      "volume24hr": 1266320.9144030008,
       "marketUrl": "https://polymarket.com/event/world-cup-winner"
     },
     {
-      "conditionId": "0x30d55d8124ee1e12dabe89201badc45669b81dff69e4ce44d961f32878ec178a",
-      "title": "Will Brazil win the 2026 FIFA World Cup?",
-      "slug": "will-brazil-win-the-2026-fifa-world-cup-183",
-      "eventSlug": "world-cup-winner",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/world-cup-winner-brazil-flag-20260603-192743.png",
-      "endDate": "2026-07-20",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 7,
+      "conditionId": "0x9352c559e9648ab4cab236087b64ca85c5b7123a4c7d9d7d4efde4a39c18056f",
+      "title": "Will the Iranian regime fall by June 30?",
+      "slug": "will-the-iranian-regime-fall-by-june-30",
+      "eventSlug": "will-the-iranian-regime-fall-by-june-30",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-the-iranian-regime-fall-in-2025-YLXIniTmQs4q.png",
+      "endDate": "2026-06-30",
+      "outcome": "No",
+      "outcomeKey": "1",
+      "supporterCount": 5,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 340331.213,
-      "avgEntryPrice": 0.0626515049703512,
-      "currentPrice": 0.0515,
-      "rankWeight": 0.942828731316216,
+      "totalCurrentValue": 513531.82190000004,
+      "avgEntryPrice": 0.8927623048742801,
+      "currentPrice": 0.9975,
+      "rankWeight": 0.5092737382293048,
       "supporters": [
         {
-          "rank": 25,
-          "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
-          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-          "currentValue": 23461.0825,
-          "size": 455555,
-          "avgPrice": 0.0166,
-          "pnl": 15868.8028
+          "rank": 51,
+          "name": "denizz",
+          "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
+          "currentValue": 25578.1102,
+          "size": 25642.2157,
+          "avgPrice": 0.9919,
+          "pnl": 141.0578
         },
         {
-          "rank": 26,
-          "name": "BreakTheBank",
-          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 21112.9592,
-          "size": 409960.3737,
-          "avgPrice": 0.0586,
-          "pnl": -2920.9677
-        },
-        {
-          "rank": 31,
-          "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
-          "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-          "currentValue": 41200,
-          "size": 800000,
-          "avgPrice": 0.0166,
-          "pnl": 27867.2
-        },
-        {
-          "rank": 89,
-          "name": "Countryside",
-          "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
-          "currentValue": 66687.0825,
-          "size": 1294894.8059,
-          "avgPrice": 0.048,
-          "pnl": 4485.5155
-        },
-        {
-          "rank": 116,
-          "name": "athelstan",
-          "wallet": "0xcfb69f94b3764e75228515ad9d169570d5f906da",
-          "currentValue": 180604.839,
-          "size": 3506890.0793,
-          "avgPrice": 0.0841,
-          "pnl": -114377.22
-        },
-        {
-          "rank": 117,
-          "name": "Crystiano",
-          "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
-          "currentValue": 7264.0906,
-          "size": 141050.3044,
-          "avgPrice": 0.0856,
-          "pnl": -4822.651
-        },
-        {
-          "rank": 174,
-          "name": "wokerjoesleeper",
-          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
-          "currentValue": 1.1592,
-          "size": 22.51,
-          "avgPrice": 0.014,
-          "pnl": 0.8425
-        }
-      ],
-      "category": "Other",
-      "liquidity": 2455868.63055,
-      "volume24hr": 2260996.497776993,
-      "marketUrl": "https://polymarket.com/event/world-cup-winner"
-    },
-    {
-      "conditionId": "0x375409bc5eeeff961e82b479caeccc20f33d15738e5bce1186d628aa3d9dfb1f",
-      "title": "Will England win the 2026 FIFA World Cup?",
-      "slug": "will-england-win-the-2026-fifa-world-cup-937",
-      "eventSlug": "world-cup-winner",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/world-cup-winner-england-flag-20260603-192743.png",
-      "endDate": "2026-07-20",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 6,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 398403.9573,
-      "avgEntryPrice": 0.06607575701310521,
-      "currentPrice": 0.1245,
-      "rankWeight": 0.8480667755660038,
-      "supporters": [
-        {
-          "rank": 25,
-          "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
-          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-          "currentValue": 42537.4493,
-          "size": 341666.26,
-          "avgPrice": 0.0166,
-          "pnl": 36843.2394
-        },
-        {
-          "rank": 26,
-          "name": "BreakTheBank",
-          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 93374.939,
-          "size": 749999.5107,
-          "avgPrice": 0.1268,
-          "pnl": -1797.7489
-        },
-        {
-          "rank": 31,
-          "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
-          "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-          "currentValue": 99600,
-          "size": 800000,
-          "avgPrice": 0.0166,
-          "pnl": 86267.2
-        },
-        {
-          "rank": 89,
-          "name": "Countryside",
-          "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
-          "currentValue": 160270.488,
-          "size": 1287313.1566,
-          "avgPrice": 0.0736,
-          "pnl": 65409.6687
+          "rank": 66,
+          "name": "The Spirit of Ukraine>UMA",
+          "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
+          "currentValue": 11.1646,
+          "size": 11.1926,
+          "avgPrice": 0.9808,
+          "pnl": 0.1863
         },
         {
           "rank": 122,
           "name": "Wickier",
           "wallet": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
-          "currentValue": 2614.5,
-          "size": 21000,
-          "avgPrice": 0.126,
-          "pnl": -31.5
+          "currentValue": 51835.5873,
+          "size": 51965.501,
+          "avgPrice": 0.6317,
+          "pnl": 19004.823
+        },
+        {
+          "rank": 157,
+          "name": "BowlOfPunch",
+          "wallet": "0x889e7f0464c72eb8cda1525ebc12b6aaba9d09e0",
+          "currentValue": 32.7878,
+          "size": 32.87,
+          "avgPrice": 0.59,
+          "pnl": 13.3945
         },
         {
           "rank": 174,
           "name": "wokerjoesleeper",
           "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
-          "currentValue": 6.581,
-          "size": 52.8599,
-          "avgPrice": 0.0128,
-          "pnl": 5.9008
+          "currentValue": 436074.172,
+          "size": 437167.0897,
+          "avgPrice": 0.918,
+          "pnl": 34717.1872
         }
       ],
       "category": "Other",
-      "liquidity": 1060795.48661,
-      "volume24hr": 2001608.3841829977,
-      "marketUrl": "https://polymarket.com/event/world-cup-winner"
+      "liquidity": 845619.28736,
+      "volume24hr": 523935.978512,
+      "marketUrl": "https://polymarket.com/event/will-the-iranian-regime-fall-by-june-30"
     },
     {
-      "conditionId": "0x1595b4818eeb1ea1e0bec5de6f057218e557feee9b405a0e930d290384fa1d16",
-      "title": "Will Germany win the 2026 FIFA World Cup?",
-      "slug": "will-germany-win-the-2026-fifa-world-cup-467",
-      "eventSlug": "world-cup-winner",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/world-cup-winner-germany-flag-20260603-192743.png",
-      "endDate": "2026-07-20",
+      "conditionId": "0x895e01dbf3e6a33cd9a44ca0f8cdb5df1bd2b0b6ebed5300d28f8da7145145e4",
+      "title": "Will Donald Trump win the 2028 Republican presidential nomination?",
+      "slug": "will-donald-trump-win-the-2028-republican-presidential-nomination",
+      "eventSlug": "republican-presidential-nominee-2028",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-donald-trump-win-the-2028-us-presidential-election-4gVusUQRi_GG.png",
+      "endDate": "2028-11-07",
       "outcome": "Yes",
       "outcomeKey": "0",
-      "supporterCount": 6,
+      "supporterCount": 4,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 92929.4588,
-      "avgEntryPrice": 0.038333744044326955,
-      "currentPrice": 0.0545,
-      "rankWeight": 0.8455761201560477,
+      "totalCurrentValue": 5365.5085,
+      "avgEntryPrice": 0.03707555529947297,
+      "currentPrice": 0.0195,
+      "rankWeight": 0.4954353450261668,
       "supporters": [
         {
-          "rank": 25,
-          "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
-          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-          "currentValue": 17851.7409,
-          "size": 327554.88,
-          "avgPrice": 0.0166,
-          "pnl": 12392.7112
+          "rank": 22,
+          "name": "beachboy4",
+          "wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+          "currentValue": 4848.6996,
+          "size": 248651.2632,
+          "avgPrice": 0.0402,
+          "pnl": -5165.9786
         },
         {
-          "rank": 26,
-          "name": "BreakTheBank",
-          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 49466.5559,
-          "size": 907643.2275,
-          "avgPrice": 0.054,
-          "pnl": 395.7324
+          "rank": 66,
+          "name": "The Spirit of Ukraine>UMA",
+          "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
+          "currentValue": 390,
+          "size": 20000.0004,
+          "avgPrice": 0.0078,
+          "pnl": 233.7599
         },
         {
-          "rank": 31,
-          "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
-          "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-          "currentValue": 20943.5646,
-          "size": 384285.59,
-          "avgPrice": 0.0166,
-          "pnl": 14539.0609
-        },
-        {
-          "rank": 89,
-          "name": "Countryside",
-          "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
-          "currentValue": 0.1106,
-          "size": 2.0297,
-          "avgPrice": 0.0166,
-          "pnl": 0.0767
-        },
-        {
-          "rank": 129,
-          "name": "theo5",
-          "wallet": "0x8a4c788f043023b8b28a762216d037e9f148532b",
-          "currentValue": 4632.5,
-          "size": 85000,
-          "avgPrice": 0.0533,
-          "pnl": 97.5799
+          "rank": 144,
+          "name": "alwayslatetotheparty",
+          "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
+          "currentValue": 122.3487,
+          "size": 6274.2924,
+          "avgPrice": 0.0078,
+          "pnl": 73.3339
         },
         {
           "rank": 174,
           "name": "wokerjoesleeper",
           "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
-          "currentValue": 34.9868,
-          "size": 641.96,
-          "avgPrice": 0.0064,
-          "pnl": 30.8288
+          "currentValue": 4.4602,
+          "size": 228.73,
+          "avgPrice": 0.0034,
+          "pnl": 3.6678
         }
       ],
       "category": "Other",
-      "liquidity": 4466537.73922,
-      "volume24hr": 1213825.4054919994,
-      "marketUrl": "https://polymarket.com/event/world-cup-winner"
+      "liquidity": 453767.86376,
+      "volume24hr": 3899.699149,
+      "marketUrl": "https://polymarket.com/event/republican-presidential-nominee-2028"
     },
     {
-      "conditionId": "0x6972edb1b3f8cd8192651a665fc424dff846efe1c4a2376f628d4b20c704144c",
-      "title": "Will Senegal win the 2026 FIFA World Cup?",
-      "slug": "will-senegal-win-the-2026-fifa-world-cup",
-      "eventSlug": "world-cup-winner",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/world-cup-winner-senegal-flag-20260603-192743.png",
-      "endDate": "2026-07-20",
+      "conditionId": "0x763a7f1e440693b54c56da02d338c2092053567dd865174387d06ee5612fdc9e",
+      "title": "Will Andy Burnham be the next Prime Minister of the United Kingdom in 2026?",
+      "slug": "will-andy-burnham-be-the-next-prime-minister-of-the-united-kingdom-in-2026-882",
+      "eventSlug": "next-uk-prime-minister-in-2026-122",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-andy-burnham-be-the-next-prime-minister-of-the-united-kingdom-in-2026-hkRyzFJOJFLe.jpg",
+      "endDate": "2026-12-31",
       "outcome": "Yes",
       "outcomeKey": "0",
-      "supporterCount": 6,
+      "supporterCount": 4,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 24601.0335,
-      "avgEntryPrice": 0.007125136516066118,
-      "currentPrice": 0.0025,
-      "rankWeight": 0.7590910471460189,
+      "totalCurrentValue": 25236.5827,
+      "avgEntryPrice": 0.6356028819138396,
+      "currentPrice": 0.9725,
+      "rankWeight": 0.48519380113065447,
       "supporters": [
         {
-          "rank": 25,
-          "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
-          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-          "currentValue": 1138.8875,
-          "size": 455555,
-          "avgPrice": 0.0166,
-          "pnl": -6453.3921
+          "rank": 21,
+          "name": "0x006cc834Cc092684F1B56626E23BEdB3835c16ea-1729683673397",
+          "wallet": "0x006cc834cc092684f1b56626e23bedb3835c16ea",
+          "currentValue": 7857.3623,
+          "size": 8079.55,
+          "avgPrice": 0.4409,
+          "pnl": 4295.0887
         },
         {
-          "rank": 31,
-          "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
-          "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-          "currentValue": 2000,
-          "size": 800000,
-          "avgPrice": 0.0166,
-          "pnl": -11332.8
+          "rank": 86,
+          "name": "scottilicious",
+          "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+          "currentValue": 8837.4187,
+          "size": 9087.32,
+          "avgPrice": 0.9572,
+          "pnl": 138.4725
         },
         {
-          "rank": 89,
-          "name": "Countryside",
-          "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
-          "currentValue": 14325.4063,
-          "size": 5730162.5446,
-          "avgPrice": 0.005,
-          "pnl": -14325.4064
+          "rank": 144,
+          "name": "alwayslatetotheparty",
+          "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
+          "currentValue": 8222.4814,
+          "size": 8454.9937,
+          "avgPrice": 0.5,
+          "pnl": 3994.9845
         },
         {
-          "rank": 91,
-          "name": "gopfan2",
-          "wallet": "0xf2f6af4f27ec2dcf4072095ab804016e14cd5817",
-          "currentValue": 2374.7552,
-          "size": 949902.1063,
-          "avgPrice": 0.0077,
-          "pnl": -4973.6874
-        },
+          "rank": 174,
+          "name": "wokerjoesleeper",
+          "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
+          "currentValue": 319.3203,
+          "size": 328.35,
+          "avgPrice": 0.0179,
+          "pnl": 313.4251
+        }
+      ],
+      "category": "Other",
+      "liquidity": 82053.38669,
+      "volume24hr": 64049.77232100002,
+      "marketUrl": "https://polymarket.com/event/next-uk-prime-minister-in-2026-122"
+    },
+    {
+      "conditionId": "0x8fbcb151e2c988df5a43abb02298014b7daf34c008f3eed9188dd16a2a19bec1",
+      "title": "Will Jared Polis win the 2028 Democratic presidential nomination?",
+      "slug": "will-jared-polis-win-the-2028-democratic-presidential-nomination-837",
+      "eventSlug": "democratic-presidential-nominee-2028",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Jared_Polis.png",
+      "endDate": "2028-11-07",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 4,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 7846.311599999999,
+      "avgEntryPrice": 0.007033925935913238,
+      "currentPrice": 0.0075,
+      "rankWeight": 0.4250917715276993,
+      "supporters": [
         {
-          "rank": 116,
-          "name": "athelstan",
-          "wallet": "0xcfb69f94b3764e75228515ad9d169570d5f906da",
-          "currentValue": 4749.6978,
-          "size": 1899879.1409,
+          "rank": 49,
+          "name": "tdrhrhhd",
+          "wallet": "0xd7f85d0eb0fe0732ca38d9107ad0d4d01b1289e4",
+          "currentValue": 7499.9805,
+          "size": 999997.4123,
           "avgPrice": 0.007,
-          "pnl": -8549.4561
+          "pnl": 499.9986
+        },
+        {
+          "rank": 66,
+          "name": "The Spirit of Ukraine>UMA",
+          "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
+          "currentValue": 334.0529,
+          "size": 44540.3909,
+          "avgPrice": 0.0078,
+          "pnl": -13.8966
+        },
+        {
+          "rank": 144,
+          "name": "alwayslatetotheparty",
+          "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
+          "currentValue": 9.75,
+          "size": 1300,
+          "avgPrice": 0.0078,
+          "pnl": -0.4055
         },
         {
           "rank": 174,
           "name": "wokerjoesleeper",
           "wallet": "0x63d43bbb87f85af03b8f2f9e2fad7b54334fa2f1",
-          "currentValue": 12.2867,
-          "size": 4914.6899,
-          "avgPrice": 0.0016,
-          "pnl": 4.1479
+          "currentValue": 2.5282,
+          "size": 337.1,
+          "avgPrice": 0.0035,
+          "pnl": 1.3169
         }
       ],
       "category": "Other",
-      "liquidity": 5876451.50747,
-      "volume24hr": 4886011.350385998,
-      "marketUrl": "https://polymarket.com/event/world-cup-winner"
+      "liquidity": 845779.14447,
+      "volume24hr": 31719.342254000017,
+      "marketUrl": "https://polymarket.com/event/democratic-presidential-nominee-2028"
     }
   ]
 }
