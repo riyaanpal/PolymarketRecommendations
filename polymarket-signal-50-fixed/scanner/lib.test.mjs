@@ -3,7 +3,8 @@ import assert from "node:assert/strict";
 import {
   buildMarketCandidates,
   hasBothOutcomes,
-  isTradeableMarket
+  isTradeableMarket,
+  selectRecommendations
 } from "./lib.mjs";
 
 function position(overrides = {}) {
@@ -103,4 +104,70 @@ test("requires an active, open, order-accepting market", () => {
   assert.equal(isTradeableMarket({ active: false, closed: false, acceptingOrders: true }), false);
   assert.equal(isTradeableMarket({ active: true, closed: true, acceptingOrders: true }), false);
   assert.equal(isTradeableMarket({ active: true, closed: false, acceptingOrders: false }), false);
+});
+
+
+test("returns at most one recommendation from each Polymarket event", async () => {
+  const sharedEventOne = position({
+    conditionId: "event-a-market-1",
+    title: "Will Candidate One win?",
+    slug: "candidate-one-win",
+    eventSlug: "shared-election-event",
+    currentValue: 12
+  });
+  const sharedEventTwo = position({
+    conditionId: "event-a-market-2",
+    title: "Will Candidate Two win?",
+    slug: "candidate-two-win",
+    eventSlug: "shared-election-event",
+    currentValue: 10
+  });
+  const differentEventOne = position({
+    conditionId: "event-b-market-1",
+    title: "Will Team B win?",
+    slug: "team-b-win",
+    eventSlug: "different-event-b",
+    currentValue: 8
+  });
+  const differentEventTwo = position({
+    conditionId: "event-c-market-1",
+    title: "Will Measure C pass?",
+    slug: "measure-c-pass",
+    eventSlug: "different-event-c",
+    currentValue: 7
+  });
+
+  const eligible = [
+    trader(1, [sharedEventOne, sharedEventTwo, differentEventOne, differentEventTwo]),
+    trader(2, [sharedEventOne, sharedEventTwo, differentEventOne, differentEventTwo])
+  ];
+
+  const fetchImpl = async () => ({
+    ok: true,
+    json: async () => ({
+      active: true,
+      closed: false,
+      archived: false,
+      acceptingOrders: true,
+      outcomes: '["Yes", "No"]',
+      outcomePrices: '["0.60", "0.40"]'
+    })
+  });
+
+  const result = await selectRecommendations(eligible, {
+    fetchImpl,
+    config: {
+      minSharedSupporters: 2,
+      recommendationCount: 5,
+      requestConcurrency: 2,
+      maxMarketChecks: 20
+    }
+  });
+
+  assert.equal(result.recommendations.length, 3);
+  assert.equal(
+    result.recommendations.filter((item) => item.eventSlug === "shared-election-event").length,
+    1
+  );
+  assert.equal(new Set(result.recommendations.map((item) => item.eventSlug)).size, 3);
 });
