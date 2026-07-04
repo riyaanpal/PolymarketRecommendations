@@ -1,26 +1,26 @@
-name: Daily Polymarket refresh
+name: 30-Minute Polymarket refresh
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 11 * * *"
+    - cron: "*/30 * * * *"
 
 permissions:
   contents: write
 
 concurrency:
-  group: polymarket-daily-refresh
+  group: polymarket-30-minute-refresh
   cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    
+    timeout-minutes: 25
+
     defaults:
       run:
         working-directory: polymarket-signal-50-fixed
-        
-    timeout-minutes: 25
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -47,5 +47,5 @@ jobs:
           git config user.name "signal-50-bot"
           git config user.email "signal-50-bot@users.noreply.github.com"
           git add data/recommendations.json
-          git commit -m "chore: refresh daily Polymarket signals"
+          git commit -m "chore: refresh Polymarket signals"
           git push
