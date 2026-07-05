@@ -216,6 +216,21 @@ h1 span {
   background: rgba(255, 143, 158, 0.07);
 }
 .decision-box-no span { color: #ffb3bd; }
+
+.decision-choice {
+  margin-top: 0.55rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.decision-choice b {
+  font-size: 1.08rem;
+}
+
+.decision-question {
+  color: #dbe7ff;
+}
+
 .market-metrics { display: flex; gap: 18px; flex-wrap: wrap; color: var(--muted); font-size: 13px; }
 .market-metrics strong { color: var(--text); }
 .supporters { display: flex; gap: 7px; align-items: center; margin-top: 16px; flex-wrap: wrap; }
@@ -300,6 +315,21 @@ h1 span {
   .signal-card { grid-template-columns: 1fr; padding: 20px; }
   .rank-box { width: 46px; height: 46px; border-radius: 14px; font-size: 16px; }
   .signal-action { grid-column: auto; padding-top: 4px; border-top: 1px solid var(--border); }
-  .market-metrics { gap: 10px 15px; }
+  
+.decision-choice {
+  margin-top: 0.55rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.decision-choice b {
+  font-size: 1.08rem;
+}
+
+.decision-question {
+  color: #dbe7ff;
+}
+
+.market-metrics { gap: 10px 15px; }
   .site-footer { flex-direction: column; }
 }
