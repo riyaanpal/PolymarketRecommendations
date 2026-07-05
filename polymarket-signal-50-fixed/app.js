@@ -58,14 +58,11 @@ function supporterChips(supporters) {
   return `${chips}${remainder > 0 ? `<span class="supporter-chip">+${remainder} more</span>` : ""}`;
 }
 
-function fallbackDecisionMeaning(side, target, choice = "") {
+function fallbackDecisionMeaning(side, target, option = "") {
   const normalized = String(side || "Unknown").toUpperCase();
   const quotedTarget = `“${target}”`;
-  if (choice && normalized === "NO") {
-    return `NO is for the “${choice}” decision only: ${quotedTarget}. It does not mean NO on the other dates/outcomes in the same event unless those exact decisions appear as separate signals.`;
-  }
-  if (choice && normalized === "YES") {
-    return `YES is for the “${choice}” decision only: ${quotedTarget}. It does not mean YES on the other dates/outcomes in the same event unless those exact decisions appear as separate signals.`;
+  if (option) {
+    return `On Polymarket, choose the “${option}” option/row/card, then click Buy ${normalized}. This applies only to the exact market question: ${quotedTarget}.`;
   }
   if (normalized === "NO") {
     return `NO is specifically on ${quotedTarget}. It pays only if that exact market question resolves No.`;
@@ -79,10 +76,10 @@ function fallbackDecisionMeaning(side, target, choice = "") {
 function recommendationCard(item, index) {
   const side = String(item.decisionSide || item.outcome || "Unknown");
   const target = String(item.decisionTarget || item.title || "this market");
-  const choice = String(item.decisionChoice || "").trim();
-  const decisionText = item.decisionText || (choice ? `Buy ${side} on the ${choice} decision` : `Buy ${side} on: ${target}`);
-  const decisionMeaning = item.decisionMeaning || fallbackDecisionMeaning(side, target, choice);
-  const decisionLabel = side.toUpperCase() === "NO" ? "Exact NO decision" : "Exact decision";
+  const option = String(item.decisionOption || item.decisionChoice || "").trim();
+  const decisionText = item.decisionText || (option ? `Select “${option}” → Buy ${side}` : `Buy ${side} on: ${target}`);
+  const decisionMeaning = item.decisionMeaning || fallbackDecisionMeaning(side, target, option);
+  const decisionLabel = option ? "Exact option to select" : (side.toUpperCase() === "NO" ? "Exact NO market" : "Exact market");
   const supporters = Array.isArray(item.supporters) ? item.supporters : [];
 
   return `
@@ -96,7 +93,8 @@ function recommendationCard(item, index) {
         <h3 class="market-title">${escapeHtml(item.title)}</h3>
         <div class="decision-box ${side.toUpperCase() === "NO" ? "decision-box-no" : ""}">
           <span>${escapeHtml(decisionLabel)}</span>
-          ${choice ? `<div class="decision-choice">Decision: <b>${escapeHtml(choice)}</b></div>` : ""}
+          ${option ? `<div class="decision-choice">Option to select: <b>${escapeHtml(option)}</b></div>` : ""}
+          <div class="decision-action">Action: <b>Buy ${escapeHtml(side)}</b></div>
           <strong>${escapeHtml(decisionText)}</strong>
           <p class="decision-question">Exact market question: ${escapeHtml(target)}</p>
           <p>${escapeHtml(decisionMeaning)}</p>
