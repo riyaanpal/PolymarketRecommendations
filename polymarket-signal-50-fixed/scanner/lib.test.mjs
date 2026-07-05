@@ -4,6 +4,7 @@ import {
   buildMarketCandidates,
   buildUsMarketSnapshot,
   createDecisionDetails,
+  enrichCandidate,
   extractDecisionChoice,
   extractDecisionOption,
   hasBothOutcomes,
@@ -650,4 +651,71 @@ test("falls back to the child market slug when the title is only the event title
     }),
     "Quarterfinals"
   );
+});
+
+
+test("does not match a US market just because the option label overlaps", () => {
+  const candidate = {
+    slug: "will-argentina-win-the-2026-fifa-world-cup",
+    title: "Will Argentina win the 2026 FIFA World Cup?",
+    groupItemTitle: "Argentina",
+    endDate: "2026-07-19T00:00:00Z"
+  };
+  const metadata = {
+    slug: "will-argentina-win-the-2026-fifa-world-cup",
+    question: "Will Argentina win the 2026 FIFA World Cup?",
+    groupItemTitle: "Argentina",
+    endDate: "2026-07-19T00:00:00Z"
+  };
+  const usMarket = {
+    slug: "will-argentina-advance-against-egypt-on-2026-07-07-1200pm-et",
+    question: "Will Argentina advance against Egypt on 2026-07-07 12:00PM ET?",
+    active: true,
+    closed: false,
+    archived: false,
+    hidden: false,
+    marketSides: [{ tradable: true }]
+  };
+
+  assert.ok(scoreUsMarketMatch(candidate, metadata, usMarket) < 0.68);
+});
+
+test("keeps the displayed title and exact question from the same market candidate", () => {
+  const candidate = {
+    conditionId: "bitcoin-250k",
+    title: "Will Bitcoin reach $250,000 by December 31, 2026?",
+    slug: "will-bitcoin-reach-250000-by-december-31-2026",
+    outcome: "No",
+    outcomeKey: "1",
+    supporterCount: 2,
+    opposingSupporters: 0,
+    consensusRate: 1,
+    totalCurrentValue: 100,
+    avgEntryPrice: 0.9,
+    currentPrice: 0.88,
+    rankWeight: 1,
+    supporters: []
+  };
+  const metadata = {
+    active: true,
+    closed: false,
+    archived: false,
+    acceptingOrders: true,
+    question: "Will Bitcoin reach $250,000 by December 31, 2026?",
+    outcomes: '["Yes", "No"]',
+    outcomePrices: '["0.12", "0.88"]'
+  };
+  const staleOrWrongUsMetadata = {
+    slug: "samuel-alito-announced-out-as-scotus-justice",
+    question: "Samuel Alito Announced Out as SCOTUS Justice?",
+    active: true,
+    closed: false,
+    archived: false,
+    hidden: false,
+    marketSides: [{ tradable: true }]
+  };
+
+  const enriched = enrichCandidate(candidate, metadata, staleOrWrongUsMetadata);
+  assert.equal(enriched.title, "Will Bitcoin reach $250,000 by December 31, 2026?");
+  assert.equal(enriched.decisionTarget, "Will Bitcoin reach $250,000 by December 31, 2026?");
 });
