@@ -128,9 +128,9 @@ function render(data) {
     return;
   }
 
-  if (recommendations.length < 5) {
+  if (recommendations.length < 4) {
     showNotice(
-      `Only ${recommendations.length} market${recommendations.length === 1 ? "" : "s"} passed every consensus and tradeability rule today.`
+      `Only ${recommendations.length} market${recommendations.length === 1 ? "" : "s"} passed every consensus and tradeability rule today. The scanner kept moving down the leaderboard, but did not find four qualifying US-available markets this run.`
     );
   }
 
