@@ -217,14 +217,20 @@ h1 span {
 }
 .decision-box-no span { color: #ffb3bd; }
 
-.decision-choice {
+.decision-choice,
+.decision-action {
   margin-top: 0.55rem;
   font-size: 1rem;
   color: #ffffff;
 }
 
-.decision-choice b {
+.decision-choice b,
+.decision-action b {
   font-size: 1.08rem;
+}
+
+.decision-action {
+  color: var(--accent);
 }
 
 .decision-question {
@@ -316,14 +322,20 @@ h1 span {
   .rank-box { width: 46px; height: 46px; border-radius: 14px; font-size: 16px; }
   .signal-action { grid-column: auto; padding-top: 4px; border-top: 1px solid var(--border); }
   
-.decision-choice {
+.decision-choice,
+.decision-action {
   margin-top: 0.55rem;
   font-size: 1rem;
   color: #ffffff;
 }
 
-.decision-choice b {
+.decision-choice b,
+.decision-action b {
   font-size: 1.08rem;
+}
+
+.decision-action {
+  color: var(--accent);
 }
 
 .decision-question {
