@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Four Polymarket US-available consensus signals derived from shared positions among all-time P&L leaderboard traders."
+    />
+    <meta name="theme-color" content="#07111f" />
+    <title>Signal 50 — Polymarket consensus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header shell">
+      <a class="brand" href="#top" aria-label="Signal 50 home">
+        <span class="brand-mark">S50</span>
+        <span>Signal 50</span>
+      </a>
+      <div class="header-status" id="header-status">
+        <span class="status-dot"></span>
+        <span>Loading daily snapshot</span>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="eyebrow">POLYMARKET CONSENSUS RESEARCH</div>
+        <h1>Follow the overlap,<br /><span>not the noise.</span></h1>
+        <p class="hero-copy">
+          Four distinct US-available active markets where top all-time P&amp;L traders are independently holding the same side.
+          The scanner starts with 50 clean traders, then keeps moving down the leaderboard until four distinct markets are found.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#signals">View today’s signals</a>
+          <button class="button ghost" type="button" id="method-button">How it works</button>
+        </div>
+      </section>
+
+      <section class="stats-shell shell" aria-label="Scan statistics">
+        <div class="stat-card">
+          <span class="stat-label">Eligible traders</span>
+          <strong id="stat-eligible">—</strong>
+          <small>after exclusions</small>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Users inspected</span>
+          <strong id="stat-inspected">—</strong>
+          <small>leaderboard order</small>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Shared markets</span>
+          <strong id="stat-candidates">—</strong>
+          <small>clear same-side signal</small>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Last refresh</span>
+          <strong class="date-stat" id="stat-updated">—</strong>
+          <small id="stat-duration">daily snapshot</small>
+        </div>
+      </section>
+
+      <section class="signals shell" id="signals">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">TODAY’S TOP FOUR</div>
+            <h2>Consensus signals</h2>
+          </div>
+          <p>Ranked by shared holders, agreement, trader rank, and capital committed.</p>
+        </div>
+
+        <div class="notice hidden" id="notice" role="status"></div>
+        <div class="signal-grid" id="signal-grid" aria-live="polite">
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+          <div class="skeleton-card"></div>
+        </div>
+      </section>
+
+      <section class="method shell" id="methodology">
+        <div class="method-panel">
+          <div>
+            <div class="eyebrow">METHODOLOGY</div>
+            <h2>Designed to reject false consensus.</h2>
+          </div>
+          <div class="method-steps">
+            <article>
+              <span>01</span>
+              <h3>Scan by all-time profit</h3>
+              <p>Start at the top of the overall all-time P&amp;L leaderboard and keep scanning in rank order.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Start with a clean set of 50</h3>
+              <p>Skip traders with no current positions. Exclude anyone holding both outcomes in any one market, then keep scanning if four distinct markets are not found.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Find same-side overlap</h3>
+              <p>Aggregate active positions, reject tied signals, keep only one pick per Polymarket event, and verify each market is tradeable.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <p>
+        Research tool only. Prediction-market positions can lose their full value. Verify market rules,
+        prices, eligibility, and local law before acting.
+      </p>
+      <p>Public data from Polymarket APIs · US availability filter · No wallet connection · No automated trading</p>
+    </footer>
+  </body>
+</html>
