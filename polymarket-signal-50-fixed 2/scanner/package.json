@@ -1,0 +1,15 @@
+{
+  "name": "polymarket-signal-50",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "refresh": "node scanner/refresh.mjs",
+    "refresh:us-markets": "node scanner/refresh-us-markets.mjs",
+    "test": "node --test scanner/lib.test.mjs",
+    "check": "node --check app.js && node --check scanner/lib.mjs && node --check scanner/refresh.mjs && node --check scanner/refresh-us-markets.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
