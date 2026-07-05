@@ -547,39 +547,75 @@ function uniqueTexts(values) {
   return output;
 }
 
-export function scoreUsMarketMatch(candidate, metadata, usMarket) {
-  if (!candidate || !usMarket || !isUsTradeableMarket(usMarket)) return 0;
-  if (!datesAreCompatible(candidate, metadata, usMarket)) return 0;
-
-  const candidateTexts = uniqueTexts([
-    candidate.slug,
-    candidate.eventSlug,
-    candidate.title,
-    candidate.groupItemTitle,
-    candidate.groupItemThreshold,
-    metadata?.slug,
-    metadata?.question,
-    metadata?.title,
-    metadata?.groupItemTitle,
-    metadata?.groupItemThreshold
-  ]);
-  const usTexts = uniqueTexts([
-    usMarket.slug,
-    usMarket.question,
-    usMarket.title,
-    usMarket.groupItemTitle,
-    usMarket.groupItemThreshold
-  ]);
-
+function bestTextSimilarity(leftTexts, rightTexts) {
   let best = 0;
-  for (const left of candidateTexts) {
-    for (const right of usTexts) {
+  for (const left of uniqueTexts(leftTexts)) {
+    for (const right of uniqueTexts(rightTexts)) {
       if (!numbersAreCompatible(left, right)) continue;
       best = Math.max(best, textSimilarity(left, right));
     }
   }
-
   return best;
+}
+
+function marketFullTexts(candidate, metadata = null) {
+  return uniqueTexts([
+    candidate?.slug,
+    candidate?.title,
+    candidate?.rawPositionTitle,
+    metadata?.slug,
+    metadata?.question,
+    metadata?.title
+  ]);
+}
+
+function usFullTexts(usMarket) {
+  return uniqueTexts([
+    usMarket?.slug,
+    usMarket?.question,
+    usMarket?.title
+  ]);
+}
+
+function marketOptionTexts(candidate, metadata = null) {
+  return uniqueTexts([
+    candidate?.groupItemTitle,
+    candidate?.groupItemThreshold,
+    metadata?.groupItemTitle,
+    metadata?.groupItemThreshold
+  ]).filter(cleanOptionLabel);
+}
+
+function optionsAreCompatible(candidate, metadata, usMarket) {
+  const candidateOptions = marketOptionTexts(candidate, metadata);
+  const usOptions = uniqueTexts([
+    usMarket?.groupItemTitle,
+    usMarket?.groupItemThreshold
+  ]).filter(cleanOptionLabel);
+
+  // If the US catalog row is event-level and does not expose an option label,
+  // do not block a strong full-question match. The UI will still display the
+  // exact child option from Gamma/Data API.
+  if (!candidateOptions.length || !usOptions.length) return true;
+
+  return bestTextSimilarity(candidateOptions, usOptions) >= 0.76;
+}
+
+export function scoreUsMarketMatch(candidate, metadata, usMarket) {
+  if (!candidate || !usMarket || !isUsTradeableMarket(usMarket)) return 0;
+  if (!datesAreCompatible(candidate, metadata, usMarket)) return 0;
+
+  // Critical: option labels like “Argentina”, “July 31”, or “↑ 250,000” are
+  // not enough to prove that the US market is the same market. They caused
+  // cards where the displayed recommendation title came from one market while
+  // the exact question/analysis came from a different candidate. Score only the
+  // full market question/slug/title against the US full question/slug/title,
+  // then use option labels only as a compatibility check.
+  const fullScore = bestTextSimilarity(marketFullTexts(candidate, metadata), usFullTexts(usMarket));
+  if (fullScore <= 0) return 0;
+  if (!optionsAreCompatible(candidate, metadata, usMarket)) return 0;
+
+  return fullScore;
 }
 
 function extractMarketsPayload(data) {
@@ -1034,8 +1070,8 @@ export function enrichCandidate(candidate, metadata, usMetadata = null) {
   );
   const metadataPrice = outcomeIndex >= 0 ? outcomePrices[outcomeIndex] : NaN;
 
-  const displayMetadata = usMetadata || metadata || {};
-  const displayTitle = displayMetadata?.question || displayMetadata?.title || candidate.title;
+  const displayMetadata = metadata || usMetadata || {};
+  const displayTitle = metadata?.question || metadata?.title || candidate.title;
   const decisionDetails = createDecisionDetails({
     outcome: candidate.outcome,
     title: candidate.title,
