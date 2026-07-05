@@ -58,9 +58,15 @@ function supporterChips(supporters) {
   return `${chips}${remainder > 0 ? `<span class="supporter-chip">+${remainder} more</span>` : ""}`;
 }
 
-function fallbackDecisionMeaning(side, target) {
+function fallbackDecisionMeaning(side, target, choice = "") {
   const normalized = String(side || "Unknown").toUpperCase();
   const quotedTarget = `“${target}”`;
+  if (choice && normalized === "NO") {
+    return `NO is for the “${choice}” decision only: ${quotedTarget}. It does not mean NO on the other dates/outcomes in the same event unless those exact decisions appear as separate signals.`;
+  }
+  if (choice && normalized === "YES") {
+    return `YES is for the “${choice}” decision only: ${quotedTarget}. It does not mean YES on the other dates/outcomes in the same event unless those exact decisions appear as separate signals.`;
+  }
   if (normalized === "NO") {
     return `NO is specifically on ${quotedTarget}. It pays only if that exact market question resolves No.`;
   }
@@ -73,9 +79,10 @@ function fallbackDecisionMeaning(side, target) {
 function recommendationCard(item, index) {
   const side = String(item.decisionSide || item.outcome || "Unknown");
   const target = String(item.decisionTarget || item.title || "this market");
-  const decisionText = item.decisionText || `Buy ${side} on: ${target}`;
-  const decisionMeaning = item.decisionMeaning || fallbackDecisionMeaning(side, target);
-  const decisionLabel = side.toUpperCase() === "NO" ? "Exact NO target" : "Exact bet";
+  const choice = String(item.decisionChoice || "").trim();
+  const decisionText = item.decisionText || (choice ? `Buy ${side} on the ${choice} decision` : `Buy ${side} on: ${target}`);
+  const decisionMeaning = item.decisionMeaning || fallbackDecisionMeaning(side, target, choice);
+  const decisionLabel = side.toUpperCase() === "NO" ? "Exact NO decision" : "Exact decision";
   const supporters = Array.isArray(item.supporters) ? item.supporters : [];
 
   return `
@@ -89,7 +96,9 @@ function recommendationCard(item, index) {
         <h3 class="market-title">${escapeHtml(item.title)}</h3>
         <div class="decision-box ${side.toUpperCase() === "NO" ? "decision-box-no" : ""}">
           <span>${escapeHtml(decisionLabel)}</span>
+          ${choice ? `<div class="decision-choice">Decision: <b>${escapeHtml(choice)}</b></div>` : ""}
           <strong>${escapeHtml(decisionText)}</strong>
+          <p class="decision-question">Exact market question: ${escapeHtml(target)}</p>
           <p>${escapeHtml(decisionMeaning)}</p>
         </div>
         <div class="market-metrics">
