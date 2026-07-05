@@ -58,9 +58,26 @@ function supporterChips(supporters) {
   return `${chips}${remainder > 0 ? `<span class="supporter-chip">+${remainder} more</span>` : ""}`;
 }
 
+function fallbackDecisionMeaning(side, target) {
+  const normalized = String(side || "Unknown").toUpperCase();
+  const quotedTarget = `“${target}”`;
+  if (normalized === "NO") {
+    return `NO is specifically on ${quotedTarget}. It pays only if that exact market question resolves No.`;
+  }
+  if (normalized === "YES") {
+    return `YES is specifically on ${quotedTarget}. It pays only if that exact market question resolves Yes.`;
+  }
+  return `${normalized} is specifically on ${quotedTarget}. Verify the market rules before acting.`;
+}
+
 function recommendationCard(item, index) {
-  const side = String(item.outcome || "Unknown");
+  const side = String(item.decisionSide || item.outcome || "Unknown");
+  const target = String(item.decisionTarget || item.title || "this market");
+  const decisionText = item.decisionText || `Buy ${side} on: ${target}`;
+  const decisionMeaning = item.decisionMeaning || fallbackDecisionMeaning(side, target);
+  const decisionLabel = side.toUpperCase() === "NO" ? "Exact NO target" : "Exact bet";
   const supporters = Array.isArray(item.supporters) ? item.supporters : [];
+
   return `
     <article class="signal-card">
       <div class="rank-box">0${index + 1}</div>
@@ -70,6 +87,11 @@ function recommendationCard(item, index) {
           <span class="side-pill">Side: ${escapeHtml(side)}</span>
         </div>
         <h3 class="market-title">${escapeHtml(item.title)}</h3>
+        <div class="decision-box ${side.toUpperCase() === "NO" ? "decision-box-no" : ""}">
+          <span>${escapeHtml(decisionLabel)}</span>
+          <strong>${escapeHtml(decisionText)}</strong>
+          <p>${escapeHtml(decisionMeaning)}</p>
+        </div>
         <div class="market-metrics">
           <span><strong>${integer.format(item.supporterCount || 0)}</strong> same-side holders</span>
           <span><strong>${integer.format(item.opposingSupporters || 0)}</strong> opposing</span>
