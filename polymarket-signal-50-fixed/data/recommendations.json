@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-07-05T01:58:37.578Z",
-  "durationSeconds": 30,
+  "generatedAt": "2026-07-05T02:08:09.241Z",
+  "durationSeconds": 26,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -14,7 +14,7 @@
     "ranking": "Supporter count first, then same-side consensus rate, rank-weighted support, and combined current position value.",
     "activeMarketRule": "Only Gamma markets that are active, not closed or archived, and accepting orders are shown.",
     "usAvailabilityRule": "Only markets that match the daily Polymarket US catalog by exact slug or high-confidence title/slug similarity, and are active, not closed, not archived, not hidden, and with a tradable side, are shown.",
-    "usMarketCatalogGeneratedAt": "2026-07-05T01:24:44.625Z",
+    "usMarketCatalogGeneratedAt": "2026-07-05T01:59:10.357Z",
     "distinctMarketRule": "Only one recommendation is shown per Polymarket event; the highest-ranked qualifying child market is kept.",
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
@@ -24,14 +24,14 @@
     "excludedBothOutcomes": 31,
     "positionFetchErrors": 0,
     "eligibleTraders": 54,
-    "candidateMarkets": 264,
+    "candidateMarkets": 263,
     "marketsChecked": 101,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
     "usMarketCatalogUsed": true,
-    "usMarketCatalogGeneratedAt": "2026-07-05T01:24:44.625Z",
-    "usMarketCatalogCount": 8465
+    "usMarketCatalogGeneratedAt": "2026-07-05T01:59:10.357Z",
+    "usMarketCatalogCount": 8236
   },
   "eligibleTraders": [
     {
@@ -228,7 +228,7 @@
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
       "pnl": 1463581.7413102787,
-      "activePositionCount": 262
+      "activePositionCount": 260
     },
     {
       "rank": 108,
@@ -515,7 +515,7 @@
       ],
       "category": "sports",
       "liquidity": 0,
-      "volume24hr": 78493,
+      "volume24hr": 79735,
       "usAvailable": true,
       "usMarketSlug": "aadc-fwc-arg-egy-2026-07-07-to-advance-arg",
       "usMatchMethod": "title_slug_similarity",
