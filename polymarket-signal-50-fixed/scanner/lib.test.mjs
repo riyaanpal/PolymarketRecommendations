@@ -6,6 +6,8 @@ import {
   hasBothOutcomes,
   isTradeableMarket,
   isUsTradeableMarket,
+  normalizeMatchText,
+  scoreUsMarketMatch,
   selectRecommendations
 } from "./lib.mjs";
 
@@ -325,6 +327,92 @@ test("builds a daily US market snapshot from the public markets endpoint", async
 
   assert.equal(snapshot.marketCount, 1);
   assert.equal(snapshot.markets[0].slug, "active-us-market");
+});
+
+
+
+test("matches Polymarket US markets by title or slug similarity when exact slugs differ", async () => {
+  const international = position({
+    conditionId: "fed-september-market",
+    slug: "will-the-fed-cut-rates-in-september-2026",
+    title: "Will the Fed cut rates in September 2026?",
+    eventSlug: "fed-rates-september-2026"
+  });
+
+  const eligible = [trader(1, [international]), trader(2, [international])];
+
+  const fetchImpl = async () => ({
+    ok: true,
+    json: async () => ({
+      active: true,
+      closed: false,
+      archived: false,
+      acceptingOrders: true,
+      question: "Will the Fed cut rates in September 2026?",
+      outcomes: '["Yes", "No"]',
+      outcomePrices: '["0.60", "0.40"]'
+    }),
+    text: async () => ""
+  });
+
+  const result = await selectRecommendations(eligible, {
+    fetchImpl,
+    usMarketSnapshot: {
+      schemaVersion: 1,
+      generatedAt: "2026-07-05T00:00:00.000Z",
+      marketCount: 1,
+      markets: [
+        {
+          slug: "fed-rate-cut-september-2026",
+          question: "Fed rate cut in September 2026?",
+          active: true,
+          closed: false,
+          archived: false,
+          hidden: false,
+          marketSides: [{ tradable: true }]
+        }
+      ]
+    },
+    config: {
+      minSharedSupporters: 2,
+      recommendationCount: 4,
+      requestConcurrency: 2,
+      maxMarketChecks: 20,
+      requireUsAvailable: true,
+      useCachedUsMarkets: true,
+      usMatchMinScore: 0.68
+    }
+  });
+
+  assert.equal(result.recommendations.length, 1);
+  assert.equal(result.recommendations[0].usMarketSlug, "fed-rate-cut-september-2026");
+  assert.equal(result.recommendations[0].usMatchMethod, "title_slug_similarity");
+  assert.equal(
+    result.recommendations[0].marketUrl,
+    "https://polymarket.us/market/fed-rate-cut-september-2026"
+  );
+});
+
+test("rejects weak US title matches even when one generic word overlaps", () => {
+  assert.equal(normalizeMatchText("Will Trump win the 2028 election?"), "will trump win the 2028 election");
+
+  const candidate = {
+    slug: "will-trump-win-2028-election",
+    title: "Will Trump win the 2028 election?",
+    endDate: "2028-11-08T00:00:00Z"
+  };
+  const usMarket = {
+    slug: "trump-republican-nomination-2028",
+    question: "Will Trump win the Republican nomination in 2028?",
+    endDateIso: "2028-07-01T00:00:00Z",
+    active: true,
+    closed: false,
+    archived: false,
+    hidden: false,
+    marketSides: [{ tradable: true }]
+  };
+
+  assert.ok(scoreUsMarketMatch(candidate, null, usMarket) < 0.68);
 });
 
 test("uses the cached daily US market snapshot instead of per-market gateway calls", async () => {
