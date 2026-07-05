@@ -1,0 +1,51 @@
+name: Daily Polymarket US markets refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 8 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: polymarket-us-markets-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-us-markets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    defaults:
+      run:
+        working-directory: polymarket-signal-50-fixed
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate scanner
+        run: |
+          npm test
+          npm run check
+
+      - name: Refresh Polymarket US market catalog
+        run: npm run refresh:us-markets
+
+      - name: Commit updated US market catalog
+        run: |
+          if git diff --quiet -- data/us-markets.json; then
+            echo "No US market catalog changes to commit."
+            exit 0
+          fi
+          git config user.name "signal-50-bot"
+          git config user.email "signal-50-bot@users.noreply.github.com"
+          git add data/us-markets.json
+          git commit -m "chore: refresh Polymarket US markets"
+          git push
