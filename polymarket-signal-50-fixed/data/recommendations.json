@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-07-05T02:28:55.595Z",
-  "durationSeconds": 37,
+  "generatedAt": "2026-07-05T02:33:45.216Z",
+  "durationSeconds": 30,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -14,7 +14,7 @@
     "ranking": "Supporter count first, then same-side consensus rate, rank-weighted support, and combined current position value.",
     "activeMarketRule": "Only Gamma markets that are active, not closed or archived, and accepting orders are shown.",
     "usAvailabilityRule": "Only markets that match the daily Polymarket US catalog by exact slug or high-confidence title/slug similarity, and are active, not closed, not archived, not hidden, and with a tradable side, are shown.",
-    "usMarketCatalogGeneratedAt": "2026-07-05T02:09:00.292Z",
+    "usMarketCatalogGeneratedAt": "2026-07-05T02:30:27.578Z",
     "distinctMarketRule": "Only one recommendation is shown per Polymarket event; the highest-ranked qualifying child market is kept.",
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
@@ -30,8 +30,8 @@
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
     "usMarketCatalogUsed": true,
-    "usMarketCatalogGeneratedAt": "2026-07-05T02:09:00.292Z",
-    "usMarketCatalogCount": 8231
+    "usMarketCatalogGeneratedAt": "2026-07-05T02:30:27.578Z",
+    "usMarketCatalogCount": 7804
   },
   "eligibleTraders": [
     {
@@ -81,7 +81,7 @@
       "name": "S-Works",
       "wallet": "0xee00ba338c59557141789b127927a55f5cc5cea1",
       "pnl": 2846760.108145476,
-      "activePositionCount": 47
+      "activePositionCount": 48
     },
     {
       "rank": 49,
@@ -151,7 +151,7 @@
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "pnl": 1922394.6209079728,
-      "activePositionCount": 48
+      "activePositionCount": 47
     },
     {
       "rank": 77,
@@ -517,7 +517,7 @@
       "decisionMeaning": "On Polymarket, choose the “Argentina” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Argentina win the 2026 FIFA World Cup?”.",
       "category": "sports",
       "liquidity": 0,
-      "volume24hr": 79869,
+      "volume24hr": 80590,
       "usAvailable": true,
       "usMarketSlug": "aadc-fwc-arg-egy-2026-07-07-to-advance-arg",
       "usMatchMethod": "title_slug_similarity",
