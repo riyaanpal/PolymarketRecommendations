@@ -10,8 +10,11 @@ export const DEFAULT_CONFIG = Object.freeze({
   positionSizeThreshold: 1,
   requestConcurrency: 6,
   minSharedSupporters: 2,
-  recommendationCount: 5,
-  maxMarketChecks: 150,
+  recommendationCount: 4,
+  maxMarketChecks: 300,
+  minEligibleBeforeRecommendations: 50,
+  maxEligibleTraders: 300,
+  usMatchMinScore: 0.68,
   requireUsAvailable: true,
   useCachedUsMarkets: true,
   usMarketsPageSize: 250,
@@ -182,6 +185,7 @@ export async function collectEligibleTraders(options = {}) {
   const config = { ...DEFAULT_CONFIG, ...(options.config ?? {}) };
   const fetchImpl = options.fetchImpl ?? globalThis.fetch;
   const onProgress = options.onProgress ?? (() => {});
+  const shouldStop = options.shouldStop ?? null;
   const eligible = [];
   const stats = {
     leaderboardUsersInspected: 0,
@@ -243,6 +247,15 @@ export async function collectEligibleTraders(options = {}) {
     }
 
     onProgress({ eligible: eligible.length, stats: { ...stats }, offset });
+
+    if (typeof shouldStop === "function") {
+      const stop = await shouldStop({
+        eligible,
+        stats: { ...stats },
+        offset
+      });
+      if (stop) break;
+    }
   }
 
   return { eligible, stats };
@@ -414,6 +427,145 @@ function normalizeSlug(slug) {
   return String(slug ?? "").trim().toLowerCase();
 }
 
+const MATCH_STOP_WORDS = new Set([
+  "a",
+  "an",
+  "and",
+  "are",
+  "at",
+  "be",
+  "by",
+  "for",
+  "from",
+  "in",
+  "is",
+  "it",
+  "of",
+  "on",
+  "or",
+  "the",
+  "to",
+  "will",
+  "with",
+  "yes",
+  "no",
+  "market",
+  "polymarket"
+]);
+
+export function normalizeMatchText(value) {
+  return String(value ?? "")
+    .toLowerCase()
+    .replaceAll("&", " and ")
+    .replace(/[’']/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function matchTokens(value) {
+  return normalizeMatchText(value)
+    .split(" ")
+    .filter((token) => token.length > 1 && !MATCH_STOP_WORDS.has(token));
+}
+
+function numberTokens(value) {
+  return new Set(matchTokens(value).filter((token) => /^\d+$/.test(token)));
+}
+
+function yearTokens(value) {
+  return new Set([...numberTokens(value)].filter((token) => /^20\d{2}$/.test(token)));
+}
+
+function setsIntersect(a, b) {
+  for (const value of a) {
+    if (b.has(value)) return true;
+  }
+  return false;
+}
+
+function numbersAreCompatible(a, b) {
+  const yearsA = yearTokens(a);
+  const yearsB = yearTokens(b);
+  return yearsA.size === 0 || yearsB.size === 0 || setsIntersect(yearsA, yearsB);
+}
+
+function textSimilarity(a, b) {
+  const normalizedA = normalizeMatchText(a);
+  const normalizedB = normalizeMatchText(b);
+  if (!normalizedA || !normalizedB) return 0;
+  if (normalizedA === normalizedB) return 1;
+
+  const tokensA = new Set(matchTokens(normalizedA));
+  const tokensB = new Set(matchTokens(normalizedB));
+  if (!tokensA.size || !tokensB.size) return 0;
+
+  const intersection = [...tokensA].filter((token) => tokensB.has(token)).length;
+  const union = new Set([...tokensA, ...tokensB]).size;
+  const jaccard = union ? intersection / union : 0;
+  const containment = intersection / Math.min(tokensA.size, tokensB.size);
+
+  // Containment helps catch equivalent titles with one extra date/descriptor
+  // while Jaccard keeps unrelated markets with a few shared words from matching.
+  return Math.max(jaccard, containment * 0.92);
+}
+
+function parseDate(value) {
+  if (!value) return null;
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+function datesAreCompatible(candidate, metadata, usMarket) {
+  const candidateDate =
+    parseDate(candidate?.endDate) ||
+    parseDate(metadata?.endDate) ||
+    parseDate(metadata?.endDateIso) ||
+    parseDate(metadata?.end_date);
+  const usDate = parseDate(usMarket?.endDateIso) || parseDate(usMarket?.endDate);
+
+  if (!candidateDate || !usDate) return true;
+  const diffDays = Math.abs(candidateDate.getTime() - usDate.getTime()) / 86_400_000;
+  return diffDays <= 45;
+}
+
+function uniqueTexts(values) {
+  const seen = new Set();
+  const output = [];
+  for (const value of values) {
+    const normalized = normalizeMatchText(value);
+    if (!normalized || seen.has(normalized)) continue;
+    seen.add(normalized);
+    output.push(String(value));
+  }
+  return output;
+}
+
+export function scoreUsMarketMatch(candidate, metadata, usMarket) {
+  if (!candidate || !usMarket || !isUsTradeableMarket(usMarket)) return 0;
+  if (!datesAreCompatible(candidate, metadata, usMarket)) return 0;
+
+  const candidateTexts = uniqueTexts([
+    candidate.slug,
+    candidate.eventSlug,
+    candidate.title,
+    metadata?.slug,
+    metadata?.question,
+    metadata?.title
+  ]);
+  const usTexts = uniqueTexts([usMarket.slug, usMarket.question, usMarket.title]);
+
+  let best = 0;
+  for (const left of candidateTexts) {
+    for (const right of usTexts) {
+      if (!numbersAreCompatible(left, right)) continue;
+      best = Math.max(best, textSimilarity(left, right));
+    }
+  }
+
+  return best;
+}
+
 function extractMarketsPayload(data) {
   if (Array.isArray(data?.markets)) return data.markets;
   if (Array.isArray(data?.data)) return data.data;
@@ -501,24 +653,65 @@ export async function buildUsMarketSnapshot(options = {}) {
 }
 
 export function createUsMarketLookup(snapshot) {
-  const lookup = new Map();
+  const bySlug = new Map();
+  const markets = [];
   const rows = Array.isArray(snapshot?.markets) ? snapshot.markets : [];
 
   for (const market of rows) {
+    if (!isUsTradeableMarket(market)) continue;
     const slug = normalizeSlug(market?.slug);
-    if (slug && isUsTradeableMarket(market)) {
-      lookup.set(slug, market);
-    }
+    if (slug) bySlug.set(slug, market);
+    markets.push(market);
   }
 
-  return lookup;
+  return { bySlug, markets };
+}
+
+function asUsMarketLookup(snapshotOrLookup) {
+  if (!snapshotOrLookup) return null;
+  if (snapshotOrLookup instanceof Map) {
+    return { bySlug: snapshotOrLookup, markets: [...snapshotOrLookup.values()] };
+  }
+  if (snapshotOrLookup.bySlug instanceof Map && Array.isArray(snapshotOrLookup.markets)) {
+    return snapshotOrLookup;
+  }
+  return createUsMarketLookup(snapshotOrLookup);
+}
+
+function withUsMatch(market, matchMethod, matchScore) {
+  return market ? { ...market, matchMethod, matchScore } : null;
 }
 
 export function findUsMarketBySlug(snapshotOrLookup, slug) {
   const key = normalizeSlug(slug);
-  if (!key || !snapshotOrLookup) return null;
-  const lookup = snapshotOrLookup instanceof Map ? snapshotOrLookup : createUsMarketLookup(snapshotOrLookup);
-  return lookup.get(key) ?? null;
+  const lookup = asUsMarketLookup(snapshotOrLookup);
+  if (!key || !lookup) return null;
+  const market = lookup.bySlug.get(key) ?? null;
+  return market ? withUsMatch(market, "exact_slug", 1) : null;
+}
+
+export function findUsMarketMatch(snapshotOrLookup, candidate, metadata = null, config = DEFAULT_CONFIG) {
+  const lookup = asUsMarketLookup(snapshotOrLookup);
+  if (!lookup || !candidate) return null;
+
+  const exact = findUsMarketBySlug(lookup, candidate.slug);
+  if (exact) return exact;
+
+  let best = null;
+  let bestScore = 0;
+  for (const market of lookup.markets) {
+    const score = scoreUsMarketMatch(candidate, metadata, market);
+    if (score > bestScore) {
+      best = market;
+      bestScore = score;
+    }
+  }
+
+  if (best && bestScore >= config.usMatchMinScore) {
+    return withUsMatch(best, "title_slug_similarity", Number(bestScore.toFixed(3)));
+  }
+
+  return null;
 }
 
 export function isTradeableMarket(metadata) {
@@ -581,8 +774,11 @@ export function enrichCandidate(candidate, metadata, usMetadata = null) {
     liquidity: number(displayMetadata?.liquidityNum, number(displayMetadata?.liquidity)),
     volume24hr: number(displayMetadata?.volume24hr),
     usAvailable: Boolean(usMetadata),
+    usMarketSlug: usMetadata?.slug || null,
+    usMatchMethod: usMetadata?.matchMethod || null,
+    usMatchScore: usMetadata?.matchScore ?? null,
     marketUrl: usMetadata
-      ? `https://polymarket.us/market/${candidate.slug}`
+      ? `https://polymarket.us/market/${usMetadata.slug || candidate.slug}`
       : candidate.eventSlug
         ? `https://polymarket.com/event/${candidate.eventSlug}`
         : `https://polymarket.com/market/${candidate.slug}`
@@ -618,11 +814,11 @@ export async function selectRecommendations(eligible, options = {}) {
     const usMetadataRows = await mapWithConcurrency(
       chunk,
       config.requestConcurrency,
-      async (candidate) => {
+      async (candidate, candidateIndex) => {
         if (!config.requireUsAvailable) return null;
 
         if (usMarketLookup) {
-          return findUsMarketBySlug(usMarketLookup, candidate.slug);
+          return findUsMarketMatch(usMarketLookup, candidate, metadataRows[candidateIndex], config);
         }
 
         try {
