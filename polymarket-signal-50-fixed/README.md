@@ -1,6 +1,6 @@
 # Signal 50
 
-A zero-dependency static website that publishes up to five Polymarket consensus signals from a clean set of 50 traders drawn from the overall all-time P&L leaderboard, then keeps only markets that are also listed as tradable on Polymarket US.
+A zero-dependency static website that publishes up to four Polymarket consensus signals. It starts with a clean set of 50 traders drawn from the overall all-time P&L leaderboard, keeps scanning farther down the leaderboard until four distinct markets are produced, and only shows markets that are also listed as tradable on Polymarket US.
 
 ## Exact rules implemented
 
@@ -8,15 +8,15 @@ A zero-dependency static website that publishes up to five Polymarket consensus 
 2. Fetch each trader's current positions.
 3. Skip traders with no current positions.
 4. Exclude a trader entirely if they hold more than one outcome for the same `conditionId`.
-5. Keep scanning down the leaderboard until 50 eligible traders are collected or the API's documented offset limit is reached.
+5. Start selecting after 50 eligible traders are collected, then keep scanning down the leaderboard until four distinct qualifying markets are produced or the configured scan cap is reached.
 6. Group positions by market and side.
 7. Require at least two traders on the same side and reject markets where that side does not outnumber all opposing holders.
 8. Validate candidates with Gamma and show only active, non-closed, non-archived markets accepting orders.
-9. Refresh a cached Polymarket US tradable-market catalog once per day and require the same slug to exist in that catalog.
+9. Refresh a cached Polymarket US tradable-market catalog once per day and match candidates against it using exact slug first, then high-confidence title/slug similarity.
 10. If the catalog has not been created yet, fall back to a live Polymarket US slug check.
 11. Collapse outcome-specific child markets that belong to the same Polymarket event, keeping only the strongest-ranked one.
 12. Rank by same-side supporter count, consensus rate, rank-weighted support, and combined current position value.
-13. Publish up to five distinct events. It shows fewer rather than repeating one event or inventing a weak signal.
+13. Publish up to four distinct events. It shows fewer rather than repeating one event or inventing a weak signal.
 
 ## First live refresh
 
@@ -80,8 +80,8 @@ Edit `DEFAULT_CONFIG` in `scanner/lib.mjs` to change:
 ## Important limitations
 
 - This is a crowd-position signal, not proof that a side is correctly priced.
-- The top-trader leaderboard and position data still come from the public Polymarket International data APIs. The US filter verifies that the recommended market slug appears in the latest cached Polymarket US tradable-market catalog.
-- If Polymarket US uses a different slug for a related market, this app will skip it rather than guessing a match.
+- The top-trader leaderboard and position data still come from the public Polymarket International data APIs. The US filter verifies that the recommended market appears in the latest cached Polymarket US tradable-market catalog.
+- Exact slug matches are preferred. When Polymarket US uses a different slug, the app can match by normalized title/slug similarity, but it rejects low-confidence matches rather than guessing.
 - Public positions can change immediately after the snapshot.
 - A trader's visible position size is not the same as their full risk exposure or conviction.
 - The app never connects a wallet or places trades.
