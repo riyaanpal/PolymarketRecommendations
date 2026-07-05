@@ -297,6 +297,9 @@ export function buildMarketCandidates(eligible, config = DEFAULT_CONFIG) {
           eventSlug: position.eventSlug || "",
           icon: position.icon || "",
           endDate: position.endDate || "",
+          groupItemTitle: position.groupItemTitle || position.groupItem || position.option || position.selection || "",
+          groupItemThreshold: position.groupItemThreshold || position.threshold || "",
+          rawPositionTitle: position.title || "",
           sides: new Map()
         });
       }
@@ -378,6 +381,9 @@ export function buildMarketCandidates(eligible, config = DEFAULT_CONFIG) {
       eventSlug: market.eventSlug,
       icon: market.icon,
       endDate: market.endDate,
+      groupItemTitle: market.groupItemTitle,
+      groupItemThreshold: market.groupItemThreshold,
+      rawPositionTitle: market.rawPositionTitle,
       outcome: winner.outcome,
       outcomeKey: winner.outcomeKey,
       supporterCount: winner.supporters.length,
@@ -549,11 +555,21 @@ export function scoreUsMarketMatch(candidate, metadata, usMarket) {
     candidate.slug,
     candidate.eventSlug,
     candidate.title,
+    candidate.groupItemTitle,
+    candidate.groupItemThreshold,
     metadata?.slug,
     metadata?.question,
-    metadata?.title
+    metadata?.title,
+    metadata?.groupItemTitle,
+    metadata?.groupItemThreshold
   ]);
-  const usTexts = uniqueTexts([usMarket.slug, usMarket.question, usMarket.title]);
+  const usTexts = uniqueTexts([
+    usMarket.slug,
+    usMarket.question,
+    usMarket.title,
+    usMarket.groupItemTitle,
+    usMarket.groupItemThreshold
+  ]);
 
   let best = 0;
   for (const left of candidateTexts) {
@@ -610,6 +626,14 @@ function compactUsMarket(market) {
     icon: market?.icon || market?.image || "",
     endDate: market?.endDate || market?.endDateIso || "",
     endDateIso: market?.endDateIso || market?.endDate || "",
+    groupItemTitle: market?.groupItemTitle || "",
+    groupItemThreshold: market?.groupItemThreshold || "",
+    groupItemRange: market?.groupItemRange || "",
+    marketGroup: market?.marketGroup ?? null,
+    line: market?.line ?? null,
+    sportsMarketType: market?.sportsMarketType || "",
+    shortOutcomes: market?.shortOutcomes || "",
+    outcomes: market?.outcomes || "",
     active: market?.active,
     closed: market?.closed,
     archived: market?.archived,
@@ -754,6 +778,254 @@ export function distinctMarketKey(candidate, metadata = null) {
   return `slug:${String(candidate?.slug || candidate?.title || "unknown").trim().toLowerCase()}`;
 }
 
+function normalizeDecisionSide(outcome) {
+  const side = String(outcome ?? "Unknown").trim();
+  if (!side) return "Unknown";
+  const lower = side.toLowerCase();
+  if (lower === "yes") return "YES";
+  if (lower === "no") return "NO";
+  return side;
+}
+
+const MONTH_NAMES = {
+  jan: "January",
+  january: "January",
+  feb: "February",
+  february: "February",
+  mar: "March",
+  march: "March",
+  apr: "April",
+  april: "April",
+  may: "May",
+  jun: "June",
+  june: "June",
+  jul: "July",
+  july: "July",
+  aug: "August",
+  august: "August",
+  sep: "September",
+  sept: "September",
+  september: "September",
+  oct: "October",
+  october: "October",
+  nov: "November",
+  november: "November",
+  dec: "December",
+  december: "December"
+};
+
+function firstNonEmpty(...values) {
+  for (const value of values) {
+    const text = String(value ?? "").trim();
+    if (text) return text;
+  }
+  return "";
+}
+
+function normalizeDecisionQuestion({ title, metadata = null, usMetadata = null } = {}) {
+  // Prefer the exact child market question from Gamma/Data API. The US match can
+  // be an event-level title, so using it first can hide the actual option such
+  // as Round of 16 vs. Quarterfinals or July 31 vs. August 31.
+  return firstNonEmpty(
+    metadata?.question,
+    metadata?.title,
+    title,
+    usMetadata?.question,
+    usMetadata?.title,
+    "this market"
+  );
+}
+
+function formatMonthDecision(month, day, year = "") {
+  const monthName = MONTH_NAMES[String(month ?? "").toLowerCase().replace(/\.$/, "")];
+  if (!monthName || !day) return "";
+  const cleanYear = String(year ?? "").trim();
+  return `${monthName} ${Number(day)}${cleanYear ? `, ${cleanYear}` : ""}`;
+}
+
+function titleCaseOption(value) {
+  const keepLower = new Set(["a", "an", "and", "as", "at", "by", "for", "from", "in", "of", "on", "or", "the", "to", "vs", "v"]);
+  return String(value ?? "")
+    .replace(/[-_/]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .split(" ")
+    .map((word, index) => {
+      if (!word) return "";
+      if (/^\d+(st|nd|rd|th)?$/i.test(word)) return word.replace(/(st|nd|rd|th)$/i, "");
+      if (/^20\d{2}$/.test(word)) return word;
+      const lower = word.toLowerCase();
+      if (index > 0 && keepLower.has(lower)) return lower;
+      if (/^[A-Z]{2,}$/.test(word)) return word;
+      return lower.charAt(0).toUpperCase() + lower.slice(1);
+    })
+    .join(" ")
+    .trim();
+}
+
+function cleanOptionLabel(value) {
+  const text = String(value ?? "")
+    .replace(/[“”]/g, '"')
+    .replace(/[’]/g, "'")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/^[-:|\s]+|[-:|\s]+$/g, "");
+
+  if (!text) return "";
+  const normalized = normalizeMatchText(text);
+  if (!normalized || normalized === "yes" || normalized === "no") return "";
+  if (normalized === "other" || normalized === "this market") return "";
+  return text;
+}
+
+function dateDecisionFromText(value) {
+  const monthDatePattern =
+    /\b(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sep(?:t)?(?:ember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)[\s\-\.]+(\d{1,2})(?:st|nd|rd|th)?(?:[,\s\-]+(20\d{2}|\d{2}))?\b/i;
+
+  const spaced = String(value ?? "").replace(/[-_/]+/g, " ");
+  const match = spaced.match(monthDatePattern);
+  return match ? formatMonthDecision(match[1], match[2], match[3]) : "";
+}
+
+export function extractDecisionChoice({ title, slug, metadata = null, usMetadata = null } = {}) {
+  const question = normalizeDecisionQuestion({ title, metadata, usMetadata });
+  const rawTexts = uniqueTexts([
+    question,
+    title,
+    metadata?.question,
+    metadata?.title,
+    metadata?.groupItemTitle,
+    metadata?.groupItemThreshold,
+    metadata?.slug,
+    slug,
+    usMetadata?.question,
+    usMetadata?.title,
+    usMetadata?.groupItemTitle,
+    usMetadata?.groupItemThreshold,
+    usMetadata?.slug
+  ]);
+
+  for (const text of rawTexts) {
+    const date = dateDecisionFromText(text);
+    if (date) return date;
+  }
+
+  return "";
+}
+
+function optionFromSlug({ slug, eventSlug } = {}) {
+  const marketSlug = normalizeSlug(slug);
+  const parentSlug = normalizeSlug(eventSlug);
+  if (!marketSlug) return "";
+
+  let suffix = "";
+  if (parentSlug && marketSlug.startsWith(`${parentSlug}-`)) {
+    suffix = marketSlug.slice(parentSlug.length + 1);
+  }
+
+  if (!suffix) return "";
+  suffix = suffix.replace(/^(by|before|after|on|in|to)-/i, "");
+  const date = dateDecisionFromText(suffix);
+  if (date) return date;
+  return cleanOptionLabel(titleCaseOption(suffix));
+}
+
+function optionFromQuestionPattern(question) {
+  const text = String(question ?? "").trim();
+  if (!text) return "";
+
+  const date = dateDecisionFromText(text);
+  if (date) return date;
+
+  const patterns = [
+    /\b(?:in|during|at)\s+(?:the\s+)?(round\s+of\s+\d+|quarterfinals?|semi[-\s]?finals?|final|championship|champion)\b/i,
+    /\b(eliminated\s+in\s+(?:the\s+)?(?:round\s+of\s+\d+|quarterfinals?|semi[-\s]?finals?|final))\b/i,
+    /:\s*([^?]+)\??$/,
+    /[-–—]\s*([^?]+)\??$/
+  ];
+
+  for (const pattern of patterns) {
+    const match = text.match(pattern);
+    if (match?.[1]) return cleanOptionLabel(titleCaseOption(match[1]));
+  }
+
+  return "";
+}
+
+export 
+function textContainsOption(text, option) {
+  const textTokens = new Set(matchTokens(text));
+  const optionTokens = matchTokens(option);
+  return optionTokens.length > 0 && optionTokens.every((token) => textTokens.has(token));
+}
+
+export function extractDecisionOption({ title, slug, eventSlug, groupItemTitle = "", groupItemThreshold = "", metadata = null, usMetadata = null } = {}) {
+  // groupItemTitle is the cleanest source for grouped/multi-option events. The
+  // Gamma market schema documents it next to marketGroup/groupItemThreshold, and
+  // it corresponds to the row/card label users select in the Polymarket UI.
+  const directOption = cleanOptionLabel(
+    firstNonEmpty(
+      metadata?.groupItemTitle,
+      metadata?.groupItemThreshold,
+      groupItemTitle,
+      groupItemThreshold,
+      usMetadata?.groupItemTitle,
+      usMetadata?.groupItemThreshold
+    )
+  );
+  if (directOption) return directOption;
+
+  const dateChoice = extractDecisionChoice({ title, slug, metadata, usMetadata });
+  if (dateChoice) return dateChoice;
+
+  const slugOption = optionFromSlug({ slug: metadata?.slug || slug, eventSlug });
+  if (slugOption) return slugOption;
+
+  const questionOption = optionFromQuestionPattern(
+    firstNonEmpty(metadata?.question, metadata?.title, title, usMetadata?.question, usMetadata?.title)
+  );
+  if (questionOption) return questionOption;
+
+  return "";
+}
+
+export function createDecisionDetails({ outcome, title, slug, eventSlug, groupItemTitle = "", groupItemThreshold = "", metadata = null, usMetadata = null } = {}) {
+  const decisionSide = normalizeDecisionSide(outcome);
+  const baseDecisionTarget = normalizeDecisionQuestion({ title, metadata, usMetadata });
+  const decisionOption = extractDecisionOption({ title, slug, eventSlug, groupItemTitle, groupItemThreshold, metadata, usMetadata });
+  const decisionChoice = decisionOption;
+  const decisionTarget =
+    decisionOption && !textContainsOption(baseDecisionTarget, decisionOption)
+      ? `${baseDecisionTarget} — ${decisionOption}`
+      : baseDecisionTarget;
+
+  const quotedTarget = `“${decisionTarget}”`;
+  const quotedOption = decisionOption ? `“${decisionOption}”` : quotedTarget;
+  const decisionText = decisionOption
+    ? `Select ${quotedOption} → Buy ${decisionSide}`
+    : `Buy ${decisionSide} on: ${decisionTarget}`;
+  let decisionMeaning;
+
+  if (decisionOption) {
+    decisionMeaning = `On Polymarket, choose the ${quotedOption} option/row/card, then click Buy ${decisionSide}. This applies only to the exact market question: ${quotedTarget}.`;
+  } else if (decisionSide === "NO") {
+    decisionMeaning = `NO is specifically on ${quotedTarget}. It pays only if that exact market question resolves No.`;
+  } else if (decisionSide === "YES") {
+    decisionMeaning = `YES is specifically on ${quotedTarget}. It pays only if that exact market question resolves Yes.`;
+  } else {
+    decisionMeaning = `${decisionSide} is specifically on ${quotedTarget}. Verify the market rules before acting.`;
+  }
+
+  return {
+    decisionSide,
+    decisionChoice,
+    decisionOption,
+    decisionTarget,
+    decisionText,
+    decisionMeaning
+  };
+}
+
 export function enrichCandidate(candidate, metadata, usMetadata = null) {
   const outcomes = parseJsonArray(metadata?.outcomes);
   const outcomePrices = parseJsonArray(metadata?.outcomePrices).map((value) => number(value, NaN));
@@ -763,10 +1035,22 @@ export function enrichCandidate(candidate, metadata, usMetadata = null) {
   const metadataPrice = outcomeIndex >= 0 ? outcomePrices[outcomeIndex] : NaN;
 
   const displayMetadata = usMetadata || metadata || {};
+  const displayTitle = displayMetadata?.question || displayMetadata?.title || candidate.title;
+  const decisionDetails = createDecisionDetails({
+    outcome: candidate.outcome,
+    title: candidate.title,
+    slug: candidate.slug,
+    eventSlug: candidate.eventSlug,
+    groupItemTitle: candidate.groupItemTitle,
+    groupItemThreshold: candidate.groupItemThreshold,
+    metadata,
+    usMetadata
+  });
 
   return {
     ...candidate,
-    title: displayMetadata?.question || displayMetadata?.title || candidate.title,
+    title: displayTitle,
+    ...decisionDetails,
     category: displayMetadata?.category || metadata?.category || "Other",
     icon: displayMetadata?.icon || displayMetadata?.image || candidate.icon,
     endDate: displayMetadata?.endDateIso || displayMetadata?.endDate || candidate.endDate,
