@@ -31,46 +31,77 @@ async function readJsonIfExists(path) {
 }
 
 async function main() {
-  log("Loading the all-time P&L leaderboard and scanning for 50 eligible traders...");
-
-  const { eligible, stats } = await collectEligibleTraders({
-    onProgress: ({ eligible: count, stats: currentStats, offset }) => {
-      log(
-        `Leaderboard offset ${offset}: ${count}/${DEFAULT_CONFIG.targetEligibleTraders} eligible; ` +
-          `${currentStats.skippedNoPositions} without positions; ` +
-          `${currentStats.excludedBothOutcomes} dual-sided exclusions.`
-      );
-    }
-  });
-
-  if (eligible.length < DEFAULT_CONFIG.targetEligibleTraders) {
-    throw new Error(
-      `Only found ${eligible.length} eligible traders after inspecting ${stats.leaderboardUsersInspected}. ` +
-        "The previous recommendation file was left unchanged."
-    );
-  }
-
   const usMarketSnapshot = await readJsonIfExists(usMarketsPath);
   if (usMarketSnapshot?.marketCount) {
-    log(`Using cached Polymarket US market list from ${usMarketSnapshot.generatedAt} with ${usMarketSnapshot.marketCount} tradable markets.`);
+    log(
+      `Using cached Polymarket US market list from ${usMarketSnapshot.generatedAt} with ${usMarketSnapshot.marketCount} tradable markets.`
+    );
   } else {
     log("No cached Polymarket US market list found; falling back to live per-market US checks.");
   }
 
+  const scanConfig = {
+    ...DEFAULT_CONFIG,
+    targetEligibleTraders: DEFAULT_CONFIG.maxEligibleTraders
+  };
+
+  let latestSelection = null;
+
+  log(
+    `Loading the all-time P&L leaderboard. The scan will continue past 50 eligible traders until ${DEFAULT_CONFIG.recommendationCount} distinct US-available markets are found, or until the leaderboard scan limit is reached...`
+  );
+
+  const { eligible, stats } = await collectEligibleTraders({
+    config: scanConfig,
+    onProgress: ({ eligible: count, stats: currentStats, offset }) => {
+      log(
+        `Leaderboard offset ${offset}: ${count}/${scanConfig.targetEligibleTraders} eligible maximum; ` +
+          `${currentStats.skippedNoPositions} without positions; ` +
+          `${currentStats.excludedBothOutcomes} dual-sided exclusions.`
+      );
+    },
+    shouldStop: async ({ eligible: currentEligible }) => {
+      if (currentEligible.length < DEFAULT_CONFIG.minEligibleBeforeRecommendations) return false;
+
+      const selection = await selectRecommendations(currentEligible, {
+        usMarketSnapshot,
+        config: DEFAULT_CONFIG
+      });
+      latestSelection = selection;
+      log(
+        `Current recommendation coverage: ${selection.recommendations.length}/${DEFAULT_CONFIG.recommendationCount} distinct markets after ${currentEligible.length} eligible traders.`
+      );
+
+      return selection.recommendations.length >= DEFAULT_CONFIG.recommendationCount;
+    }
+  });
+
   log("Aggregating shared positions and validating that candidate markets are still tradeable...");
-  const selection = await selectRecommendations(eligible, { usMarketSnapshot });
+  const selection =
+    latestSelection ??
+    (await selectRecommendations(eligible, {
+      usMarketSnapshot,
+      config: DEFAULT_CONFIG
+    }));
 
   const finishedAt = new Date();
   const payload = {
-    schemaVersion: 1,
-    status: selection.recommendations.length > 0 ? "ok" : "no_shared_markets",
+    schemaVersion: 2,
+    status:
+      selection.recommendations.length >= DEFAULT_CONFIG.recommendationCount
+        ? "ok"
+        : selection.recommendations.length > 0
+          ? "partial"
+          : "no_shared_markets",
     generatedAt: finishedAt.toISOString(),
     durationSeconds: Math.round((finishedAt - startedAt) / 1000),
     methodology: {
       leaderboard: "OVERALL / ALL time / ordered by PNL",
-      eligibleTraderTarget: DEFAULT_CONFIG.targetEligibleTraders,
+      eligibleTraderMinimumBeforeSelecting: DEFAULT_CONFIG.minEligibleBeforeRecommendations,
+      eligibleTraderMaxScan: DEFAULT_CONFIG.maxEligibleTraders,
       positionSizeThreshold: DEFAULT_CONFIG.positionSizeThreshold,
       minSharedSupporters: DEFAULT_CONFIG.minSharedSupporters,
+      recommendationTarget: DEFAULT_CONFIG.recommendationCount,
       dualOutcomeRule:
         "A trader is excluded if they currently hold more than one outcome in the same conditionId.",
       ranking:
@@ -78,10 +109,12 @@ async function main() {
       activeMarketRule:
         "Only Gamma markets that are active, not closed or archived, and accepting orders are shown.",
       usAvailabilityRule:
-        "Only markets with the same slug listed in data/us-markets.json, or live fallback if the file is missing, and marked active, not closed, not archived, not hidden, and with a tradable side are shown.",
+        "Only markets that match the daily Polymarket US catalog by exact slug or high-confidence title/slug similarity, and are active, not closed, not archived, not hidden, and with a tradable side, are shown.",
       usMarketCatalogGeneratedAt: usMarketSnapshot?.generatedAt ?? null,
       distinctMarketRule:
-        "Only one recommendation is shown per Polymarket event; the highest-ranked qualifying child market is kept."
+        "Only one recommendation is shown per Polymarket event; the highest-ranked qualifying child market is kept.",
+      scanUntilRule:
+        `After at least ${DEFAULT_CONFIG.minEligibleBeforeRecommendations} clean traders are collected, the scanner continues down the leaderboard until ${DEFAULT_CONFIG.recommendationCount} distinct markets are produced or ${DEFAULT_CONFIG.maxEligibleTraders} eligible traders have been inspected.`
     },
     stats: {
       ...stats,
@@ -89,6 +122,8 @@ async function main() {
       candidateMarkets: selection.candidateMarketCount,
       marketsChecked: selection.marketsChecked,
       recommendationsReturned: selection.recommendations.length,
+      recommendationTarget: DEFAULT_CONFIG.recommendationCount,
+      fullRecommendationSetFound: selection.recommendations.length >= DEFAULT_CONFIG.recommendationCount,
       usMarketCatalogUsed: Boolean(usMarketSnapshot?.marketCount),
       usMarketCatalogGeneratedAt: usMarketSnapshot?.generatedAt ?? null,
       usMarketCatalogCount: usMarketSnapshot?.marketCount ?? null
