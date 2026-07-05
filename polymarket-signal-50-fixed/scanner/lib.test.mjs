@@ -3,6 +3,9 @@ import assert from "node:assert/strict";
 import {
   buildMarketCandidates,
   buildUsMarketSnapshot,
+  createDecisionDetails,
+  extractDecisionChoice,
+  extractDecisionOption,
   hasBothOutcomes,
   isTradeableMarket,
   isUsTradeableMarket,
@@ -477,4 +480,174 @@ test("uses the cached daily US market snapshot instead of per-market gateway cal
   assert.equal(result.recommendations.length, 1);
   assert.equal(result.recommendations[0].slug, "cached-us-market");
   assert.equal(result.recommendations[0].usAvailable, true);
+});
+
+test("adds exact decision copy so NO recommendations identify the market question", async () => {
+  const noPosition = position({
+    outcomeIndex: 1,
+    outcome: "No",
+    title: "Will Team A win the championship?",
+    slug: "will-team-a-win-the-championship",
+    curPrice: 0.42
+  });
+
+  const eligible = [trader(1, [noPosition]), trader(2, [noPosition])];
+
+  const fetchImpl = async () => ({
+    ok: true,
+    json: async () => ({
+      active: true,
+      closed: false,
+      archived: false,
+      acceptingOrders: true,
+      question: "Will Team A win the championship?",
+      outcomes: '["Yes", "No"]',
+      outcomePrices: '["0.58", "0.42"]'
+    }),
+    text: async () => ""
+  });
+
+  const result = await selectRecommendations(eligible, {
+    fetchImpl,
+    config: {
+      minSharedSupporters: 2,
+      recommendationCount: 4,
+      requestConcurrency: 2,
+      maxMarketChecks: 20,
+      requireUsAvailable: false
+    }
+  });
+
+  assert.equal(result.recommendations.length, 1);
+  assert.equal(result.recommendations[0].decisionSide, "NO");
+  assert.equal(result.recommendations[0].decisionTarget, "Will Team A win the championship?");
+  assert.equal(
+    result.recommendations[0].decisionText,
+    "Buy NO on: Will Team A win the championship?"
+  );
+  assert.match(result.recommendations[0].decisionMeaning, /exact market question resolves No/);
+});
+
+test("creates standalone decision details for a NO side", () => {
+  const details = createDecisionDetails({
+    outcome: "No",
+    title: "Will the bill pass?"
+  });
+
+  assert.equal(details.decisionSide, "NO");
+  assert.equal(details.decisionTarget, "Will the bill pass?");
+  assert.equal(details.decisionText, "Buy NO on: Will the bill pass?");
+  assert.equal(
+    details.decisionMeaning,
+    "NO is specifically on “Will the bill pass?”. It pays only if that exact market question resolves No."
+  );
+});
+
+
+
+test("shows which date decision a NO signal applies to", async () => {
+  const julyNo = position({
+    conditionId: "alito-july-31",
+    outcomeIndex: 1,
+    outcome: "No",
+    title: "Samuel Alito Announced Out as SCOTUS Justice by July 31?",
+    slug: "samuel-alito-announced-out-as-scotus-justice-by-july-31",
+    eventSlug: "samuel-alito-announced-out-as-scotus-justice"
+  });
+
+  const eligible = [trader(1, [julyNo]), trader(2, [julyNo])];
+
+  const fetchImpl = async () => ({
+    ok: true,
+    json: async () => ({
+      active: true,
+      closed: false,
+      archived: false,
+      acceptingOrders: true,
+      question: "Samuel Alito Announced Out as SCOTUS Justice by July 31?",
+      outcomes: '["Yes", "No"]',
+      outcomePrices: '["0.60", "0.40"]'
+    }),
+    text: async () => ""
+  });
+
+  const result = await selectRecommendations(eligible, {
+    fetchImpl,
+    usMarketSnapshot: {
+      schemaVersion: 1,
+      generatedAt: "2026-07-05T00:00:00.000Z",
+      marketCount: 1,
+      markets: [
+        {
+          slug: "samuel-alito-announced-out-as-scotus-justice",
+          question: "Samuel Alito Announced Out as SCOTUS Justice?",
+          active: true,
+          closed: false,
+          archived: false,
+          hidden: false,
+          marketSides: [{ tradable: true }]
+        }
+      ]
+    },
+    config: {
+      minSharedSupporters: 2,
+      recommendationCount: 4,
+      requestConcurrency: 2,
+      maxMarketChecks: 20,
+      requireUsAvailable: true,
+      useCachedUsMarkets: true,
+      usMatchMinScore: 0.35
+    }
+  });
+
+  assert.equal(result.recommendations.length, 1);
+  assert.equal(result.recommendations[0].decisionSide, "NO");
+  assert.equal(result.recommendations[0].decisionChoice, "July 31");
+  assert.equal(
+    result.recommendations[0].decisionTarget,
+    "Samuel Alito Announced Out as SCOTUS Justice by July 31?"
+  );
+  assert.equal(result.recommendations[0].decisionOption, "July 31");
+  assert.equal(result.recommendations[0].decisionText, "Select “July 31” → Buy NO");
+  assert.match(result.recommendations[0].decisionMeaning, /option\/row\/card/);
+});
+
+test("extracts a date decision from a slug when the title is generic", () => {
+  assert.equal(
+    extractDecisionChoice({
+      title: "Samuel Alito Announced Out as SCOTUS Justice?",
+      slug: "samuel-alito-announced-out-as-scotus-justice-by-august-31"
+    }),
+    "August 31"
+  );
+});
+
+
+test("uses Gamma groupItemTitle as the option the user should select", () => {
+  const details = createDecisionDetails({
+    outcome: "No",
+    title: "Brazil Stage of Elimination",
+    slug: "world-cup-brazil-stage-of-elimination-round-of-16",
+    eventSlug: "world-cup-brazil-stage-of-elimination",
+    metadata: {
+      question: "Brazil Stage of Elimination",
+      groupItemTitle: "Round of 16"
+    }
+  });
+
+  assert.equal(details.decisionSide, "NO");
+  assert.equal(details.decisionOption, "Round of 16");
+  assert.equal(details.decisionText, "Select “Round of 16” → Buy NO");
+  assert.match(details.decisionMeaning, /choose the “Round of 16” option\/row\/card/);
+});
+
+test("falls back to the child market slug when the title is only the event title", () => {
+  assert.equal(
+    extractDecisionOption({
+      title: "Brazil Stage of Elimination",
+      slug: "world-cup-brazil-stage-of-elimination-quarterfinals",
+      eventSlug: "world-cup-brazil-stage-of-elimination"
+    }),
+    "Quarterfinals"
+  );
 });
