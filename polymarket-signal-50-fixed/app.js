@@ -104,6 +104,7 @@ function recommendationCard(item, index) {
           <span><strong>${integer.format(item.opposingSupporters || 0)}</strong> opposing</span>
           <span><strong>${percentage(item.consensusRate)}</strong> agreement</span>
           <span><strong>${money.format(item.totalCurrentValue || 0)}</strong> combined value</span>
+          <span><strong>${percentage(item.avgAccountAllocation)}</strong> avg account allocation</span>
           <span><strong>${percentage(item.avgEntryPrice)}</strong> avg entry</span>
         </div>
         <div class="supporters" aria-label="Supporting traders">
