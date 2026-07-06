@@ -30,7 +30,93 @@ async function readJsonIfExists(path) {
   }
 }
 
+
+function recommendationIdentity(item) {
+  return {
+    conditionId: String(item?.conditionId ?? ""),
+    slug: String(item?.slug ?? ""),
+    eventSlug: String(item?.eventSlug ?? ""),
+    side: String(item?.decisionSide ?? item?.outcome ?? "").toUpperCase(),
+    outcomeKey: String(item?.outcomeKey ?? ""),
+    option: String(item?.decisionOption ?? item?.decisionChoice ?? item?.groupItemTitle ?? item?.groupItemThreshold ?? ""),
+    target: String(item?.decisionTarget ?? item?.title ?? ""),
+    usMarketSlug: String(item?.usMarketSlug ?? "")
+  };
+}
+
+function recommendationSignature(recommendations = []) {
+  return JSON.stringify(
+    (Array.isArray(recommendations) ? recommendations : [])
+      .map(recommendationIdentity)
+      .sort((a, b) => JSON.stringify(a).localeCompare(JSON.stringify(b)))
+  );
+}
+
+function recommendationCount(data) {
+  return Array.isArray(data?.recommendations) ? data.recommendations.length : 0;
+}
+
+function buildPublishPayload({ freshPayload, previousPayload, finishedAt }) {
+  const lastCheckedAt = finishedAt.toISOString();
+  const freshCount = recommendationCount(freshPayload);
+  const previousCount = recommendationCount(previousPayload);
+  const previousHasRecommendations = previousCount > 0;
+  const freshHasRecommendations = freshCount > 0;
+  const signaturesMatch =
+    previousHasRecommendations &&
+    freshHasRecommendations &&
+    recommendationSignature(previousPayload.recommendations) ===
+      recommendationSignature(freshPayload.recommendations);
+
+  if (!previousHasRecommendations) {
+    return {
+      ...freshPayload,
+      generatedAt: freshPayload.generatedAt ?? lastCheckedAt,
+      recommendationsUpdatedAt: freshHasRecommendations ? lastCheckedAt : null,
+      lastCheckedAt,
+      lastCheckStatus: freshPayload.status,
+      lastCheckRecommendationCount: freshCount,
+      refreshMode: freshHasRecommendations ? "recommendations_updated" : "checked_no_recommendations_yet"
+    };
+  }
+
+  if (freshHasRecommendations && !signaturesMatch) {
+    return {
+      ...freshPayload,
+      generatedAt: lastCheckedAt,
+      recommendationsUpdatedAt: lastCheckedAt,
+      lastCheckedAt,
+      lastCheckStatus: freshPayload.status,
+      lastCheckRecommendationCount: freshCount,
+      previousRecommendationsReplacedAt: previousPayload.generatedAt ?? previousPayload.recommendationsUpdatedAt ?? null,
+      refreshMode: "recommendations_updated"
+    };
+  }
+
+  const preservedNotes = Array.isArray(previousPayload.notes) ? previousPayload.notes : [];
+  const checkNote = freshHasRecommendations
+    ? `Checked at ${lastCheckedAt}. The scanner found the same recommendation set, so the published cards were left unchanged.`
+    : `Checked at ${lastCheckedAt}. The scanner did not find a replacement recommendation set, so the previously published cards were kept.`;
+
+  return {
+    ...freshPayload,
+    status: previousPayload.status ?? freshPayload.status,
+    generatedAt: previousPayload.generatedAt ?? previousPayload.recommendationsUpdatedAt ?? lastCheckedAt,
+    recommendationsUpdatedAt:
+      previousPayload.recommendationsUpdatedAt ?? previousPayload.generatedAt ?? null,
+    lastCheckedAt,
+    lastCheckStatus: freshPayload.status,
+    lastCheckRecommendationCount: freshCount,
+    refreshMode: freshHasRecommendations
+      ? "checked_recommendations_unchanged"
+      : "checked_no_replacement_found",
+    recommendations: previousPayload.recommendations,
+    notes: [...preservedNotes.filter((note) => !String(note).startsWith("Checked at ")), checkNote]
+  };
+}
+
 async function main() {
+  const previousPayload = await readJsonIfExists(outputPath);
   const usMarketSnapshot = await readJsonIfExists(usMarketsPath);
   if (usMarketSnapshot?.marketCount) {
     log(
@@ -85,7 +171,7 @@ async function main() {
     }));
 
   const finishedAt = new Date();
-  const payload = {
+  const freshPayload = {
     schemaVersion: 2,
     status:
       selection.recommendations.length >= DEFAULT_CONFIG.recommendationCount
@@ -138,8 +224,18 @@ async function main() {
     recommendations: selection.recommendations
   };
 
+  const payload = buildPublishPayload({
+    freshPayload,
+    previousPayload,
+    finishedAt
+  });
+
   await writeAtomically(outputPath, payload);
-  log(`Wrote ${selection.recommendations.length} recommendations to ${outputPath}.`);
+  if (payload.refreshMode === "recommendations_updated") {
+    log(`Published ${payload.recommendations.length} new recommendations to ${outputPath}.`);
+  } else {
+    log(`Checked markets and kept the existing ${payload.recommendations.length} recommendations. Updated lastCheckedAt only.`);
+  }
 }
 
 main().catch((error) => {
