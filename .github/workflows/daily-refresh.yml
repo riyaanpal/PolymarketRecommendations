@@ -3,7 +3,8 @@ name: 30-Minute Polymarket refresh
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"
+    # Runs at :07 and :37 instead of :00 and :30 to avoid GitHub's busiest times.
+    - cron: "7,37 * * * *"
 
 permissions:
   contents: write
@@ -35,17 +36,17 @@ jobs:
           npm test
           npm run check
 
-      - name: Refresh recommendations
+      - name: Check for recommendation updates
         run: npm run refresh
 
-      - name: Commit updated snapshot
+      - name: Commit updated timestamp or recommendations
         run: |
           if git diff --quiet -- data/recommendations.json; then
-            echo "No snapshot changes to commit."
+            echo "No recommendation file changes to commit."
             exit 0
           fi
           git config user.name "signal-50-bot"
           git config user.email "signal-50-bot@users.noreply.github.com"
           git add data/recommendations.json
-          git commit -m "chore: refresh Polymarket signals"
+          git commit -m "chore: check Polymarket signals"
           git push
