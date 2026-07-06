@@ -39,6 +39,22 @@ jobs:
       - name: Check for recommendation updates
         run: npm run refresh
 
+      - name: Force-update lastCheckedAt after every successful scan
+        run: |
+          node - <<'NODE'
+          const fs = require("fs");
+          const path = "data/recommendations.json";
+          const data = JSON.parse(fs.readFileSync(path, "utf8"));
+          const now = new Date().toISOString();
+
+          data.lastCheckedAt = now;
+          data.lastSuccessfulWorkflowAt = now;
+          data.refreshCadence = "every 30 minutes";
+          data.timestampOnlyUpdate = true;
+
+          fs.writeFileSync(path, JSON.stringify(data, null, 2) + "\n");
+          NODE
+
       - name: Commit updated timestamp or recommendations
         run: |
           if git diff --quiet -- data/recommendations.json; then
