@@ -134,21 +134,31 @@ function render(data) {
   elements.eligible.textContent = integer.format(stats.eligibleTraders || 0);
   elements.inspected.textContent = integer.format(stats.leaderboardUsersInspected || 0);
   elements.candidates.textContent = integer.format(stats.candidateMarkets || 0);
-  elements.updated.textContent = dateLabel(data.generatedAt);
-  elements.duration.textContent = data.durationSeconds
-    ? `scan completed in ${integer.format(data.durationSeconds)}s`
-    : "daily snapshot";
+  const checkedAt = data.lastCheckedAt || data.lastWorkflowRunAt || data.generatedAt;
+  const recommendationsUpdatedAt = data.recommendationsUpdatedAt || data.generatedAt;
+
+  elements.updated.textContent = dateLabel(checkedAt);
+
+  if (data.refreshMode === "checked_recommendations_unchanged") {
+    elements.duration.textContent = `checked; picks unchanged since ${dateLabel(recommendationsUpdatedAt)}`;
+  } else if (data.refreshMode === "checked_no_replacement_found") {
+    elements.duration.textContent = `checked; kept picks from ${dateLabel(recommendationsUpdatedAt)}`;
+  } else {
+    elements.duration.textContent = data.durationSeconds
+      ? `scan completed in ${integer.format(data.durationSeconds)}s`
+      : "latest snapshot";
+  }
 
   if (data.status === "not_generated") {
     elements.headerStatus.innerHTML = '<span class="status-dot"></span><span>Awaiting first refresh</span>';
     elements.grid.innerHTML = "";
     showNotice(
-      "The site is ready, but the first live snapshot has not run. In GitHub, open Actions → Daily Polymarket refresh → Run workflow."
+      "The site is ready, but the first live snapshot has not run. In GitHub, open Actions → 30-Minute Polymarket refresh → Run workflow."
     );
     return;
   }
 
-  elements.headerStatus.innerHTML = `<span class="status-dot"></span><span>Updated ${escapeHtml(dateLabel(data.generatedAt))}</span>`;
+  elements.headerStatus.innerHTML = `<span class="status-dot"></span><span>Checked ${escapeHtml(dateLabel(checkedAt))}</span>`;
 
   if (!recommendations.length) {
     elements.grid.innerHTML = "";
