@@ -12,7 +12,8 @@ import {
   isUsTradeableMarket,
   normalizeMatchText,
   scoreUsMarketMatch,
-  selectRecommendations
+  selectRecommendations,
+  traderVisibleAccountValue
 } from "./lib.mjs";
 
 function position(overrides = {}) {
@@ -105,6 +106,38 @@ test("does not count duplicate same-side rows as extra supporters", () => {
   assert.equal(candidates.length, 1);
   assert.equal(candidates[0].supporterCount, 2);
   assert.equal(candidates[0].totalCurrentValue, 14.4);
+});
+
+
+test("calculates average same-side holder account allocation from visible open positions", () => {
+  const eligible = [
+    trader(1, [
+      position({ currentValue: 25 }),
+      position({
+        conditionId: "other-1",
+        title: "Other market 1",
+        slug: "other-market-1",
+        currentValue: 75
+      })
+    ]),
+    trader(2, [
+      position({ currentValue: 50 }),
+      position({
+        conditionId: "other-2",
+        title: "Other market 2",
+        slug: "other-market-2",
+        currentValue: 50
+      })
+    ])
+  ];
+
+  assert.equal(traderVisibleAccountValue(eligible[0]), 100);
+
+  const candidates = buildMarketCandidates(eligible, { minSharedSupporters: 2 });
+  assert.equal(candidates.length, 1);
+  assert.equal(candidates[0].avgAccountAllocation, 0.375);
+  assert.equal(candidates[0].supporters[0].accountAllocation, 0.25);
+  assert.equal(candidates[0].supporters[1].accountAllocation, 0.5);
 });
 
 test("requires an active, open, order-accepting market", () => {
