@@ -280,10 +280,34 @@ function median(values) {
   return sorted.length % 2 ? sorted[middle] : (sorted[middle - 1] + sorted[middle]) / 2;
 }
 
+function average(values) {
+  const clean = values.filter(Number.isFinite);
+  if (!clean.length) return 0;
+  return clean.reduce((sum, value) => sum + value, 0) / clean.length;
+}
+
+function clamp01(value) {
+  if (!Number.isFinite(value)) return 0;
+  return Math.max(0, Math.min(1, value));
+}
+
+function positionCurrentValue(position) {
+  return number(position.currentValue, number(position.size) * number(position.curPrice));
+}
+
+export function traderVisibleAccountValue(trader) {
+  return normalizePositions(trader?.positions).reduce(
+    (sum, position) => sum + positionCurrentValue(position),
+    0
+  );
+}
+
 export function buildMarketCandidates(eligible, config = DEFAULT_CONFIG) {
   const markets = new Map();
 
   for (const trader of eligible) {
+    const visibleAccountValue = traderVisibleAccountValue(trader);
+
     for (const position of trader.positions) {
       const conditionId = String(position.conditionId ?? "");
       if (!conditionId) continue;
@@ -320,10 +344,7 @@ export function buildMarketCandidates(eligible, config = DEFAULT_CONFIG) {
       }
 
       const side = market.sides.get(outcomeKey);
-      const positionValue = number(
-        position.currentValue,
-        number(position.size) * number(position.curPrice)
-      );
+      const positionValue = positionCurrentValue(position);
       const existingSupporter = side.supporters.find(
         (supporter) => supporter.wallet === trader.wallet
       );
@@ -332,12 +353,17 @@ export function buildMarketCandidates(eligible, config = DEFAULT_CONFIG) {
         existingSupporter.currentValue += positionValue;
         existingSupporter.size += number(position.size);
         existingSupporter.pnl += number(position.cashPnl);
+        existingSupporter.accountAllocation = clamp01(
+          existingSupporter.currentValue / Math.max(existingSupporter.visibleAccountValue, 1e-9)
+        );
       } else {
         side.supporters.push({
           rank: trader.rank,
           name: displayName(trader),
           wallet: trader.wallet,
           currentValue: positionValue,
+          visibleAccountValue,
+          accountAllocation: clamp01(positionValue / Math.max(visibleAccountValue, 1e-9)),
           size: number(position.size),
           avgPrice: number(position.avgPrice),
           pnl: number(position.cashPnl)
@@ -390,6 +416,7 @@ export function buildMarketCandidates(eligible, config = DEFAULT_CONFIG) {
       opposingSupporters,
       consensusRate: involved > 0 ? winner.supporters.length / involved : 1,
       totalCurrentValue: winner.totalCurrentValue,
+      avgAccountAllocation: average(winner.supporters.map((supporter) => supporter.accountAllocation)),
       avgEntryPrice: weightedAverage(winner.entryPrices),
       currentPrice: median(winner.currentPrices),
       rankWeight: winner.rankWeight,
