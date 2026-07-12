@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-12T01:38:19.338Z",
-  "durationSeconds": 16,
+  "durationSeconds": 17,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -221,7 +221,7 @@
       "name": "debased",
       "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
       "pnl": 1665142.4290782625,
-      "activePositionCount": 71
+      "activePositionCount": 72
     },
     {
       "rank": 92,
@@ -871,12 +871,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-12T01:38:19.338Z",
-  "lastCheckedAt": "2026-07-12T01:38:19.395Z",
+  "lastCheckedAt": "2026-07-12T01:45:40.477Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-07-12T00:03:47.589Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-07-12T01:38:19.395Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-07-12T01:45:40.410Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-07-12T01:45:40.477Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
