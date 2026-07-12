@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-12T02:34:52.775Z",
-  "durationSeconds": 21,
+  "durationSeconds": 17,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -24,7 +24,7 @@
     "excludedBothOutcomes": 33,
     "positionFetchErrors": 0,
     "eligibleTraders": 56,
-    "candidateMarkets": 207,
+    "candidateMarkets": 208,
     "marketsChecked": 12,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -130,7 +130,7 @@
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
       "pnl": 2322559.220243319,
-      "activePositionCount": 278
+      "activePositionCount": 277
     },
     {
       "rank": 61,
@@ -389,7 +389,7 @@
       "name": "Sharky6999",
       "wallet": "0x751a2b86cab503496efd325c8344e10159349ea1",
       "pnl": 943262.4457745741,
-      "activePositionCount": 4
+      "activePositionCount": 5
     },
     {
       "rank": 179,
@@ -842,12 +842,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-12T02:34:52.775Z",
-  "lastCheckedAt": "2026-07-12T02:34:52.846Z",
+  "lastCheckedAt": "2026-07-12T02:39:41.201Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-07-12T01:38:19.338Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-07-12T02:34:52.846Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-07-12T02:39:41.131Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-07-12T02:39:41.201Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
