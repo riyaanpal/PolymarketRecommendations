@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-12T23:37:23.121Z",
-  "durationSeconds": 32,
+  "durationSeconds": 20,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -21,10 +21,10 @@
   "stats": {
     "leaderboardUsersInspected": 200,
     "skippedNoPositions": 120,
-    "excludedBothOutcomes": 27,
+    "excludedBothOutcomes": 26,
     "positionFetchErrors": 0,
-    "eligibleTraders": 53,
-    "candidateMarkets": 158,
+    "eligibleTraders": 54,
+    "candidateMarkets": 159,
     "marketsChecked": 82,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -102,7 +102,7 @@
       "name": "BreakTheBank",
       "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
       "pnl": 2785926.576635633,
-      "activePositionCount": 3
+      "activePositionCount": 4
     },
     {
       "rank": 47,
@@ -137,7 +137,7 @@
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
       "pnl": 2300565.458653924,
-      "activePositionCount": 285
+      "activePositionCount": 275
     },
     {
       "rank": 61,
@@ -306,6 +306,13 @@
       "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
       "pnl": 1190509.7910858733,
       "activePositionCount": 1
+    },
+    {
+      "rank": 146,
+      "name": "ferrariChampions2026",
+      "wallet": "0xfe787d2da716d60e8acff57fb87eb13cd4d10319",
+      "pnl": 1145456.9459313976,
+      "activePositionCount": 18
     },
     {
       "rank": 147,
@@ -777,12 +784,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-12T23:37:23.121Z",
-  "lastCheckedAt": "2026-07-12T23:37:23.201Z",
+  "lastCheckedAt": "2026-07-12T23:57:15.158Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-07-12T22:58:51.770Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-07-12T23:37:23.201Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-07-12T23:57:15.091Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-07-12T23:57:15.158Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
