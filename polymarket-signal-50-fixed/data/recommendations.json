@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-07-13T10:40:22.692Z",
-  "durationSeconds": 24,
+  "generatedAt": "2026-07-13T13:28:34.308Z",
+  "durationSeconds": 20,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -14,31 +14,31 @@
     "ranking": "Supporter count first, then same-side consensus rate, rank-weighted support, and combined current position value.",
     "activeMarketRule": "Only Gamma markets that are active, not closed or archived, and accepting orders are shown.",
     "usAvailabilityRule": "Only markets that match the daily Polymarket US catalog by exact slug or high-confidence title/slug similarity, and are active, not closed, not archived, not hidden, and with a tradable side, are shown.",
-    "usMarketCatalogGeneratedAt": "2026-07-12T10:02:48.451Z",
+    "usMarketCatalogGeneratedAt": "2026-07-13T11:28:22.449Z",
     "distinctMarketRule": "Only one recommendation is shown per Polymarket event; the highest-ranked qualifying child market is kept.",
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
     "leaderboardUsersInspected": 200,
-    "skippedNoPositions": 120,
-    "excludedBothOutcomes": 26,
+    "skippedNoPositions": 119,
+    "excludedBothOutcomes": 27,
     "positionFetchErrors": 0,
     "eligibleTraders": 54,
-    "candidateMarkets": 154,
-    "marketsChecked": 71,
+    "candidateMarkets": 142,
+    "marketsChecked": 67,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
     "usMarketCatalogUsed": true,
-    "usMarketCatalogGeneratedAt": "2026-07-12T10:02:48.451Z",
-    "usMarketCatalogCount": 8657
+    "usMarketCatalogGeneratedAt": "2026-07-13T11:28:22.449Z",
+    "usMarketCatalogCount": 7227
   },
   "eligibleTraders": [
     {
       "rank": 23,
       "name": "0x006cc834Cc092684F1B56626E23BEdB3835c16ea-1729683673397",
       "wallet": "0x006cc834cc092684f1b56626e23bedb3835c16ea",
-      "pnl": 4719316.74608772,
+      "pnl": 4719316.577092718,
       "activePositionCount": 3
     },
     {
@@ -52,14 +52,14 @@
       "rank": 27,
       "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
       "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-      "pnl": 4176537.191068719,
+      "pnl": 4176877.3645872665,
       "activePositionCount": 8
     },
     {
       "rank": 28,
       "name": "DrPufferfish",
       "wallet": "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e",
-      "pnl": 4055550.441755281,
+      "pnl": 4055550.4417552836,
       "activePositionCount": 1
     },
     {
@@ -73,7 +73,7 @@
       "rank": 37,
       "name": "GCottrell93",
       "wallet": "0x94a428cfa4f84b264e01f70d93d02bc96cb36356",
-      "pnl": 3450893.4394222563,
+      "pnl": 3451018.4191867085,
       "activePositionCount": 4
     },
     {
@@ -87,105 +87,98 @@
       "rank": 45,
       "name": "BreakTheBank",
       "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-      "pnl": 2791140.9270480876,
-      "activePositionCount": 8
+      "pnl": 2791968.1306367163,
+      "activePositionCount": 9
     },
     {
       "rank": 46,
       "name": "LaBradfordSmith22",
       "wallet": "0x9495425feeb0c250accb89275c97587011b19a27",
-      "pnl": 2789348.152631349,
+      "pnl": 2789348.1526313466,
       "activePositionCount": 1
     },
     {
       "rank": 47,
       "name": "S-Works",
       "wallet": "0xee00ba338c59557141789b127927a55f5cc5cea1",
-      "pnl": 2776128.012024621,
+      "pnl": 2776085.992659935,
       "activePositionCount": 22
     },
     {
       "rank": 48,
       "name": "Allezpapa",
       "wallet": "0xe549581668a5751c1972d3ad2d1991d900bd2d54",
-      "pnl": 2696232.1264672712,
+      "pnl": 2698720.8979355446,
       "activePositionCount": 7
     },
     {
       "rank": 52,
       "name": "tdrhrhhd",
       "wallet": "0xd7f85d0eb0fe0732ca38d9107ad0d4d01b1289e4",
-      "pnl": 2464311.501057122,
+      "pnl": 2464478.879082567,
       "activePositionCount": 6
     },
     {
       "rank": 53,
       "name": "denizz",
       "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
-      "pnl": 2449827.159953651,
+      "pnl": 2449096.263025275,
       "activePositionCount": 48
     },
     {
-      "rank": 60,
+      "rank": 59,
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
-      "pnl": 2308354.293676425,
-      "activePositionCount": 293
+      "pnl": 2314556.949404432,
+      "activePositionCount": 288
     },
     {
       "rank": 61,
       "name": "0x7fB7Ad0d194D7123e711e7db6C9D418fAc14E33d-1750343282446",
       "wallet": "0x7fb7ad0d194d7123e711e7db6c9d418fac14e33d",
-      "pnl": 2282133.8592162617,
+      "pnl": 2282133.859216262,
       "activePositionCount": 1
     },
     {
       "rank": 63,
       "name": "The Spirit of Ukraine>UMA",
       "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
-      "pnl": 2196254.846317144,
+      "pnl": 2194630.3591781426,
       "activePositionCount": 93
     },
     {
       "rank": 64,
       "name": "geniusMC",
       "wallet": "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44",
-      "pnl": 2169326.303954826,
+      "pnl": 2169326.3039514264,
       "activePositionCount": 1
     },
     {
       "rank": 69,
       "name": "jtwyslljy",
       "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
-      "pnl": 2073202.943797889,
-      "activePositionCount": 5
-    },
-    {
-      "rank": 74,
-      "name": "justdance",
-      "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "pnl": 1964853.5449094484,
-      "activePositionCount": 43
+      "pnl": 2069436.397468299,
+      "activePositionCount": 4
     },
     {
       "rank": 75,
       "name": "0xf705…3ca7",
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
-      "pnl": 1935247.6927071984,
+      "pnl": 1935972.3795947188,
       "activePositionCount": 87
     },
     {
       "rank": 76,
       "name": "hot2trot",
       "wallet": "0xb61b2079b95f6b7476fd3203e0274ffb93308a06",
-      "pnl": 1929368.6941543007,
+      "pnl": 1929427.486286894,
       "activePositionCount": 1
     },
     {
       "rank": 79,
       "name": "Pestle",
       "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
-      "pnl": 1907161.0101428851,
+      "pnl": 1907161.649651839,
       "activePositionCount": 47
     },
     {
@@ -199,28 +192,28 @@
       "rank": 90,
       "name": "cnyek",
       "wallet": "0x65018f9fc473f6e920b8929a375d39c26a461220",
-      "pnl": 1714342.4201774176,
+      "pnl": 1714439.4314474177,
       "activePositionCount": 2
     },
     {
       "rank": 91,
       "name": "RJW1",
       "wallet": "0x85f031d069de300055900c4055c1baeb6bde3f67",
-      "pnl": 1686530.191815724,
+      "pnl": 1685946.7842577628,
       "activePositionCount": 5
     },
     {
       "rank": 96,
       "name": "scottilicious",
       "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
-      "pnl": 1642054.9445903539,
+      "pnl": 1642056.353018779,
       "activePositionCount": 27
     },
     {
       "rank": 99,
       "name": "gopfan2",
       "wallet": "0xf2f6af4f27ec2dcf4072095ab804016e14cd5817",
-      "pnl": 1568145.750886683,
+      "pnl": 1567794.3420254937,
       "activePositionCount": 64
     },
     {
@@ -234,14 +227,14 @@
       "rank": 103,
       "name": "Jsram",
       "wallet": "0x83720820a8aa6c3f20ad71850e7a1a17d16c5223",
-      "pnl": 1521133.6413966632,
+      "pnl": 1521168.4776190347,
       "activePositionCount": 4
     },
     {
       "rank": 110,
       "name": "Kickstand7",
       "wallet": "0xd1acd3925d895de9aec98ff95f3a30c5279d08d5",
-      "pnl": 1460552.2246398677,
+      "pnl": 1460553.432098289,
       "activePositionCount": 9
     },
     {
@@ -255,22 +248,22 @@
       "rank": 120,
       "name": "sportmaster777",
       "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
-      "pnl": 1335910.9435157145,
+      "pnl": 1335910.9435157147,
       "activePositionCount": 3
     },
     {
       "rank": 122,
       "name": "matanovik",
       "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
-      "pnl": 1326608.693874998,
+      "pnl": 1326611.4083189818,
       "activePositionCount": 3
     },
     {
       "rank": 124,
       "name": "Q96s3kwozynxpau",
       "wallet": "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f",
-      "pnl": 1318698.4108816048,
-      "activePositionCount": 88
+      "pnl": 1318193.8391363742,
+      "activePositionCount": 87
     },
     {
       "rank": 128,
@@ -283,14 +276,14 @@
       "rank": 129,
       "name": "Wickier",
       "wallet": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
-      "pnl": 1278848.8327909939,
+      "pnl": 1278848.8327909936,
       "activePositionCount": 3
     },
     {
       "rank": 130,
       "name": "influenz.eth",
       "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
-      "pnl": 1271624.7167595525,
+      "pnl": 1271652.182162395,
       "activePositionCount": 15
     },
     {
@@ -304,42 +297,49 @@
       "rank": 134,
       "name": "coinman2",
       "wallet": "0x55be7aa03ecfbe37aa5460db791205f7ac9ddca3",
-      "pnl": 1226018.6444111662,
+      "pnl": 1225014.59570365,
       "activePositionCount": 21
     },
     {
       "rank": 139,
       "name": "VARryKane",
       "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
-      "pnl": 1190709.7909388056,
+      "pnl": 1190709.7909388046,
       "activePositionCount": 1
     },
     {
       "rank": 140,
       "name": "DLEK",
       "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
-      "pnl": 1190258.243969952,
+      "pnl": 1190530.6774828434,
       "activePositionCount": 15
     },
     {
-      "rank": 146,
+      "rank": 147,
       "name": "gatorr",
       "wallet": "0x93abbc022ce98d6f45d4444b594791cc4b7a9723",
-      "pnl": 1144389.1663934984,
+      "pnl": 1144002.7573106717,
       "activePositionCount": 6
+    },
+    {
+      "rank": 154,
+      "name": "0xE16D3F2A5807999b358aFfD9445C3a09E45E5e30-1776429210592",
+      "wallet": "0xe16d3f2a5807999b358affd9445c3a09e45e5e30",
+      "pnl": 1109383.3374900022,
+      "activePositionCount": 10
     },
     {
       "rank": 155,
       "name": "theo5",
       "wallet": "0x8a4c788f043023b8b28a762216d037e9f148532b",
-      "pnl": 1091988.7682801334,
+      "pnl": 1091446.0871151963,
       "activePositionCount": 43
     },
     {
       "rank": 158,
       "name": "Joe-Biden",
       "wallet": "0x8b5a7da2fdf239b51b9c68a2a1a35bb156d200f2",
-      "pnl": 1058015.3485298152,
+      "pnl": 1058782.5218418252,
       "activePositionCount": 6
     },
     {
@@ -350,45 +350,45 @@
       "activePositionCount": 2
     },
     {
-      "rank": 166,
+      "rank": 165,
       "name": "pada",
       "wallet": "0x714a685b5454ea4d52979563bbafa77b8168ab2f",
-      "pnl": 1018443.7455573819,
+      "pnl": 1020835.6430003158,
       "activePositionCount": 9
     },
     {
-      "rank": 169,
+      "rank": 168,
       "name": "shijiebeifacai",
       "wallet": "0xbc1b1e935cf5a06f9378fe2b249338649dc29d59",
-      "pnl": 1004974.7542143591,
+      "pnl": 1005274.754144301,
       "activePositionCount": 7
     },
     {
       "rank": 180,
       "name": "Lilybaeum",
       "wallet": "0x01c78f8873c0c86d6b6b92ff627e3802237ee995",
-      "pnl": 951795.2673278407,
-      "activePositionCount": 17
+      "pnl": 952168.954586309,
+      "activePositionCount": 15
     },
     {
       "rank": 181,
       "name": "Sharky6999",
       "wallet": "0x751a2b86cab503496efd325c8344e10159349ea1",
-      "pnl": 943885.4830801268,
+      "pnl": 943885.4830801253,
       "activePositionCount": 3
     },
     {
       "rank": 182,
       "name": "BowlOfPunch",
       "wallet": "0x889e7f0464c72eb8cda1525ebc12b6aaba9d09e0",
-      "pnl": 939960.7593374733,
+      "pnl": 939960.7596374734,
       "activePositionCount": 3
     },
     {
-      "rank": 187,
+      "rank": 188,
       "name": "Macks22",
       "wallet": "0x1057e7d3ddafc60a4aeb10a2bc5b543792449ea5",
-      "pnl": 931089.6515110311,
+      "pnl": 930893.8910190191,
       "activePositionCount": 8
     },
     {
@@ -402,14 +402,14 @@
       "rank": 195,
       "name": "Anointed-Connect",
       "wallet": "0x8f037a2e4fd49d11267f4ab874ab7ba745ac64d6",
-      "pnl": 921428.4907974605,
+      "pnl": 921429.7103457334,
       "activePositionCount": 12
     },
     {
       "rank": 200,
       "name": "TIMETOMAKEIT",
       "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
-      "pnl": 907265.4626770093,
+      "pnl": 907265.4626770099,
       "activePositionCount": 1
     }
   ],
@@ -426,146 +426,135 @@
       "rawPositionTitle": "Will Spain win the 2026 FIFA World Cup?",
       "outcome": "Yes",
       "outcomeKey": "0",
-      "supporterCount": 12,
+      "supporterCount": 11,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 1411963.4658999997,
-      "avgAccountAllocation": 0.3095618926909984,
-      "avgEntryPrice": 0.15165919814265424,
-      "currentPrice": 0.2075,
-      "rankWeight": 1.2908184103333327,
+      "totalCurrentValue": 1404909.6838,
+      "avgAccountAllocation": 0.32586711889216635,
+      "avgEntryPrice": 0.14750954599197696,
+      "currentPrice": 0.2085,
+      "rankWeight": 1.2012443573779141,
       "supporters": [
         {
           "rank": 27,
           "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
           "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-          "currentValue": 70586.0051,
-          "visibleAccountValue": 210244.0665,
-          "accountAllocation": 0.3357336369823307,
+          "currentValue": 70926.1786,
+          "visibleAccountValue": 210584.24000000002,
+          "accountAllocation": 0.3368066793602408,
           "size": 340173.5185,
           "avgPrice": 0.0166,
-          "pnl": 64916.6732
+          "pnl": 65256.8467
         },
         {
           "rank": 45,
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 143225.1224,
-          "visibleAccountValue": 1293747.0184,
-          "accountAllocation": 0.11070566375266246,
-          "size": 690241.554,
-          "avgPrice": 0.1776,
-          "pnl": 20616.8249
+          "currentValue": 147992.6962,
+          "visibleAccountValue": 1312812.0758999998,
+          "accountAllocation": 0.11272953602178243,
+          "size": 709797.104,
+          "avgPrice": 0.1784,
+          "pnl": 21349.987
         },
         {
           "rank": 48,
           "name": "Allezpapa",
           "wallet": "0xe549581668a5751c1972d3ad2d1991d900bd2d54",
-          "currentValue": 516420.0796,
-          "visibleAccountValue": 1119643.0313,
-          "accountAllocation": 0.4612363629865072,
+          "currentValue": 518908.8511,
+          "visibleAccountValue": 1122131.8028,
+          "accountAllocation": 0.4624312846362544,
           "size": 2488771.4682,
           "avgPrice": 0.1508,
-          "pnl": 141098.4095
+          "pnl": 143587.181
         },
         {
           "rank": 90,
           "name": "cnyek",
           "wallet": "0x65018f9fc473f6e920b8929a375d39c26a461220",
-          "currentValue": 20129.8385,
-          "visibleAccountValue": 86438.9477,
-          "accountAllocation": 0.2328792637534619,
+          "currentValue": 20226.8497,
+          "visibleAccountValue": 86535.9589,
+          "accountAllocation": 0.23373924501575033,
           "size": 97011.27,
           "avgPrice": 0.103,
-          "pnl": 10130.8869
+          "pnl": 10227.8981
         },
         {
           "rank": 102,
           "name": "Countryside",
           "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
-          "currentValue": 0.2404,
-          "visibleAccountValue": 370589.8701,
-          "accountAllocation": 6.486955510552149e-7,
+          "currentValue": 0.2415,
+          "visibleAccountValue": 370579.62460000004,
+          "accountAllocation": 6.516818086279641e-7,
           "size": 1.1585,
           "avgPrice": 0.1589,
-          "pnl": 0.0561
+          "pnl": 0.0572
         },
         {
           "rank": 103,
           "name": "Jsram",
           "wallet": "0x83720820a8aa6c3f20ad71850e7a1a17d16c5223",
-          "currentValue": 299293.7268,
-          "visibleAccountValue": 1352453.1646,
-          "accountAllocation": 0.22129692519778957,
+          "currentValue": 300736.1062,
+          "visibleAccountValue": 1369956.7955,
+          "accountAllocation": 0.21952232887040704,
           "size": 1442379.4064,
           "avgPrice": 0.1581,
-          "pnl": 71135.2675
-        },
-        {
-          "rank": 124,
-          "name": "Q96s3kwozynxpau",
-          "wallet": "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f",
-          "currentValue": 17849.7345,
-          "visibleAccountValue": 121775.41289999997,
-          "accountAllocation": 0.1465791334631558,
-          "size": 86022.817,
-          "avgPrice": 0.4892,
-          "pnl": -24237.1867
+          "pnl": 72577.6469
         },
         {
           "rank": 134,
           "name": "coinman2",
           "wallet": "0x55be7aa03ecfbe37aa5460db791205f7ac9ddca3",
-          "currentValue": 59061.5508,
-          "visibleAccountValue": 99985.38099999996,
-          "accountAllocation": 0.5907018627053091,
+          "currentValue": 59346.1848,
+          "visibleAccountValue": 98620.61189999999,
+          "accountAllocation": 0.6017624881518303,
           "size": 284633.98,
           "avgPrice": 0.1324,
-          "pnl": 21363.2033
+          "pnl": 21647.8373
         },
         {
           "rank": 139,
           "name": "VARryKane",
           "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
-          "currentValue": 20749.9847,
-          "visibleAccountValue": 20749.9847,
+          "currentValue": 20849.9846,
+          "visibleAccountValue": 20849.9846,
           "accountAllocation": 1,
           "size": 99999.9264,
           "avgPrice": 0.159,
-          "pnl": 4849.9963
+          "pnl": 4949.9962
         },
         {
           "rank": 140,
           "name": "DLEK",
           "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
-          "currentValue": 43208.7355,
-          "visibleAccountValue": 181958.37749999994,
-          "accountAllocation": 0.2374649416732682,
+          "currentValue": 43416.9703,
+          "visibleAccountValue": 182404.85559999998,
+          "accountAllocation": 0.23802529903705044,
           "size": 208234.87,
           "avgPrice": 0.2014,
-          "pnl": 1270.2326
+          "pnl": 1478.4674
         },
         {
           "rank": 158,
           "name": "Joe-Biden",
           "wallet": "0x8b5a7da2fdf239b51b9c68a2a1a35bb156d200f2",
-          "currentValue": 159188.4622,
-          "visibleAccountValue": 547415.0201,
-          "accountAllocation": 0.29080031850591165,
+          "currentValue": 159955.6355,
+          "visibleAccountValue": 548182.1934,
+          "accountAllocation": 0.2917928335247527,
           "size": 767173.312,
           "avgPrice": 0.146,
-          "pnl": 47126.6893
+          "pnl": 47893.8626
         },
         {
-          "rank": 169,
+          "rank": 168,
           "name": "shijiebeifacai",
           "wallet": "0xbc1b1e935cf5a06f9378fe2b249338649dc29d59",
-          "currentValue": 62249.9854,
-          "visibleAccountValue": 712699.4158,
-          "accountAllocation": 0.08734395457603236,
+          "currentValue": 62549.9853,
+          "visibleAccountValue": 712999.4156999999,
+          "accountAllocation": 0.08772796151395221,
           "size": 299999.9299,
           "avgPrice": 0.136,
-          "pnl": 21449.9949
+          "pnl": 21749.9948
         }
       ],
       "decisionSide": "YES",
@@ -575,13 +564,83 @@
       "decisionText": "Select “Spain” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Spain” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Spain win the 2026 FIFA World Cup?”.",
       "category": "Other",
-      "liquidity": 7920420.16315,
-      "volume24hr": 2178740.6134800008,
+      "liquidity": 7550208.97884,
+      "volume24hr": 1972298.8532189974,
       "usAvailable": true,
       "usMarketSlug": "aqc-fifa-wc-2026-07-03-round16q-spaain",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
       "marketUrl": "https://polymarket.us/market/aqc-fifa-wc-2026-07-03-round16q-spaain"
+    },
+    {
+      "conditionId": "0x3b9204e0fcba9234e3eaca1a941a342e4ce82aeb4ba373c668f2e8a72f1d41de",
+      "title": "Will France vs. Spain end in a draw?",
+      "slug": "fifwc-fra-esp-2026-07-14-draw",
+      "eventSlug": "fifwc-fra-esp-2026-07-14",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/soccer ball-bba4025f77.png",
+      "endDate": "2026-07-14",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Will France vs. Spain end in a draw?",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 3,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 152839.31240000002,
+      "avgAccountAllocation": 0.35488857518386857,
+      "avgEntryPrice": 0.29994292514920845,
+      "currentPrice": 0.29875,
+      "rankWeight": 0.38394451183991096,
+      "supporters": [
+        {
+          "rank": 45,
+          "name": "BreakTheBank",
+          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+          "currentValue": 1126.909,
+          "visibleAccountValue": 1312812.0758999998,
+          "accountAllocation": 0.0008583932313598246,
+          "size": 3772.7117,
+          "avgPrice": 0.2975,
+          "pnl": 4.5272
+        },
+        {
+          "rank": 48,
+          "name": "Allezpapa",
+          "wallet": "0xe549581668a5751c1972d3ad2d1991d900bd2d54",
+          "currentValue": 149350,
+          "visibleAccountValue": 1122131.8028,
+          "accountAllocation": 0.13309488210505604,
+          "size": 500000,
+          "avgPrice": 0.3,
+          "pnl": -650
+        },
+        {
+          "rank": 122,
+          "name": "matanovik",
+          "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
+          "currentValue": 2362.4034,
+          "visibleAccountValue": 2538.2742,
+          "accountAllocation": 0.9307124502151897,
+          "size": 7908.9501,
+          "avgPrice": 0.2975,
+          "pnl": 9.4907
+        }
+      ],
+      "decisionSide": "YES",
+      "decisionChoice": "Draw (France vs. Spain)",
+      "decisionOption": "Draw (France vs. Spain)",
+      "decisionTarget": "Will France vs. Spain end in a draw?",
+      "decisionText": "Select “Draw (France vs. Spain)” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “Draw (France vs. Spain)” option/row/card, then click Buy YES. This applies only to the exact market question: “Will France vs. Spain end in a draw?”.",
+      "category": "Other",
+      "liquidity": 3254054.102925,
+      "volume24hr": 741815.7205259933,
+      "usAvailable": true,
+      "usMarketSlug": "aqc-fifa-wc-2026-07-03-round16q-france",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/aqc-fifa-wc-2026-07-03-round16q-france"
     },
     {
       "conditionId": "0xa1b3158fedfddaf2a0d8b364f6a57ee68146fb6ad458222aa8e02bcf0abbb099",
@@ -598,44 +657,44 @@
       "supporterCount": 3,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 262381.73,
-      "avgAccountAllocation": 0.24895485673081488,
+      "totalCurrentValue": 265280.9756,
+      "avgAccountAllocation": 0.2502748947676402,
       "avgEntryPrice": 0.797188910489297,
-      "currentPrice": 0.905,
+      "currentPrice": 0.915,
       "rankWeight": 0.3513938122509938,
       "supporters": [
         {
           "rank": 53,
           "name": "denizz",
           "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
-          "currentValue": 66651.9093,
-          "visibleAccountValue": 1358362.6464000004,
-          "accountAllocation": 0.04906783138997835,
+          "currentValue": 67388.3944,
+          "visibleAccountValue": 1349402.6302000002,
+          "accountAllocation": 0.0499394271893572,
           "size": 73648.5185,
           "avgPrice": 0.7979,
-          "pnl": 7885.3995
+          "pnl": 8621.8846
         },
         {
           "rank": 63,
           "name": "The Spirit of Ukraine>UMA",
           "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
-          "currentValue": 57567.136,
-          "visibleAccountValue": 1214193.7825000002,
-          "accountAllocation": 0.047411819126161596,
+          "currentValue": 58203.237,
+          "visibleAccountValue": 1212422.6900999998,
+          "accountAllocation": 0.04800573057173603,
           "size": 63610.095,
           "avgPrice": 0.8861,
-          "pnl": 1200.2588
+          "pnl": 1836.3598
         },
         {
           "rank": 129,
           "name": "Wickier",
           "wallet": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
-          "currentValue": 138162.6847,
-          "visibleAccountValue": 212432.17750000002,
-          "accountAllocation": 0.6503849196763047,
+          "currentValue": 139689.3442,
+          "visibleAccountValue": 213958.83699999997,
+          "accountAllocation": 0.6528795265418273,
           "size": 152665.95,
           "avgPrice": 0.7598,
-          "pnl": 22164.1952
+          "pnl": 23690.8547
         }
       ],
       "decisionSide": "NO",
@@ -645,8 +704,8 @@
       "decisionText": "Select “August 31” → Buy NO",
       "decisionMeaning": "On Polymarket, choose the “August 31” option/row/card, then click Buy NO. This applies only to the exact market question: “US-Iran Final Nuclear Deal by August 31, 2026?”.",
       "category": "Other",
-      "liquidity": 303760.7223,
-      "volume24hr": 22095.567402999986,
+      "liquidity": 350839.7244,
+      "volume24hr": 24174.028977999988,
       "usAvailable": true,
       "usMarketSlug": "aqc-fifa-wc-2026-07-19-stgelim-eng-final",
       "usMatchMethod": "title_slug_similarity",
@@ -668,9 +727,9 @@
       "supporterCount": 3,
       "opposingSupporters": 1,
       "consensusRate": 0.75,
-      "totalCurrentValue": 212211.888,
-      "avgAccountAllocation": 0.6641508244323431,
-      "avgEntryPrice": 0.4902983573007421,
+      "totalCurrentValue": 214055.2056,
+      "avgAccountAllocation": 0.6641486816808849,
+      "avgEntryPrice": 0.4903803632748473,
       "currentPrice": 0.49375,
       "rankWeight": 0.35544891513808796,
       "supporters": [
@@ -679,8 +738,8 @@
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
           "currentValue": 572.6732,
-          "visibleAccountValue": 1293747.0184,
-          "accountAllocation": 0.0004426469718231584,
+          "visibleAccountValue": 1312812.0758999998,
+          "accountAllocation": 0.00043621871744849936,
           "size": 1159.9619,
           "avgPrice": 0.4875,
           "pnl": 7.1917
@@ -689,12 +748,12 @@
           "rank": 76,
           "name": "hot2trot",
           "wallet": "0xb61b2079b95f6b7476fd3203e0274ffb93308a06",
-          "currentValue": 171821.1411,
-          "visibleAccountValue": 171821.1411,
+          "currentValue": 173664.4587,
+          "visibleAccountValue": 173664.4587,
           "accountAllocation": 1,
-          "size": 348027.4279,
-          "avgPrice": 0.4904,
-          "pnl": 1117.5159
+          "size": 351761.1075,
+          "avgPrice": 0.4905,
+          "pnl": 1124.2284
         },
         {
           "rank": 119,
@@ -715,81 +774,22 @@
       "decisionText": "Select “O/U 2.5” → Buy Under",
       "decisionMeaning": "On Polymarket, choose the “O/U 2.5” option/row/card, then click Buy Under. This applies only to the exact market question: “France vs. Spain: O/U 2.5 — O/U 2.5”.",
       "category": "Other",
-      "liquidity": 1400954.995525,
-      "volume24hr": 822173.6410459997,
+      "liquidity": 1286982.906,
+      "volume24hr": 725195.7401790003,
       "usAvailable": true,
       "usMarketSlug": "aadc-fwc-fra-esp-2026-07-14-to-advance",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
       "marketUrl": "https://polymarket.us/market/aadc-fwc-fra-esp-2026-07-14-to-advance"
-    },
-    {
-      "conditionId": "0xb7b8304ad637aba0995ba75b3230086d86f9fcb7a6b5f3ae96a75e73eacfd309",
-      "title": "Will Marcus Thuram be the top goalscorer at the 2026 FIFA World Cup?",
-      "slug": "will-marcus-thuram-be-the-top-goalscorer-at-the-2026-fifa-world-cup",
-      "eventSlug": "world-cup-golden-boot-winner",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/2026-fifa-world-cup-top-goalscorer-g8rHBY_mzgM7.jpg",
-      "endDate": "2026-07-20",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will Marcus Thuram be the top goalscorer at the 2026 FIFA World Cup?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 2,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 69.7491,
-      "avgAccountAllocation": 0.0008079801252794293,
-      "avgEntryPrice": 0.0125,
-      "currentPrice": 0.0005,
-      "rankWeight": 0.2749644363714751,
-      "supporters": [
-        {
-          "rank": 47,
-          "name": "S-Works",
-          "wallet": "0xee00ba338c59557141789b127927a55f5cc5cea1",
-          "currentValue": 3.8199,
-          "visibleAccountValue": 320079.6621,
-          "accountAllocation": 0.000011934216547649872,
-          "size": 7639.87,
-          "avgPrice": 0.0125,
-          "pnl": -91.6784
-        },
-        {
-          "rank": 60,
-          "name": "alwayslatetotheparty",
-          "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
-          "currentValue": 65.9292,
-          "visibleAccountValue": 41102.32539999989,
-          "accountAllocation": 0.0016040260340112087,
-          "size": 131858.5802,
-          "avgPrice": 0.0125,
-          "pnl": -1582.303
-        }
-      ],
-      "decisionSide": "YES",
-      "decisionChoice": "Marcus Thuram",
-      "decisionOption": "Marcus Thuram",
-      "decisionTarget": "Will Marcus Thuram be the top goalscorer at the 2026 FIFA World Cup?",
-      "decisionText": "Select “Marcus Thuram” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Marcus Thuram” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Marcus Thuram be the top goalscorer at the 2026 FIFA World Cup?”.",
-      "category": "Other",
-      "liquidity": 396131.53123,
-      "volume24hr": 2000,
-      "usAvailable": true,
-      "usMarketSlug": "aachc-fifa-wc-2026-07-19-fra-gs-fwcmarthu",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aachc-fifa-wc-2026-07-19-fra-gs-fwcmarthu"
     }
   ],
-  "recommendationsUpdatedAt": "2026-07-13T10:40:22.692Z",
-  "lastCheckedAt": "2026-07-13T10:40:22.757Z",
+  "recommendationsUpdatedAt": "2026-07-13T13:28:34.308Z",
+  "lastCheckedAt": "2026-07-13T13:28:34.362Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-07-13T07:31:23.862Z",
+  "previousRecommendationsReplacedAt": "2026-07-13T10:40:22.692Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-07-13T10:40:22.757Z",
+  "lastSuccessfulWorkflowAt": "2026-07-13T13:28:34.362Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
