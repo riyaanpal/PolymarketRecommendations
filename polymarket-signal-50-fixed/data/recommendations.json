@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-14T19:09:36.469Z",
-  "durationSeconds": 22,
+  "durationSeconds": 21,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -21,10 +21,10 @@
   "stats": {
     "leaderboardUsersInspected": 200,
     "skippedNoPositions": 111,
-    "excludedBothOutcomes": 34,
+    "excludedBothOutcomes": 35,
     "positionFetchErrors": 0,
-    "eligibleTraders": 55,
-    "candidateMarkets": 154,
+    "eligibleTraders": 54,
+    "candidateMarkets": 152,
     "marketsChecked": 55,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -348,13 +348,6 @@
       "wallet": "0x37ee3bceb4fbf028fb90d1463a4a5354da02f86f",
       "pnl": 1035655.4157997841,
       "activePositionCount": 1
-    },
-    {
-      "rank": 161,
-      "name": "curie",
-      "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
-      "pnl": 1030052.2106536826,
-      "activePositionCount": 6
     },
     {
       "rank": 163,
@@ -868,14 +861,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-14T19:09:36.469Z",
-  "lastCheckedAt": "2026-07-14T19:19:14.512Z",
+  "lastCheckedAt": "2026-07-14T19:21:28.575Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
   "refreshMode": "checked_recommendations_unchanged",
   "notes": [
-    "Checked at 2026-07-14T19:19:14.458Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+    "Checked at 2026-07-14T19:21:28.502Z. The scanner found the same recommendation set, so the published cards were left unchanged."
   ],
-  "lastSuccessfulWorkflowAt": "2026-07-14T19:19:14.512Z",
+  "lastSuccessfulWorkflowAt": "2026-07-14T19:21:28.575Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
