@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-14T20:16:33.026Z",
-  "durationSeconds": 18,
+  "durationSeconds": 20,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -24,8 +24,8 @@
     "excludedBothOutcomes": 33,
     "positionFetchErrors": 0,
     "eligibleTraders": 58,
-    "candidateMarkets": 163,
-    "marketsChecked": 47,
+    "candidateMarkets": 172,
+    "marketsChecked": 48,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -34,6 +34,13 @@
     "usMarketCatalogCount": 8386
   },
   "eligibleTraders": [
+    {
+      "rank": 15,
+      "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
+      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+      "pnl": 6966152.123928468,
+      "activePositionCount": 69
+    },
     {
       "rank": 23,
       "name": "0x006cc834Cc092684F1B56626E23BEdB3835c16ea-1729683673397",
@@ -137,7 +144,7 @@
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
       "pnl": 2379140.2038762644,
-      "activePositionCount": 298
+      "activePositionCount": 296
     },
     {
       "rank": 60,
@@ -270,14 +277,14 @@
       "name": "sportmaster777",
       "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
       "pnl": 1337809.5377462863,
-      "activePositionCount": 12
+      "activePositionCount": 13
     },
     {
       "rank": 122,
       "name": "VPenguin",
       "wallet": "0xfbf3d501e88815464642d0e913f15379c3eeb218",
       "pnl": 1331911.3999196289,
-      "activePositionCount": 6
+      "activePositionCount": 5
     },
     {
       "rank": 124,
@@ -369,13 +376,6 @@
       "wallet": "0x37ee3bceb4fbf028fb90d1463a4a5354da02f86f",
       "pnl": 1035655.4161790268,
       "activePositionCount": 1
-    },
-    {
-      "rank": 161,
-      "name": "curie",
-      "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
-      "pnl": 1030052.2106536803,
-      "activePositionCount": 21
     },
     {
       "rank": 163,
@@ -900,14 +900,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-14T20:16:33.026Z",
-  "lastCheckedAt": "2026-07-14T20:19:19.095Z",
+  "lastCheckedAt": "2026-07-14T20:25:14.693Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
   "refreshMode": "checked_recommendations_unchanged",
   "notes": [
-    "Checked at 2026-07-14T20:19:19.050Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+    "Checked at 2026-07-14T20:25:14.622Z. The scanner found the same recommendation set, so the published cards were left unchanged."
   ],
-  "lastSuccessfulWorkflowAt": "2026-07-14T20:19:19.095Z",
+  "lastSuccessfulWorkflowAt": "2026-07-14T20:25:14.693Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
