@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-14T18:43:24.527Z",
-  "durationSeconds": 22,
+  "durationSeconds": 26,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -20,10 +20,10 @@
   },
   "stats": {
     "leaderboardUsersInspected": 200,
-    "skippedNoPositions": 114,
-    "excludedBothOutcomes": 34,
+    "skippedNoPositions": 113,
+    "excludedBothOutcomes": 33,
     "positionFetchErrors": 0,
-    "eligibleTraders": 52,
+    "eligibleTraders": 54,
     "candidateMarkets": 153,
     "marketsChecked": 55,
     "recommendationsReturned": 4,
@@ -95,7 +95,7 @@
       "name": "BreakTheBank",
       "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
       "pnl": 2843417.5894925524,
-      "activePositionCount": 13
+      "activePositionCount": 14
     },
     {
       "rank": 46,
@@ -193,7 +193,7 @@
       "name": "maz26",
       "wallet": "0x67542c3219b37fd1610aad290676ff91cdbfe3bc",
       "pnl": 1748445.8703941721,
-      "activePositionCount": 2
+      "activePositionCount": 3
     },
     {
       "rank": 90,
@@ -245,11 +245,25 @@
       "activePositionCount": 110
     },
     {
+      "rank": 121,
+      "name": "sportmaster777",
+      "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
+      "pnl": 1337749.1796136084,
+      "activePositionCount": 11
+    },
+    {
+      "rank": 122,
+      "name": "VPenguin",
+      "wallet": "0xfbf3d501e88815464642d0e913f15379c3eeb218",
+      "pnl": 1331913.148352921,
+      "activePositionCount": 6
+    },
+    {
       "rank": 124,
       "name": "matanovik",
       "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
       "pnl": 1323675.6746239844,
-      "activePositionCount": 4
+      "activePositionCount": 5
     },
     {
       "rank": 129,
@@ -298,7 +312,7 @@
       "name": "VARryKane",
       "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
       "pnl": 1195682.2294332078,
-      "activePositionCount": 3
+      "activePositionCount": 4
     },
     {
       "rank": 146,
@@ -814,12 +828,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-14T18:43:24.527Z",
-  "lastCheckedAt": "2026-07-14T18:43:24.595Z",
+  "lastCheckedAt": "2026-07-14T18:56:56.316Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-07-14T17:23:32.598Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-07-14T18:43:24.595Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-07-14T18:56:56.248Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-07-14T18:56:56.316Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
