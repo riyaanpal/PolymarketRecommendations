@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-14T19:38:05.521Z",
-  "durationSeconds": 23,
+  "durationSeconds": 20,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -879,12 +879,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-14T19:38:05.521Z",
-  "lastCheckedAt": "2026-07-14T19:38:05.601Z",
+  "lastCheckedAt": "2026-07-14T19:39:28.173Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-07-14T19:35:57.497Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-07-14T19:38:05.601Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-07-14T19:39:28.108Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-07-14T19:39:28.173Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
