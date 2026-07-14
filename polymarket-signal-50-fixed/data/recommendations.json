@@ -24,7 +24,7 @@
     "excludedBothOutcomes": 26,
     "positionFetchErrors": 0,
     "eligibleTraders": 57,
-    "candidateMarkets": 182,
+    "candidateMarkets": 183,
     "marketsChecked": 53,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -130,7 +130,7 @@
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
       "pnl": 2385492.8542017043,
-      "activePositionCount": 311
+      "activePositionCount": 313
     },
     {
       "rank": 63,
@@ -368,7 +368,7 @@
       "name": "0x37ee3BCEb4fBf028fb90D1463A4a5354Da02f86F-1781205947489",
       "wallet": "0x37ee3bceb4fbf028fb90d1463a4a5354da02f86f",
       "pnl": 1035655.4418415941,
-      "activePositionCount": 5
+      "activePositionCount": 4
     },
     {
       "rank": 163,
@@ -860,12 +860,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-14T23:21:33.501Z",
-  "lastCheckedAt": "2026-07-14T23:21:33.567Z",
+  "lastCheckedAt": "2026-07-14T23:27:51.023Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-07-14T21:32:41.337Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-07-14T23:21:33.567Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-07-14T23:27:50.958Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-07-14T23:27:51.023Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
