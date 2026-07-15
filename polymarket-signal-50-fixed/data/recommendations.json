@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-15T18:14:52.064Z",
-  "durationSeconds": 16,
+  "durationSeconds": 22,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -20,12 +20,12 @@
   },
   "stats": {
     "leaderboardUsersInspected": 200,
-    "skippedNoPositions": 111,
+    "skippedNoPositions": 110,
     "excludedBothOutcomes": 29,
     "positionFetchErrors": 0,
-    "eligibleTraders": 60,
-    "candidateMarkets": 190,
-    "marketsChecked": 15,
+    "eligibleTraders": 61,
+    "candidateMarkets": 192,
+    "marketsChecked": 16,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -165,7 +165,7 @@
       "name": "jtwyslljy",
       "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
       "pnl": 2109469.6881023212,
-      "activePositionCount": 6
+      "activePositionCount": 5
     },
     {
       "rank": 72,
@@ -186,7 +186,7 @@
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "pnl": 1962054.6416823438,
-      "activePositionCount": 55
+      "activePositionCount": 54
     },
     {
       "rank": 79,
@@ -319,7 +319,7 @@
       "name": "Wickier",
       "wallet": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
       "pnl": 1282670.6082360777,
-      "activePositionCount": 8
+      "activePositionCount": 7
     },
     {
       "rank": 133,
@@ -340,6 +340,13 @@
       "name": "gud.hl",
       "wallet": "0xa7b7505abe2fdcc497c00074534f7fbd7e07962e",
       "pnl": 1195007.8227685248,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 143,
+      "name": "0xC41D736bDed9ED1acCD6A44235039266219774fD-1777101352681",
+      "wallet": "0xc41d736bded9ed1accd6a44235039266219774fd",
+      "pnl": 1181109.1021670047,
       "activePositionCount": 1
     },
     {
@@ -375,7 +382,7 @@
       "name": "curie",
       "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
       "pnl": 1046919.4858567058,
-      "activePositionCount": 5
+      "activePositionCount": 8
     },
     {
       "rank": 161,
@@ -445,7 +452,7 @@
       "name": "TIMETOMAKEIT",
       "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
       "pnl": 924945.5457746761,
-      "activePositionCount": 6
+      "activePositionCount": 7
     },
     {
       "rank": 197,
@@ -914,14 +921,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-15T18:14:52.064Z",
-  "lastCheckedAt": "2026-07-15T19:13:23.066Z",
+  "lastCheckedAt": "2026-07-15T19:27:31.875Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
   "refreshMode": "checked_recommendations_unchanged",
   "notes": [
-    "Checked at 2026-07-15T19:13:22.984Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+    "Checked at 2026-07-15T19:27:31.812Z. The scanner found the same recommendation set, so the published cards were left unchanged."
   ],
-  "lastSuccessfulWorkflowAt": "2026-07-15T19:13:23.066Z",
+  "lastSuccessfulWorkflowAt": "2026-07-15T19:27:31.875Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
