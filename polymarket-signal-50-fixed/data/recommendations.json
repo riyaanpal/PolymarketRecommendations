@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-15T19:47:19.054Z",
-  "durationSeconds": 17,
+  "durationSeconds": 21,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -24,7 +24,7 @@
     "excludedBothOutcomes": 28,
     "positionFetchErrors": 0,
     "eligibleTraders": 62,
-    "candidateMarkets": 193,
+    "candidateMarkets": 194,
     "marketsChecked": 13,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -74,7 +74,7 @@
       "name": "BreakTheBank",
       "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
       "pnl": 3796705.893509522,
-      "activePositionCount": 5
+      "activePositionCount": 6
     },
     {
       "rank": 39,
@@ -382,7 +382,7 @@
       "name": "curie",
       "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
       "pnl": 1046919.4858567058,
-      "activePositionCount": 7
+      "activePositionCount": 9
     },
     {
       "rank": 161,
@@ -459,7 +459,7 @@
       "name": "TIMETOMAKEIT",
       "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
       "pnl": 924945.5457746761,
-      "activePositionCount": 6
+      "activePositionCount": 5
     },
     {
       "rank": 197,
@@ -961,12 +961,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-15T19:47:19.054Z",
-  "lastCheckedAt": "2026-07-15T19:47:19.129Z",
+  "lastCheckedAt": "2026-07-15T19:51:40.488Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-07-15T18:14:52.064Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-07-15T19:47:19.129Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-07-15T19:51:40.410Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-07-15T19:51:40.488Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
