@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-18T19:45:11.870Z",
-  "durationSeconds": 17,
+  "durationSeconds": 18,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -21,10 +21,10 @@
   "stats": {
     "leaderboardUsersInspected": 200,
     "skippedNoPositions": 113,
-    "excludedBothOutcomes": 32,
+    "excludedBothOutcomes": 33,
     "positionFetchErrors": 0,
-    "eligibleTraders": 55,
-    "candidateMarkets": 126,
+    "eligibleTraders": 54,
+    "candidateMarkets": 124,
     "marketsChecked": 9,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -343,13 +343,6 @@
       "activePositionCount": 9
     },
     {
-      "rank": 158,
-      "name": "curie",
-      "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
-      "pnl": 1081534.4050307828,
-      "activePositionCount": 29
-    },
-    {
       "rank": 159,
       "name": "theo5",
       "wallet": "0x8a4c788f043023b8b28a762216d037e9f148532b",
@@ -410,7 +403,7 @@
       "name": "0x3DFb153c197D4C19D3B31c1ecD2c7B6860eeabAf-1722957908185",
       "wallet": "0x3dfb153c197d4c19d3b31c1ecd2c7b6860eeabaf",
       "pnl": 924734.9825265353,
-      "activePositionCount": 28
+      "activePositionCount": 30
     },
     {
       "rank": 198,
@@ -868,14 +861,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-18T19:45:11.870Z",
-  "lastCheckedAt": "2026-07-18T20:55:51.147Z",
+  "lastCheckedAt": "2026-07-18T21:02:16.903Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
   "refreshMode": "checked_recommendations_unchanged",
   "notes": [
-    "Checked at 2026-07-18T20:55:51.065Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+    "Checked at 2026-07-18T21:02:16.826Z. The scanner found the same recommendation set, so the published cards were left unchanged."
   ],
-  "lastSuccessfulWorkflowAt": "2026-07-18T20:55:51.147Z",
+  "lastSuccessfulWorkflowAt": "2026-07-18T21:02:16.903Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
