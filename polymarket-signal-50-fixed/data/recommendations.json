@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-18T19:45:11.870Z",
-  "durationSeconds": 16,
+  "durationSeconds": 19,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -21,11 +21,11 @@
   "stats": {
     "leaderboardUsersInspected": 200,
     "skippedNoPositions": 112,
-    "excludedBothOutcomes": 34,
+    "excludedBothOutcomes": 32,
     "positionFetchErrors": 0,
-    "eligibleTraders": 54,
-    "candidateMarkets": 131,
-    "marketsChecked": 10,
+    "eligibleTraders": 56,
+    "candidateMarkets": 137,
+    "marketsChecked": 11,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -109,7 +109,7 @@
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
       "pnl": 2656572.452360628,
-      "activePositionCount": 356
+      "activePositionCount": 350
     },
     {
       "rank": 56,
@@ -151,7 +151,7 @@
       "name": "cnyek",
       "wallet": "0x65018f9fc473f6e920b8929a375d39c26a461220",
       "pnl": 2145713.6065416695,
-      "activePositionCount": 3
+      "activePositionCount": 4
     },
     {
       "rank": 70,
@@ -194,6 +194,13 @@
       "wallet": "0x84dbb7103982e3617704a2ed7d5b39691952aeeb",
       "pnl": 1859985.0688600836,
       "activePositionCount": 2
+    },
+    {
+      "rank": 87,
+      "name": "0x6db5…e279",
+      "wallet": "0x6db568e61e5e3de7d87f831431b673f38ce2e279",
+      "pnl": 1834792.8097219102,
+      "activePositionCount": 1
     },
     {
       "rank": 88,
@@ -249,7 +256,7 @@
       "name": "surfandturf",
       "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
       "pnl": 1388972.2268041656,
-      "activePositionCount": 8
+      "activePositionCount": 10
     },
     {
       "rank": 123,
@@ -291,7 +298,7 @@
       "name": "Talvez10",
       "wallet": "0xa71093cafc0c099b4ccab24c3cb8018d817923c4",
       "pnl": 1251798.1794797797,
-      "activePositionCount": 17
+      "activePositionCount": 15
     },
     {
       "rank": 138,
@@ -312,7 +319,7 @@
       "name": "maz26",
       "wallet": "0x67542c3219b37fd1610aad290676ff91cdbfe3bc",
       "pnl": 1174491.629558545,
-      "activePositionCount": 4
+      "activePositionCount": 5
     },
     {
       "rank": 147,
@@ -336,6 +343,13 @@
       "activePositionCount": 1
     },
     {
+      "rank": 156,
+      "name": "curie",
+      "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+      "pnl": 1083287.2422504365,
+      "activePositionCount": 60
+    },
+    {
       "rank": 158,
       "name": "pada",
       "wallet": "0x714a685b5454ea4d52979563bbafa77b8168ab2f",
@@ -354,7 +368,7 @@
       "name": "0x37ee3BCEb4fBf028fb90D1463A4a5354Da02f86F-1781205947489",
       "wallet": "0x37ee3bceb4fbf028fb90d1463a4a5354da02f86f",
       "pnl": 1035654.8399955044,
-      "activePositionCount": 25
+      "activePositionCount": 26
     },
     {
       "rank": 166,
@@ -389,7 +403,7 @@
       "name": "Sharky6999",
       "wallet": "0x751a2b86cab503496efd325c8344e10159349ea1",
       "pnl": 939567.4623371726,
-      "activePositionCount": 5
+      "activePositionCount": 7
     },
     {
       "rank": 185,
@@ -861,14 +875,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-18T19:45:11.870Z",
-  "lastCheckedAt": "2026-07-18T21:39:58.976Z",
+  "lastCheckedAt": "2026-07-18T21:58:25.586Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
   "refreshMode": "checked_recommendations_unchanged",
   "notes": [
-    "Checked at 2026-07-18T21:39:58.897Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+    "Checked at 2026-07-18T21:58:25.514Z. The scanner found the same recommendation set, so the published cards were left unchanged."
   ],
-  "lastSuccessfulWorkflowAt": "2026-07-18T21:39:58.976Z",
+  "lastSuccessfulWorkflowAt": "2026-07-18T21:58:25.586Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
