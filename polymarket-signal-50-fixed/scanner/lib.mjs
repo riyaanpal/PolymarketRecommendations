@@ -14,6 +14,7 @@ export const DEFAULT_CONFIG = Object.freeze({
   maxMarketChecks: 300,
   minEligibleBeforeRecommendations: 50,
   maxEligibleTraders: 300,
+  excludeCryptoMarkets: true,
   usMatchMinScore: 0.68,
   requireUsAvailable: true,
   useCachedUsMarkets: true,
@@ -801,6 +802,109 @@ export function findUsMarketMatch(snapshotOrLookup, candidate, metadata = null, 
   return null;
 }
 
+
+const CRYPTO_CATEGORY_PATTERNS = [
+  /\bcrypto\b/i,
+  /\bcryptocurrency\b/i,
+  /\bdigital\s+assets?\b/i,
+  /\bweb3\b/i
+];
+
+const CRYPTO_TEXT_PATTERNS = [
+  /\bcrypto(?:currency|currencies)?\b/i,
+  /\bstablecoins?\b/i,
+  /\bmemecoins?\b/i,
+  /\baltcoins?\b/i,
+  /\bdefi\b/i,
+  /\bnfts?\b/i,
+  /\bbitcoin\b/i,
+  /\bbtc\b/i,
+  /\bethereum\b/i,
+  /\bether\b/i,
+  /\beth\b/i,
+  /\bsolana\b/i,
+  /\bsol\b/i,
+  /\bxrp\b/i,
+  /\bripple\b/i,
+  /\bdogecoin\b/i,
+  /\bdoge\b/i,
+  /\blitecoin\b/i,
+  /\bltc\b/i,
+  /\bcardano\b/i,
+  /\bada\b/i,
+  /\btether\b/i,
+  /\busdt\b/i,
+  /\busdc\b/i,
+  /\bbinance\b/i,
+  /\bbnb\b/i,
+  /\bavalanche\b/i,
+  /\bavax\b/i,
+  /\bchainlink\b/i,
+  /\bpolkadot\b/i,
+  /\bpolygon\b/i,
+  /\bmatic\b/i,
+  /\btron\b/i,
+  /\btrx\b/i,
+  /\btoncoin\b/i,
+  /\bsui\b/i
+];
+
+function fieldTexts(...values) {
+  return values
+    .flatMap((value) => {
+      if (!value) return [];
+      if (typeof value === "string" || typeof value === "number") return [String(value)];
+      if (Array.isArray(value)) return value.flatMap((item) => fieldTexts(item));
+      if (typeof value === "object") {
+        return fieldTexts(
+          value.category,
+          value.title,
+          value.question,
+          value.slug,
+          value.eventSlug,
+          value.name,
+          value.label,
+          value.description
+        );
+      }
+      return [];
+    })
+    .filter(Boolean);
+}
+
+export function isCryptoMarket(candidate = null, metadata = null, usMetadata = null) {
+  const categoryTexts = fieldTexts(
+    candidate?.category,
+    metadata?.category,
+    metadata?.categories,
+    metadata?.tags,
+    usMetadata?.category,
+    usMetadata?.categories,
+    usMetadata?.tags
+  );
+
+  if (categoryTexts.some((text) => CRYPTO_CATEGORY_PATTERNS.some((pattern) => pattern.test(text)))) {
+    return true;
+  }
+
+  const marketTexts = fieldTexts(
+    candidate?.title,
+    candidate?.slug,
+    candidate?.eventSlug,
+    candidate?.rawPositionTitle,
+    metadata?.question,
+    metadata?.title,
+    metadata?.slug,
+    metadata?.eventSlug,
+    metadata?.events,
+    usMetadata?.question,
+    usMetadata?.title,
+    usMetadata?.slug
+  );
+
+  return marketTexts.some((text) => CRYPTO_TEXT_PATTERNS.some((pattern) => pattern.test(text)));
+}
+
 export function isTradeableMarket(metadata) {
   return Boolean(
     metadata &&
@@ -1181,7 +1285,10 @@ export async function selectRecommendations(eligible, options = {}) {
       const internationalIsTradeable = isTradeableMarket(metadataRows[i]);
       const usIsTradeable = !config.requireUsAvailable || isUsTradeableMarket(usMetadataRows[i]);
 
-      if (internationalIsTradeable && usIsTradeable) {
+      const cryptoIsExcluded =
+        config.excludeCryptoMarkets !== false && isCryptoMarket(chunk[i], metadataRows[i], usMetadataRows[i]);
+
+      if (!cryptoIsExcluded && internationalIsTradeable && usIsTradeable) {
         const marketKey = distinctMarketKey(chunk[i], metadataRows[i]);
 
         // Keep only the strongest-ranked child market from each Polymarket event.
