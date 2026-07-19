@@ -8,6 +8,7 @@ import {
   extractDecisionChoice,
   extractDecisionOption,
   hasBothOutcomes,
+  isCryptoMarket,
   isTradeableMarket,
   isUsTradeableMarket,
   normalizeMatchText,
@@ -751,4 +752,68 @@ test("keeps the displayed title and exact question from the same market candidat
   const enriched = enrichCandidate(candidate, metadata, staleOrWrongUsMetadata);
   assert.equal(enriched.title, "Will Bitcoin reach $250,000 by December 31, 2026?");
   assert.equal(enriched.decisionTarget, "Will Bitcoin reach $250,000 by December 31, 2026?");
+});
+
+
+test("detects crypto markets from category, title, question, or slug", () => {
+  assert.equal(isCryptoMarket({ title: "Will Bitcoin hit $150k?" }), true);
+  assert.equal(isCryptoMarket({ slug: "will-eth-reach-5000" }), true);
+  assert.equal(isCryptoMarket({}, { category: "Crypto" }), true);
+  assert.equal(isCryptoMarket({}, { question: "Will Dogecoin reach $1?" }), true);
+  assert.equal(isCryptoMarket({ title: "Will Arsenal win the Premier League?" }), false);
+});
+
+test("skips crypto markets and keeps scanning for non-crypto recommendations", async () => {
+  const bitcoin = position({
+    conditionId: "bitcoin-market",
+    title: "Will Bitcoin reach $250,000 by December 31, 2026?",
+    slug: "will-bitcoin-reach-250000-by-december-31-2026",
+    eventSlug: "bitcoin-price-2026",
+    currentValue: 100
+  });
+  const sports = position({
+    conditionId: "sports-market",
+    title: "Will Arsenal win the Premier League?",
+    slug: "will-arsenal-win-the-premier-league",
+    eventSlug: "arsenal-premier-league",
+    currentValue: 50
+  });
+
+  const eligible = [trader(1, [bitcoin, sports]), trader(2, [bitcoin, sports])];
+
+  const fetchImpl = async (url) => {
+    const text = String(url);
+    const isBitcoin = text.includes("bitcoin");
+    return {
+      ok: true,
+      json: async () => ({
+        active: true,
+        closed: false,
+        archived: false,
+        acceptingOrders: true,
+        question: isBitcoin
+          ? "Will Bitcoin reach $250,000 by December 31, 2026?"
+          : "Will Arsenal win the Premier League?",
+        category: isBitcoin ? "Crypto" : "Sports",
+        outcomes: '["Yes", "No"]',
+        outcomePrices: '["0.60", "0.40"]'
+      }),
+      text: async () => ""
+    };
+  };
+
+  const result = await selectRecommendations(eligible, {
+    fetchImpl,
+    config: {
+      minSharedSupporters: 2,
+      recommendationCount: 2,
+      requestConcurrency: 2,
+      maxMarketChecks: 20,
+      requireUsAvailable: false,
+      excludeCryptoMarkets: true
+    }
+  });
+
+  assert.equal(result.recommendations.length, 1);
+  assert.equal(result.recommendations[0].slug, "will-arsenal-win-the-premier-league");
 });
