@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-19T20:46:13.266Z",
-  "durationSeconds": 30,
+  "durationSeconds": 26,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -24,7 +24,7 @@
     "excludedBothOutcomes": 34,
     "positionFetchErrors": 0,
     "eligibleTraders": 58,
-    "candidateMarkets": 475,
+    "candidateMarkets": 474,
     "marketsChecked": 14,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -368,7 +368,7 @@
       "name": "0x37ee3BCEb4fBf028fb90D1463A4a5354Da02f86F-1781205947489",
       "wallet": "0x37ee3bceb4fbf028fb90d1463a4a5354da02f86f",
       "pnl": 1035724.5229311078,
-      "activePositionCount": 4
+      "activePositionCount": 5
     },
     {
       "rank": 166,
@@ -911,12 +911,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-19T20:46:13.266Z",
-  "lastCheckedAt": "2026-07-19T20:46:13.343Z",
+  "lastCheckedAt": "2026-07-19T21:02:15.899Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-07-19T20:15:15.261Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-07-19T20:46:13.343Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-07-19T21:02:15.822Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-07-19T21:02:15.899Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
