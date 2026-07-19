@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-07-19T21:20:23.857Z",
-  "durationSeconds": 28,
+  "durationSeconds": 23,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -21,11 +21,11 @@
   "stats": {
     "leaderboardUsersInspected": 200,
     "skippedNoPositions": 110,
-    "excludedBothOutcomes": 35,
+    "excludedBothOutcomes": 34,
     "positionFetchErrors": 0,
-    "eligibleTraders": 55,
-    "candidateMarkets": 129,
-    "marketsChecked": 19,
+    "eligibleTraders": 56,
+    "candidateMarkets": 153,
+    "marketsChecked": 8,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -34,6 +34,13 @@
     "usMarketCatalogCount": 11210
   },
   "eligibleTraders": [
+    {
+      "rank": 16,
+      "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
+      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+      "pnl": 7193472.435738046,
+      "activePositionCount": 56
+    },
     {
       "rank": 18,
       "name": "BreakTheBank",
@@ -109,7 +116,7 @@
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
       "pnl": 2711617.0123017067,
-      "activePositionCount": 340
+      "activePositionCount": 336
     },
     {
       "rank": 56,
@@ -165,7 +172,7 @@
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "pnl": 1951467.5897802066,
-      "activePositionCount": 56
+      "activePositionCount": 59
     },
     {
       "rank": 81,
@@ -256,7 +263,7 @@
       "name": "VPenguin",
       "wallet": "0xfbf3d501e88815464642d0e913f15379c3eeb218",
       "pnl": 1342011.5672893324,
-      "activePositionCount": 10
+      "activePositionCount": 11
     },
     {
       "rank": 125,
@@ -361,7 +368,7 @@
       "name": "0x37ee3BCEb4fBf028fb90D1463A4a5354Da02f86F-1781205947489",
       "wallet": "0x37ee3bceb4fbf028fb90d1463a4a5354da02f86f",
       "pnl": 1035724.665344731,
-      "activePositionCount": 5
+      "activePositionCount": 6
     },
     {
       "rank": 166,
@@ -382,7 +389,7 @@
       "name": "Sharky6999",
       "wallet": "0x751a2b86cab503496efd325c8344e10159349ea1",
       "pnl": 956454.4479375943,
-      "activePositionCount": 5
+      "activePositionCount": 7
     },
     {
       "rank": 181,
@@ -890,14 +897,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-07-19T21:20:23.857Z",
-  "lastCheckedAt": "2026-07-19T21:41:12.116Z",
+  "lastCheckedAt": "2026-07-19T22:00:37.332Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
   "refreshMode": "checked_recommendations_unchanged",
   "notes": [
-    "Checked at 2026-07-19T21:41:12.055Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+    "Checked at 2026-07-19T22:00:37.256Z. The scanner found the same recommendation set, so the published cards were left unchanged."
   ],
-  "lastSuccessfulWorkflowAt": "2026-07-19T21:41:12.116Z",
+  "lastSuccessfulWorkflowAt": "2026-07-19T22:00:37.332Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
