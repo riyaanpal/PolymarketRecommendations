@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-07-20T14:52:03.026Z",
-  "durationSeconds": 38,
+  "generatedAt": "2026-07-20T22:24:59.179Z",
+  "durationSeconds": 35,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -19,13 +19,13 @@
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
-    "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 203,
-    "excludedBothOutcomes": 40,
+    "leaderboardUsersInspected": 250,
+    "skippedNoPositions": 165,
+    "excludedBothOutcomes": 34,
     "positionFetchErrors": 0,
-    "eligibleTraders": 57,
-    "candidateMarkets": 154,
-    "marketsChecked": 69,
+    "eligibleTraders": 51,
+    "candidateMarkets": 151,
+    "marketsChecked": 72,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -35,10 +35,17 @@
   },
   "eligibleTraders": [
     {
+      "rank": 17,
+      "name": "BreakTheBank",
+      "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+      "pnl": 6950936.807859596,
+      "activePositionCount": 1
+    },
+    {
       "rank": 25,
       "name": "0x006cc834Cc092684F1B56626E23BEdB3835c16ea-1729683673397",
       "wallet": "0x006cc834cc092684f1b56626e23bedb3835c16ea",
-      "pnl": 4718280.5482552545,
+      "pnl": 4718447.770805808,
       "activePositionCount": 3
     },
     {
@@ -52,21 +59,21 @@
       "rank": 30,
       "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
       "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-      "pnl": 4236955.041322027,
+      "pnl": 4236955.041322033,
       "activePositionCount": 4
     },
     {
       "rank": 41,
       "name": "GCottrell93",
       "wallet": "0x94a428cfa4f84b264e01f70d93d02bc96cb36356",
-      "pnl": 3448025.0120330695,
+      "pnl": 3448035.0120330695,
       "activePositionCount": 4
     },
     {
       "rank": 43,
       "name": "S-Works",
       "wallet": "0xee00ba338c59557141789b127927a55f5cc5cea1",
-      "pnl": 3208967.4731506165,
+      "pnl": 3208967.473150611,
       "activePositionCount": 1
     },
     {
@@ -116,7 +123,7 @@
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "pnl": 1953463.453842428,
-      "activePositionCount": 48
+      "activePositionCount": 49
     },
     {
       "rank": 80,
@@ -137,7 +144,7 @@
       "name": "Pestle",
       "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
       "pnl": 1906985.9348633012,
-      "activePositionCount": 45
+      "activePositionCount": 43
     },
     {
       "rank": 97,
@@ -150,56 +157,63 @@
       "rank": 102,
       "name": "Joe-Biden",
       "wallet": "0x8b5a7da2fdf239b51b9c68a2a1a35bb156d200f2",
-      "pnl": 1519095.1772357072,
+      "pnl": 1519158.5308357072,
       "activePositionCount": 4
     },
     {
       "rank": 105,
       "name": "sportmaster777",
       "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
-      "pnl": 1511338.9452143766,
-      "activePositionCount": 17
+      "pnl": 1511490.646961583,
+      "activePositionCount": 20
     },
     {
-      "rank": 107,
+      "rank": 108,
       "name": "DLEK",
       "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
-      "pnl": 1488309.1238943667,
+      "pnl": 1485649.9826268938,
       "activePositionCount": 16
     },
     {
       "rank": 114,
       "name": "Dropper",
       "wallet": "0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
-      "pnl": 1467190.0160920469,
+      "pnl": 1467541.9293639848,
       "activePositionCount": 8
     },
     {
       "rank": 115,
       "name": "coinman2",
       "wallet": "0x55be7aa03ecfbe37aa5460db791205f7ac9ddca3",
-      "pnl": 1462303.7012262982,
+      "pnl": 1462315.8240053812,
       "activePositionCount": 26
     },
     {
       "rank": 116,
       "name": "gopfan2",
       "wallet": "0xf2f6af4f27ec2dcf4072095ab804016e14cd5817",
-      "pnl": 1450383.3380995416,
+      "pnl": 1450827.9605432348,
       "activePositionCount": 62
     },
     {
       "rank": 118,
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
-      "pnl": 1445846.4112611152,
-      "activePositionCount": 294
+      "pnl": 1445764.919028886,
+      "activePositionCount": 291
+    },
+    {
+      "rank": 125,
+      "name": "matanovik",
+      "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
+      "pnl": 1399149.400586942,
+      "activePositionCount": 2
     },
     {
       "rank": 137,
       "name": "influenz.eth",
       "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
-      "pnl": 1251337.0974822375,
+      "pnl": 1251424.6026883936,
       "activePositionCount": 20
     },
     {
@@ -220,49 +234,49 @@
       "rank": 148,
       "name": "Countryside",
       "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
-      "pnl": 1164611.1950889432,
+      "pnl": 1164612.9504127253,
       "activePositionCount": 5
     },
     {
       "rank": 152,
       "name": "gatorr",
       "wallet": "0x93abbc022ce98d6f45d4444b594791cc4b7a9723",
-      "pnl": 1144960.3160591526,
+      "pnl": 1144960.3160591528,
       "activePositionCount": 6
     },
     {
       "rank": 156,
       "name": "Talvez10",
       "wallet": "0xa71093cafc0c099b4ccab24c3cb8018d817923c4",
-      "pnl": 1123047.2968307256,
-      "activePositionCount": 12
+      "pnl": 1122563.103053193,
+      "activePositionCount": 13
     },
     {
       "rank": 160,
       "name": "theo5",
       "wallet": "0x8a4c788f043023b8b28a762216d037e9f148532b",
-      "pnl": 1082778.7482999146,
+      "pnl": 1084227.243581962,
       "activePositionCount": 47
     },
     {
       "rank": 164,
       "name": "pada",
       "wallet": "0x714a685b5454ea4d52979563bbafa77b8168ab2f",
-      "pnl": 1046847.5640709962,
+      "pnl": 1047121.3433653419,
       "activePositionCount": 9
     },
     {
       "rank": 170,
       "name": "Airpods123",
       "wallet": "0xb90494d9a5d8f71f1930b2aa4b599f95c344c255",
-      "pnl": 1023294.6500887937,
+      "pnl": 1023324.6499149525,
       "activePositionCount": 2
     },
     {
-      "rank": 182,
+      "rank": 181,
       "name": "Sharky6999",
       "wallet": "0x751a2b86cab503496efd325c8344e10159349ea1",
-      "pnl": 960384.8003825892,
+      "pnl": 960220.5355411834,
       "activePositionCount": 6
     },
     {
@@ -276,293 +290,237 @@
       "rank": 190,
       "name": "ROBBATTISTAFANDUELRETARD",
       "wallet": "0x13414a77a4be48988851c73dfd824d0168e70853",
-      "pnl": 931508.5841640811,
+      "pnl": 931508.6841607955,
       "activePositionCount": 11
     },
     {
       "rank": 194,
       "name": "Macks22",
       "wallet": "0x1057e7d3ddafc60a4aeb10a2bc5b543792449ea5",
-      "pnl": 930396.9567914671,
+      "pnl": 930392.333287473,
       "activePositionCount": 9
     },
     {
       "rank": 200,
       "name": "Anointed-Connect",
       "wallet": "0x8f037a2e4fd49d11267f4ab874ab7ba745ac64d6",
-      "pnl": 921505.5607767417,
+      "pnl": 921505.560776742,
       "activePositionCount": 12
     },
     {
       "rank": 201,
       "name": "one8tyfive",
       "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
-      "pnl": 920307.8863384781,
+      "pnl": 921387.1368833558,
       "activePositionCount": 7
     },
     {
       "rank": 208,
       "name": "Nexuus",
       "wallet": "0xce5bec63b40392845a9a504915f607c8e03a047a",
-      "pnl": 879905.6993612613,
-      "activePositionCount": 43
+      "pnl": 879905.6933612732,
+      "activePositionCount": 41
     },
     {
       "rank": 210,
       "name": "zerosmart",
       "wallet": "0x275575bb11522eb29f82fe0a601d7c4dc94b5016",
-      "pnl": 872691.1434232441,
+      "pnl": 872697.2494432442,
       "activePositionCount": 12
     },
     {
       "rank": 212,
       "name": "MonsieurDimanche",
       "wallet": "0x0d18e30e252008d83f51dae00d36873ddd9e24a6",
-      "pnl": 863223.3884369376,
+      "pnl": 863223.4211869376,
       "activePositionCount": 1
     },
     {
       "rank": 215,
       "name": "0x3DFb153c197D4C19D3B31c1ecD2c7B6860eeabAf-1722957908185",
       "wallet": "0x3dfb153c197d4c19d3b31c1ecd2c7b6860eeabaf",
-      "pnl": 857062.1640382328,
-      "activePositionCount": 4
+      "pnl": 857197.4661116933,
+      "activePositionCount": 13
     },
     {
       "rank": 223,
       "name": "kingofcoinflips",
       "wallet": "0xe9c6312464b52aa3eff13d822b003282075995c9",
-      "pnl": 836688.6133384064,
+      "pnl": 836621.5007114487,
       "activePositionCount": 22
     },
     {
       "rank": 224,
       "name": "HaileyWelch",
       "wallet": "0x80cd8310aa624521e9e1b2b53b568cafb0ef0273",
-      "pnl": 836181.7274582579,
+      "pnl": 836181.833281652,
       "activePositionCount": 7
     },
     {
-      "rank": 225,
+      "rank": 226,
       "name": "easyclap",
       "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
-      "pnl": 832125.5346321171,
+      "pnl": 832097.3488167081,
       "activePositionCount": 18
     },
     {
       "rank": 229,
       "name": "Magamyman",
       "wallet": "0x4dfd481c16d9995b809780fd8a9808e8689f6e4a",
-      "pnl": 823571.1677403569,
+      "pnl": 823524.7191278071,
       "activePositionCount": 6
     },
     {
-      "rank": 233,
+      "rank": 234,
       "name": "eanvanezygv",
       "wallet": "0x9d94f602535e518ee1cb6aade0ca9569f1b1017d",
-      "pnl": 817844.9418892974,
+      "pnl": 817441.260978874,
       "activePositionCount": 2
     },
     {
       "rank": 239,
       "name": "212121212121212121212",
       "wallet": "0x1bc0d88ca86b9049cf05d642e634836d5ddf4429",
-      "pnl": 810194.2852363024,
+      "pnl": 810194.2852363012,
       "activePositionCount": 7
     },
     {
       "rank": 246,
       "name": "SlavaUkraini",
       "wallet": "0xe899b5ea69afb161da7a35597b6fe70398860899",
-      "pnl": 787395.5597456071,
+      "pnl": 787395.559745607,
       "activePositionCount": 4
-    },
-    {
-      "rank": 254,
-      "name": "rwo",
-      "wallet": "0xd189664c5308903476f9f079820431e4fd7d06f4",
-      "pnl": 760886.3053133665,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 255,
-      "name": "KirksCousin",
-      "wallet": "0xb55216ed55337cf9443139e4e5cace56426694a8",
-      "pnl": 753627.2304499989,
-      "activePositionCount": 8
-    },
-    {
-      "rank": 259,
-      "name": "RJW1",
-      "wallet": "0x85f031d069de300055900c4055c1baeb6bde3f67",
-      "pnl": 730540.1298112966,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 264,
-      "name": "0x8a3aB8120807bD64a3De48695110e390fa2ceB9a-1771005965025",
-      "wallet": "0x8a3ab8120807bd64a3de48695110e390fa2ceb9a",
-      "pnl": 724799.056444125,
-      "activePositionCount": 6
-    },
-    {
-      "rank": 270,
-      "name": "phonesculptor",
-      "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
-      "pnl": 713712.7646230472,
-      "activePositionCount": 13
-    },
-    {
-      "rank": 271,
-      "name": "chungguskhan",
-      "wallet": "0x7744bfd749a70020d16a1fcbac1d064761c9999e",
-      "pnl": 708777.531003753,
-      "activePositionCount": 5
-    },
-    {
-      "rank": 274,
-      "name": "AgricultureSecretary",
-      "wallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
-      "pnl": 703751.041391267,
-      "activePositionCount": 17
-    },
-    {
-      "rank": 277,
-      "name": "AvocadosFromMexico",
-      "wallet": "0x033f0346c007323030eb420305ffede19a95618e",
-      "pnl": 696074.6312507583,
-      "activePositionCount": 27
     }
   ],
   "recommendations": [
     {
-      "conditionId": "0xa1b3158fedfddaf2a0d8b364f6a57ee68146fb6ad458222aa8e02bcf0abbb099",
-      "title": "US-Iran Final Nuclear Deal by August 31, 2026?",
-      "slug": "us-iran-final-nuclear-deal-by-august-31-2026-20260621201255154",
-      "eventSlug": "us-iran-final-nuclear-deal-by-20260621201254412",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-iran-final-nuclear-deal-by-20260621201254412-2M_GeQ8diXxj.jpg",
-      "endDate": "2026-08-31",
+      "conditionId": "0xb5c0abeecb5502e6e8d83155c27819174d8317af3c425c3afc5a8c45257a3793",
+      "title": "Will the Fed increase interest rates by 25 bps after the July 2026 meeting?",
+      "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-july-2026-meeting",
+      "eventSlug": "fed-decision-in-july-181",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/jerome+powell+glasses1.png",
+      "endDate": "2026-07-29",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "US-Iran Final Nuclear Deal by August 31, 2026?",
-      "outcome": "No",
-      "outcomeKey": "1",
+      "rawPositionTitle": "Will the Fed increase interest rates by 25 bps after the July 2026 meeting?",
+      "outcome": "Yes",
+      "outcomeKey": "0",
       "supporterCount": 3,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 295134.6433,
-      "avgAccountAllocation": 0.34949824488507814,
-      "avgEntryPrice": 0.809252986186827,
-      "currentPrice": 0.925,
-      "rankWeight": 0.3421807810182723,
+      "opposingSupporters": 1,
+      "consensusRate": 0.75,
+      "totalCurrentValue": 1779.0385,
+      "avgAccountAllocation": 0.01110901775075185,
+      "avgEntryPrice": 0.05861785691019035,
+      "currentPrice": 0.073,
+      "rankWeight": 0.3293419342438197,
       "supporters": [
         {
-          "rank": 56,
-          "name": "denizz",
-          "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
-          "currentValue": 67899.0409,
-          "visibleAccountValue": 1287289.9471000002,
-          "accountAllocation": 0.05274572449894649,
-          "size": 73404.3685,
-          "avgPrice": 0.7979,
-          "pnl": 9327.3462
+          "rank": 41,
+          "name": "GCottrell93",
+          "wallet": "0x94a428cfa4f84b264e01f70d93d02bc96cb36356",
+          "currentValue": 1484.5486,
+          "visibleAccountValue": 62812.035500000005,
+          "accountAllocation": 0.023634779356895702,
+          "size": 20476.5329,
+          "avgPrice": 0.0317,
+          "pnl": 834.2958
         },
         {
-          "rank": 65,
-          "name": "The Spirit of Ukraine>UMA",
-          "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
-          "currentValue": 86019.5987,
-          "visibleAccountValue": 1249506.8244000012,
-          "accountAllocation": 0.06884284024723564,
-          "size": 92994.1608,
-          "avgPrice": 0.8994,
-          "pnl": 2378.4186
+          "rank": 118,
+          "name": "alwayslatetotheparty",
+          "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
+          "currentValue": 214.7399,
+          "visibleAccountValue": 24536.554600000014,
+          "accountAllocation": 0.008751835924021699,
+          "size": 2961.9301,
+          "avgPrice": 0.2,
+          "pnl": -377.6461
         },
         {
-          "rank": 140,
-          "name": "Wickier",
-          "wallet": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
-          "currentValue": 141216.0037,
-          "visibleAccountValue": 152351.9945,
-          "accountAllocation": 0.9269061699090523,
-          "size": 152665.95,
-          "avgPrice": 0.7598,
-          "pnl": 25217.5142
+          "rank": 152,
+          "name": "gatorr",
+          "wallet": "0x93abbc022ce98d6f45d4444b594791cc4b7a9723",
+          "currentValue": 79.75,
+          "visibleAccountValue": 84800.91450000001,
+          "accountAllocation": 0.0009404379713381509,
+          "size": 1100,
+          "avgPrice": 0.179,
+          "pnl": -117.15
         }
       ],
-      "decisionSide": "NO",
-      "decisionChoice": "August 31",
-      "decisionOption": "August 31",
-      "decisionTarget": "US-Iran Final Nuclear Deal by August 31, 2026?",
-      "decisionText": "Select “August 31” → Buy NO",
-      "decisionMeaning": "On Polymarket, choose the “August 31” option/row/card, then click Buy NO. This applies only to the exact market question: “US-Iran Final Nuclear Deal by August 31, 2026?”.",
+      "decisionSide": "YES",
+      "decisionChoice": "25 bps increase",
+      "decisionOption": "25 bps increase",
+      "decisionTarget": "Will the Fed increase interest rates by 25 bps after the July 2026 meeting?",
+      "decisionText": "Select “25 bps increase” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “25 bps increase” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Fed increase interest rates by 25 bps after the July 2026 meeting?”.",
       "category": "Other",
-      "liquidity": 123528.9962,
-      "volume24hr": 16546.840924,
+      "liquidity": 481301.27183,
+      "volume24hr": 618483.6936759976,
       "usAvailable": true,
-      "usMarketSlug": "aimc-gemini-3pt5pro-2026-08-31",
+      "usMarketSlug": "rdc-usfed-fomc-2026-07-29-hike25",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aimc-gemini-3pt5pro-2026-08-31"
+      "marketUrl": "https://polymarket.us/market/rdc-usfed-fomc-2026-07-29-hike25"
     },
     {
-      "conditionId": "0xe846dd72f8a654ef137a3e23a88226400b42cc0ca817ab4390a615860e08cafa",
-      "title": "Iran agrees to surrender enriched uranium stockpile by December 31, 2026?",
-      "slug": "iran-agrees-to-surrender-enriched-uranium-stockpile-by-december-31-2026-752-299",
-      "eventSlug": "iran-agrees-to-surrender-enriched-uranium-stockpile-by",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/iran-agrees-to-end-enrichment-of-uranium-before-july-G-riWTpXuKoj.jpg",
-      "endDate": "2026-12-31",
+      "conditionId": "0x871d6dd18226a33d117eb4c23ec9df64e1d7b8aae3ed5185b93c5bb9cc003291",
+      "title": "Spread: Milwaukee Brewers (-1.5)",
+      "slug": "mlb-nym-mil-2026-07-20-spread-home-1pt5",
+      "eventSlug": "mlb-nym-mil-2026-07-20",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Repetitive-markets/MLB.jpg",
+      "endDate": "2026-07-20",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Iran agrees to surrender enriched uranium stockpile by December 31, 2026?",
-      "outcome": "No",
+      "rawPositionTitle": "Spread: Milwaukee Brewers (-1.5)",
+      "outcome": "New York Mets",
       "outcomeKey": "1",
       "supporterCount": 2,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 13915.980599999999,
-      "avgAccountAllocation": 0.005417967451846947,
-      "avgEntryPrice": 0.777716412533923,
-      "currentPrice": 0.86,
-      "rankWeight": 0.2576653555454207,
+      "totalCurrentValue": 9598.5042,
+      "avgAccountAllocation": 0.5216011011470782,
+      "avgEntryPrice": 0.49375587680927546,
+      "currentPrice": 0.495,
+      "rankWeight": 0.3401256323311863,
       "supporters": [
         {
-          "rank": 56,
-          "name": "denizz",
-          "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
-          "currentValue": 12824.3409,
-          "visibleAccountValue": 1287289.9471000002,
-          "accountAllocation": 0.009962278450857637,
-          "size": 14912.0243,
-          "avgPrice": 0.7848,
-          "pnl": 1120.4149
+          "rank": 17,
+          "name": "BreakTheBank",
+          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+          "currentValue": 8408.7089,
+          "visibleAccountValue": 8408.7089,
+          "accountAllocation": 1,
+          "size": 16987.2907,
+          "avgPrice": 0.49,
+          "pnl": 84.9364
         },
         {
-          "rank": 65,
-          "name": "The Spirit of Ukraine>UMA",
-          "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
-          "currentValue": 1091.6397,
-          "visibleAccountValue": 1249506.8244000012,
-          "accountAllocation": 0.0008736564528362562,
-          "size": 1269.3485,
-          "avgPrice": 0.6945,
-          "pnl": 210.0111
+          "rank": 105,
+          "name": "sportmaster777",
+          "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
+          "currentValue": 1189.7953,
+          "visibleAccountValue": 27540.153899999998,
+          "accountAllocation": 0.04320220229415639,
+          "size": 2403.627,
+          "avgPrice": 0.5203,
+          "pnl": -61.0113
         }
       ],
-      "decisionSide": "NO",
-      "decisionChoice": "December 31",
-      "decisionOption": "December 31",
-      "decisionTarget": "Iran agrees to surrender enriched uranium stockpile by December 31, 2026?",
-      "decisionText": "Select “December 31” → Buy NO",
-      "decisionMeaning": "On Polymarket, choose the “December 31” option/row/card, then click Buy NO. This applies only to the exact market question: “Iran agrees to surrender enriched uranium stockpile by December 31, 2026?”.",
+      "decisionSide": "New York Mets",
+      "decisionChoice": "Spread -1.5",
+      "decisionOption": "Spread -1.5",
+      "decisionTarget": "Spread: Milwaukee Brewers (-1.5)",
+      "decisionText": "Select “Spread -1.5” → Buy New York Mets",
+      "decisionMeaning": "On Polymarket, choose the “Spread -1.5” option/row/card, then click Buy New York Mets. This applies only to the exact market question: “Spread: Milwaukee Brewers (-1.5)”.",
       "category": "Other",
-      "liquidity": 66592.8381,
-      "volume24hr": 1012.7633320000001,
+      "liquidity": 483203.1478,
+      "volume24hr": 77294.86257199991,
       "usAvailable": true,
-      "usMarketSlug": "aimc-openai-gpt-6-2026-12-31",
+      "usMarketSlug": "astatc-mlb-nym-mil-2026-07-20-xi",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aimc-openai-gpt-6-2026-12-31"
+      "marketUrl": "https://polymarket.us/market/astatc-mlb-nym-mil-2026-07-20-xi"
     },
     {
       "conditionId": "0x1baf407855ceab1d3e1a9c9c1fe32b547a3ccd575e4d8eb1f7d4b5b27a1122df",
@@ -579,33 +537,33 @@
       "supporterCount": 2,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 14222.3398,
-      "avgAccountAllocation": 0.01649733413961177,
+      "totalCurrentValue": 14214.982100000001,
+      "avgAccountAllocation": 0.016522153035240288,
       "avgEntryPrice": 0.8790654885110245,
-      "currentPrice": 0.9665,
+      "currentPrice": 0.966,
       "rankWeight": 0.23516523746957413,
       "supporters": [
         {
           "rank": 56,
           "name": "denizz",
           "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
-          "currentValue": 7202.9306,
-          "visibleAccountValue": 1287289.9471000002,
-          "accountAllocation": 0.005595422085153949,
+          "currentValue": 7199.2043,
+          "visibleAccountValue": 1288044.4499000001,
+          "accountAllocation": 0.005589251442804574,
           "size": 7452.5925,
           "avgPrice": 0.8879,
-          "pnl": 585.4681
+          "pnl": 581.7418
         },
         {
           "rank": 97,
           "name": "scottilicious",
           "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
-          "currentValue": 7019.4092,
-          "visibleAccountValue": 256189.8656,
-          "accountAllocation": 0.027399246194069592,
+          "currentValue": 7015.7778,
+          "visibleAccountValue": 255536.83630000002,
+          "accountAllocation": 0.027455054627675998,
           "size": 7262.71,
           "avgPrice": 0.87,
-          "pnl": 700.8514
+          "pnl": 697.22
         }
       ],
       "decisionSide": "NO",
@@ -615,8 +573,8 @@
       "decisionText": "Select “August 31” → Buy NO",
       "decisionMeaning": "On Polymarket, choose the “August 31” option/row/card, then click Buy NO. This applies only to the exact market question: “Israel withdraws from Lebanon by August 31, 2026?”.",
       "category": "Other",
-      "liquidity": 97862.31317,
-      "volume24hr": 13790.959533000003,
+      "liquidity": 94459.32665,
+      "volume24hr": 734.8682410000001,
       "usAvailable": true,
       "usMarketSlug": "aimc-gemini-3pt5pro-2026-08-31",
       "usMatchMethod": "title_slug_similarity",
@@ -624,74 +582,72 @@
       "marketUrl": "https://polymarket.us/market/aimc-gemini-3pt5pro-2026-08-31"
     },
     {
-      "conditionId": "0x25fb28382075f418a944a781a9f8840e2f541152eea0d9798d1cabfa1466adbb",
-      "title": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-      "slug": "will-mojtaba-khamenei-be-head-of-state-in-iran-end-of-2026",
-      "eventSlug": "iran-leader-end-of-2026",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/khamenei-out-as-supreme-leader-of-iran-in-2025-VNDMf5RqFLwB.jpg",
-      "endDate": "2026-12-31",
+      "conditionId": "0xd5d9fc47718bd553592d126b1fa5e87183d27f3936975b0c04cc0f2dec1f1bb4",
+      "title": "Will the Democratic Party control the House after the 2026 Midterm elections?",
+      "slug": "will-the-democratic-party-control-the-house-after-the-2026-midterm-elections",
+      "eventSlug": "which-party-will-win-the-house-in-2026",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-the-democratic-party-control-the-senate-after-the-2026-midterm-elections-JJ9h02JGR09z.png",
+      "endDate": "2026-11-03",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
+      "rawPositionTitle": "Will the Democratic Party control the House after the 2026 Midterm elections?",
       "outcome": "Yes",
       "outcomeKey": "0",
       "supporterCount": 2,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 37078.9948,
-      "avgAccountAllocation": 0.04421798097740476,
-      "avgEntryPrice": 0.5993463131822643,
-      "currentPrice": 0.7585,
-      "rankWeight": 0.20263717689044763,
+      "totalCurrentValue": 207349.53579999998,
+      "avgAccountAllocation": 0.3996495706815207,
+      "avgEntryPrice": 0.8119313303631442,
+      "currentPrice": 0.855,
+      "rankWeight": 0.19775966137829953,
       "supporters": [
         {
-          "rank": 56,
-          "name": "denizz",
-          "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
-          "currentValue": 33991.7911,
-          "visibleAccountValue": 1287289.9471000002,
-          "accountAllocation": 0.02640569917956442,
-          "size": 44844.0516,
-          "avgPrice": 0.6211,
-          "pnl": 6138.2985
+          "rank": 97,
+          "name": "scottilicious",
+          "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+          "currentValue": 155214.3718,
+          "visibleAccountValue": 255536.83630000002,
+          "accountAllocation": 0.6074050772773067,
+          "size": 181537.277,
+          "avgPrice": 0.8152,
+          "pnl": 7211.0236
         },
         {
-          "rank": 210,
-          "name": "zerosmart",
-          "wallet": "0x275575bb11522eb29f82fe0a601d7c4dc94b5016",
-          "currentValue": 3087.2037,
-          "visibleAccountValue": 49769.3152,
-          "accountAllocation": 0.0620302627752451,
-          "size": 4070.68,
-          "avgPrice": 0.3597,
-          "pnl": 1622.7155
+          "rank": 108,
+          "name": "DLEK",
+          "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
+          "currentValue": 52135.164,
+          "visibleAccountValue": 271687.21579999995,
+          "accountAllocation": 0.19189406408573462,
+          "size": 60976.8,
+          "avgPrice": 0.8022,
+          "pnl": 3216.831
         }
       ],
       "decisionSide": "YES",
-      "decisionChoice": "Mojtaba Khamenei",
-      "decisionOption": "Mojtaba Khamenei",
-      "decisionTarget": "Will Mojtaba Khamenei be head of state in Iran end of 2026?",
-      "decisionText": "Select “Mojtaba Khamenei” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Mojtaba Khamenei” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Mojtaba Khamenei be head of state in Iran end of 2026?”.",
+      "decisionChoice": "Democratic Party",
+      "decisionOption": "Democratic Party",
+      "decisionTarget": "Will the Democratic Party control the House after the 2026 Midterm elections?",
+      "decisionText": "Select “Democratic Party” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “Democratic Party” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Democratic Party control the House after the 2026 Midterm elections?”.",
       "category": "Other",
-      "liquidity": 85191.52583,
-      "volume24hr": 231011.65603699992,
+      "liquidity": 416250.321,
+      "volume24hr": 51392.957337,
       "usAvailable": true,
-      "usMarketSlug": "pintc-meet-trump-2026-12-31-mojkha",
+      "usMarketSlug": "ewc-usgub-az-2026-11-03-dem",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/pintc-meet-trump-2026-12-31-mojkha"
+      "marketUrl": "https://polymarket.us/market/ewc-usgub-az-2026-11-03-dem"
     }
   ],
-  "recommendationsUpdatedAt": "2026-07-20T14:52:03.026Z",
-  "lastCheckedAt": "2026-07-20T21:45:56.153Z",
+  "recommendationsUpdatedAt": "2026-07-20T22:24:59.179Z",
+  "lastCheckedAt": "2026-07-20T22:24:59.241Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "refreshMode": "checked_recommendations_unchanged",
-  "notes": [
-    "Checked at 2026-07-20T21:45:56.082Z. The scanner found the same recommendation set, so the published cards were left unchanged."
-  ],
-  "lastSuccessfulWorkflowAt": "2026-07-20T21:45:56.153Z",
+  "previousRecommendationsReplacedAt": "2026-07-20T14:52:03.026Z",
+  "refreshMode": "recommendations_updated",
+  "lastSuccessfulWorkflowAt": "2026-07-20T22:24:59.241Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
