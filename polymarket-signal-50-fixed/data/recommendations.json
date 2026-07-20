@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-07-20T00:35:31.082Z",
-  "durationSeconds": 46,
+  "generatedAt": "2026-07-20T00:38:54.694Z",
+  "durationSeconds": 36,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -24,8 +24,8 @@
     "excludedBothOutcomes": 29,
     "positionFetchErrors": 0,
     "eligibleTraders": 52,
-    "candidateMarkets": 316,
-    "marketsChecked": 98,
+    "candidateMarkets": 302,
+    "marketsChecked": 86,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -109,7 +109,7 @@
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
       "pnl": 2724947.7569523333,
-      "activePositionCount": 334
+      "activePositionCount": 320
     },
     {
       "rank": 56,
@@ -165,7 +165,7 @@
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "pnl": 1952612.975102543,
-      "activePositionCount": 53
+      "activePositionCount": 54
     },
     {
       "rank": 81,
@@ -186,14 +186,14 @@
       "name": "Pestle",
       "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
       "pnl": 1907166.457008306,
-      "activePositionCount": 43
+      "activePositionCount": 42
     },
     {
       "rank": 87,
       "name": "debased",
       "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
       "pnl": 1850047.2983761476,
-      "activePositionCount": 86
+      "activePositionCount": 67
     },
     {
       "rank": 91,
@@ -221,7 +221,7 @@
       "name": "Car",
       "wallet": "0x7c3db723f1d4d8cb9c550095203b686cb11e5c6b",
       "pnl": 1483467.8744619277,
-      "activePositionCount": 74
+      "activePositionCount": 73
     },
     {
       "rank": 111,
@@ -368,7 +368,7 @@
       "name": "Bigggggggg",
       "wallet": "0x511f9c771449162349795d17becf8b37031acbe1",
       "pnl": 976158.1442294858,
-      "activePositionCount": 827
+      "activePositionCount": 783
     },
     {
       "rank": 185,
@@ -389,7 +389,7 @@
       "name": "ROBBATTISTAFANDUELRETARD",
       "wallet": "0x13414a77a4be48988851c73dfd824d0168e70853",
       "pnl": 931110.4174813962,
-      "activePositionCount": 14
+      "activePositionCount": 13
     },
     {
       "rank": 197,
@@ -415,8 +415,8 @@
       "supporterCount": 3,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 2595.8301,
-      "avgAccountAllocation": 0.009099839104221377,
+      "totalCurrentValue": 2516.5681,
+      "avgAccountAllocation": 0.008879468238757198,
       "avgEntryPrice": 0.04312305010713913,
       "currentPrice": 0.0655,
       "rankWeight": 0.34396731177492357,
@@ -425,34 +425,34 @@
           "rank": 41,
           "name": "GCottrell93",
           "wallet": "0x94a428cfa4f84b264e01f70d93d02bc96cb36356",
-          "currentValue": 1341.2129,
-          "visibleAccountValue": 60898.445700000004,
-          "accountAllocation": 0.022023762422560482,
+          "currentValue": 1300.2598,
+          "visibleAccountValue": 61004.2716,
+          "accountAllocation": 0.02131424187023651,
           "size": 20476.5329,
           "avgPrice": 0.0317,
-          "pnl": 690.9601
+          "pnl": 650.007
         },
         {
           "rank": 87,
           "name": "debased",
           "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
-          "currentValue": 1182.5672,
-          "visibleAccountValue": 267397.6226000004,
-          "accountAllocation": 0.004422504540247914,
+          "currentValue": 1146.4583,
+          "visibleAccountValue": 254941.6227,
+          "accountAllocation": 0.004496944390085268,
           "size": 18054.4625,
           "avgPrice": 0.0478,
-          "pnl": 318.4445
+          "pnl": 282.3356
         },
         {
           "rank": 154,
           "name": "gatorr",
           "wallet": "0x93abbc022ce98d6f45d4444b594791cc4b7a9723",
-          "currentValue": 72.05,
-          "visibleAccountValue": 84441.80540000001,
-          "accountAllocation": 0.0008532503498557361,
+          "currentValue": 69.85,
+          "visibleAccountValue": 84439.60540000001,
+          "accountAllocation": 0.0008272184559498188,
           "size": 1100,
           "avgPrice": 0.179,
-          "pnl": -124.85
+          "pnl": -127.05
         }
       ],
       "decisionSide": "YES",
@@ -471,6 +471,65 @@
       "marketUrl": "https://polymarket.us/market/rdc-usfed-fomc-2026-07-29-hike25"
     },
     {
+      "conditionId": "0xaf12bd1a9ec448b428e5879f180b9b05d17cdf6a6af3c20d8a4b7327ca6bfd37",
+      "title": "Will LeBron James play for the Golden State Warriors in 2026-27?",
+      "slug": "will-lebron-james-play-for-the-golden-state-warriors-in-2026-27",
+      "eventSlug": "nba-lebron-james-next-team",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/nba-lebron-james-next-team-nr9nNXh02DJY.jpg",
+      "endDate": "2026-10-31",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Will LeBron James play for the Golden State Warriors in 2026-27?",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 2,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 5938.7162,
+      "avgAccountAllocation": 0.006294312498218783,
+      "avgEntryPrice": 0.28260217081347483,
+      "currentPrice": 0.114,
+      "rankWeight": 0.23359084863155719,
+      "supporters": [
+        {
+          "rank": 52,
+          "name": "alwayslatetotheparty",
+          "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
+          "currentValue": 19.1196,
+          "visibleAccountValue": 19910.023,
+          "accountAllocation": 0.0009603002467651593,
+          "size": 182.0918,
+          "avgPrice": 0.5,
+          "pnl": -71.9263
+        },
+        {
+          "rank": 111,
+          "name": "DLEK",
+          "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
+          "currentValue": 5919.5966,
+          "visibleAccountValue": 509067.0176000001,
+          "accountAllocation": 0.011628324749672406,
+          "size": 56377.1112,
+          "avgPrice": 0.2819,
+          "pnl": -9975.197
+        }
+      ],
+      "decisionSide": "YES",
+      "decisionChoice": "Golden State Warriors",
+      "decisionOption": "Golden State Warriors",
+      "decisionTarget": "Will LeBron James play for the Golden State Warriors in 2026-27?",
+      "decisionText": "Select “Golden State Warriors” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “Golden State Warriors” option/row/card, then click Buy YES. This applies only to the exact market question: “Will LeBron James play for the Golden State Warriors in 2026-27?”.",
+      "category": "Other",
+      "liquidity": 57269.41566,
+      "volume24hr": 93498.13593199999,
+      "usAvailable": true,
+      "usMarketSlug": "aqc-wnba-playoffs-2026-09-24-gsv",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/aqc-wnba-playoffs-2026-09-24-gsv"
+    },
+    {
       "conditionId": "0x1baf407855ceab1d3e1a9c9c1fe32b547a3ccd575e4d8eb1f7d4b5b27a1122df",
       "title": "Israel withdraws from Lebanon by August 31, 2026?",
       "slug": "israel-withdraws-from-lebanon-by-august-31-2026",
@@ -486,7 +545,7 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 14200.2668,
-      "avgAccountAllocation": 0.015881021942988002,
+      "avgAccountAllocation": 0.01587462895044404,
       "avgEntryPrice": 0.8790654885110245,
       "currentPrice": 0.965,
       "rankWeight": 0.2329570172324256,
@@ -496,8 +555,8 @@
           "name": "denizz",
           "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
           "currentValue": 7191.7517,
-          "visibleAccountValue": 1279963.0239,
-          "accountAllocation": 0.0056187183267896275,
+          "visibleAccountValue": 1283642.5172000004,
+          "accountAllocation": 0.005602612568246269,
           "size": 7452.5925,
           "avgPrice": 0.8879,
           "pnl": 574.2892
@@ -507,8 +566,8 @@
           "name": "scottilicious",
           "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
           "currentValue": 7008.5151,
-          "visibleAccountValue": 268080.4736999999,
-          "accountAllocation": 0.02614332555918638,
+          "visibleAccountValue": 268046.43619999994,
+          "accountAllocation": 0.026146645332641813,
           "size": 7262.71,
           "avgPrice": 0.87,
           "pnl": 689.9573
@@ -521,8 +580,8 @@
       "decisionText": "Select “August 31” → Buy NO",
       "decisionMeaning": "On Polymarket, choose the “August 31” option/row/card, then click Buy NO. This applies only to the exact market question: “Israel withdraws from Lebanon by August 31, 2026?”.",
       "category": "Other",
-      "liquidity": 93212.26409,
-      "volume24hr": 13897.65601,
+      "liquidity": 94768.34571,
+      "volume24hr": 13797.65601,
       "usAvailable": true,
       "usMarketSlug": "aimc-gemini-3pt5pro-2026-08-31",
       "usMatchMethod": "title_slug_similarity",
@@ -545,7 +604,7 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 1108.8271,
-      "avgAccountAllocation": 0.04233232704836598,
+      "avgAccountAllocation": 0.07367717850816731,
       "avgEntryPrice": 0.20000000000000004,
       "currentPrice": 0.585,
       "rankWeight": 0.2127999807224174,
@@ -555,8 +614,8 @@
           "name": "alwayslatetotheparty",
           "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
           "currentValue": 498.1535,
-          "visibleAccountValue": 20213.529699999992,
-          "accountAllocation": 0.024644557748862643,
+          "visibleAccountValue": 19910.023,
+          "accountAllocation": 0.0250202372945526,
           "size": 851.5444,
           "avgPrice": 0.2,
           "pnl": 327.8446
@@ -566,8 +625,8 @@
           "name": "Bigggggggg",
           "wallet": "0x511f9c771449162349795d17becf8b37031acbe1",
           "currentValue": 610.6736,
-          "visibleAccountValue": 10174.485500000012,
-          "accountAllocation": 0.06002009634786931,
+          "visibleAccountValue": 4991.850199999987,
+          "accountAllocation": 0.12233411972178203,
           "size": 1043.8866,
           "avgPrice": 0.2,
           "pnl": 401.8962
@@ -587,74 +646,15 @@
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
       "marketUrl": "https://polymarket.us/market/rdc-usfed-fomc-2026-07-29-nochng"
-    },
-    {
-      "conditionId": "0xe944062b6d02b59c5f6c39cd4d35538918053c0c7e5f8d7fa0ab1d4edb9baa46",
-      "title": "Will Anthropic have the best AI model at the end of December 2026?",
-      "slug": "will-anthropic-have-the-best-ai-model-at-the-end-of-december-2026",
-      "eventSlug": "which-company-has-best-ai-model-end-of-2026",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-anthropic-have-the-top-ai-model-on-february-28-2aPXb3voV_7Y.png",
-      "endDate": "2026-12-31",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will Anthropic have the best AI model at the end of December 2026?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 2,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 623.2508,
-      "avgAccountAllocation": 0.017622950170652126,
-      "avgEntryPrice": 0.43304930368838335,
-      "currentPrice": 0.655,
-      "rankWeight": 0.2127999807224174,
-      "supporters": [
-        {
-          "rank": 52,
-          "name": "alwayslatetotheparty",
-          "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
-          "currentValue": 532.8542,
-          "visibleAccountValue": 20213.529699999992,
-          "accountAllocation": 0.026361264356516628,
-          "size": 813.5179,
-          "avgPrice": 0.5,
-          "pnl": 126.0952
-        },
-        {
-          "rank": 182,
-          "name": "Bigggggggg",
-          "wallet": "0x511f9c771449162349795d17becf8b37031acbe1",
-          "currentValue": 90.3966,
-          "visibleAccountValue": 10174.485500000012,
-          "accountAllocation": 0.008884635984787625,
-          "size": 138.0101,
-          "avgPrice": 0.0384,
-          "pnl": 85.0885
-        }
-      ],
-      "decisionSide": "YES",
-      "decisionChoice": "Anthropic",
-      "decisionOption": "Anthropic",
-      "decisionTarget": "Will Anthropic have the best AI model at the end of December 2026?",
-      "decisionText": "Select “Anthropic” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Anthropic” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Anthropic have the best AI model at the end of December 2026?”.",
-      "category": "Other",
-      "liquidity": 26260.4658,
-      "volume24hr": 480.298472,
-      "usAvailable": true,
-      "usMarketSlug": "aimrc-code1-2026-12-31-anthro",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aimrc-code1-2026-12-31-anthro"
     }
   ],
-  "recommendationsUpdatedAt": "2026-07-20T00:35:31.082Z",
-  "lastCheckedAt": "2026-07-20T00:35:31.156Z",
+  "recommendationsUpdatedAt": "2026-07-20T00:38:54.694Z",
+  "lastCheckedAt": "2026-07-20T00:38:54.765Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-07-20T00:33:37.903Z",
+  "previousRecommendationsReplacedAt": "2026-07-20T00:35:31.082Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-07-20T00:35:31.156Z",
+  "lastSuccessfulWorkflowAt": "2026-07-20T00:38:54.765Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
