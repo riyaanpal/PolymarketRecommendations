@@ -15,6 +15,7 @@ export const DEFAULT_CONFIG = Object.freeze({
   minEligibleBeforeRecommendations: 50,
   maxEligibleTraders: 300,
   excludeCryptoMarkets: true,
+  excludeIranMarkets: true,
   excludeZeroAvgAccountAllocation: true,
   excludeExtremeMarketPrices: true,
   excludedRoundedMarketPrices: [0, 99, 100],
@@ -852,6 +853,27 @@ const CRYPTO_TEXT_PATTERNS = [
   /\bsui\b/i
 ];
 
+const IRAN_CATEGORY_PATTERNS = [
+  /\biran\b/i,
+  /\biranian\b/i,
+  /\bmiddle\s+east\b/i
+];
+
+const IRAN_TEXT_PATTERNS = [
+  /\biran\b/i,
+  /\biranian(?:s)?\b/i,
+  /\bislamic\s+republic\s+of\s+iran\b/i,
+  /\btehran\b/i,
+  /\bkhamenei\b/i,
+  /\bayatollah\b/i,
+  /\birgc\b/i,
+  /\bislamic\s+revolutionary\s+guard\b/i,
+  /\biran\s*[-–—/]\s*israel\b/i,
+  /\bisrael\s*[-–—/]\s*iran\b/i,
+  /\bus\s*[-–—/]\s*iran\b/i,
+  /\biran\s*[-–—/]\s*us\b/i
+];
+
 function fieldTexts(...values) {
   return values
     .flatMap((value) => {
@@ -906,6 +928,39 @@ export function isCryptoMarket(candidate = null, metadata = null, usMetadata = n
   );
 
   return marketTexts.some((text) => CRYPTO_TEXT_PATTERNS.some((pattern) => pattern.test(text)));
+}
+
+export function isIranMarket(candidate = null, metadata = null, usMetadata = null) {
+  const categoryTexts = fieldTexts(
+    candidate?.category,
+    metadata?.category,
+    metadata?.categories,
+    metadata?.tags,
+    usMetadata?.category,
+    usMetadata?.categories,
+    usMetadata?.tags
+  );
+
+  if (categoryTexts.some((text) => IRAN_CATEGORY_PATTERNS.some((pattern) => pattern.test(text)))) {
+    return true;
+  }
+
+  const marketTexts = fieldTexts(
+    candidate?.title,
+    candidate?.slug,
+    candidate?.eventSlug,
+    candidate?.rawPositionTitle,
+    metadata?.question,
+    metadata?.title,
+    metadata?.slug,
+    metadata?.eventSlug,
+    metadata?.events,
+    usMetadata?.question,
+    usMetadata?.title,
+    usMetadata?.slug
+  );
+
+  return marketTexts.some((text) => IRAN_TEXT_PATTERNS.some((pattern) => pattern.test(text)));
 }
 
 
@@ -1313,8 +1368,10 @@ export async function selectRecommendations(eligible, options = {}) {
 
       const cryptoIsExcluded =
         config.excludeCryptoMarkets !== false && isCryptoMarket(chunk[i], metadataRows[i], usMetadataRows[i]);
+      const iranIsExcluded =
+        config.excludeIranMarkets !== false && isIranMarket(chunk[i], metadataRows[i], usMetadataRows[i]);
 
-      if (!cryptoIsExcluded && internationalIsTradeable && usIsTradeable) {
+      if (!cryptoIsExcluded && !iranIsExcluded && internationalIsTradeable && usIsTradeable) {
         const enriched = enrichCandidate(chunk[i], metadataRows[i], usMetadataRows[i]);
         const signalExclusionReason = excludedSignalReason(enriched, config);
 
