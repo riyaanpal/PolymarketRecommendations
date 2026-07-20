@@ -15,6 +15,9 @@ export const DEFAULT_CONFIG = Object.freeze({
   minEligibleBeforeRecommendations: 50,
   maxEligibleTraders: 300,
   excludeCryptoMarkets: true,
+  excludeZeroAvgAccountAllocation: true,
+  excludeExtremeMarketPrices: true,
+  excludedRoundedMarketPrices: [0, 99, 100],
   usMatchMinScore: 0.68,
   requireUsAvailable: true,
   useCachedUsMarkets: true,
@@ -905,6 +908,29 @@ export function isCryptoMarket(candidate = null, metadata = null, usMetadata = n
   return marketTexts.some((text) => CRYPTO_TEXT_PATTERNS.some((pattern) => pattern.test(text)));
 }
 
+
+function roundedDisplayPercent(value) {
+  const numeric = number(value, NaN);
+  return Number.isFinite(numeric) ? Math.round(numeric * 100) : null;
+}
+
+export function excludedSignalReason(candidate, config = DEFAULT_CONFIG) {
+  if (config.excludeZeroAvgAccountAllocation !== false) {
+    const allocationPercent = roundedDisplayPercent(candidate?.avgAccountAllocation);
+    if (allocationPercent === 0) return "zero_avg_account_allocation";
+  }
+
+  if (config.excludeExtremeMarketPrices !== false) {
+    const pricePercent = roundedDisplayPercent(candidate?.currentPrice);
+    const blockedPrices = new Set(config.excludedRoundedMarketPrices ?? [0, 99, 100]);
+    if (pricePercent !== null && blockedPrices.has(pricePercent)) {
+      return `extreme_market_price_${pricePercent}`;
+    }
+  }
+
+  return "";
+}
+
 export function isTradeableMarket(metadata) {
   return Boolean(
     metadata &&
@@ -1289,14 +1315,19 @@ export async function selectRecommendations(eligible, options = {}) {
         config.excludeCryptoMarkets !== false && isCryptoMarket(chunk[i], metadataRows[i], usMetadataRows[i]);
 
       if (!cryptoIsExcluded && internationalIsTradeable && usIsTradeable) {
-        const marketKey = distinctMarketKey(chunk[i], metadataRows[i]);
+        const enriched = enrichCandidate(chunk[i], metadataRows[i], usMetadataRows[i]);
+        const signalExclusionReason = excludedSignalReason(enriched, config);
 
-        // Keep only the strongest-ranked child market from each Polymarket event.
-        // This prevents the five cards from being the same event expressed through
-        // several outcome-specific binary markets.
-        if (!selectedMarketKeys.has(marketKey)) {
-          selectedMarketKeys.add(marketKey);
-          recommendations.push(enrichCandidate(chunk[i], metadataRows[i], usMetadataRows[i]));
+        if (!signalExclusionReason) {
+          const marketKey = distinctMarketKey(chunk[i], metadataRows[i]);
+
+          // Keep only the strongest-ranked child market from each Polymarket event.
+          // This prevents the five cards from being the same event expressed through
+          // several outcome-specific binary markets.
+          if (!selectedMarketKeys.has(marketKey)) {
+            selectedMarketKeys.add(marketKey);
+            recommendations.push(enriched);
+          }
         }
       }
       if (recommendations.length >= config.recommendationCount) break;
