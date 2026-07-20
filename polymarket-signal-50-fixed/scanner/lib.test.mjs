@@ -5,6 +5,7 @@ import {
   buildUsMarketSnapshot,
   createDecisionDetails,
   enrichCandidate,
+  excludedSignalReason,
   extractDecisionChoice,
   extractDecisionOption,
   hasBothOutcomes,
@@ -816,4 +817,110 @@ test("skips crypto markets and keeps scanning for non-crypto recommendations", a
 
   assert.equal(result.recommendations.length, 1);
   assert.equal(result.recommendations[0].slug, "will-arsenal-win-the-premier-league");
+});
+
+test("flags zero displayed allocation and extreme displayed market prices", () => {
+  assert.equal(
+    excludedSignalReason({ avgAccountAllocation: 0.004, currentPrice: 0.55 }),
+    "zero_avg_account_allocation"
+  );
+  assert.equal(
+    excludedSignalReason({ avgAccountAllocation: 0.05, currentPrice: 0.004 }),
+    "extreme_market_price_0"
+  );
+  assert.equal(
+    excludedSignalReason({ avgAccountAllocation: 0.05, currentPrice: 0.99 }),
+    "extreme_market_price_99"
+  );
+  assert.equal(
+    excludedSignalReason({ avgAccountAllocation: 0.05, currentPrice: 1 }),
+    "extreme_market_price_100"
+  );
+  assert.equal(
+    excludedSignalReason({ avgAccountAllocation: 0.05, currentPrice: 0.55 }),
+    ""
+  );
+});
+
+test("skips recommendations with 0% allocation or 0%, 99%, or 100% displayed price", async () => {
+  const tinyAllocation = position({
+    conditionId: "tiny-allocation-market",
+    title: "Will tiny allocation happen?",
+    slug: "will-tiny-allocation-happen",
+    eventSlug: "tiny-allocation-event",
+    currentValue: 1,
+    curPrice: 0.55
+  });
+  const extremePrice = position({
+    conditionId: "extreme-price-market",
+    title: "Will extreme price happen?",
+    slug: "will-extreme-price-happen",
+    eventSlug: "extreme-price-event",
+    currentValue: 99,
+    curPrice: 0.99
+  });
+  const valid = position({
+    conditionId: "valid-market",
+    title: "Will valid market happen?",
+    slug: "will-valid-market-happen",
+    eventSlug: "valid-event",
+    currentValue: 40,
+    curPrice: 0.55
+  });
+
+  const eligible = [
+    trader(1, [
+      tinyAllocation,
+      extremePrice,
+      valid,
+      position({ conditionId: "large-private-denominator-1", slug: "other-1", title: "Other 1", currentValue: 999 })
+    ]),
+    trader(2, [
+      tinyAllocation,
+      extremePrice,
+      valid,
+      position({ conditionId: "large-private-denominator-2", slug: "other-2", title: "Other 2", currentValue: 999 })
+    ])
+  ];
+
+  const fetchImpl = async (url) => {
+    const text = String(url);
+    let price = "0.55";
+    if (text.includes("extreme-price")) price = "0.99";
+    return {
+      ok: true,
+      json: async () => ({
+        active: true,
+        closed: false,
+        archived: false,
+        acceptingOrders: true,
+        question: text.includes("tiny-allocation")
+          ? "Will tiny allocation happen?"
+          : text.includes("extreme-price")
+            ? "Will extreme price happen?"
+            : "Will valid market happen?",
+        outcomes: '["Yes", "No"]',
+        outcomePrices: `["${price}", "${(1 - Number(price)).toFixed(2)}"]`
+      }),
+      text: async () => ""
+    };
+  };
+
+  const result = await selectRecommendations(eligible, {
+    fetchImpl,
+    config: {
+      minSharedSupporters: 2,
+      recommendationCount: 3,
+      requestConcurrency: 3,
+      maxMarketChecks: 20,
+      requireUsAvailable: false,
+      excludeCryptoMarkets: true,
+      excludeZeroAvgAccountAllocation: true,
+      excludeExtremeMarketPrices: true
+    }
+  });
+
+  assert.deepEqual(result.recommendations.map((item) => item.slug), ["will-valid-market-happen"]);
+  assert.equal(Math.round(result.recommendations[0].avgAccountAllocation * 100) > 0, true);
+  assert.equal(Math.round(result.recommendations[0].currentPrice * 100), 55);
 });
