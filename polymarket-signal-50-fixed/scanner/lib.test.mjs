@@ -10,6 +10,7 @@ import {
   extractDecisionOption,
   hasBothOutcomes,
   isCryptoMarket,
+  isIranMarket,
   isTradeableMarket,
   isUsTradeableMarket,
   normalizeMatchText,
@@ -923,4 +924,70 @@ test("skips recommendations with 0% allocation or 0%, 99%, or 100% displayed pri
   assert.deepEqual(result.recommendations.map((item) => item.slug), ["will-valid-market-happen"]);
   assert.equal(Math.round(result.recommendations[0].avgAccountAllocation * 100) > 0, true);
   assert.equal(Math.round(result.recommendations[0].currentPrice * 100), 55);
+});
+
+
+
+test("detects Iran markets from title, question, slug, or category", () => {
+  assert.equal(isIranMarket({ title: "Will Iran and Israel reach a ceasefire?" }), true);
+  assert.equal(isIranMarket({ slug: "will-iran-nuclear-talks-resume" }), true);
+  assert.equal(isIranMarket({}, { category: "Iran" }), true);
+  assert.equal(isIranMarket({}, { question: "Will Tehran announce a new agreement?" }), true);
+  assert.equal(isIranMarket({ title: "Will Arsenal win the Premier League?" }), false);
+});
+
+test("skips Iran-related markets and keeps scanning for non-Iran recommendations", async () => {
+  const iran = position({
+    conditionId: "iran-market",
+    title: "Will Iran and Israel reach a ceasefire?",
+    slug: "will-iran-and-israel-reach-a-ceasefire",
+    eventSlug: "iran-israel-ceasefire",
+    currentValue: 100
+  });
+  const sports = position({
+    conditionId: "sports-market",
+    title: "Will Arsenal win the Premier League?",
+    slug: "will-arsenal-win-the-premier-league",
+    eventSlug: "arsenal-premier-league",
+    currentValue: 50
+  });
+
+  const eligible = [trader(1, [iran, sports]), trader(2, [iran, sports])];
+
+  const fetchImpl = async (url) => {
+    const text = String(url);
+    const isIran = text.includes("iran");
+    return {
+      ok: true,
+      json: async () => ({
+        active: true,
+        closed: false,
+        archived: false,
+        acceptingOrders: true,
+        question: isIran
+          ? "Will Iran and Israel reach a ceasefire?"
+          : "Will Arsenal win the Premier League?",
+        category: isIran ? "Politics" : "Sports",
+        outcomes: '["Yes", "No"]',
+        outcomePrices: '["0.60", "0.40"]'
+      }),
+      text: async () => ""
+    };
+  };
+
+  const result = await selectRecommendations(eligible, {
+    fetchImpl,
+    config: {
+      minSharedSupporters: 2,
+      recommendationCount: 2,
+      requestConcurrency: 2,
+      maxMarketChecks: 20,
+      requireUsAvailable: false,
+      excludeCryptoMarkets: true,
+      excludeIranMarkets: true
+    }
+  });
+
+  assert.equal(result.recommendations.length, 1);
+  assert.equal(result.recommendations[0].slug, "will-arsenal-win-the-premier-league");
 });
