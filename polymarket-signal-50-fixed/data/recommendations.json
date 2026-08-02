@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-08-02T18:33:37.663Z",
-  "durationSeconds": 34,
+  "durationSeconds": 28,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -19,12 +19,12 @@
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
-    "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 191,
-    "excludedBothOutcomes": 55,
+    "leaderboardUsersInspected": 250,
+    "skippedNoPositions": 159,
+    "excludedBothOutcomes": 41,
     "positionFetchErrors": 0,
-    "eligibleTraders": 54,
-    "candidateMarkets": 173,
+    "eligibleTraders": 50,
+    "candidateMarkets": 171,
     "marketsChecked": 49,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -45,28 +45,28 @@
       "rank": 22,
       "name": "beachboy4",
       "wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
-      "pnl": 5217448.661125827,
+      "pnl": 5220131.805339286,
       "activePositionCount": 3
     },
     {
       "rank": 26,
       "name": "0x006cc834Cc092684F1B56626E23BEdB3835c16ea-1729683673397",
       "wallet": "0x006cc834cc092684f1b56626e23bedb3835c16ea",
-      "pnl": 4718499.006775807,
+      "pnl": 4718500.454070807,
       "activePositionCount": 3
     },
     {
       "rank": 30,
       "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
       "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-      "pnl": 4236958.651712026,
+      "pnl": 4236958.6517120255,
       "activePositionCount": 4
     },
     {
       "rank": 41,
       "name": "GCottrell93",
       "wallet": "0x94a428cfa4f84b264e01f70d93d02bc96cb36356",
-      "pnl": 3453827.4477771297,
+      "pnl": 3453754.058287972,
       "activePositionCount": 2
     },
     {
@@ -196,11 +196,18 @@
       "activePositionCount": 4
     },
     {
+      "rank": 111,
+      "name": "highnetworth",
+      "wallet": "0xbb5fbe810633ab08d106b82db84418a0e2ca2e21",
+      "pnl": 1490949.897989357,
+      "activePositionCount": 1
+    },
+    {
       "rank": 116,
       "name": "coinman2",
       "wallet": "0x55be7aa03ecfbe37aa5460db791205f7ac9ddca3",
       "pnl": 1466203.6638400792,
-      "activePositionCount": 15
+      "activePositionCount": 16
     },
     {
       "rank": 117,
@@ -231,6 +238,13 @@
       "activePositionCount": 37
     },
     {
+      "rank": 144,
+      "name": "curie",
+      "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
+      "pnl": 1214664.4652992175,
+      "activePositionCount": 58
+    },
+    {
       "rank": 146,
       "name": "Hugewinner",
       "wallet": "0xc8ec6d4cef5c5fe8409ef69303c37f05b678e8f1",
@@ -257,6 +271,13 @@
       "wallet": "0x8a4c788f043023b8b28a762216d037e9f148532b",
       "pnl": 1081681.6889657434,
       "activePositionCount": 47
+    },
+    {
+      "rank": 167,
+      "name": "STOPTHETROLLING",
+      "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
+      "pnl": 1047465.5362741773,
+      "activePositionCount": 9
     },
     {
       "rank": 171,
@@ -333,7 +354,7 @@
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
       "pnl": 832050.3977073594,
-      "activePositionCount": 559
+      "activePositionCount": 556
     },
     {
       "rank": 230,
@@ -362,55 +383,6 @@
       "wallet": "0xe899b5ea69afb161da7a35597b6fe70398860899",
       "pnl": 789712.0926400113,
       "activePositionCount": 10
-    },
-    {
-      "rank": 265,
-      "name": "RJW1",
-      "wallet": "0x85f031d069de300055900c4055c1baeb6bde3f67",
-      "pnl": 731280.9450287715,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 270,
-      "name": "GamblingOdyssey",
-      "wallet": "0xe5241830e8876c115d7dc8311ad9f43d85fdd34f",
-      "pnl": 721358.6837053425,
-      "activePositionCount": 9
-    },
-    {
-      "rank": 275,
-      "name": "chungguskhan",
-      "wallet": "0x7744bfd749a70020d16a1fcbac1d064761c9999e",
-      "pnl": 714092.2750039711,
-      "activePositionCount": 5
-    },
-    {
-      "rank": 280,
-      "name": "AvocadosFromMexico",
-      "wallet": "0x033f0346c007323030eb420305ffede19a95618e",
-      "pnl": 696537.5080942917,
-      "activePositionCount": 16
-    },
-    {
-      "rank": 285,
-      "name": "0x8a3aB8120807bD64a3De48695110e390fa2ceB9a-1771005965025",
-      "wallet": "0x8a3ab8120807bd64a3de48695110e390fa2ceb9a",
-      "pnl": 677519.258811397,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 287,
-      "name": "WordleAddict",
-      "wallet": "0xe25b9180f5687aa85bd94ee309bb72a464320f1b",
-      "pnl": 672397.989939274,
-      "activePositionCount": 5
-    },
-    {
-      "rank": 293,
-      "name": "phonesculptor",
-      "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
-      "pnl": 666331.9804860736,
-      "activePositionCount": 9
     }
   ],
   "recommendations": [
@@ -674,12 +646,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-02T18:33:37.663Z",
-  "lastCheckedAt": "2026-08-02T18:33:37.733Z",
+  "lastCheckedAt": "2026-08-02T19:18:48.356Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-02T17:10:48.764Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-02T18:33:37.733Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-08-02T19:18:48.277Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-08-02T19:18:48.356Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
