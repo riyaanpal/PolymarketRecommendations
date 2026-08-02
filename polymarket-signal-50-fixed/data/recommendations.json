@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-08-02T18:33:37.663Z",
-  "durationSeconds": 34,
+  "durationSeconds": 29,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -19,12 +19,12 @@
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
-    "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 190,
-    "excludedBothOutcomes": 53,
+    "leaderboardUsersInspected": 250,
+    "skippedNoPositions": 158,
+    "excludedBothOutcomes": 42,
     "positionFetchErrors": 0,
-    "eligibleTraders": 57,
-    "candidateMarkets": 172,
+    "eligibleTraders": 50,
+    "candidateMarkets": 170,
     "marketsChecked": 49,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -221,7 +221,7 @@
       "name": "Djdjdjekekek",
       "wallet": "0x6d20c35f65d9899b6d6b74f8466e824580f9a165",
       "pnl": 1356731.9597118036,
-      "activePositionCount": 1
+      "activePositionCount": 2
     },
     {
       "rank": 134,
@@ -229,6 +229,13 @@
       "wallet": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
       "pnl": 1279906.380330964,
       "activePositionCount": 4
+    },
+    {
+      "rank": 135,
+      "name": "VARryKane",
+      "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
+      "pnl": 1271391.997506449,
+      "activePositionCount": 1
     },
     {
       "rank": 138,
@@ -376,62 +383,6 @@
       "wallet": "0xe16d3f2a5807999b358affd9445c3a09e45e5e30",
       "pnl": 785264.7893955817,
       "activePositionCount": 4
-    },
-    {
-      "rank": 255,
-      "name": "0xb55fa1296E6ec55D0cE53d93B9237389f11764d4-1777575277609",
-      "wallet": "0xb55fa1296e6ec55d0ce53d93b9237389f11764d4",
-      "pnl": 765915.1015582867,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 265,
-      "name": "RJW1",
-      "wallet": "0x85f031d069de300055900c4055c1baeb6bde3f67",
-      "pnl": 731280.9561287715,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 274,
-      "name": "chungguskhan",
-      "wallet": "0x7744bfd749a70020d16a1fcbac1d064761c9999e",
-      "pnl": 714062.2945403281,
-      "activePositionCount": 5
-    },
-    {
-      "rank": 275,
-      "name": "GamblingOdyssey",
-      "wallet": "0xe5241830e8876c115d7dc8311ad9f43d85fdd34f",
-      "pnl": 713434.757632104,
-      "activePositionCount": 8
-    },
-    {
-      "rank": 277,
-      "name": "phonesculptor",
-      "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
-      "pnl": 708438.0771690474,
-      "activePositionCount": 9
-    },
-    {
-      "rank": 281,
-      "name": "AvocadosFromMexico",
-      "wallet": "0x033f0346c007323030eb420305ffede19a95618e",
-      "pnl": 696533.8913942921,
-      "activePositionCount": 16
-    },
-    {
-      "rank": 286,
-      "name": "0x8a3aB8120807bD64a3De48695110e390fa2ceB9a-1771005965025",
-      "wallet": "0x8a3ab8120807bd64a3de48695110e390fa2ceb9a",
-      "pnl": 677519.2588113969,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 288,
-      "name": "WordleAddict",
-      "wallet": "0xe25b9180f5687aa85bd94ee309bb72a464320f1b",
-      "pnl": 672397.9899757494,
-      "activePositionCount": 5
     }
   ],
   "recommendations": [
@@ -695,14 +646,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-02T18:33:37.663Z",
-  "lastCheckedAt": "2026-08-02T19:52:51.952Z",
+  "lastCheckedAt": "2026-08-02T20:00:21.895Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
   "refreshMode": "checked_recommendations_unchanged",
   "notes": [
-    "Checked at 2026-08-02T19:52:51.878Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+    "Checked at 2026-08-02T20:00:21.824Z. The scanner found the same recommendation set, so the published cards were left unchanged."
   ],
-  "lastSuccessfulWorkflowAt": "2026-08-02T19:52:51.952Z",
+  "lastSuccessfulWorkflowAt": "2026-08-02T20:00:21.895Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
