@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-08-14T21:33:45.188Z",
-  "durationSeconds": 33,
+  "generatedAt": "2026-08-14T21:53:42.965Z",
+  "durationSeconds": 39,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -19,13 +19,13 @@
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
-    "leaderboardUsersInspected": 250,
-    "skippedNoPositions": 159,
-    "excludedBothOutcomes": 41,
+    "leaderboardUsersInspected": 300,
+    "skippedNoPositions": 189,
+    "excludedBothOutcomes": 51,
     "positionFetchErrors": 0,
-    "eligibleTraders": 50,
-    "candidateMarkets": 506,
-    "marketsChecked": 39,
+    "eligibleTraders": 60,
+    "candidateMarkets": 452,
+    "marketsChecked": 41,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -207,7 +207,7 @@
       "name": "matanovik",
       "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
       "pnl": 1262891.949328746,
-      "activePositionCount": 1
+      "activePositionCount": 2
     },
     {
       "rank": 141,
@@ -235,7 +235,7 @@
       "name": "IMAREALPERSON",
       "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
       "pnl": 1145951.2800027519,
-      "activePositionCount": 3
+      "activePositionCount": 2
     },
     {
       "rank": 159,
@@ -290,77 +290,77 @@
       "rank": 205,
       "name": "one8tyfive",
       "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
-      "pnl": 903987.4224597276,
+      "pnl": 903987.4224633618,
       "activePositionCount": 5
     },
     {
-      "rank": 206,
-      "name": "donthackme",
-      "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-      "pnl": 903424.0895008575,
-      "activePositionCount": 2894
+      "rank": 207,
+      "name": "easyclap",
+      "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
+      "pnl": 891425.4259631765,
+      "activePositionCount": 16
     },
     {
       "rank": 208,
-      "name": "easyclap",
-      "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
-      "pnl": 891588.6775638177,
-      "activePositionCount": 16
+      "name": "donthackme",
+      "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
+      "pnl": 890363.2730963315,
+      "activePositionCount": 2860
     },
     {
       "rank": 210,
       "name": "Nexuus",
       "wallet": "0xce5bec63b40392845a9a504915f607c8e03a047a",
-      "pnl": 879903.3121410828,
+      "pnl": 879903.3081410731,
       "activePositionCount": 48
     },
     {
       "rank": 211,
       "name": "zerosmart",
       "wallet": "0x275575bb11522eb29f82fe0a601d7c4dc94b5016",
-      "pnl": 879646.4616339144,
+      "pnl": 879646.4616339142,
       "activePositionCount": 12
     },
     {
-      "rank": 215,
+      "rank": 214,
       "name": "johnbaster",
       "wallet": "0x31864feb9d25dee93728c6225ba891530967e9ca",
-      "pnl": 872144.7092572047,
-      "activePositionCount": 3
+      "pnl": 872144.7092572043,
+      "activePositionCount": 2
     },
     {
       "rank": 222,
       "name": "RememberAmalek",
       "wallet": "0x6139c42e48cf190e67a0a85d492413b499336b7a",
-      "pnl": 855699.7792941572,
+      "pnl": 856303.1365269811,
       "activePositionCount": 169
     },
     {
       "rank": 226,
       "name": "kingofcoinflips",
       "wallet": "0xe9c6312464b52aa3eff13d822b003282075995c9",
-      "pnl": 847668.6140240678,
+      "pnl": 847656.3389230927,
       "activePositionCount": 23
     },
     {
       "rank": 230,
       "name": "HaileyWelch",
       "wallet": "0x80cd8310aa624521e9e1b2b53b568cafb0ef0273",
-      "pnl": 839247.5518411646,
+      "pnl": 839248.9785219218,
       "activePositionCount": 4
     },
     {
       "rank": 235,
       "name": "alwayslatetotheparty",
       "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
-      "pnl": 827069.5444027648,
+      "pnl": 827070.7902863818,
       "activePositionCount": 296
     },
     {
       "rank": 236,
       "name": "Magamyman",
       "wallet": "0x4dfd481c16d9995b809780fd8a9808e8689f6e4a",
-      "pnl": 825252.6887289468,
+      "pnl": 825252.688728947,
       "activePositionCount": 6
     },
     {
@@ -371,18 +371,88 @@
       "activePositionCount": 7
     },
     {
-      "rank": 244,
-      "name": "AnonymousUsername",
-      "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-      "pnl": 802697.8476386861,
-      "activePositionCount": 305
-    },
-    {
-      "rank": 245,
+      "rank": 243,
       "name": "bomber",
       "wallet": "0xd776f0a066fd3014ecfac89cfd414440982bffeb",
-      "pnl": 802444.208633352,
+      "pnl": 802444.2086333518,
       "activePositionCount": 1
+    },
+    {
+      "rank": 259,
+      "name": "SlavaUkraini",
+      "wallet": "0xe899b5ea69afb161da7a35597b6fe70398860899",
+      "pnl": 752465.0967091658,
+      "activePositionCount": 7
+    },
+    {
+      "rank": 270,
+      "name": "GamblingOdyssey",
+      "wallet": "0xe5241830e8876c115d7dc8311ad9f43d85fdd34f",
+      "pnl": 717750.6346645103,
+      "activePositionCount": 4
+    },
+    {
+      "rank": 276,
+      "name": "chungguskhan",
+      "wallet": "0x7744bfd749a70020d16a1fcbac1d064761c9999e",
+      "pnl": 706948.0679761743,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 279,
+      "name": "RJW1",
+      "wallet": "0x85f031d069de300055900c4055c1baeb6bde3f67",
+      "pnl": 702796.6957484916,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 282,
+      "name": "02-",
+      "wallet": "0x10ff6cd4b1b5669d4ca87faebae0c869ad315088",
+      "pnl": 697785.4124067147,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 283,
+      "name": "AvocadosFromMexico",
+      "wallet": "0x033f0346c007323030eb420305ffede19a95618e",
+      "pnl": 696517.0213243738,
+      "activePositionCount": 15
+    },
+    {
+      "rank": 287,
+      "name": "WordleAddict",
+      "wallet": "0xe25b9180f5687aa85bd94ee309bb72a464320f1b",
+      "pnl": 683734.6277576691,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 289,
+      "name": "afkpnlucl",
+      "wallet": "0x55eca3687ea7d69632ffe0f297ea3d5158bb8c7d",
+      "pnl": 679690.2778342762,
+      "activePositionCount": 69
+    },
+    {
+      "rank": 290,
+      "name": "coali10",
+      "wallet": "0x7bc14171ccb0d3e6bac219ec6a76211826e28db4",
+      "pnl": 679267.2237807475,
+      "activePositionCount": 26
+    },
+    {
+      "rank": 292,
+      "name": "0x228B8d11EBa89BF1c554f8879a9293B7106DaF4c-1765442354872",
+      "wallet": "0x228b8d11eba89bf1c554f8879a9293b7106daf4c",
+      "pnl": 673824.4673980838,
+      "activePositionCount": 6
+    },
+    {
+      "rank": 293,
+      "name": "RenanPresidente.",
+      "wallet": "0x88c4919de76e526d55a32c1f8afb439dd1f1129a",
+      "pnl": 673156.8385887144,
+      "activePositionCount": 18
     }
   ],
   "recommendations": [
@@ -401,11 +471,11 @@
       "supporterCount": 4,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 72612.4504,
-      "avgAccountAllocation": 0.25833018041169376,
-      "avgEntryPrice": 0.48598184957414153,
+      "totalCurrentValue": 96431.114,
+      "avgAccountAllocation": 0.2915548409050811,
+      "avgEntryPrice": 0.4565136493216514,
       "currentPrice": 0.4655,
-      "rankWeight": 0.4921192365896332,
+      "rankWeight": 0.48795794626506167,
       "supporters": [
         {
           "rank": 24,
@@ -430,26 +500,26 @@
           "pnl": -3212.4047
         },
         {
-          "rank": 206,
+          "rank": 208,
           "name": "donthackme",
           "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
           "currentValue": 109.3269,
-          "visibleAccountValue": 82822.4122999999,
-          "accountAllocation": 0.001320015886569391,
+          "visibleAccountValue": 82693.38989999994,
+          "accountAllocation": 0.0013220754419695168,
           "size": 234.8591,
           "avgPrice": 0.4992,
           "pnl": -7.9274
         },
         {
-          "rank": 244,
-          "name": "AnonymousUsername",
-          "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-          "currentValue": 4092.8728,
-          "visibleAccountValue": 232293.78580000004,
-          "accountAllocation": 0.017619381361858193,
-          "size": 8792.4228,
-          "avgPrice": 0.4623,
-          "pnl": 27.6521
+          "rank": 276,
+          "name": "chungguskhan",
+          "wallet": "0x7744bfd749a70020d16a1fcbac1d064761c9999e",
+          "currentValue": 27911.5364,
+          "visibleAccountValue": 185439.0438,
+          "accountAllocation": 0.15051596378000737,
+          "size": 59960.336,
+          "avgPrice": 0.3807,
+          "pnl": 5079.4798
         }
       ],
       "decisionSide": "YES",
@@ -459,175 +529,13 @@
       "decisionText": "Select “J.D. Vance” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “J.D. Vance” option/row/card, then click Buy YES. This applies only to the exact market question: “Will J.D. Vance win the 2028 Republican presidential nomination?”.",
       "category": "Other",
-      "liquidity": 328530.73142,
-      "volume24hr": 13684.881789,
+      "liquidity": 329872.706,
+      "volume24hr": 13662.70884,
       "usAvailable": true,
       "usMarketSlug": "ewc-usp-2028-11-07-jdvan",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
       "marketUrl": "https://polymarket.us/market/ewc-usp-2028-11-07-jdvan"
-    },
-    {
-      "conditionId": "0x4567b275e6b667a6217f5cb4f06a797d3a1eaf1d0281fb5bc8c75e2046ae7e57",
-      "title": "Will Gavin Newsom win the 2028 US Presidential Election?",
-      "slug": "will-gavin-newsom-win-the-2028-us-presidential-election",
-      "eventSlug": "presidential-election-winner-2028",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-gavin-newsom-win-the-2028-us-presidential-election-x9lPL7_gXn--.png",
-      "endDate": "2028-11-07",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will Gavin Newsom win the 2028 US Presidential Election?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 4,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 22835.9632,
-      "avgAccountAllocation": 0.015516094231495433,
-      "avgEntryPrice": 0.23646421458470598,
-      "currentPrice": 0.0895,
-      "rankWeight": 0.3258895209879158,
-      "supporters": [
-        {
-          "rank": 103,
-          "name": "scottilicious",
-          "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
-          "currentValue": 1213.7291,
-          "visibleAccountValue": 597102.8605999999,
-          "accountAllocation": 0.002032696843522709,
-          "size": 13561.22,
-          "avgPrice": 0.18,
-          "pnl": -1227.2905
-        },
-        {
-          "rank": 117,
-          "name": "gopfan2",
-          "wallet": "0xf2f6af4f27ec2dcf4072095ab804016e14cd5817",
-          "currentValue": 17094.479,
-          "visibleAccountValue": 451227.9408999999,
-          "accountAllocation": 0.03788435389418502,
-          "size": 190999.7658,
-          "avgPrice": 0.1722,
-          "pnl": -15797.3996
-        },
-        {
-          "rank": 199,
-          "name": "Anointed-Connect",
-          "wallet": "0x8f037a2e4fd49d11267f4ab874ab7ba745ac64d6",
-          "currentValue": 34.3518,
-          "visibleAccountValue": 12252.2933,
-          "accountAllocation": 0.002803703695209451,
-          "size": 383.82,
-          "avgPrice": 0.171,
-          "pnl": -31.2814
-        },
-        {
-          "rank": 244,
-          "name": "AnonymousUsername",
-          "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-          "currentValue": 4493.4033,
-          "visibleAccountValue": 232293.78580000004,
-          "accountAllocation": 0.019343622493064552,
-          "size": 50205.6242,
-          "avgPrice": 0.4967,
-          "pnl": -20446.0899
-        }
-      ],
-      "decisionSide": "YES",
-      "decisionChoice": "Gavin Newsom",
-      "decisionOption": "Gavin Newsom",
-      "decisionTarget": "Will Gavin Newsom win the 2028 US Presidential Election?",
-      "decisionText": "Select “Gavin Newsom” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Gavin Newsom” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Gavin Newsom win the 2028 US Presidential Election?”.",
-      "category": "Other",
-      "liquidity": 445606.18019,
-      "volume24hr": 50054.785297,
-      "usAvailable": true,
-      "usMarketSlug": "ewc-usp-2028-11-07-gavnew",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/ewc-usp-2028-11-07-gavnew"
-    },
-    {
-      "conditionId": "0xd65891729ce093cc12236856837eba1a0872fc7998fd4294c21346f7db68079c",
-      "title": "Will Josh Shapiro win the 2028 Democratic presidential nomination?",
-      "slug": "will-josh-shapiro-win-the-2028-democratic-presidential-nomination-977",
-      "eventSlug": "democratic-presidential-nominee-2028",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-josh-shapiro-win-the-2028-us-presidential-election-h3nL-gpVkam1.png",
-      "endDate": "2028-11-07",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will Josh Shapiro win the 2028 Democratic presidential nomination?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 4,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 4306.6327,
-      "avgAccountAllocation": 0.014034165057889545,
-      "avgEntryPrice": 0.44110041503649117,
-      "currentPrice": 0.0485,
-      "rankWeight": 0.30359461619411077,
-      "supporters": [
-        {
-          "rank": 102,
-          "name": "DLEK",
-          "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
-          "currentValue": 41.5805,
-          "visibleAccountValue": 168310.2396,
-          "accountAllocation": 0.0002470467637549486,
-          "size": 857.33,
-          "avgPrice": 0.044,
-          "pnl": 3.8579
-        },
-        {
-          "rank": 199,
-          "name": "Anointed-Connect",
-          "wallet": "0x8f037a2e4fd49d11267f4ab874ab7ba745ac64d6",
-          "currentValue": 484.999,
-          "visibleAccountValue": 12252.2933,
-          "accountAllocation": 0.03958434458959614,
-          "size": 9999.9808,
-          "avgPrice": 0.041,
-          "pnl": 74.9997
-        },
-        {
-          "rank": 206,
-          "name": "donthackme",
-          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 4.1887,
-          "visibleAccountValue": 82822.4122999999,
-          "accountAllocation": 0.00005057447475482437,
-          "size": 86.3655,
-          "avgPrice": 0.4998,
-          "pnl": -38.9798
-        },
-        {
-          "rank": 244,
-          "name": "AnonymousUsername",
-          "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-          "currentValue": 3775.8645,
-          "visibleAccountValue": 232293.78580000004,
-          "accountAllocation": 0.016254694403452265,
-          "size": 77852.8772,
-          "avgPrice": 0.4968,
-          "pnl": -34905.6925
-        }
-      ],
-      "decisionSide": "YES",
-      "decisionChoice": "Josh Shapiro",
-      "decisionOption": "Josh Shapiro",
-      "decisionTarget": "Will Josh Shapiro win the 2028 Democratic presidential nomination?",
-      "decisionText": "Select “Josh Shapiro” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Josh Shapiro” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Josh Shapiro win the 2028 Democratic presidential nomination?”.",
-      "category": "Other",
-      "liquidity": 431621.90882,
-      "volume24hr": 17242.793831,
-      "usAvailable": true,
-      "usMarketSlug": "ewc-usp-2028-11-07-jossha",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/ewc-usp-2028-11-07-jossha"
     },
     {
       "conditionId": "0xa34edb6c898232378a9cc08744842df2cd89d278ba45b012bed3ac10c7241c4d",
@@ -645,18 +553,18 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 15075.8282,
-      "avgAccountAllocation": 0.025460711337325945,
+      "avgAccountAllocation": 0.025461639869849867,
       "avgEntryPrice": 0.3534229874098418,
       "currentPrice": 0.1675,
-      "rankWeight": 0.3875867626099357,
+      "rankWeight": 0.3872509857089276,
       "supporters": [
         {
           "rank": 17,
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
           "currentValue": 8997.484,
-          "visibleAccountValue": 720901.2453000003,
-          "accountAllocation": 0.012480882865247003,
+          "visibleAccountValue": 720919.6094000003,
+          "accountAllocation": 0.012480564937730485,
           "size": 53716.3227,
           "avgPrice": 0.4089,
           "pnl": -12970.5582
@@ -673,12 +581,12 @@
           "pnl": -3493.9252
         },
         {
-          "rank": 206,
+          "rank": 208,
           "name": "donthackme",
           "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
           "currentValue": 164.7437,
-          "visibleAccountValue": 82822.4122999999,
-          "accountAllocation": 0.0019891197977096376,
+          "visibleAccountValue": 82693.38989999994,
+          "accountAllocation": 0.001992223322797898,
           "size": 983.5448,
           "avgPrice": 0.4473,
           "pnl": -275.2197
@@ -691,22 +599,162 @@
       "decisionText": "Select “Lamine Yamal” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Lamine Yamal” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Lamine Yamal win the 2026 Ballon d'Or?”.",
       "category": "Other",
-      "liquidity": 166818.55612,
+      "liquidity": 169219.32638,
       "volume24hr": 6060.077372,
       "usAvailable": true,
       "usMarketSlug": "tec-uefa-bdor-2026-10-26-w-lamyam",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
       "marketUrl": "https://polymarket.us/market/tec-uefa-bdor-2026-10-26-w-lamyam"
+    },
+    {
+      "conditionId": "0x4567b275e6b667a6217f5cb4f06a797d3a1eaf1d0281fb5bc8c75e2046ae7e57",
+      "title": "Will Gavin Newsom win the 2028 US Presidential Election?",
+      "slug": "will-gavin-newsom-win-the-2028-us-presidential-election",
+      "eventSlug": "presidential-election-winner-2028",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-gavin-newsom-win-the-2028-us-presidential-election-x9lPL7_gXn--.png",
+      "endDate": "2028-11-07",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Will Gavin Newsom win the 2028 US Presidential Election?",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 3,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 18342.5599,
+      "avgAccountAllocation": 0.014239943819673091,
+      "avgEntryPrice": 0.17271387948862083,
+      "currentPrice": 0.0895,
+      "rankWeight": 0.2618710810214678,
+      "supporters": [
+        {
+          "rank": 103,
+          "name": "scottilicious",
+          "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+          "currentValue": 1213.7291,
+          "visibleAccountValue": 597119.5125999999,
+          "accountAllocation": 0.002032640157269582,
+          "size": 13561.22,
+          "avgPrice": 0.18,
+          "pnl": -1227.2905
+        },
+        {
+          "rank": 117,
+          "name": "gopfan2",
+          "wallet": "0xf2f6af4f27ec2dcf4072095ab804016e14cd5817",
+          "currentValue": 17094.479,
+          "visibleAccountValue": 451238.25920000015,
+          "accountAllocation": 0.03788348760654024,
+          "size": 190999.7658,
+          "avgPrice": 0.1722,
+          "pnl": -15797.3996
+        },
+        {
+          "rank": 199,
+          "name": "Anointed-Connect",
+          "wallet": "0x8f037a2e4fd49d11267f4ab874ab7ba745ac64d6",
+          "currentValue": 34.3518,
+          "visibleAccountValue": 12252.2933,
+          "accountAllocation": 0.002803703695209451,
+          "size": 383.82,
+          "avgPrice": 0.171,
+          "pnl": -31.2814
+        }
+      ],
+      "decisionSide": "YES",
+      "decisionChoice": "Gavin Newsom",
+      "decisionOption": "Gavin Newsom",
+      "decisionTarget": "Will Gavin Newsom win the 2028 US Presidential Election?",
+      "decisionText": "Select “Gavin Newsom” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “Gavin Newsom” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Gavin Newsom win the 2028 US Presidential Election?”.",
+      "category": "Other",
+      "liquidity": 441552.80729,
+      "volume24hr": 50054.785297,
+      "usAvailable": true,
+      "usMarketSlug": "ewc-usp-2028-11-07-gavnew",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/ewc-usp-2028-11-07-gavnew"
+    },
+    {
+      "conditionId": "0xa5d79e71e66c9fe122f8b8b3ca6ab7a0e3048bd8508f130746944e92ed79ddf3",
+      "title": "Will Xavier Becerra win the California Governor Election in 2026?",
+      "slug": "will-xavier-becerra-win-the-california-governor-election-in-2026",
+      "eventSlug": "california-governor-election-2026",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-xavier-becerra-win-the-california-governor-election-in-2026-a_BhzW4kyJfq.png",
+      "endDate": "2026-11-03",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Will Xavier Becerra win the California Governor Election in 2026?",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 3,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 19604.611600000004,
+      "avgAccountAllocation": 0.018251732860530227,
+      "avgEntryPrice": 0.8221858617313735,
+      "currentPrice": 0.9295,
+      "rankWeight": 0.2603204850487878,
+      "supporters": [
+        {
+          "rank": 103,
+          "name": "scottilicious",
+          "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+          "currentValue": 6728.4128,
+          "visibleAccountValue": 597119.5125999999,
+          "accountAllocation": 0.011268117450563449,
+          "size": 7238.7442,
+          "avgPrice": 0.6922,
+          "pnl": 1717.3333
+        },
+        {
+          "rank": 117,
+          "name": "gopfan2",
+          "wallet": "0xf2f6af4f27ec2dcf4072095ab804016e14cd5817",
+          "currentValue": 11362.3567,
+          "visibleAccountValue": 451238.25920000015,
+          "accountAllocation": 0.02518039299270481,
+          "size": 12224.16,
+          "avgPrice": 0.9399,
+          "pnl": -128.3033
+        },
+        {
+          "rank": 208,
+          "name": "donthackme",
+          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
+          "currentValue": 1513.8421,
+          "visibleAccountValue": 82693.38989999994,
+          "accountAllocation": 0.018306688138322424,
+          "size": 1628.6628,
+          "avgPrice": 0.5164,
+          "pnl": 672.7601
+        }
+      ],
+      "decisionSide": "YES",
+      "decisionChoice": "Xavier Becerra",
+      "decisionOption": "Xavier Becerra",
+      "decisionTarget": "Will Xavier Becerra win the California Governor Election in 2026?",
+      "decisionText": "Select “Xavier Becerra” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “Xavier Becerra” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Xavier Becerra win the California Governor Election in 2026?”.",
+      "category": "Other",
+      "liquidity": 60548.20536,
+      "volume24hr": 8926.716392,
+      "usAvailable": true,
+      "usMarketSlug": "ewc-usgub-ca-2026-11-03-xavbec",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/ewc-usgub-ca-2026-11-03-xavbec"
     }
   ],
-  "recommendationsUpdatedAt": "2026-08-14T21:33:45.188Z",
-  "lastCheckedAt": "2026-08-14T21:33:45.251Z",
+  "recommendationsUpdatedAt": "2026-08-14T21:53:42.965Z",
+  "lastCheckedAt": "2026-08-14T21:53:43.022Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-14T20:39:50.572Z",
+  "previousRecommendationsReplacedAt": "2026-08-14T21:33:45.188Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-14T21:33:45.251Z",
+  "lastSuccessfulWorkflowAt": "2026-08-14T21:53:43.022Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
