@@ -21,10 +21,10 @@
   "stats": {
     "leaderboardUsersInspected": 300,
     "skippedNoPositions": 192,
-    "excludedBothOutcomes": 52,
+    "excludedBothOutcomes": 51,
     "positionFetchErrors": 0,
-    "eligibleTraders": 56,
-    "candidateMarkets": 447,
+    "eligibleTraders": 57,
+    "candidateMarkets": 448,
     "marketsChecked": 41,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -327,6 +327,13 @@
       "wallet": "0x6139c42e48cf190e67a0a85d492413b499336b7a",
       "pnl": 863739.3996872397,
       "activePositionCount": 170
+    },
+    {
+      "rank": 220,
+      "name": "fkigedgjdgwbg",
+      "wallet": "0x52ecea7b3159f09db589e4f4ee64872fd0bba6f3",
+      "pnl": 860633.0080718646,
+      "activePositionCount": 5
     },
     {
       "rank": 227,
@@ -721,12 +728,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-15T09:33:57.547Z",
-  "lastCheckedAt": "2026-08-15T09:33:57.622Z",
+  "lastCheckedAt": "2026-08-15T09:53:02.302Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-15T08:38:59.665Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-15T09:33:57.622Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-08-15T09:53:02.224Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-08-15T09:53:02.302Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
