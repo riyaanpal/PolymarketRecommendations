@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-08-16T16:35:09.317Z",
-  "durationSeconds": 27,
+  "durationSeconds": 28,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -21,9 +21,9 @@
   "stats": {
     "leaderboardUsersInspected": 300,
     "skippedNoPositions": 185,
-    "excludedBothOutcomes": 56,
+    "excludedBothOutcomes": 57,
     "positionFetchErrors": 0,
-    "eligibleTraders": 59,
+    "eligibleTraders": 58,
     "candidateMarkets": 267,
     "marketsChecked": 35,
     "recommendationsReturned": 4,
@@ -280,13 +280,6 @@
       "activePositionCount": 5
     },
     {
-      "rank": 210,
-      "name": "johnbaster",
-      "wallet": "0x31864feb9d25dee93728c6225ba891530967e9ca",
-      "pnl": 888694.4941789692,
-      "activePositionCount": 3
-    },
-    {
       "rank": 211,
       "name": "easyclap",
       "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
@@ -326,7 +319,7 @@
       "name": "AnonymousUsername",
       "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
       "pnl": 846924.6945507787,
-      "activePositionCount": 274
+      "activePositionCount": 275
     },
     {
       "rank": 232,
@@ -403,7 +396,7 @@
       "name": "GamblingOdyssey",
       "wallet": "0xe5241830e8876c115d7dc8311ad9f43d85fdd34f",
       "pnl": 708111.1704730801,
-      "activePositionCount": 3
+      "activePositionCount": 5
     },
     {
       "rank": 286,
@@ -797,12 +790,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-16T16:35:09.317Z",
-  "lastCheckedAt": "2026-08-16T16:35:09.386Z",
+  "lastCheckedAt": "2026-08-16T16:55:27.925Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-16T15:50:12.197Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-16T16:35:09.386Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-08-16T16:55:27.851Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-08-16T16:55:27.925Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
