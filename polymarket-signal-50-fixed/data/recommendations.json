@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-08-17T15:33:42.536Z",
-  "durationSeconds": 30,
+  "durationSeconds": 39,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -21,10 +21,10 @@
   "stats": {
     "leaderboardUsersInspected": 300,
     "skippedNoPositions": 194,
-    "excludedBothOutcomes": 49,
+    "excludedBothOutcomes": 51,
     "positionFetchErrors": 0,
-    "eligibleTraders": 57,
-    "candidateMarkets": 580,
+    "eligibleTraders": 55,
+    "candidateMarkets": 579,
     "marketsChecked": 66,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -73,29 +73,15 @@
       "rank": 52,
       "name": "LaBradfordSmith22",
       "wallet": "0x9495425feeb0c250accb89275c97587011b19a27",
-      "pnl": 2789088.0927313743,
+      "pnl": 2789261.4659980247,
       "activePositionCount": 1
     },
     {
       "rank": 58,
       "name": "tdrhrhhd",
       "wallet": "0xd7f85d0eb0fe0732ca38d9107ad0d4d01b1289e4",
-      "pnl": 2438834.1645700424,
+      "pnl": 2438847.908620605,
       "activePositionCount": 6
-    },
-    {
-      "rank": 61,
-      "name": "jtwyslljy",
-      "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
-      "pnl": 2343485.603996659,
-      "activePositionCount": 2
-    },
-    {
-      "rank": 64,
-      "name": "CandleHammerDrums",
-      "wallet": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
-      "pnl": 2301818.8169927467,
-      "activePositionCount": 1
     },
     {
       "rank": 65,
@@ -108,36 +94,36 @@
       "rank": 66,
       "name": "The Spirit of Ukraine>UMA",
       "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
-      "pnl": 2212925.4672421915,
+      "pnl": 2213789.214331685,
       "activePositionCount": 100
     },
     {
       "rank": 69,
       "name": "geniusMC",
       "wallet": "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44",
-      "pnl": 2169137.4980256315,
+      "pnl": 2169137.4980254313,
       "activePositionCount": 1
     },
     {
       "rank": 81,
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "pnl": 1937023.3371299314,
+      "pnl": 1935424.3017353825,
       "activePositionCount": 47
     },
     {
       "rank": 83,
       "name": "Pestle",
       "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
-      "pnl": 1906970.3750123747,
+      "pnl": 1906970.37751238,
       "activePositionCount": 56
     },
     {
       "rank": 85,
       "name": "0xf705…3ca7",
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
-      "pnl": 1869750.5419119531,
-      "activePositionCount": 123
+      "pnl": 1869908.923106305,
+      "activePositionCount": 124
     },
     {
       "rank": 99,
@@ -179,7 +165,7 @@
       "name": "coinman2",
       "wallet": "0x55be7aa03ecfbe37aa5460db791205f7ac9ddca3",
       "pnl": 1485911.9490749533,
-      "activePositionCount": 18
+      "activePositionCount": 19
     },
     {
       "rank": 117,
@@ -256,7 +242,7 @@
       "name": "donthackme",
       "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
       "pnl": 965077.8301050843,
-      "activePositionCount": 2913
+      "activePositionCount": 2921
     },
     {
       "rank": 187,
@@ -270,7 +256,7 @@
       "name": "Lilybaeum",
       "wallet": "0x01c78f8873c0c86d6b6b92ff627e3802237ee995",
       "pnl": 942756.077282921,
-      "activePositionCount": 1
+      "activePositionCount": 3
     },
     {
       "rank": 193,
@@ -375,14 +361,14 @@
       "name": "AnonymousUsername",
       "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
       "pnl": 770282.005015705,
-      "activePositionCount": 250
+      "activePositionCount": 251
     },
     {
       "rank": 262,
       "name": "11122",
       "wallet": "0x011f2d377e56119fb09196dffb0948ae55711122",
       "pnl": 753579.8481827145,
-      "activePositionCount": 248
+      "activePositionCount": 247
     },
     {
       "rank": 263,
@@ -794,12 +780,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-17T15:33:42.536Z",
-  "lastCheckedAt": "2026-08-17T15:33:42.609Z",
+  "lastCheckedAt": "2026-08-17T15:53:24.435Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-17T14:57:33.221Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-17T15:33:42.609Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-08-17T15:53:24.357Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-08-17T15:53:24.435Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
