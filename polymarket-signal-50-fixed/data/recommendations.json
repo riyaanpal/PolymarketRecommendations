@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-08-19T21:33:56.092Z",
-  "durationSeconds": 39,
+  "generatedAt": "2026-08-19T21:54:39.617Z",
+  "durationSeconds": 50,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -19,13 +19,13 @@
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
-    "leaderboardUsersInspected": 350,
-    "skippedNoPositions": 219,
-    "excludedBothOutcomes": 67,
+    "leaderboardUsersInspected": 300,
+    "skippedNoPositions": 193,
+    "excludedBothOutcomes": 57,
     "positionFetchErrors": 0,
-    "eligibleTraders": 64,
-    "candidateMarkets": 524,
-    "marketsChecked": 59,
+    "eligibleTraders": 50,
+    "candidateMarkets": 382,
+    "marketsChecked": 91,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -36,30 +36,30 @@
   "eligibleTraders": [
     {
       "rank": 24,
-      "name": "BreakTheBank",
-      "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-      "pnl": 4763035.904118931,
-      "activePositionCount": 50
-    },
-    {
-      "rank": 25,
       "name": "0x006cc834Cc092684F1B56626E23BEdB3835c16ea-1729683673397",
       "wallet": "0x006cc834cc092684f1b56626e23bedb3835c16ea",
-      "pnl": 4718555.355944937,
+      "pnl": 4718555.355944938,
       "activePositionCount": 1
     },
     {
-      "rank": 26,
+      "rank": 25,
       "name": "beachboy4",
       "wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
       "pnl": 4641373.54500584,
       "activePositionCount": 2
     },
     {
+      "rank": 28,
+      "name": "BreakTheBank",
+      "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+      "pnl": 4482374.498274057,
+      "activePositionCount": 50
+    },
+    {
       "rank": 30,
       "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
       "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-      "pnl": 4236957.227957027,
+      "pnl": 4236957.227957033,
       "activePositionCount": 4
     },
     {
@@ -73,35 +73,35 @@
       "rank": 57,
       "name": "denizz",
       "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
-      "pnl": 2458586.030181321,
+      "pnl": 2458343.5070795985,
       "activePositionCount": 46
     },
     {
       "rank": 58,
       "name": "tdrhrhhd",
       "wallet": "0xd7f85d0eb0fe0732ca38d9107ad0d4d01b1289e4",
-      "pnl": 2437377.7039484,
+      "pnl": 2437380.4527584,
       "activePositionCount": 6
     },
     {
       "rank": 60,
       "name": "jtwyslljy",
       "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
-      "pnl": 2371080.090069794,
+      "pnl": 2368933.4362639003,
       "activePositionCount": 8
     },
     {
       "rank": 65,
       "name": "0x7fB7Ad0d194D7123e711e7db6C9D418fAc14E33d-1750343282446",
       "wallet": "0x7fb7ad0d194d7123e711e7db6c9d418fac14e33d",
-      "pnl": 2282133.8592162626,
+      "pnl": 2282133.859216262,
       "activePositionCount": 1
     },
     {
       "rank": 66,
       "name": "The Spirit of Ukraine>UMA",
       "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
-      "pnl": 2230379.0101306434,
+      "pnl": 2232137.335398018,
       "activePositionCount": 94
     },
     {
@@ -112,25 +112,32 @@
       "activePositionCount": 1
     },
     {
+      "rank": 78,
+      "name": "0xf705…3ca7",
+      "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
+      "pnl": 2013490.8178343964,
+      "activePositionCount": 135
+    },
+    {
       "rank": 82,
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "pnl": 1961068.355401087,
-      "activePositionCount": 59
+      "pnl": 1968503.0866832237,
+      "activePositionCount": 64
     },
     {
       "rank": 84,
       "name": "Pestle",
       "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
-      "pnl": 1906969.9196039918,
+      "pnl": 1906969.9046404397,
       "activePositionCount": 57
     },
     {
       "rank": 99,
       "name": "Talvez10",
       "wallet": "0xa71093cafc0c099b4ccab24c3cb8018d817923c4",
-      "pnl": 1656395.0501063028,
-      "activePositionCount": 4
+      "pnl": 1652631.2970850677,
+      "activePositionCount": 9
     },
     {
       "rank": 103,
@@ -145,6 +152,13 @@
       "wallet": "0x8b5a7da2fdf239b51b9c68a2a1a35bb156d200f2",
       "pnl": 1514056.8258629122,
       "activePositionCount": 4
+    },
+    {
+      "rank": 109,
+      "name": "coinman2",
+      "wallet": "0x55be7aa03ecfbe37aa5460db791205f7ac9ddca3",
+      "pnl": 1510256.4498424581,
+      "activePositionCount": 38
     },
     {
       "rank": 116,
@@ -235,7 +249,7 @@
       "name": "donthackme",
       "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
       "pnl": 995940.2909871143,
-      "activePositionCount": 2869
+      "activePositionCount": 2849
     },
     {
       "rank": 186,
@@ -250,13 +264,6 @@
       "wallet": "0x1057e7d3ddafc60a4aeb10a2bc5b543792449ea5",
       "pnl": 933071.308771847,
       "activePositionCount": 8
-    },
-    {
-      "rank": 199,
-      "name": "one8tyfive",
-      "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
-      "pnl": 927206.7402521451,
-      "activePositionCount": 11
     },
     {
       "rank": 202,
@@ -277,7 +284,7 @@
       "name": "easyclap",
       "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
       "pnl": 881090.2333215247,
-      "activePositionCount": 29
+      "activePositionCount": 30
     },
     {
       "rank": 216,
@@ -340,7 +347,7 @@
       "name": "AgricultureSecretary",
       "wallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
       "pnl": 737660.5657423261,
-      "activePositionCount": 17
+      "activePositionCount": 18
     },
     {
       "rank": 267,
@@ -376,206 +383,9 @@
       "wallet": "0x88c4919de76e526d55a32c1f8afb439dd1f1129a",
       "pnl": 666024.8012359256,
       "activePositionCount": 25
-    },
-    {
-      "rank": 309,
-      "name": "RJW1",
-      "wallet": "0x85f031d069de300055900c4055c1baeb6bde3f67",
-      "pnl": 648227.1607255316,
-      "activePositionCount": 5
-    },
-    {
-      "rank": 315,
-      "name": "mr.ozi",
-      "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
-      "pnl": 631804.1804015074,
-      "activePositionCount": 38
-    },
-    {
-      "rank": 316,
-      "name": "NO-GOD-PLEASE-NO",
-      "wallet": "0x5257aa84944804bbb0c718814ebebeeafaca3e2a",
-      "pnl": 630937.8133136912,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 319,
-      "name": "Avarice31",
-      "wallet": "0x781caf04d98a281712caf1677877c442789fdb68",
-      "pnl": 628932.480075114,
-      "activePositionCount": 5
-    },
-    {
-      "rank": 320,
-      "name": "betterfasterstronger",
-      "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
-      "pnl": 628288.207261028,
-      "activePositionCount": 224
-    },
-    {
-      "rank": 321,
-      "name": "Q96s3kwozynxpau",
-      "wallet": "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f",
-      "pnl": 626717.9422784038,
-      "activePositionCount": 98
-    },
-    {
-      "rank": 322,
-      "name": "semi",
-      "wallet": "0xd3989ba133ab48b5b3a81e3dba9b37b5966a46d7",
-      "pnl": 625785.7426267694,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 327,
-      "name": "elPolloLoco",
-      "wallet": "0xa2f1fecf1cc7db65a46588f764b6691533052d22",
-      "pnl": 620515.6294242726,
-      "activePositionCount": 32
-    },
-    {
-      "rank": 335,
-      "name": "bestfriends",
-      "wallet": "0x7abe2e7eac6f63b1bf4c21eeae71b03e9bd9b47e",
-      "pnl": 615683.0850081738,
-      "activePositionCount": 3
-    },
-    {
-      "rank": 337,
-      "name": "betwick",
-      "wallet": "0xc851cd9bee7d262afd78674f861f9f576a12cd2a",
-      "pnl": 615142.3693118154,
-      "activePositionCount": 6
-    },
-    {
-      "rank": 340,
-      "name": "farmyboi",
-      "wallet": "0x1823757d22022f81a8fa1536d63101fe458884d8",
-      "pnl": 612707.0138149997,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 341,
-      "name": "trgparking",
-      "wallet": "0xe3611dada6c5ea53af7bf22e80e07c005f48ae44",
-      "pnl": 611419.3373114795,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 343,
-      "name": "keasiyo",
-      "wallet": "0xee67f4f549180f564dd5910b1024b8c6729cef38",
-      "pnl": 610583.1524015687,
-      "activePositionCount": 11
-    },
-    {
-      "rank": 348,
-      "name": "Kevindoto",
-      "wallet": "0xcd71fd5370880f3d92bb941e628c05840fe0d127",
-      "pnl": 600566.190131682,
-      "activePositionCount": 27
-    },
-    {
-      "rank": 350,
-      "name": "0xF201A19b43471261A3c1Ba9247335d55270e527e-1763824114616",
-      "wallet": "0xf201a19b43471261a3c1ba9247335d55270e527e",
-      "pnl": 599050.7868202995,
-      "activePositionCount": 1
     }
   ],
   "recommendations": [
-    {
-      "conditionId": "0xd65891729ce093cc12236856837eba1a0872fc7998fd4294c21346f7db68079c",
-      "title": "Will Josh Shapiro win the 2028 Democratic presidential nomination?",
-      "slug": "will-josh-shapiro-win-the-2028-democratic-presidential-nomination-977",
-      "eventSlug": "democratic-presidential-nominee-2028",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-josh-shapiro-win-the-2028-us-presidential-election-h3nL-gpVkam1.png",
-      "endDate": "2028-11-07",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will Josh Shapiro win the 2028 Democratic presidential nomination?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 5,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 991.6985000000001,
-      "avgAccountAllocation": 0.058857936134002566,
-      "avgEntryPrice": 0.17714120789715693,
-      "currentPrice": 0.0505,
-      "rankWeight": 0.3558610934039216,
-      "supporters": [
-        {
-          "rank": 103,
-          "name": "DLEK",
-          "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
-          "currentValue": 43.2951,
-          "visibleAccountValue": 170354.6416,
-          "accountAllocation": 0.000254146876148281,
-          "size": 857.33,
-          "avgPrice": 0.044,
-          "pnl": 5.5725
-        },
-        {
-          "rank": 177,
-          "name": "donthackme",
-          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 4.3614,
-          "visibleAccountValue": 81061.98319999997,
-          "accountAllocation": 0.000053803272851582555,
-          "size": 86.3655,
-          "avgPrice": 0.4998,
-          "pnl": -38.8071
-        },
-        {
-          "rank": 202,
-          "name": "Anointed-Connect",
-          "wallet": "0x8f037a2e4fd49d11267f4ab874ab7ba745ac64d6",
-          "currentValue": 504.999,
-          "visibleAccountValue": 12260.610799999999,
-          "accountAllocation": 0.04118873098883459,
-          "size": 9999.9808,
-          "avgPrice": 0.041,
-          "pnl": 94.9997
-        },
-        {
-          "rank": 319,
-          "name": "Avarice31",
-          "wallet": "0x781caf04d98a281712caf1677877c442789fdb68",
-          "currentValue": 151.5,
-          "visibleAccountValue": 611.94,
-          "accountAllocation": 0.24757329149916657,
-          "size": 3000,
-          "avgPrice": 0.053,
-          "pnl": -7.5
-        },
-        {
-          "rank": 321,
-          "name": "Q96s3kwozynxpau",
-          "wallet": "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f",
-          "currentValue": 287.543,
-          "visibleAccountValue": 55087.94710000003,
-          "accountAllocation": 0.005219708033011814,
-          "size": 5693.9227,
-          "avgPrice": 0.4968,
-          "pnl": -2541.7152
-        }
-      ],
-      "decisionSide": "YES",
-      "decisionChoice": "Josh Shapiro",
-      "decisionOption": "Josh Shapiro",
-      "decisionTarget": "Will Josh Shapiro win the 2028 Democratic presidential nomination?",
-      "decisionText": "Select “Josh Shapiro” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Josh Shapiro” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Josh Shapiro win the 2028 Democratic presidential nomination?”.",
-      "category": "Other",
-      "liquidity": 497116.05988,
-      "volume24hr": 6091.463895,
-      "usAvailable": true,
-      "usMarketSlug": "ewc-usp-2028-11-07-jossha",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/ewc-usp-2028-11-07-jossha"
-    },
     {
       "conditionId": "0x18b1c135d0a40c5894da9412e77311827d9caf16cf4cd6591b247a34730af919",
       "title": "Will J.D. Vance win the 2028 Republican presidential nomination?",
@@ -592,13 +402,13 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 98088.362,
-      "avgAccountAllocation": 0.28904593103775494,
+      "avgAccountAllocation": 0.2890462748450185,
       "avgEntryPrice": 0.4565136493216514,
       "currentPrice": 0.4735,
-      "rankWeight": 0.4843020615379518,
+      "rankWeight": 0.4881859263997678,
       "supporters": [
         {
-          "rank": 26,
+          "rank": 25,
           "name": "beachboy4",
           "wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
           "currentValue": 86.0909,
@@ -624,8 +434,8 @@
           "name": "donthackme",
           "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
           "currentValue": 111.2058,
-          "visibleAccountValue": 81061.98319999997,
-          "accountAllocation": 0.0013718613289490805,
+          "visibleAccountValue": 80980.8036,
+          "accountAllocation": 0.001373236558003235,
           "size": 234.8591,
           "avgPrice": 0.4992,
           "pnl": -6.0485
@@ -649,7 +459,7 @@
       "decisionText": "Select “J.D. Vance” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “J.D. Vance” option/row/card, then click Buy YES. This applies only to the exact market question: “Will J.D. Vance win the 2028 Republican presidential nomination?”.",
       "category": "Other",
-      "liquidity": 340886.76996,
+      "liquidity": 353915.64836,
       "volume24hr": 9120.457626,
       "usAvailable": true,
       "usMarketSlug": "ewc-usp-2028-11-07-jdvan",
@@ -669,17 +479,17 @@
       "rawPositionTitle": "Will Lamine Yamal win the 2026 Ballon d'Or?",
       "outcome": "Yes",
       "outcomeKey": "0",
-      "supporterCount": 4,
+      "supporterCount": 3,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 14285.579,
-      "avgAccountAllocation": 0.017896760618915493,
-      "avgEntryPrice": 0.35102779205779294,
+      "totalCurrentValue": 14277.9018,
+      "avgAccountAllocation": 0.0232679397948261,
+      "avgEntryPrice": 0.35121051857165053,
       "currentPrice": 0.1575,
-      "rankWeight": 0.40436189385631666,
+      "rankWeight": 0.3333182856915039,
       "supporters": [
         {
-          "rank": 24,
+          "rank": 28,
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
           "currentValue": 8460.3208,
@@ -694,8 +504,8 @@
           "name": "donthackme",
           "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
           "currentValue": 257.0313,
-          "visibleAccountValue": 81061.98319999997,
-          "accountAllocation": 0.003170799551817529,
+          "visibleAccountValue": 80980.8036,
+          "accountAllocation": 0.003173978135233027,
           "size": 1631.9448,
           "avgPrice": 0.2871,
           "pnl": -211.6221
@@ -710,17 +520,6 @@
           "size": 35305.078,
           "avgPrice": 0.2664,
           "pnl": -3846.976
-        },
-        {
-          "rank": 320,
-          "name": "betterfasterstronger",
-          "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
-          "currentValue": 7.6772,
-          "visibleAccountValue": 4297.577699999996,
-          "accountAllocation": 0.0017864016745991601,
-          "size": 48.7446,
-          "avgPrice": 0.0112,
-          "pnl": 7.1295
         }
       ],
       "decisionSide": "YES",
@@ -730,8 +529,8 @@
       "decisionText": "Select “Lamine Yamal” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Lamine Yamal” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Lamine Yamal win the 2026 Ballon d'Or?”.",
       "category": "Other",
-      "liquidity": 152247.69967,
-      "volume24hr": 10248.694074,
+      "liquidity": 152298.15117,
+      "volume24hr": 10216.846941999998,
       "usAvailable": true,
       "usMarketSlug": "tec-uefa-bdor-2026-10-26-w-lamyam",
       "usMatchMethod": "title_slug_similarity",
@@ -739,94 +538,142 @@
       "marketUrl": "https://polymarket.us/market/tec-uefa-bdor-2026-10-26-w-lamyam"
     },
     {
-      "conditionId": "0xa5d79e71e66c9fe122f8b8b3ca6ab7a0e3048bd8508f130746944e92ed79ddf3",
-      "title": "Will Xavier Becerra win the California Governor Election in 2026?",
-      "slug": "will-xavier-becerra-win-the-california-governor-election-in-2026",
-      "eventSlug": "california-governor-election-2026",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-xavier-becerra-win-the-california-governor-election-in-2026-a_BhzW4kyJfq.png",
-      "endDate": "2026-11-03",
+      "conditionId": "0xd65891729ce093cc12236856837eba1a0872fc7998fd4294c21346f7db68079c",
+      "title": "Will Josh Shapiro win the 2028 Democratic presidential nomination?",
+      "slug": "will-josh-shapiro-win-the-2028-democratic-presidential-nomination-977",
+      "eventSlug": "democratic-presidential-nominee-2028",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-josh-shapiro-win-the-2028-us-presidential-election-h3nL-gpVkam1.png",
+      "endDate": "2028-11-07",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Will Xavier Becerra win the California Governor Election in 2026?",
+      "rawPositionTitle": "Will Josh Shapiro win the 2028 Democratic presidential nomination?",
       "outcome": "Yes",
       "outcomeKey": "0",
-      "supporterCount": 4,
+      "supporterCount": 3,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 14268.993499999999,
-      "avgAccountAllocation": 0.26524884833318024,
-      "avgEntryPrice": 0.8657122220920725,
-      "currentPrice": 0.946,
-      "rankWeight": 0.2800837101282452,
+      "totalCurrentValue": 552.6555000000001,
+      "avgAccountAllocation": 0.013832145993804813,
+      "avgEntryPrice": 0.04485578668842755,
+      "currentPrice": 0.0505,
+      "rankWeight": 0.2440572850897414,
       "supporters": [
         {
-          "rank": 116,
-          "name": "gopfan2",
-          "wallet": "0xf2f6af4f27ec2dcf4072095ab804016e14cd5817",
-          "currentValue": 11564.0553,
-          "visibleAccountValue": 284170.7075,
-          "accountAllocation": 0.04069404408967803,
-          "size": 12224.16,
-          "avgPrice": 0.9399,
-          "pnl": 73.3952
+          "rank": 103,
+          "name": "DLEK",
+          "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
+          "currentValue": 43.2951,
+          "visibleAccountValue": 170384.9014,
+          "accountAllocation": 0.0002541017404961212,
+          "size": 857.33,
+          "avgPrice": 0.044,
+          "pnl": 5.5725
         },
         {
           "rank": 177,
           "name": "donthackme",
           "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 1540.715,
-          "visibleAccountValue": 81061.98319999997,
-          "accountAllocation": 0.019006628498079978,
-          "size": 1628.6628,
-          "avgPrice": 0.5164,
-          "pnl": 699.633
+          "currentValue": 4.3614,
+          "visibleAccountValue": 80980.8036,
+          "accountAllocation": 0.00005385720820384647,
+          "size": 86.3655,
+          "avgPrice": 0.4998,
+          "pnl": -38.8071
         },
         {
-          "rank": 315,
-          "name": "mr.ozi",
-          "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
-          "currentValue": 922.0662,
-          "visibleAccountValue": 712173.8055000001,
-          "accountAllocation": 0.0012947207449628669,
-          "size": 974.7,
-          "avgPrice": 0.6111,
-          "pnl": 326.3732
-        },
-        {
-          "rank": 322,
-          "name": "semi",
-          "wallet": "0xd3989ba133ab48b5b3a81e3dba9b37b5966a46d7",
-          "currentValue": 242.157,
-          "visibleAccountValue": 242.157,
-          "accountAllocation": 1,
-          "size": 255.98,
-          "avgPrice": 0.5149,
-          "pnl": 110.3275
+          "rank": 202,
+          "name": "Anointed-Connect",
+          "wallet": "0x8f037a2e4fd49d11267f4ab874ab7ba745ac64d6",
+          "currentValue": 504.999,
+          "visibleAccountValue": 12260.6858,
+          "accountAllocation": 0.04118847903271447,
+          "size": 9999.9808,
+          "avgPrice": 0.041,
+          "pnl": 94.9997
         }
       ],
       "decisionSide": "YES",
-      "decisionChoice": "Xavier Becerra",
-      "decisionOption": "Xavier Becerra",
-      "decisionTarget": "Will Xavier Becerra win the California Governor Election in 2026?",
-      "decisionText": "Select “Xavier Becerra” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Xavier Becerra” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Xavier Becerra win the California Governor Election in 2026?”.",
+      "decisionChoice": "Josh Shapiro",
+      "decisionOption": "Josh Shapiro",
+      "decisionTarget": "Will Josh Shapiro win the 2028 Democratic presidential nomination?",
+      "decisionText": "Select “Josh Shapiro” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “Josh Shapiro” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Josh Shapiro win the 2028 Democratic presidential nomination?”.",
       "category": "Other",
-      "liquidity": 110302.15078,
-      "volume24hr": 15401.363754999997,
+      "liquidity": 500450.35152,
+      "volume24hr": 6091.463895,
       "usAvailable": true,
-      "usMarketSlug": "aachc-cfb-wins-ou-2026-11-28-cah",
+      "usMarketSlug": "ewc-usp-2028-11-07-jossha",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aachc-cfb-wins-ou-2026-11-28-cah"
+      "marketUrl": "https://polymarket.us/market/ewc-usp-2028-11-07-jossha"
+    },
+    {
+      "conditionId": "0x86e8f678e6cebb9596ffbb5a736b2ff9f36b12905d5b65b1556329c28533c7a1",
+      "title": "Will Manchester City win the 2026-27 English Premier League (EPL) Championship?",
+      "slug": "will-manchester-city-win-the-2026-27-english-premier-league-epl-championship-20260701200428761",
+      "eventSlug": "epl-2027-champion-20260701200428749",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/epl-2027-champion-20260701200428749-KFJD-iJWObEe.png",
+      "endDate": "2027-05-30",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Will Manchester City win the 2026-27 English Premier League (EPL) Championship?",
+      "outcome": "No",
+      "outcomeKey": "1",
+      "supporterCount": 2,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 516944.0343,
+      "avgAccountAllocation": 0.3421575094193071,
+      "avgEntryPrice": 0.7099018232194158,
+      "currentPrice": 0.785,
+      "rankWeight": 0.26414683930489646,
+      "supporters": [
+        {
+          "rank": 28,
+          "name": "BreakTheBank",
+          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+          "currentValue": 516920.4717,
+          "visibleAccountValue": 755705.1086000002,
+          "accountAllocation": 0.6840240535857083,
+          "size": 658497.4161,
+          "avgPrice": 0.7099,
+          "pnl": 49408.0476
+        },
+        {
+          "rank": 177,
+          "name": "donthackme",
+          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
+          "currentValue": 23.5626,
+          "visibleAccountValue": 80980.8036,
+          "accountAllocation": 0.0002909652529059368,
+          "size": 30.016,
+          "avgPrice": 0.7499,
+          "pnl": 1.0515
+        }
+      ],
+      "decisionSide": "NO",
+      "decisionChoice": "Manchester City",
+      "decisionOption": "Manchester City",
+      "decisionTarget": "Will Manchester City win the 2026-27 English Premier League (EPL) Championship?",
+      "decisionText": "Select “Manchester City” → Buy NO",
+      "decisionMeaning": "On Polymarket, choose the “Manchester City” option/row/card, then click Buy NO. This applies only to the exact market question: “Will Manchester City win the 2026-27 English Premier League (EPL) Championship?”.",
+      "category": "Other",
+      "liquidity": 302268.8741,
+      "volume24hr": 31281.570877,
+      "usAvailable": true,
+      "usMarketSlug": "aachc-epl-2027-05-30-relegation-mnc",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/aachc-epl-2027-05-30-relegation-mnc"
     }
   ],
-  "recommendationsUpdatedAt": "2026-08-19T21:33:56.092Z",
-  "lastCheckedAt": "2026-08-19T21:33:56.170Z",
+  "recommendationsUpdatedAt": "2026-08-19T21:54:39.617Z",
+  "lastCheckedAt": "2026-08-19T21:54:39.676Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-19T20:38:03.556Z",
+  "previousRecommendationsReplacedAt": "2026-08-19T21:33:56.092Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-19T21:33:56.170Z",
+  "lastSuccessfulWorkflowAt": "2026-08-19T21:54:39.676Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
