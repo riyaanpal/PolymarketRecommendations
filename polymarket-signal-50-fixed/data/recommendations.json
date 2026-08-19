@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-08-19T11:33:51.692Z",
-  "durationSeconds": 45,
+  "durationSeconds": 51,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -20,12 +20,12 @@
   },
   "stats": {
     "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 194,
-    "excludedBothOutcomes": 53,
+    "skippedNoPositions": 193,
+    "excludedBothOutcomes": 55,
     "positionFetchErrors": 0,
-    "eligibleTraders": 53,
-    "candidateMarkets": 377,
-    "marketsChecked": 82,
+    "eligibleTraders": 52,
+    "candidateMarkets": 463,
+    "marketsChecked": 86,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -89,6 +89,13 @@
       "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
       "pnl": 2404440.9814106612,
       "activePositionCount": 3
+    },
+    {
+      "rank": 64,
+      "name": "CandleHammerDrums",
+      "wallet": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
+      "pnl": 2301500.8994439202,
+      "activePositionCount": 1
     },
     {
       "rank": 65,
@@ -182,13 +189,6 @@
       "activePositionCount": 4
     },
     {
-      "rank": 139,
-      "name": "IMAREALPERSON",
-      "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
-      "pnl": 1256850.1104547633,
-      "activePositionCount": 6
-    },
-    {
       "rank": 140,
       "name": "influenz.eth",
       "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
@@ -249,7 +249,7 @@
       "name": "donthackme",
       "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
       "pnl": 1012064.9947202655,
-      "activePositionCount": 2829
+      "activePositionCount": 2831
     },
     {
       "rank": 187,
@@ -257,13 +257,6 @@
       "wallet": "0x13414a77a4be48988851c73dfd824d0168e70853",
       "pnl": 946399.5335835591,
       "activePositionCount": 11
-    },
-    {
-      "rank": 191,
-      "name": "Lilybaeum",
-      "wallet": "0x01c78f8873c0c86d6b6b92ff627e3802237ee995",
-      "pnl": 936891.207718587,
-      "activePositionCount": 4
     },
     {
       "rank": 193,
@@ -284,7 +277,7 @@
       "name": "one8tyfive",
       "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
       "pnl": 914098.9017621599,
-      "activePositionCount": 8
+      "activePositionCount": 10
     },
     {
       "rank": 210,
@@ -364,6 +357,13 @@
       "activePositionCount": 7
     },
     {
+      "rank": 254,
+      "name": "AnonymousUsername",
+      "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
+      "pnl": 787221.6493645464,
+      "activePositionCount": 279
+    },
+    {
       "rank": 263,
       "name": "SineNooneEI",
       "wallet": "0x38337de21ff0bb0a11a40761507d51e318d633d1",
@@ -390,13 +390,6 @@
       "wallet": "0xe5241830e8876c115d7dc8311ad9f43d85fdd34f",
       "pnl": 699409.7770099745,
       "activePositionCount": 1
-    },
-    {
-      "rank": 288,
-      "name": "0xheavy888",
-      "wallet": "0xec981ed70ae69c5cbcac08c1ba063e734f6bafcd",
-      "pnl": 685174.9187955728,
-      "activePositionCount": 17
     },
     {
       "rank": 292,
@@ -700,12 +693,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-19T11:33:51.692Z",
-  "lastCheckedAt": "2026-08-19T11:33:51.770Z",
+  "lastCheckedAt": "2026-08-19T11:54:41.796Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-19T09:42:03.227Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-19T11:33:51.770Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-08-19T11:54:41.725Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-08-19T11:54:41.796Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
