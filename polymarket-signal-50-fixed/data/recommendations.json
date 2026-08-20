@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-08-20T11:35:44.542Z",
-  "durationSeconds": 44,
+  "durationSeconds": 51,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -20,11 +20,11 @@
   },
   "stats": {
     "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 193,
+    "skippedNoPositions": 194,
     "excludedBothOutcomes": 55,
     "positionFetchErrors": 0,
-    "eligibleTraders": 52,
-    "candidateMarkets": 356,
+    "eligibleTraders": 51,
+    "candidateMarkets": 355,
     "marketsChecked": 84,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -91,13 +91,6 @@
       "activePositionCount": 2
     },
     {
-      "rank": 64,
-      "name": "CandleHammerDrums",
-      "wallet": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
-      "pnl": 2301419.1720961686,
-      "activePositionCount": 1
-    },
-    {
       "rank": 65,
       "name": "0x7fB7Ad0d194D7123e711e7db6C9D418fAc14E33d-1750343282446",
       "wallet": "0x7fb7ad0d194d7123e711e7db6c9d418fac14e33d",
@@ -151,7 +144,7 @@
       "name": "sportmaster777",
       "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
       "pnl": 1597239.4181604795,
-      "activePositionCount": 4
+      "activePositionCount": 3
     },
     {
       "rank": 103,
@@ -179,7 +172,7 @@
       "name": "1winstreak1",
       "wallet": "0xbca08c1bc204a34f2fddbe47b438b9bd42ac9705",
       "pnl": 1422438.6499259474,
-      "activePositionCount": 3
+      "activePositionCount": 2
     },
     {
       "rank": 131,
@@ -249,7 +242,7 @@
       "name": "donthackme",
       "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
       "pnl": 1044335.8915745949,
-      "activePositionCount": 2898
+      "activePositionCount": 2900
     },
     {
       "rank": 174,
@@ -291,7 +284,7 @@
       "name": "one8tyfive",
       "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
       "pnl": 905008.2343479155,
-      "activePositionCount": 11
+      "activePositionCount": 12
     },
     {
       "rank": 214,
@@ -375,7 +368,7 @@
       "name": "0x1610DB79f753a80207E1d66716be9E91E627AE49-1778875286261",
       "wallet": "0x1610db79f753a80207e1d66716be9e91e627ae49",
       "pnl": 694801.6091917648,
-      "activePositionCount": 3
+      "activePositionCount": 4
     },
     {
       "rank": 291,
@@ -682,12 +675,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-20T11:35:44.542Z",
-  "lastCheckedAt": "2026-08-20T11:35:44.620Z",
+  "lastCheckedAt": "2026-08-20T11:58:03.437Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-20T10:39:22.254Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-20T11:35:44.620Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-08-20T11:58:03.378Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-08-20T11:58:03.437Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
