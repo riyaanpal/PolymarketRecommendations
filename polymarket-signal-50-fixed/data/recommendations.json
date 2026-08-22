@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-08-22T07:38:53.467Z",
-  "durationSeconds": 42,
+  "durationSeconds": 56,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -19,13 +19,13 @@
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
-    "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 190,
-    "excludedBothOutcomes": 50,
+    "leaderboardUsersInspected": 250,
+    "skippedNoPositions": 158,
+    "excludedBothOutcomes": 41,
     "positionFetchErrors": 0,
-    "eligibleTraders": 60,
-    "candidateMarkets": 657,
-    "marketsChecked": 69,
+    "eligibleTraders": 51,
+    "candidateMarkets": 451,
+    "marketsChecked": 98,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -61,6 +61,13 @@
       "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
       "pnl": 4236958.904802028,
       "activePositionCount": 4
+    },
+    {
+      "rank": 38,
+      "name": "Djdjdjekekek",
+      "wallet": "0x6d20c35f65d9899b6d6b74f8466e824580f9a165",
+      "pnl": 3642481.6136056446,
+      "activePositionCount": 1
     },
     {
       "rank": 44,
@@ -119,6 +126,13 @@
       "activePositionCount": 94
     },
     {
+      "rank": 68,
+      "name": "ferrariChampions2026",
+      "wallet": "0xfe787d2da716d60e8acff57fb87eb13cd4d10319",
+      "pnl": 2204833.6340517537,
+      "activePositionCount": 88
+    },
+    {
       "rank": 70,
       "name": "geniusMC",
       "wallet": "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44",
@@ -158,7 +172,7 @@
       "name": "sportmaster777",
       "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
       "pnl": 1586393.4261245786,
-      "activePositionCount": 5
+      "activePositionCount": 6
     },
     {
       "rank": 105,
@@ -200,7 +214,7 @@
       "name": "donthackme",
       "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
       "pnl": 1240109.6513102164,
-      "activePositionCount": 2986
+      "activePositionCount": 2985
     },
     {
       "rank": 143,
@@ -376,83 +390,6 @@
       "wallet": "0x1465b79bff7992bc703e1aafb3683b1089647072",
       "pnl": 806769.3608075478,
       "activePositionCount": 23
-    },
-    {
-      "rank": 259,
-      "name": "AnonymousUsername",
-      "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-      "pnl": 770321.6714987163,
-      "activePositionCount": 320
-    },
-    {
-      "rank": 266,
-      "name": "SlavaUkraini",
-      "wallet": "0xe899b5ea69afb161da7a35597b6fe70398860899",
-      "pnl": 751241.611858446,
-      "activePositionCount": 8
-    },
-    {
-      "rank": 271,
-      "name": "0x8a3aB8120807bD64a3De48695110e390fa2ceB9a-1771005965025",
-      "wallet": "0x8a3ab8120807bd64a3de48695110e390fa2ceb9a",
-      "pnl": 727505.9132325993,
-      "activePositionCount": 2
-    },
-    {
-      "rank": 275,
-      "name": "chungguskhan",
-      "wallet": "0x7744bfd749a70020d16a1fcbac1d064761c9999e",
-      "pnl": 716896.6436350652,
-      "activePositionCount": 5
-    },
-    {
-      "rank": 279,
-      "name": "SineNooneEI",
-      "wallet": "0x38337de21ff0bb0a11a40761507d51e318d633d1",
-      "pnl": 710274.7268881239,
-      "activePositionCount": 7
-    },
-    {
-      "rank": 280,
-      "name": "pingan123",
-      "wallet": "0x7dddf1968c14900b2d2ef9dada8465e82ac4c933",
-      "pnl": 708537.7633023221,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 288,
-      "name": "0xheavy888",
-      "wallet": "0xec981ed70ae69c5cbcac08c1ba063e734f6bafcd",
-      "pnl": 691160.3459732014,
-      "activePositionCount": 22
-    },
-    {
-      "rank": 289,
-      "name": "AvocadosFromMexico",
-      "wallet": "0x033f0346c007323030eb420305ffede19a95618e",
-      "pnl": 688685.4933317242,
-      "activePositionCount": 15
-    },
-    {
-      "rank": 291,
-      "name": "betterfasterstronger",
-      "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
-      "pnl": 687440.6429215545,
-      "activePositionCount": 236
-    },
-    {
-      "rank": 292,
-      "name": "afkpnlucl",
-      "wallet": "0x55eca3687ea7d69632ffe0f297ea3d5158bb8c7d",
-      "pnl": 684167.9621034551,
-      "activePositionCount": 53
-    },
-    {
-      "rank": 299,
-      "name": "RenanPresidente.",
-      "wallet": "0x88c4919de76e526d55a32c1f8afb439dd1f1129a",
-      "pnl": 674738.8113680944,
-      "activePositionCount": 24
     }
   ],
   "recommendations": [
@@ -815,14 +752,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-22T07:38:53.467Z",
-  "lastCheckedAt": "2026-08-22T09:35:26.816Z",
+  "lastCheckedAt": "2026-08-22T09:54:54.050Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
   "refreshMode": "checked_recommendations_unchanged",
   "notes": [
-    "Checked at 2026-08-22T09:35:26.757Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+    "Checked at 2026-08-22T09:54:53.980Z. The scanner found the same recommendation set, so the published cards were left unchanged."
   ],
-  "lastSuccessfulWorkflowAt": "2026-08-22T09:35:26.816Z",
+  "lastSuccessfulWorkflowAt": "2026-08-22T09:54:54.050Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
