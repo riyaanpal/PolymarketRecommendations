@@ -11,6 +11,7 @@ import {
   hasBothOutcomes,
   isCryptoMarket,
   isIranMarket,
+  isPoliticsMarket,
   isTradeableMarket,
   isUsTradeableMarket,
   normalizeMatchText,
@@ -251,7 +252,8 @@ test("returns at most one recommendation from each Polymarket event", async () =
       minSharedSupporters: 2,
       recommendationCount: 5,
       requestConcurrency: 2,
-      maxMarketChecks: 20
+      maxMarketChecks: 20,
+      excludePoliticsMarkets: false
     }
   });
 
@@ -633,7 +635,8 @@ test("shows which date decision a NO signal applies to", async () => {
       maxMarketChecks: 20,
       requireUsAvailable: true,
       useCachedUsMarkets: true,
-      usMatchMinScore: 0.35
+      usMatchMinScore: 0.35,
+      excludePoliticsMarkets: false
     }
   });
 
@@ -985,6 +988,72 @@ test("skips Iran-related markets and keeps scanning for non-Iran recommendations
       requireUsAvailable: false,
       excludeCryptoMarkets: true,
       excludeIranMarkets: true
+    }
+  });
+
+  assert.equal(result.recommendations.length, 1);
+  assert.equal(result.recommendations[0].slug, "will-arsenal-win-the-premier-league");
+});
+
+
+test("detects politics markets from category, title, question, or slug", () => {
+  assert.equal(isPoliticsMarket({ title: "Will Trump win the 2028 election?" }), true);
+  assert.equal(isPoliticsMarket({ slug: "samuel-alito-announced-out-as-scotus-justice" }), true);
+  assert.equal(isPoliticsMarket({}, { category: "Politics" }), true);
+  assert.equal(isPoliticsMarket({}, { question: "Will the Senate pass the bill?" }), true);
+  assert.equal(isPoliticsMarket({ title: "Will Arsenal win the Premier League?" }), false);
+});
+
+test("skips politics markets and keeps scanning for non-politics recommendations", async () => {
+  const politics = position({
+    conditionId: "politics-market",
+    title: "Will Trump win the 2028 election?",
+    slug: "will-trump-win-the-2028-election",
+    eventSlug: "trump-2028-election",
+    currentValue: 100
+  });
+  const sports = position({
+    conditionId: "sports-market",
+    title: "Will Arsenal win the Premier League?",
+    slug: "will-arsenal-win-the-premier-league",
+    eventSlug: "arsenal-premier-league",
+    currentValue: 50
+  });
+
+  const eligible = [trader(1, [politics, sports]), trader(2, [politics, sports])];
+
+  const fetchImpl = async (url) => {
+    const text = String(url);
+    const isPolitics = text.includes("trump") || text.includes("election");
+    return {
+      ok: true,
+      json: async () => ({
+        active: true,
+        closed: false,
+        archived: false,
+        acceptingOrders: true,
+        question: isPolitics
+          ? "Will Trump win the 2028 election?"
+          : "Will Arsenal win the Premier League?",
+        category: isPolitics ? "Politics" : "Sports",
+        outcomes: '["Yes", "No"]',
+        outcomePrices: '["0.60", "0.40"]'
+      }),
+      text: async () => ""
+    };
+  };
+
+  const result = await selectRecommendations(eligible, {
+    fetchImpl,
+    config: {
+      minSharedSupporters: 2,
+      recommendationCount: 2,
+      requestConcurrency: 2,
+      maxMarketChecks: 20,
+      requireUsAvailable: false,
+      excludeCryptoMarkets: true,
+      excludeIranMarkets: true,
+      excludePoliticsMarkets: true
     }
   });
 
