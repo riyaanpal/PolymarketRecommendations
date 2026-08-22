@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-08-22T20:34:08.209Z",
-  "durationSeconds": 109,
+  "generatedAt": "2026-08-22T20:53:37.136Z",
+  "durationSeconds": 99,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -21,11 +21,11 @@
   "stats": {
     "leaderboardUsersInspected": 300,
     "skippedNoPositions": 183,
-    "excludedBothOutcomes": 57,
+    "excludedBothOutcomes": 56,
     "positionFetchErrors": 0,
-    "eligibleTraders": 60,
-    "candidateMarkets": 347,
-    "marketsChecked": 216,
+    "eligibleTraders": 61,
+    "candidateMarkets": 349,
+    "marketsChecked": 116,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -40,6 +40,13 @@
       "wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
       "pnl": 5042516.878910711,
       "activePositionCount": 2
+    },
+    {
+      "rank": 23,
+      "name": "Djdjdjekekek",
+      "wallet": "0x6d20c35f65d9899b6d6b74f8466e824580f9a165",
+      "pnl": 4959502.854747436,
+      "activePositionCount": 1
     },
     {
       "rank": 26,
@@ -130,7 +137,7 @@
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "pnl": 2068305.2303711534,
-      "activePositionCount": 62
+      "activePositionCount": 63
     },
     {
       "rank": 86,
@@ -193,7 +200,7 @@
       "name": "WTSA",
       "wallet": "0x04d5524a0a5af2eca6e39e03defc261d42fe66d8",
       "pnl": 1223539.0671946378,
-      "activePositionCount": 2
+      "activePositionCount": 3
     },
     {
       "rank": 152,
@@ -382,7 +389,7 @@
       "name": "0x8a3aB8120807bD64a3De48695110e390fa2ceB9a-1771005965025",
       "wallet": "0x8a3ab8120807bd64a3de48695110e390fa2ceb9a",
       "pnl": 725772.8047585029,
-      "activePositionCount": 2
+      "activePositionCount": 1
     },
     {
       "rank": 276,
@@ -417,14 +424,14 @@
       "name": "betterfasterstronger",
       "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
       "pnl": 694219.5934179167,
-      "activePositionCount": 218
+      "activePositionCount": 226
     },
     {
       "rank": 291,
       "name": "GamblingOdyssey",
       "wallet": "0xe5241830e8876c115d7dc8311ad9f43d85fdd34f",
       "pnl": 691718.9857085545,
-      "activePositionCount": 1
+      "activePositionCount": 2
     },
     {
       "rank": 292,
@@ -438,7 +445,7 @@
       "name": "jump-trading-with-80pct-taker-rebate",
       "wallet": "0xb0c85813a7a4428f1139ff91d3118a92c391fe7f",
       "pnl": 680736.5163745322,
-      "activePositionCount": 1841
+      "activePositionCount": 1849
     },
     {
       "rank": 297,
@@ -471,9 +478,9 @@
       "supporterCount": 3,
       "opposingSupporters": 1,
       "consensusRate": 0.75,
-      "totalCurrentValue": 124030.11250000002,
-      "avgAccountAllocation": 0.3652867461441837,
-      "avgEntryPrice": 0.45371714499240606,
+      "totalCurrentValue": 124029.11330000001,
+      "avgAccountAllocation": 0.36501323259786694,
+      "avgEntryPrice": 0.4537207099398311,
       "currentPrice": 0.6185,
       "rankWeight": 0.22477212940908436,
       "supporters": [
@@ -482,8 +489,8 @@
           "name": "DLEK",
           "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
           "currentValue": 37350.0458,
-          "visibleAccountValue": 172014.5062,
-          "accountAllocation": 0.21713311641620142,
+          "visibleAccountValue": 172055.35460000002,
+          "accountAllocation": 0.2170815659113465,
           "size": 60388.1096,
           "avgPrice": 0.4991,
           "pnl": 7207.7879
@@ -503,12 +510,12 @@
           "rank": 289,
           "name": "betterfasterstronger",
           "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
-          "currentValue": 89.6937,
-          "visibleAccountValue": 5495.562899999975,
-          "accountAllocation": 0.016321112437817864,
-          "size": 145.0181,
+          "currentValue": 88.6945,
+          "visibleAccountValue": 5703.047999999976,
+          "accountAllocation": 0.015552122303722566,
+          "size": 143.4026,
           "avgPrice": 0.0112,
-          "pnl": 88.0644
+          "pnl": 87.0833
         }
       ],
       "decisionSide": "YES",
@@ -518,13 +525,72 @@
       "decisionText": "Select “Harry Kane” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Harry Kane” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Harry Kane win the 2026 Ballon d'Or?”.",
       "category": "Other",
-      "liquidity": 197080.76721,
+      "liquidity": 198830.0759,
       "volume24hr": 46789.06284200001,
       "usAvailable": true,
       "usMarketSlug": "tec-uefa-bdor-2026-10-26-w-harkan",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
       "marketUrl": "https://polymarket.us/market/tec-uefa-bdor-2026-10-26-w-harkan"
+    },
+    {
+      "conditionId": "0x69a24b337ef9c44ef2cda8ddc69bf32cba38dec05846c26071d6bba43e9f7834",
+      "title": "Will the Detroit Lions win the 2027 NFL league championship?",
+      "slug": "will-the-detroit-lions-win-the-2027-nfl-league-championship",
+      "eventSlug": "pro-football-2027-champion-20260729185915366",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/football-logo.png",
+      "endDate": "2027-03-31",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Will the Detroit Lions win the 2027 NFL league championship?",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 2,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 32.018699999999995,
+      "avgAccountAllocation": 0.06427365128745363,
+      "avgEntryPrice": 0.03521330006745617,
+      "currentPrice": 0.0395,
+      "rankWeight": 0.24139771524682008,
+      "supporters": [
+        {
+          "rank": 30,
+          "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
+          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
+          "currentValue": 16.2183,
+          "visibleAccountValue": 128.9451,
+          "accountAllocation": 0.12577678407322185,
+          "size": 410.59,
+          "avgPrice": 0.04,
+          "pnl": -0.2053
+        },
+        {
+          "rank": 289,
+          "name": "betterfasterstronger",
+          "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
+          "currentValue": 15.8004,
+          "visibleAccountValue": 5703.047999999976,
+          "accountAllocation": 0.0027705185016854263,
+          "size": 400.0104,
+          "avgPrice": 0.0303,
+          "pnl": 3.6792
+        }
+      ],
+      "decisionSide": "YES",
+      "decisionChoice": "Detroit Lions",
+      "decisionOption": "Detroit Lions",
+      "decisionTarget": "Will the Detroit Lions win the 2027 NFL league championship?",
+      "decisionText": "Select “Detroit Lions” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “Detroit Lions” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Detroit Lions win the 2027 NFL league championship?”.",
+      "category": "Other",
+      "liquidity": 145462.15356,
+      "volume24hr": 10345.83,
+      "usAvailable": true,
+      "usMarketSlug": "aachc-nba-2027-04-11-bestrecord-det",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/aachc-nba-2027-04-11-bestrecord-det"
     },
     {
       "conditionId": "0x7367df88b3c0eb6ff01ebc8c40f6887a163fa0baf505814decc204d47ee7ea7c",
@@ -541,33 +607,33 @@
       "supporterCount": 2,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 160764.3651,
-      "avgAccountAllocation": 0.470802100599654,
+      "totalCurrentValue": 169115.76069999998,
+      "avgAccountAllocation": 0.32297419812892203,
       "avgEntryPrice": 0.3161137826924293,
-      "currentPrice": 0.385,
+      "currentPrice": 0.405,
       "rankWeight": 0.23574029755351858,
       "supporters": [
         {
           "rank": 33,
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 129058.6105,
-          "visibleAccountValue": 1033195.8254000003,
-          "accountAllocation": 0.12491205183686754,
+          "currentValue": 135762.9539,
+          "visibleAccountValue": 1050231.087399998,
+          "accountAllocation": 0.12926960126090078,
           "size": 335217.1702,
           "avgPrice": 0.31,
-          "pnl": 25141.2877
+          "pnl": 31845.6311
         },
         {
           "rank": 263,
           "name": "bomber",
           "wallet": "0xd776f0a066fd3014ecfac89cfd414440982bffeb",
-          "currentValue": 31705.7546,
-          "visibleAccountValue": 38822.1616,
-          "accountAllocation": 0.8166921493624405,
+          "currentValue": 33352.8068,
+          "visibleAccountValue": 64552.304299999996,
+          "accountAllocation": 0.5166787949969432,
           "size": 82352.6094,
           "avgPrice": 0.341,
-          "pnl": 3623.35
+          "pnl": 5270.4022
         }
       ],
       "decisionSide": "NO",
@@ -577,8 +643,8 @@
       "decisionText": "Select “Real Madrid CF” → Buy NO",
       "decisionMeaning": "On Polymarket, choose the “Real Madrid CF” option/row/card, then click Buy NO. This applies only to the exact market question: “Will Real Madrid CF win on 2026-08-22?”.",
       "category": "Other",
-      "liquidity": 237627.853,
-      "volume24hr": 1254250.517929,
+      "liquidity": 112974.4889,
+      "volume24hr": 1343625.993633007,
       "usAvailable": true,
       "usMarketSlug": "astatc-lal-esp-rma-2026-08-22-fh-ftts-rma",
       "usMatchMethod": "title_slug_similarity",
@@ -601,7 +667,7 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 97589.9033,
-      "avgAccountAllocation": 0.10061260196887956,
+      "avgAccountAllocation": 0.0978985605339602,
       "avgEntryPrice": 0.4972291020950781,
       "currentPrice": 0.485,
       "rankWeight": 0.23290118536746257,
@@ -611,8 +677,8 @@
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
           "currentValue": 97000,
-          "visibleAccountValue": 1033195.8254000003,
-          "accountAllocation": 0.09388346102003131,
+          "visibleAccountValue": 1050231.087399998,
+          "accountAllocation": 0.09236062535545184,
           "size": 200000,
           "avgPrice": 0.5,
           "pnl": -3000
@@ -622,8 +688,8 @@
           "name": "betterfasterstronger",
           "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
           "currentValue": 589.9033,
-          "visibleAccountValue": 5495.562899999975,
-          "accountAllocation": 0.10734174291772779,
+          "visibleAccountValue": 5703.047999999976,
+          "accountAllocation": 0.10343649571246856,
           "size": 1216.2954,
           "avgPrice": 0.0416,
           "pnl": 539.2251
@@ -636,81 +702,22 @@
       "decisionText": "Select “Arsenal” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Arsenal” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Arsenal win the 2026-27 English Premier League (EPL) Championship?”.",
       "category": "Other",
-      "liquidity": 362220.9256,
+      "liquidity": 362931.6657,
       "volume24hr": 27478.399793,
       "usAvailable": true,
       "usMarketSlug": "aachc-epl-2027-05-30-relegation-ars",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
       "marketUrl": "https://polymarket.us/market/aachc-epl-2027-05-30-relegation-ars"
-    },
-    {
-      "conditionId": "0xdb88bf08a8244ff54b020d91853d03655b23eea74ed3ced99be6e6e978b0a3c3",
-      "title": "Will the Los Angeles Rams win the 2027 NFL league championship?",
-      "slug": "will-the-los-angeles-rams-win-the-2027-nfl-league-championship",
-      "eventSlug": "pro-football-2027-champion-20260729185915366",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/football-logo.png",
-      "endDate": "2027-03-31",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will the Los Angeles Rams win the 2027 NFL league championship?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 2,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 7315.451,
-      "avgAccountAllocation": 0.05433956677345986,
-      "avgEntryPrice": 0.10680935884685745,
-      "currentPrice": 0.145,
-      "rankWeight": 0.14309347527723257,
-      "supporters": [
-        {
-          "rank": 161,
-          "name": "gatorr",
-          "wallet": "0x93abbc022ce98d6f45d4444b594791cc4b7a9723",
-          "currentValue": 7250,
-          "visibleAccountValue": 66799.9629,
-          "accountAllocation": 0.1085329944097918,
-          "size": 50000,
-          "avgPrice": 0.1066,
-          "pnl": 1916.6835
-        },
-        {
-          "rank": 242,
-          "name": "11122",
-          "wallet": "0x011f2d377e56119fb09196dffb0948ae55711122",
-          "currentValue": 65.451,
-          "visibleAccountValue": 447867.70529999956,
-          "accountAllocation": 0.00014613913712791218,
-          "size": 451.3865,
-          "avgPrice": 0.13,
-          "pnl": 6.7707
-        }
-      ],
-      "decisionSide": "YES",
-      "decisionChoice": "Los Angeles Rams",
-      "decisionOption": "Los Angeles Rams",
-      "decisionTarget": "Will the Los Angeles Rams win the 2027 NFL league championship?",
-      "decisionText": "Select “Los Angeles Rams” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Los Angeles Rams” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Los Angeles Rams win the 2027 NFL league championship?”.",
-      "category": "Other",
-      "liquidity": 227137.092,
-      "volume24hr": 3628.2866609999996,
-      "usAvailable": true,
-      "usMarketSlug": "aachc-nba-2027-04-11-bestrecord-lac",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aachc-nba-2027-04-11-bestrecord-lac"
     }
   ],
-  "recommendationsUpdatedAt": "2026-08-22T20:34:08.209Z",
-  "lastCheckedAt": "2026-08-22T20:34:08.266Z",
+  "recommendationsUpdatedAt": "2026-08-22T20:53:37.136Z",
+  "lastCheckedAt": "2026-08-22T20:53:37.221Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-22T19:50:15.320Z",
+  "previousRecommendationsReplacedAt": "2026-08-22T20:34:08.209Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-22T20:34:08.266Z",
+  "lastSuccessfulWorkflowAt": "2026-08-22T20:53:37.221Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
