@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-08-22T04:42:17.402Z",
-  "durationSeconds": 35,
+  "durationSeconds": 44,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -20,12 +20,12 @@
   },
   "stats": {
     "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 194,
-    "excludedBothOutcomes": 50,
+    "skippedNoPositions": 196,
+    "excludedBothOutcomes": 48,
     "positionFetchErrors": 0,
     "eligibleTraders": 56,
-    "candidateMarkets": 641,
-    "marketsChecked": 69,
+    "candidateMarkets": 294,
+    "marketsChecked": 47,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -53,7 +53,7 @@
       "name": "BreakTheBank",
       "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
       "pnl": 4444819.043697485,
-      "activePositionCount": 49
+      "activePositionCount": 50
     },
     {
       "rank": 30,
@@ -95,7 +95,7 @@
       "name": "0xf705…3ca7",
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
       "pnl": 2368950.4939572266,
-      "activePositionCount": 129
+      "activePositionCount": 130
     },
     {
       "rank": 62,
@@ -110,6 +110,13 @@
       "wallet": "0x7fb7ad0d194d7123e711e7db6c9d418fac14e33d",
       "pnl": 2282133.6592162624,
       "activePositionCount": 1
+    },
+    {
+      "rank": 67,
+      "name": "ferrariChampions2026",
+      "wallet": "0xfe787d2da716d60e8acff57fb87eb13cd4d10319",
+      "pnl": 2258702.049461611,
+      "activePositionCount": 56
     },
     {
       "rank": 68,
@@ -137,7 +144,7 @@
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "pnl": 2065436.3888769483,
-      "activePositionCount": 57
+      "activePositionCount": 56
     },
     {
       "rank": 86,
@@ -182,6 +189,13 @@
       "activePositionCount": 4
     },
     {
+      "rank": 123,
+      "name": "1winstreak1",
+      "wallet": "0xbca08c1bc204a34f2fddbe47b438b9bd42ac9705",
+      "pnl": 1430677.8067013829,
+      "activePositionCount": 3
+    },
+    {
       "rank": 127,
       "name": "IMAREALPERSON",
       "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
@@ -201,13 +215,6 @@
       "wallet": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
       "pnl": 1238042.1669181962,
       "activePositionCount": 3
-    },
-    {
-      "rank": 144,
-      "name": "donthackme",
-      "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-      "pnl": 1233344.486801291,
-      "activePositionCount": 2988
     },
     {
       "rank": 148,
@@ -355,13 +362,6 @@
       "wallet": "0x1bc0d88ca86b9049cf05d642e634836d5ddf4429",
       "pnl": 809796.4389787625,
       "activePositionCount": 7
-    },
-    {
-      "rank": 258,
-      "name": "AnonymousUsername",
-      "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-      "pnl": 774508.2423031019,
-      "activePositionCount": 315
     },
     {
       "rank": 266,
@@ -787,14 +787,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-22T04:42:17.402Z",
-  "lastCheckedAt": "2026-08-22T05:35:26.481Z",
+  "lastCheckedAt": "2026-08-22T05:57:39.540Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
   "refreshMode": "checked_recommendations_unchanged",
   "notes": [
-    "Checked at 2026-08-22T05:35:26.409Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+    "Checked at 2026-08-22T05:57:39.454Z. The scanner found the same recommendation set, so the published cards were left unchanged."
   ],
-  "lastSuccessfulWorkflowAt": "2026-08-22T05:35:26.481Z",
+  "lastSuccessfulWorkflowAt": "2026-08-22T05:57:39.540Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
