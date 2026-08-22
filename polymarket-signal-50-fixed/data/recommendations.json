@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-08-22T15:29:41.845Z",
-  "durationSeconds": 40,
+  "durationSeconds": 47,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -20,11 +20,11 @@
   },
   "stats": {
     "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 184,
-    "excludedBothOutcomes": 55,
+    "skippedNoPositions": 183,
+    "excludedBothOutcomes": 56,
     "positionFetchErrors": 0,
     "eligibleTraders": 61,
-    "candidateMarkets": 387,
+    "candidateMarkets": 386,
     "marketsChecked": 27,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -137,7 +137,7 @@
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "pnl": 2065691.4160415789,
-      "activePositionCount": 66
+      "activePositionCount": 64
     },
     {
       "rank": 86,
@@ -424,7 +424,7 @@
       "name": "betterfasterstronger",
       "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
       "pnl": 692870.905347183,
-      "activePositionCount": 230
+      "activePositionCount": 227
     },
     {
       "rank": 290,
@@ -459,7 +459,7 @@
       "name": "beg-for-private-vps",
       "wallet": "0xb0c85813a7a4428f1139ff91d3118a92c391fe7f",
       "pnl": 672955.1207923617,
-      "activePositionCount": 1907
+      "activePositionCount": 1929
     }
   ],
   "recommendations": [
@@ -767,12 +767,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-22T15:29:41.845Z",
-  "lastCheckedAt": "2026-08-22T15:29:41.918Z",
+  "lastCheckedAt": "2026-08-22T15:50:15.999Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-22T14:30:14.829Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-22T15:29:41.918Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-08-22T15:50:15.926Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-08-22T15:50:15.999Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
