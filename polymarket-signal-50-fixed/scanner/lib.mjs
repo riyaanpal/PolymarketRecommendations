@@ -16,6 +16,7 @@ export const DEFAULT_CONFIG = Object.freeze({
   maxEligibleTraders: 300,
   excludeCryptoMarkets: true,
   excludeIranMarkets: true,
+  excludePoliticsMarkets: true,
   excludeZeroAvgAccountAllocation: true,
   excludeExtremeMarketPrices: true,
   excludedRoundedMarketPrices: [0, 99, 100],
@@ -874,6 +875,63 @@ const IRAN_TEXT_PATTERNS = [
   /\biran\s*[-–—/]\s*us\b/i
 ];
 
+const POLITICS_CATEGORY_PATTERNS = [
+  /\bpolitics?\b/i,
+  /\belections?\b/i,
+  /\bgovernment\b/i,
+  /\bgeopolitics?\b/i,
+  /\bpublic\s+policy\b/i
+];
+
+const POLITICS_TEXT_PATTERNS = [
+  /\bpolitics?\b/i,
+  /\belections?\b/i,
+  /\belected\b/i,
+  /\bvoters?\b/i,
+  /\bvoting\b/i,
+  /\bballots?\b/i,
+  /\bpolls?\b/i,
+  /\bpresident(?:ial)?\b/i,
+  /\bvice\s+president\b/i,
+  /\bpotus\b/i,
+  /\bcongress(?:ional)?\b/i,
+  /\bsenate\b/i,
+  /\bsenators?\b/i,
+  /\bhouse\s+of\s+representatives\b/i,
+  /\bparliament\b/i,
+  /\bprime\s+minister\b/i,
+  /\bgovernors?\b/i,
+  /\bmayors?\b/i,
+  /\bscotus\b/i,
+  /\bsupreme\s+court\b/i,
+  /\bjustice(?:s)?\b/i,
+  /\bcabinet\b/i,
+  /\bnomination\b/i,
+  /\bnominee\b/i,
+  /\brepublicans?\b/i,
+  /\bdemocrats?\b/i,
+  /\bgop\b/i,
+  /\bdnc\b/i,
+  /\brnc\b/i,
+  /\btrump\b/i,
+  /\bbiden\b/i,
+  /\bharris\b/i,
+  /\bobama\b/i,
+  /\bvance\b/i,
+  /\bdesantis\b/i,
+  /\bnewsom\b/i,
+  /\baoc\b/i,
+  /\brfk\b/i,
+  /\bmaga\b/i,
+  /\breferendums?\b/i,
+  /\bimpeach(?:ment|ed)?\b/i,
+  /\bexecutive\s+order\b/i,
+  /\bpolicy\b/i,
+  /\blegislation\b/i,
+  /\bbill\s+(?:pass|passes|passed|become|becomes)\b/i,
+  /\bresign(?:s|ed|ation)?\b/i
+];
+
 function fieldTexts(...values) {
   return values
     .flatMap((value) => {
@@ -961,6 +1019,39 @@ export function isIranMarket(candidate = null, metadata = null, usMetadata = nul
   );
 
   return marketTexts.some((text) => IRAN_TEXT_PATTERNS.some((pattern) => pattern.test(text)));
+}
+
+export function isPoliticsMarket(candidate = null, metadata = null, usMetadata = null) {
+  const categoryTexts = fieldTexts(
+    candidate?.category,
+    metadata?.category,
+    metadata?.categories,
+    metadata?.tags,
+    usMetadata?.category,
+    usMetadata?.categories,
+    usMetadata?.tags
+  );
+
+  if (categoryTexts.some((text) => POLITICS_CATEGORY_PATTERNS.some((pattern) => pattern.test(text)))) {
+    return true;
+  }
+
+  const marketTexts = fieldTexts(
+    candidate?.title,
+    candidate?.slug,
+    candidate?.eventSlug,
+    candidate?.rawPositionTitle,
+    metadata?.question,
+    metadata?.title,
+    metadata?.slug,
+    metadata?.eventSlug,
+    metadata?.events,
+    usMetadata?.question,
+    usMetadata?.title,
+    usMetadata?.slug
+  );
+
+  return marketTexts.some((text) => POLITICS_TEXT_PATTERNS.some((pattern) => pattern.test(text)));
 }
 
 
@@ -1370,8 +1461,10 @@ export async function selectRecommendations(eligible, options = {}) {
         config.excludeCryptoMarkets !== false && isCryptoMarket(chunk[i], metadataRows[i], usMetadataRows[i]);
       const iranIsExcluded =
         config.excludeIranMarkets !== false && isIranMarket(chunk[i], metadataRows[i], usMetadataRows[i]);
+      const politicsIsExcluded =
+        config.excludePoliticsMarkets !== false && isPoliticsMarket(chunk[i], metadataRows[i], usMetadataRows[i]);
 
-      if (!cryptoIsExcluded && !iranIsExcluded && internationalIsTradeable && usIsTradeable) {
+      if (!cryptoIsExcluded && !iranIsExcluded && !politicsIsExcluded && internationalIsTradeable && usIsTradeable) {
         const enriched = enrichCandidate(chunk[i], metadataRows[i], usMetadataRows[i]);
         const signalExclusionReason = excludedSignalReason(enriched, config);
 
