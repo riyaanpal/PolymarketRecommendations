@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-08-22T18:28:50.594Z",
-  "durationSeconds": 141,
+  "durationSeconds": 144,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -21,11 +21,11 @@
   "stats": {
     "leaderboardUsersInspected": 300,
     "skippedNoPositions": 182,
-    "excludedBothOutcomes": 56,
+    "excludedBothOutcomes": 58,
     "positionFetchErrors": 0,
-    "eligibleTraders": 62,
-    "candidateMarkets": 345,
-    "marketsChecked": 283,
+    "eligibleTraders": 60,
+    "candidateMarkets": 346,
+    "marketsChecked": 285,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -103,13 +103,6 @@
       "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
       "pnl": 2351312.2517642053,
       "activePositionCount": 3
-    },
-    {
-      "rank": 65,
-      "name": "CandleHammerDrums",
-      "wallet": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
-      "pnl": 2302291.2527871965,
-      "activePositionCount": 2
     },
     {
       "rank": 66,
@@ -256,13 +249,6 @@
       "name": "matanovik",
       "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
       "pnl": 1109510.2322519347,
-      "activePositionCount": 4
-    },
-    {
-      "rank": 169,
-      "name": "tradecraft",
-      "wallet": "0xde9f7f4e77a1595623ceb58e469f776257ccd43c",
-      "pnl": 1052140.15388983,
       "activePositionCount": 4
     },
     {
@@ -438,14 +424,14 @@
       "name": "betterfasterstronger",
       "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
       "pnl": 693115.6421598783,
-      "activePositionCount": 225
+      "activePositionCount": 226
     },
     {
       "rank": 290,
       "name": "AvocadosFromMexico",
       "wallet": "0x033f0346c007323030eb420305ffede19a95618e",
       "pnl": 688749.8136814056,
-      "activePositionCount": 16
+      "activePositionCount": 15
     },
     {
       "rank": 295,
@@ -719,12 +705,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-22T18:28:50.594Z",
-  "lastCheckedAt": "2026-08-22T18:28:50.664Z",
+  "lastCheckedAt": "2026-08-22T18:43:29.585Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-22T17:28:52.207Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-22T18:28:50.664Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-08-22T18:43:29.515Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-08-22T18:43:29.585Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
