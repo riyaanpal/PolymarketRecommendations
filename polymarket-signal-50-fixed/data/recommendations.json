@@ -20,11 +20,11 @@
   },
   "stats": {
     "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 182,
+    "skippedNoPositions": 183,
     "excludedBothOutcomes": 56,
     "positionFetchErrors": 0,
-    "eligibleTraders": 62,
-    "candidateMarkets": 358,
+    "eligibleTraders": 61,
+    "candidateMarkets": 356,
     "marketsChecked": 28,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
@@ -63,6 +63,13 @@
       "activePositionCount": 4
     },
     {
+      "rank": 35,
+      "name": "Djdjdjekekek",
+      "wallet": "0x6d20c35f65d9899b6d6b74f8466e824580f9a165",
+      "pnl": 3691278.6482695737,
+      "activePositionCount": 1
+    },
+    {
       "rank": 44,
       "name": "GCottrell93",
       "wallet": "0x94a428cfa4f84b264e01f70d93d02bc96cb36356",
@@ -96,13 +103,6 @@
       "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
       "pnl": 2389138.722510031,
       "activePositionCount": 3
-    },
-    {
-      "rank": 65,
-      "name": "CandleHammerDrums",
-      "wallet": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
-      "pnl": 2302276.893985656,
-      "activePositionCount": 1
     },
     {
       "rank": 66,
@@ -182,18 +182,11 @@
       "activePositionCount": 4
     },
     {
-      "rank": 124,
-      "name": "1winstreak1",
-      "wallet": "0xbca08c1bc204a34f2fddbe47b438b9bd42ac9705",
-      "pnl": 1413321.1979424881,
-      "activePositionCount": 5
-    },
-    {
       "rank": 130,
       "name": "RegardedMoney",
       "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
       "pnl": 1346450.4622806231,
-      "activePositionCount": 2
+      "activePositionCount": 1
     },
     {
       "rank": 143,
@@ -273,6 +266,13 @@
       "activePositionCount": 8
     },
     {
+      "rank": 199,
+      "name": "johnbaster",
+      "wallet": "0x31864feb9d25dee93728c6225ba891530967e9ca",
+      "pnl": 929488.8873042637,
+      "activePositionCount": 5
+    },
+    {
       "rank": 205,
       "name": "Anointed-Connect",
       "wallet": "0x8f037a2e4fd49d11267f4ab874ab7ba745ac64d6",
@@ -285,13 +285,6 @@
       "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
       "pnl": 906338.0079954364,
       "activePositionCount": 5
-    },
-    {
-      "rank": 213,
-      "name": "fkigedgjdgwbg",
-      "wallet": "0x52ecea7b3159f09db589e4f4ee64872fd0bba6f3",
-      "pnl": 898700.4817635815,
-      "activePositionCount": 3
     },
     {
       "rank": 217,
@@ -333,7 +326,7 @@
       "name": "0xF201A19b43471261A3c1Ba9247335d55270e527e-1763824114616",
       "wallet": "0xf201a19b43471261a3c1ba9247335d55270e527e",
       "pnl": 835333.0396190038,
-      "activePositionCount": 8
+      "activePositionCount": 7
     },
     {
       "rank": 239,
@@ -410,14 +403,14 @@
       "name": "SineNooneEI",
       "wallet": "0x38337de21ff0bb0a11a40761507d51e318d633d1",
       "pnl": 715645.4701051146,
-      "activePositionCount": 4
+      "activePositionCount": 3
     },
     {
       "rank": 281,
       "name": "0xheavy888",
       "wallet": "0xec981ed70ae69c5cbcac08c1ba063e734f6bafcd",
       "pnl": 710331.5709621897,
-      "activePositionCount": 28
+      "activePositionCount": 27
     },
     {
       "rank": 283,
@@ -438,7 +431,7 @@
       "name": "betterfasterstronger",
       "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
       "pnl": 693115.6421598783,
-      "activePositionCount": 223
+      "activePositionCount": 222
     },
     {
       "rank": 290,
@@ -459,7 +452,7 @@
       "name": "jump-trading-with-80pct-taker-rebate",
       "wallet": "0xb0c85813a7a4428f1139ff91d3118a92c391fe7f",
       "pnl": 677613.6957749162,
-      "activePositionCount": 1845
+      "activePositionCount": 1842
     },
     {
       "rank": 298,
@@ -785,12 +778,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-22T17:28:52.207Z",
-  "lastCheckedAt": "2026-08-22T17:28:52.294Z",
+  "lastCheckedAt": "2026-08-22T17:50:35.559Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-22T16:54:51.589Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-22T17:28:52.294Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-08-22T17:50:35.481Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-08-22T17:50:35.559Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
