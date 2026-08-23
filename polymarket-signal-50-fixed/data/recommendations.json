@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-08-23T16:36:18.114Z",
-  "durationSeconds": 77,
+  "generatedAt": "2026-08-23T16:56:57.576Z",
+  "durationSeconds": 72,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -21,11 +21,11 @@
   "stats": {
     "leaderboardUsersInspected": 250,
     "skippedNoPositions": 156,
-    "excludedBothOutcomes": 43,
+    "excludedBothOutcomes": 44,
     "positionFetchErrors": 0,
-    "eligibleTraders": 51,
-    "candidateMarkets": 207,
-    "marketsChecked": 97,
+    "eligibleTraders": 50,
+    "candidateMarkets": 202,
+    "marketsChecked": 89,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -67,7 +67,7 @@
       "name": "BreakTheBank",
       "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
       "pnl": 4099559.7772413054,
-      "activePositionCount": 57
+      "activePositionCount": 58
     },
     {
       "rank": 44,
@@ -109,14 +109,7 @@
       "name": "0xf705…3ca7",
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
       "pnl": 2320012.7261781725,
-      "activePositionCount": 149
-    },
-    {
-      "rank": 65,
-      "name": "CandleHammerDrums",
-      "wallet": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
-      "pnl": 2303047.7161707645,
-      "activePositionCount": 1
+      "activePositionCount": 150
     },
     {
       "rank": 66,
@@ -179,7 +172,7 @@
       "name": "sportmaster777",
       "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
       "pnl": 1578996.286173782,
-      "activePositionCount": 7
+      "activePositionCount": 9
     },
     {
       "rank": 107,
@@ -187,13 +180,6 @@
       "wallet": "0x8b5a7da2fdf239b51b9c68a2a1a35bb156d200f2",
       "pnl": 1541419.5022173063,
       "activePositionCount": 11
-    },
-    {
-      "rank": 109,
-      "name": "coinman2",
-      "wallet": "0x55be7aa03ecfbe37aa5460db791205f7ac9ddca3",
-      "pnl": 1527119.0126907472,
-      "activePositionCount": 45
     },
     {
       "rank": 120,
@@ -322,6 +308,13 @@
       "activePositionCount": 5
     },
     {
+      "rank": 215,
+      "name": "fkigedgjdgwbg",
+      "wallet": "0x52ecea7b3159f09db589e4f4ee64872fd0bba6f3",
+      "pnl": 901647.0268145212,
+      "activePositionCount": 5
+    },
+    {
       "rank": 217,
       "name": "easyclap",
       "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
@@ -347,7 +340,7 @@
       "name": "n.maga",
       "wallet": "0x73c5701afdefba2814193168448b2992306b2f80",
       "pnl": 866116.2390294271,
-      "activePositionCount": 1
+      "activePositionCount": 2
     },
     {
       "rank": 227,
@@ -394,65 +387,6 @@
   ],
   "recommendations": [
     {
-      "conditionId": "0x65e192c00f6ffe5e487ada218f0792aa5ce0a9d1017360ad21ac7d95ef54324a",
-      "title": "Counter-Strike: FUT Esports vs Spirit (BO5) - Esports World Cup Playoffs",
-      "slug": "cs2-fut-ts7-2026-08-23",
-      "eventSlug": "cs2-fut-ts7-2026-08-23",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/counter-strike-image-16c415c538.png",
-      "endDate": "2026-08-23",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Counter-Strike: FUT Esports vs Spirit (BO5) - Esports World Cup Playoffs",
-      "outcome": "Spirit",
-      "outcomeKey": "1",
-      "supporterCount": 2,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 976673.3591,
-      "avgAccountAllocation": 0.5305641691257161,
-      "avgEntryPrice": 0.7196346055698082,
-      "currentPrice": 0.979,
-      "rankWeight": 0.31815138481217314,
-      "supporters": [
-        {
-          "rank": 19,
-          "name": "Djdjdjekekek",
-          "wallet": "0x6d20c35f65d9899b6d6b74f8466e824580f9a165",
-          "currentValue": 975016.5779,
-          "visibleAccountValue": 975016.5779,
-          "accountAllocation": 1,
-          "size": 995931.1317,
-          "avgPrice": 0.7196,
-          "pnl": 258299.3135
-        },
-        {
-          "rank": 127,
-          "name": "RegardedMoney",
-          "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
-          "currentValue": 1656.7812,
-          "visibleAccountValue": 27103.3247,
-          "accountAllocation": 0.061128338251432296,
-          "size": 1692.32,
-          "avgPrice": 0.74,
-          "pnl": 404.4644
-        }
-      ],
-      "decisionSide": "Spirit",
-      "decisionChoice": "Match Winner",
-      "decisionOption": "Match Winner",
-      "decisionTarget": "Counter-Strike: FUT Esports vs Spirit (BO5) - Esports World Cup Playoffs — Match Winner",
-      "decisionText": "Select “Match Winner” → Buy Spirit",
-      "decisionMeaning": "On Polymarket, choose the “Match Winner” option/row/card, then click Buy Spirit. This applies only to the exact market question: “Counter-Strike: FUT Esports vs Spirit (BO5) - Esports World Cup Playoffs — Match Winner”.",
-      "category": "Other",
-      "liquidity": 244174.84725,
-      "volume24hr": 3110801.2103059962,
-      "usAvailable": true,
-      "usMarketSlug": "tec-cs2-ewc-2026-08-23-w-fut",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/tec-cs2-ewc-2026-08-23-w-fut"
-    },
-    {
       "conditionId": "0x6ae54b57f576915b00f24e95c48c5f49fa7a40247caed58746654e7bfce4613a",
       "title": "Will Liverpool FC win on 2026-08-23?",
       "slug": "epl-new-liv-2026-08-23-liv",
@@ -467,33 +401,33 @@
       "supporterCount": 2,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 472189.34979999997,
-      "avgAccountAllocation": 0.6251280690605865,
+      "totalCurrentValue": 534730.9855,
+      "avgAccountAllocation": 0.6446328512934768,
       "avgEntryPrice": 0.49,
-      "currentPrice": 0.755,
+      "currentPrice": 0.855,
       "rankWeight": 0.2683409529683863,
       "supporters": [
         {
           "rank": 31,
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 446742.8063,
-          "visibleAccountValue": 1434698.3879999968,
-          "accountAllocation": 0.31138447637260536,
+          "currentValue": 505914.0389,
+          "visibleAccountValue": 1467657.3410999973,
+          "accountAllocation": 0.3447085533744692,
           "size": 591712.3262,
           "avgPrice": 0.49,
-          "pnl": 156803.7664
+          "pnl": 215974.999
         },
         {
           "rank": 127,
           "name": "RegardedMoney",
           "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
-          "currentValue": 25446.5435,
-          "visibleAccountValue": 27103.3247,
-          "accountAllocation": 0.9388716617485676,
+          "currentValue": 28816.9466,
+          "visibleAccountValue": 30508.4204,
+          "accountAllocation": 0.9445571492124843,
           "size": 33704.0311,
           "avgPrice": 0.49,
-          "pnl": 8931.5682
+          "pnl": 12301.9713
         }
       ],
       "decisionSide": "NO",
@@ -503,8 +437,8 @@
       "decisionText": "Select “Liverpool FC” → Buy NO",
       "decisionMeaning": "On Polymarket, choose the “Liverpool FC” option/row/card, then click Buy NO. This applies only to the exact market question: “Will Liverpool FC win on 2026-08-23?”.",
       "category": "Other",
-      "liquidity": 404753.3737,
-      "volume24hr": 2387962.5802200115,
+      "liquidity": 150942.7138,
+      "volume24hr": 2430623.9474750115,
       "usAvailable": true,
       "usMarketSlug": "asc-epl-new-liv-2026-08-23-fh-neg-1pt5",
       "usMatchMethod": "title_slug_similarity",
@@ -527,7 +461,7 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 14733.041799999999,
-      "avgAccountAllocation": 0.0326010804816594,
+      "avgAccountAllocation": 0.03253150400968102,
       "avgEntryPrice": 0.35238579582617147,
       "currentPrice": 0.1655,
       "rankWeight": 0.24812417300952808,
@@ -537,8 +471,8 @@
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
           "currentValue": 8890.0514,
-          "visibleAccountValue": 1434698.3879999968,
-          "accountAllocation": 0.006196460158007803,
+          "visibleAccountValue": 1467657.3410999973,
+          "accountAllocation": 0.0060573072140510525,
           "size": 53716.3227,
           "avgPrice": 0.4089,
           "pnl": -13077.9908
@@ -562,13 +496,72 @@
       "decisionText": "Select “Lamine Yamal” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Lamine Yamal” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Lamine Yamal win the 2026 Ballon d'Or?”.",
       "category": "Other",
-      "liquidity": 148304.06381,
-      "volume24hr": 17413.877059,
+      "liquidity": 147017.28745,
+      "volume24hr": 17407.997058999998,
       "usAvailable": true,
       "usMarketSlug": "tec-uefa-bdor-2026-10-26-w-lamyam",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
       "marketUrl": "https://polymarket.us/market/tec-uefa-bdor-2026-10-26-w-lamyam"
+    },
+    {
+      "conditionId": "0x50d3d911f79fa89cc245196565cf5c084867dbe124382ac80d22cd07c31f8129",
+      "title": "Will Villarreal CF win on 2026-08-23?",
+      "slug": "lal-mad-vil-2026-08-23-vil",
+      "eventSlug": "lal-mad-vil-2026-08-23",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-lal.png",
+      "endDate": "2026-08-23",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Will Villarreal CF win on 2026-08-23?",
+      "outcome": "No",
+      "outcomeKey": "1",
+      "supporterCount": 2,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 18700.3349,
+      "avgAccountAllocation": 0.5051416352438022,
+      "avgEntryPrice": 0.7935403633083171,
+      "currentPrice": 0.82,
+      "rankWeight": 0.24612431255054884,
+      "supporters": [
+        {
+          "rank": 31,
+          "name": "BreakTheBank",
+          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+          "currentValue": 15098.4294,
+          "visibleAccountValue": 1467657.3410999973,
+          "accountAllocation": 0.010287434932655227,
+          "size": 18301.1266,
+          "avgPrice": 0.7899,
+          "pnl": 640.5975
+        },
+        {
+          "rank": 226,
+          "name": "n.maga",
+          "wallet": "0x73c5701afdefba2814193168448b2992306b2f80",
+          "currentValue": 3601.9055,
+          "visibleAccountValue": 3601.9204999999997,
+          "accountAllocation": 0.9999958355549491,
+          "size": 4365.946,
+          "avgPrice": 0.8088,
+          "pnl": 70.3726
+        }
+      ],
+      "decisionSide": "NO",
+      "decisionChoice": "Villarreal CF",
+      "decisionOption": "Villarreal CF",
+      "decisionTarget": "Will Villarreal CF win on 2026-08-23?",
+      "decisionText": "Select “Villarreal CF” → Buy NO",
+      "decisionMeaning": "On Polymarket, choose the “Villarreal CF” option/row/card, then click Buy NO. This applies only to the exact market question: “Will Villarreal CF win on 2026-08-23?”.",
+      "category": "Other",
+      "liquidity": 115467.682,
+      "volume24hr": 259173.41594500002,
+      "usAvailable": true,
+      "usMarketSlug": "astatc-lal-ala-vil-2026-08-28-fh-ftts-vil",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/astatc-lal-ala-vil-2026-08-28-fh-ftts-vil"
     },
     {
       "conditionId": "0x4ab2690cf2ef7decb5cc7b519ce1dffd4cc3a812e966b38ade8c4ff480bc0f85",
@@ -586,7 +579,7 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 1335.3057,
-      "avgAccountAllocation": 0.548881328115248,
+      "avgAccountAllocation": 0.5370495358081508,
       "avgEntryPrice": 0.36721495258860914,
       "currentPrice": 0.365,
       "rankWeight": 0.18887710021238102,
@@ -596,8 +589,8 @@
           "name": "sportmaster777",
           "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
           "currentValue": 1144.4876,
-          "visibleAccountValue": 11706.797299999998,
-          "accountAllocation": 0.09776265623049611,
+          "visibleAccountValue": 15445.370300000002,
+          "accountAllocation": 0.07409907161630173,
           "size": 3135.5825,
           "avgPrice": 0.3651,
           "pnl": -0.3982
@@ -621,7 +614,7 @@
       "decisionText": "Select “Match Winner” → Buy Kiwoom DRX Challengers",
       "decisionMeaning": "On Polymarket, choose the “Match Winner” option/row/card, then click Buy Kiwoom DRX Challengers. This applies only to the exact market question: “LoL: DN SOOPers Challengers vs Kiwoom DRX Challengers (BO5) - LCK Challengers League Play-In — Match Winner”.",
       "category": "Other",
-      "liquidity": 31979.2699,
+      "liquidity": 31926.9508,
       "volume24hr": 37738.030576000005,
       "usAvailable": true,
       "usMarketSlug": "aec-lol-dnsc-krxc-2026-08-24",
@@ -630,13 +623,13 @@
       "marketUrl": "https://polymarket.us/market/aec-lol-dnsc-krxc-2026-08-24"
     }
   ],
-  "recommendationsUpdatedAt": "2026-08-23T16:36:18.114Z",
-  "lastCheckedAt": "2026-08-23T16:36:18.183Z",
+  "recommendationsUpdatedAt": "2026-08-23T16:56:57.576Z",
+  "lastCheckedAt": "2026-08-23T16:56:57.651Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-23T15:51:05.800Z",
+  "previousRecommendationsReplacedAt": "2026-08-23T16:36:18.114Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-23T16:36:18.183Z",
+  "lastSuccessfulWorkflowAt": "2026-08-23T16:56:57.651Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
