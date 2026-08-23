@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-08-23T15:32:07.340Z",
-  "durationSeconds": 86,
+  "generatedAt": "2026-08-23T15:51:05.800Z",
+  "durationSeconds": 44,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -20,12 +20,12 @@
   },
   "stats": {
     "leaderboardUsersInspected": 250,
-    "skippedNoPositions": 157,
-    "excludedBothOutcomes": 42,
+    "skippedNoPositions": 156,
+    "excludedBothOutcomes": 41,
     "positionFetchErrors": 0,
-    "eligibleTraders": 51,
+    "eligibleTraders": 53,
     "candidateMarkets": 211,
-    "marketsChecked": 97,
+    "marketsChecked": 41,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -38,14 +38,14 @@
       "rank": 21,
       "name": "Djdjdjekekek",
       "wallet": "0x6d20c35f65d9899b6d6b74f8466e824580f9a165",
-      "pnl": 5590828.356530217,
-      "activePositionCount": 2
+      "pnl": 5575889.3895540275,
+      "activePositionCount": 1
     },
     {
       "rank": 23,
       "name": "beachboy4",
       "wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
-      "pnl": 5117781.013168133,
+      "pnl": 5117781.013168129,
       "activePositionCount": 2
     },
     {
@@ -59,14 +59,14 @@
       "rank": 30,
       "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
       "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-      "pnl": 4236957.932732026,
+      "pnl": 4236958.343322027,
       "activePositionCount": 4
     },
     {
-      "rank": 31,
+      "rank": 34,
       "name": "BreakTheBank",
       "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-      "pnl": 4113669.167038326,
+      "pnl": 3979612.8623075634,
       "activePositionCount": 57
     },
     {
@@ -81,7 +81,7 @@
       "name": "S-Works",
       "wallet": "0xee00ba338c59557141789b127927a55f5cc5cea1",
       "pnl": 2572991.7079726923,
-      "activePositionCount": 2
+      "activePositionCount": 1
     },
     {
       "rank": 57,
@@ -214,7 +214,7 @@
       "name": "BRINGBACKTHELUCK",
       "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
       "pnl": 1269294.4586709607,
-      "activePositionCount": 6
+      "activePositionCount": 5
     },
     {
       "rank": 143,
@@ -243,6 +243,13 @@
       "wallet": "0xc8ec6d4cef5c5fe8409ef69303c37f05b678e8f1",
       "pnl": 1177752.1796876425,
       "activePositionCount": 2
+    },
+    {
+      "rank": 154,
+      "name": "3edmond.dantes",
+      "wallet": "0x983eedfbd75803602e4a6e6ea9aab6dc6b9c6748",
+      "pnl": 1169451.4559325161,
+      "activePositionCount": 1
     },
     {
       "rank": 162,
@@ -278,6 +285,13 @@
       "wallet": "0xf201a19b43471261a3c1ba9247335d55270e527e",
       "pnl": 986590.088947706,
       "activePositionCount": 5
+    },
+    {
+      "rank": 190,
+      "name": "johnbaster",
+      "wallet": "0x31864feb9d25dee93728c6225ba891530967e9ca",
+      "pnl": 949680.8852006724,
+      "activePositionCount": 1
     },
     {
       "rank": 191,
@@ -347,7 +361,7 @@
       "name": "n.maga",
       "wallet": "0x73c5701afdefba2814193168448b2992306b2f80",
       "pnl": 866110.6858929263,
-      "activePositionCount": 2
+      "activePositionCount": 3
     },
     {
       "rank": 227,
@@ -394,6 +408,76 @@
   ],
   "recommendations": [
     {
+      "conditionId": "0x0e33ea6244005745d4abadbfbe6756348647840d7f4ae9f8ea0398cfd83d4ab5",
+      "title": "LoL: Team Heretics vs GIANTX - Game 1 Winner",
+      "slug": "lol-th-gx-2026-08-23-game1",
+      "eventSlug": "lol-th-gx-2026-08-23",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-of-legends-61a4f083a6.png",
+      "endDate": "2026-08-23",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "LoL: Team Heretics vs GIANTX - Game 1 Winner",
+      "outcome": "GIANTX",
+      "outcomeKey": "1",
+      "supporterCount": 3,
+      "opposingSupporters": 1,
+      "consensusRate": 0.75,
+      "totalCurrentValue": 37949.701,
+      "avgAccountAllocation": 0.436958767400198,
+      "avgEntryPrice": 0.4621310776237753,
+      "currentPrice": 0.905,
+      "rankWeight": 0.21487199062415863,
+      "supporters": [
+        {
+          "rank": 182,
+          "name": "0xF201A19b43471261A3c1Ba9247335d55270e527e-1763824114616",
+          "wallet": "0xf201a19b43471261a3c1ba9247335d55270e527e",
+          "currentValue": 26407.5392,
+          "visibleAccountValue": 97494.08329999998,
+          "accountAllocation": 0.27086299297508243,
+          "size": 29179.6014,
+          "avgPrice": 0.4132,
+          "pnl": 14348.1231
+        },
+        {
+          "rank": 190,
+          "name": "johnbaster",
+          "wallet": "0x31864feb9d25dee93728c6225ba891530967e9ca",
+          "currentValue": 5517.785,
+          "visibleAccountValue": 5517.785,
+          "accountAllocation": 1,
+          "size": 6097,
+          "avgPrice": 0.8302,
+          "pnl": 455.7466
+        },
+        {
+          "rank": 215,
+          "name": "fkigedgjdgwbg",
+          "wallet": "0x52ecea7b3159f09db589e4f4ee64872fd0bba6f3",
+          "currentValue": 6024.3768,
+          "visibleAccountValue": 150559.3243,
+          "accountAllocation": 0.04001330922551171,
+          "size": 6656.77,
+          "avgPrice": 0.3395,
+          "pnl": 3764.3003
+        }
+      ],
+      "decisionSide": "GIANTX",
+      "decisionChoice": "Game 1 Winner",
+      "decisionOption": "Game 1 Winner",
+      "decisionTarget": "LoL: Team Heretics vs GIANTX - Game 1 Winner",
+      "decisionText": "Select “Game 1 Winner” → Buy GIANTX",
+      "decisionMeaning": "On Polymarket, choose the “Game 1 Winner” option/row/card, then click Buy GIANTX. This applies only to the exact market question: “LoL: Team Heretics vs GIANTX - Game 1 Winner”.",
+      "category": "Other",
+      "liquidity": 225631.2046,
+      "volume24hr": 157467.98185999994,
+      "usAvailable": true,
+      "usMarketSlug": "astatc-lol-bam-gng-2026-08-20-game1",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/astatc-lol-bam-gng-2026-08-20-game1"
+    },
+    {
       "conditionId": "0x65e192c00f6ffe5e487ada218f0792aa5ce0a9d1017360ad21ac7d95ef54324a",
       "title": "Counter-Strike: FUT Esports vs Spirit (BO5) - Esports World Cup Playoffs",
       "slug": "cs2-fut-ts7-2026-08-23",
@@ -409,9 +493,9 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 663419.5954,
-      "avgAccountAllocation": 0.5082096050005868,
+      "avgAccountAllocation": 0.523567829699105,
       "avgEntryPrice": 0.7196346055698082,
-      "currentPrice": 0.68,
+      "currentPrice": 0.685,
       "rankWeight": 0.30695354117760376,
       "supporters": [
         {
@@ -419,8 +503,8 @@
           "name": "Djdjdjekekek",
           "wallet": "0x6d20c35f65d9899b6d6b74f8466e824580f9a165",
           "currentValue": 662294.2026,
-          "visibleAccountValue": 694792.0954999999,
-          "accountAllocation": 0.9532264498826614,
+          "visibleAccountValue": 662294.2026,
+          "accountAllocation": 1,
           "size": 995931.1317,
           "avgPrice": 0.7196,
           "pnl": -54423.0617
@@ -430,8 +514,8 @@
           "name": "RegardedMoney",
           "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
           "currentValue": 1125.3928,
-          "visibleAccountValue": 17808.8882,
-          "accountAllocation": 0.06319276011851206,
+          "visibleAccountValue": 23875.613800000003,
+          "accountAllocation": 0.0471356593982099,
           "size": 1692.32,
           "avgPrice": 0.74,
           "pnl": -126.924
@@ -444,8 +528,8 @@
       "decisionText": "Select “Match Winner” → Buy Spirit",
       "decisionMeaning": "On Polymarket, choose the “Match Winner” option/row/card, then click Buy Spirit. This applies only to the exact market question: “Counter-Strike: FUT Esports vs Spirit (BO5) - Esports World Cup Playoffs — Match Winner”.",
       "category": "Other",
-      "liquidity": 224237.4252,
-      "volume24hr": 2650626.377589997,
+      "liquidity": 230407.6308,
+      "volume24hr": 2705946.5663119964,
       "usAvailable": true,
       "usMarketSlug": "tec-cs2-ewc-2026-08-23-w-fut",
       "usMatchMethod": "title_slug_similarity",
@@ -467,33 +551,33 @@
       "supporterCount": 2,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 309581.0968,
-      "avgAccountAllocation": 0.5837545685528149,
+      "totalCurrentValue": 422156.04120000004,
+      "avgAccountAllocation": 0.6185461256340902,
       "avgEntryPrice": 0.49,
-      "currentPrice": 0.495,
-      "rankWeight": 0.2683409529683863,
+      "currentPrice": 0.685,
+      "rankWeight": 0.2602342360841202,
       "supporters": [
         {
-          "rank": 31,
+          "rank": 34,
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 292897.6014,
-          "visibleAccountValue": 1269593.3796999978,
-          "accountAllocation": 0.230701897224142,
+          "currentValue": 399405.8202,
+          "visibleAccountValue": 1405230.8207999978,
+          "accountAllocation": 0.28422791066639025,
           "size": 591712.3262,
           "avgPrice": 0.49,
-          "pnl": 2958.5615
+          "pnl": 109466.7803
         },
         {
           "rank": 127,
           "name": "RegardedMoney",
           "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
-          "currentValue": 16683.4954,
-          "visibleAccountValue": 17808.8882,
-          "accountAllocation": 0.9368072398814878,
+          "currentValue": 22750.221,
+          "visibleAccountValue": 23875.613800000003,
+          "accountAllocation": 0.95286434060179,
           "size": 33704.0311,
           "avgPrice": 0.49,
-          "pnl": 168.5201
+          "pnl": 6235.2457
         }
       ],
       "decisionSide": "NO",
@@ -503,8 +587,8 @@
       "decisionText": "Select “Liverpool FC” → Buy NO",
       "decisionMeaning": "On Polymarket, choose the “Liverpool FC” option/row/card, then click Buy NO. This applies only to the exact market question: “Will Liverpool FC win on 2026-08-23?”.",
       "category": "Other",
-      "liquidity": 2412153.1027,
-      "volume24hr": 1865691.0766730062,
+      "liquidity": 177363.2154,
+      "volume24hr": 2266017.271810012,
       "usAvailable": true,
       "usMarketSlug": "asc-epl-new-liv-2026-08-23-fh-neg-1pt5",
       "usMatchMethod": "title_slug_similarity",
@@ -527,18 +611,18 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 15534.2344,
-      "avgAccountAllocation": 0.03465563682861269,
+      "avgAccountAllocation": 0.03429931782807978,
       "avgEntryPrice": 0.35238579582617147,
       "currentPrice": 0.1745,
-      "rankWeight": 0.24812417300952808,
+      "rankWeight": 0.24001745612526199,
       "supporters": [
         {
-          "rank": 31,
+          "rank": 34,
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
           "currentValue": 9373.4983,
-          "visibleAccountValue": 1269593.3796999978,
-          "accountAllocation": 0.007383071186315524,
+          "visibleAccountValue": 1405230.8207999978,
+          "accountAllocation": 0.006670433185249714,
           "size": 53716.3227,
           "avgPrice": 0.4089,
           "pnl": -12594.5439
@@ -562,81 +646,22 @@
       "decisionText": "Select “Lamine Yamal” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Lamine Yamal” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Lamine Yamal win the 2026 Ballon d'Or?”.",
       "category": "Other",
-      "liquidity": 147316.85195,
+      "liquidity": 146907.68654,
       "volume24hr": 15759.717059,
       "usAvailable": true,
       "usMarketSlug": "tec-uefa-bdor-2026-10-26-w-lamyam",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
       "marketUrl": "https://polymarket.us/market/tec-uefa-bdor-2026-10-26-w-lamyam"
-    },
-    {
-      "conditionId": "0x4ab2690cf2ef7decb5cc7b519ce1dffd4cc3a812e966b38ade8c4ff480bc0f85",
-      "title": "LoL: DN SOOPers Challengers vs Kiwoom DRX Challengers (BO5) - LCK Challengers League Play-In",
-      "slug": "lol-dnsc-drxc-2026-08-24",
-      "eventSlug": "lol-dnsc-drxc-2026-08-24",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-of-legends-61a4f083a6.png",
-      "endDate": "2026-08-24",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "LoL: DN SOOPers Challengers vs Kiwoom DRX Challengers (BO5) - LCK Challengers League Play-In",
-      "outcome": "Kiwoom DRX Challengers",
-      "outcomeKey": "1",
-      "supporterCount": 2,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 1298.7220000000002,
-      "avgAccountAllocation": 0.5679087937075561,
-      "avgEntryPrice": 0.36721495258860914,
-      "currentPrice": 0.355,
-      "rankWeight": 0.1893451604866197,
-      "supporters": [
-        {
-          "rank": 104,
-          "name": "sportmaster777",
-          "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
-          "currentValue": 1113.1318,
-          "visibleAccountValue": 8195.7854,
-          "accountAllocation": 0.13581758741511216,
-          "size": 3135.5825,
-          "avgPrice": 0.3651,
-          "pnl": -31.754
-        },
-        {
-          "rank": 120,
-          "name": "1winstreak1",
-          "wallet": "0xbca08c1bc204a34f2fddbe47b438b9bd42ac9705",
-          "currentValue": 185.5902,
-          "visibleAccountValue": 185.5902,
-          "accountAllocation": 1,
-          "size": 522.7894,
-          "avgPrice": 0.3799,
-          "pnl": -13.0692
-        }
-      ],
-      "decisionSide": "Kiwoom DRX Challengers",
-      "decisionChoice": "Match Winner",
-      "decisionOption": "Match Winner",
-      "decisionTarget": "LoL: DN SOOPers Challengers vs Kiwoom DRX Challengers (BO5) - LCK Challengers League Play-In — Match Winner",
-      "decisionText": "Select “Match Winner” → Buy Kiwoom DRX Challengers",
-      "decisionMeaning": "On Polymarket, choose the “Match Winner” option/row/card, then click Buy Kiwoom DRX Challengers. This applies only to the exact market question: “LoL: DN SOOPers Challengers vs Kiwoom DRX Challengers (BO5) - LCK Challengers League Play-In — Match Winner”.",
-      "category": "Other",
-      "liquidity": 29103.1104,
-      "volume24hr": 35797.921012000006,
-      "usAvailable": true,
-      "usMarketSlug": "aec-lol-dnsc-krxc-2026-08-24",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.767,
-      "marketUrl": "https://polymarket.us/market/aec-lol-dnsc-krxc-2026-08-24"
     }
   ],
-  "recommendationsUpdatedAt": "2026-08-23T15:32:07.340Z",
-  "lastCheckedAt": "2026-08-23T15:32:07.416Z",
+  "recommendationsUpdatedAt": "2026-08-23T15:51:05.800Z",
+  "lastCheckedAt": "2026-08-23T15:51:05.873Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-23T14:54:19.442Z",
+  "previousRecommendationsReplacedAt": "2026-08-23T15:32:07.340Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-23T15:32:07.416Z",
+  "lastSuccessfulWorkflowAt": "2026-08-23T15:51:05.873Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
