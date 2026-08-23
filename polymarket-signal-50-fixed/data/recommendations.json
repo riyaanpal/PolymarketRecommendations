@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-08-23T23:30:45.445Z",
-  "durationSeconds": 116,
+  "generatedAt": "2026-08-23T23:53:30.222Z",
+  "durationSeconds": 271,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -19,13 +19,13 @@
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
-    "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 195,
-    "excludedBothOutcomes": 53,
+    "leaderboardUsersInspected": 350,
+    "skippedNoPositions": 219,
+    "excludedBothOutcomes": 68,
     "positionFetchErrors": 0,
-    "eligibleTraders": 52,
-    "candidateMarkets": 344,
-    "marketsChecked": 214,
+    "eligibleTraders": 63,
+    "candidateMarkets": 419,
+    "marketsChecked": 253,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -102,7 +102,7 @@
       "name": "0xf705…3ca7",
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
       "pnl": 2332377.4554687813,
-      "activePositionCount": 153
+      "activePositionCount": 154
     },
     {
       "rank": 66,
@@ -138,13 +138,6 @@
       "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
       "pnl": 1906969.3797282095,
       "activePositionCount": 57
-    },
-    {
-      "rank": 89,
-      "name": "0x6db5…e279",
-      "wallet": "0x6db568e61e5e3de7d87f831431b673f38ce2e279",
-      "pnl": 1843381.8674109108,
-      "activePositionCount": 1
     },
     {
       "rank": 99,
@@ -206,7 +199,7 @@
       "rank": 153,
       "name": "Countryside",
       "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
-      "pnl": 1176974.6140513835,
+      "pnl": 1176196.1524240535,
       "activePositionCount": 4
     },
     {
@@ -220,7 +213,7 @@
       "rank": 163,
       "name": "occasionalAwareness",
       "wallet": "0x8a4c788f043023b8b28a762216d037e9f148532b",
-      "pnl": 1119824.8373315013,
+      "pnl": 1119926.0524769851,
       "activePositionCount": 49
     },
     {
@@ -234,35 +227,35 @@
       "rank": 178,
       "name": "0xF201A19b43471261A3c1Ba9247335d55270e527e-1763824114616",
       "wallet": "0xf201a19b43471261a3c1ba9247335d55270e527e",
-      "pnl": 1012680.5350302419,
+      "pnl": 1012603.2755065804,
       "activePositionCount": 5
     },
     {
-      "rank": 182,
+      "rank": 185,
       "name": "JnStrtPrdctnMrkts",
       "wallet": "0x1465b79bff7992bc703e1aafb3683b1089647072",
-      "pnl": 985742.1328943154,
+      "pnl": 977661.4255586617,
       "activePositionCount": 28
     },
     {
       "rank": 187,
       "name": "matanovik",
       "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
-      "pnl": 966193.3664586472,
+      "pnl": 966866.456458647,
       "activePositionCount": 1
     },
     {
       "rank": 192,
       "name": "ROBBATTISTAFANDUELRETARD",
       "wallet": "0x13414a77a4be48988851c73dfd824d0168e70853",
-      "pnl": 946404.7844192716,
+      "pnl": 946405.1387283988,
       "activePositionCount": 11
     },
     {
-      "rank": 197,
+      "rank": 200,
       "name": "Macks22",
       "wallet": "0x1057e7d3ddafc60a4aeb10a2bc5b543792449ea5",
-      "pnl": 933199.1986971601,
+      "pnl": 933147.3411261953,
       "activePositionCount": 8
     },
     {
@@ -375,14 +368,14 @@
       "name": "be-your-own-jump-trading",
       "wallet": "0xb0c85813a7a4428f1139ff91d3118a92c391fe7f",
       "pnl": 699637.4770120201,
-      "activePositionCount": 1832
+      "activePositionCount": 1817
     },
     {
       "rank": 289,
       "name": "GamblingOdyssey",
       "wallet": "0xe5241830e8876c115d7dc8311ad9f43d85fdd34f",
       "pnl": 698734.7094321644,
-      "activePositionCount": 3
+      "activePositionCount": 2
     },
     {
       "rank": 292,
@@ -397,9 +390,163 @@
       "wallet": "0x88c4919de76e526d55a32c1f8afb439dd1f1129a",
       "pnl": 676898.4835307418,
       "activePositionCount": 23
+    },
+    {
+      "rank": 315,
+      "name": "SineNooneEI",
+      "wallet": "0x38337de21ff0bb0a11a40761507d51e318d633d1",
+      "pnl": 639371.6607136505,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 318,
+      "name": "mr.ozi",
+      "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
+      "pnl": 629601.7644732501,
+      "activePositionCount": 33
+    },
+    {
+      "rank": 319,
+      "name": "Avarice31",
+      "wallet": "0x781caf04d98a281712caf1677877c442789fdb68",
+      "pnl": 628944.2360563867,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 321,
+      "name": "coali10",
+      "wallet": "0x7bc14171ccb0d3e6bac219ec6a76211826e28db4",
+      "pnl": 626607.2569167832,
+      "activePositionCount": 31
+    },
+    {
+      "rank": 322,
+      "name": "semi",
+      "wallet": "0xd3989ba133ab48b5b3a81e3dba9b37b5966a46d7",
+      "pnl": 625787.1505167694,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 325,
+      "name": "Q96s3kwozynxpau",
+      "wallet": "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f",
+      "pnl": 624266.6223461585,
+      "activePositionCount": 88
+    },
+    {
+      "rank": 329,
+      "name": "elPolloLoco",
+      "wallet": "0xa2f1fecf1cc7db65a46588f764b6691533052d22",
+      "pnl": 619397.3797810689,
+      "activePositionCount": 32
+    },
+    {
+      "rank": 334,
+      "name": "bestfriends",
+      "wallet": "0x7abe2e7eac6f63b1bf4c21eeae71b03e9bd9b47e",
+      "pnl": 615681.4382225804,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 337,
+      "name": "farmyboi",
+      "wallet": "0x1823757d22022f81a8fa1536d63101fe458884d8",
+      "pnl": 612707.0138149997,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 339,
+      "name": "keasiyo",
+      "wallet": "0xee67f4f549180f564dd5910b1024b8c6729cef38",
+      "pnl": 610204.9059973167,
+      "activePositionCount": 11
+    },
+    {
+      "rank": 343,
+      "name": "Kevindoto",
+      "wallet": "0xcd71fd5370880f3d92bb941e628c05840fe0d127",
+      "pnl": 603321.624120416,
+      "activePositionCount": 27
+    },
+    {
+      "rank": 350,
+      "name": "MEPP",
+      "wallet": "0x6d9fc316c3b8377060a44b852ba664adbfd59790",
+      "pnl": 589749.4328388749,
+      "activePositionCount": 64
     }
   ],
   "recommendations": [
+    {
+      "conditionId": "0xe85cac63bc745dbdee8c9523fb87dd25658b678efb266eb3e91a44d1b558c205",
+      "title": "Israel withdraws from Lebanon by December 31, 2026?",
+      "slug": "israel-withdraws-from-lebanon-by-december-31-2026",
+      "eventSlug": "israel-withdraws-from-lebanon-by",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/israel-withdraws-from-lebanon-by-iSLvDOMpOkAG.jpg",
+      "endDate": "2027-01-01",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Israel withdraws from Lebanon by December 31, 2026?",
+      "outcome": "No",
+      "outcomeKey": "1",
+      "supporterCount": 3,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 18935.9652,
+      "avgAccountAllocation": 0.01036205881758257,
+      "avgEntryPrice": 0.8284647315149768,
+      "currentPrice": 0.9,
+      "rankWeight": 0.23990040880459312,
+      "supporters": [
+        {
+          "rank": 57,
+          "name": "denizz",
+          "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
+          "currentValue": 7528.4865,
+          "visibleAccountValue": 1240785.7092999995,
+          "accountAllocation": 0.006067515481176249,
+          "size": 8364.985,
+          "avgPrice": 0.8143,
+          "pnl": 716.8122
+        },
+        {
+          "rank": 343,
+          "name": "Kevindoto",
+          "wallet": "0xcd71fd5370880f3d92bb941e628c05840fe0d127",
+          "currentValue": 4500,
+          "visibleAccountValue": 409543.55780000007,
+          "accountAllocation": 0.010987842231417952,
+          "size": 5000,
+          "avgPrice": 0.9,
+          "pnl": 0
+        },
+        {
+          "rank": 350,
+          "name": "MEPP",
+          "wallet": "0x6d9fc316c3b8377060a44b852ba664adbfd59790",
+          "currentValue": 6907.4787,
+          "visibleAccountValue": 492307.60000000015,
+          "accountAllocation": 0.014030818740153508,
+          "size": 7674.9763,
+          "avgPrice": 0.7973,
+          "pnl": 787.9897
+        }
+      ],
+      "decisionSide": "NO",
+      "decisionChoice": "December 31",
+      "decisionOption": "December 31",
+      "decisionTarget": "Israel withdraws from Lebanon by December 31, 2026?",
+      "decisionText": "Select “December 31” → Buy NO",
+      "decisionMeaning": "On Polymarket, choose the “December 31” option/row/card, then click Buy NO. This applies only to the exact market question: “Israel withdraws from Lebanon by December 31, 2026?”.",
+      "category": "Other",
+      "liquidity": 54559.9564,
+      "volume24hr": 317.06,
+      "usAvailable": true,
+      "usMarketSlug": "aimc-openai-gpt-6-2026-12-31",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/aimc-openai-gpt-6-2026-12-31"
+    },
     {
       "conditionId": "0xa34edb6c898232378a9cc08744842df2cd89d278ba45b012bed3ac10c7241c4d",
       "title": "Will Lamine Yamal win the 2026 Ballon d'Or?",
@@ -418,7 +565,7 @@
       "totalCurrentValue": 14154.4027,
       "avgAccountAllocation": 0.03399683686014228,
       "avgEntryPrice": 0.35238579582617147,
-      "currentPrice": 0.159,
+      "currentPrice": 0.1595,
       "rankWeight": 0.24780473597382224,
       "supporters": [
         {
@@ -451,7 +598,7 @@
       "decisionText": "Select “Lamine Yamal” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Lamine Yamal” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Lamine Yamal win the 2026 Ballon d'Or?”.",
       "category": "Other",
-      "liquidity": 140578.59952,
+      "liquidity": 139942.18069,
       "volume24hr": 13346.854635000002,
       "usAvailable": true,
       "usMarketSlug": "tec-uefa-bdor-2026-10-26-w-lamyam",
@@ -475,7 +622,7 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 24.7292,
-      "avgAccountAllocation": 0.06458337434189267,
+      "avgAccountAllocation": 0.06455233945597441,
       "avgEntryPrice": 0.036822634115536115,
       "currentPrice": 0.0405,
       "rankWeight": 0.24343224778007383,
@@ -496,8 +643,8 @@
           "name": "betterfasterstronger",
           "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
           "currentValue": 8.1004,
-          "visibleAccountValue": 8086.660499999981,
-          "accountAllocation": 0.0010016990326229252,
+          "visibleAccountValue": 8620.846900000017,
+          "accountAllocation": 0.0009396292607864298,
           "size": 200.0104,
           "avgPrice": 0.0303,
           "pnl": 2.0396
@@ -510,72 +657,13 @@
       "decisionText": "Select “Detroit Lions” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Detroit Lions” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Detroit Lions win the 2027 NFL league championship?”.",
       "category": "Other",
-      "liquidity": 132422.48186,
+      "liquidity": 132436.19186,
       "volume24hr": 3476.3,
       "usAvailable": true,
       "usMarketSlug": "aachc-nba-2027-04-11-bestrecord-det",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
       "marketUrl": "https://polymarket.us/market/aachc-nba-2027-04-11-bestrecord-det"
-    },
-    {
-      "conditionId": "0xb43134b6924e8bdb4b67e662c0f8fafb1374ecb762502f0b25f893dbcc2a20ea",
-      "title": "Indiana Fever vs. Chicago Sky",
-      "slug": "wnba-ind-chi-2026-08-23",
-      "eventSlug": "wnba-ind-chi-2026-08-23",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/wnba-logo-PAR4befDAubM.png",
-      "endDate": "2026-08-23",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Indiana Fever vs. Chicago Sky",
-      "outcome": "Indiana Fever",
-      "outcomeKey": "0",
-      "supporterCount": 2,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 7757.652599999999,
-      "avgAccountAllocation": 0.586566818709551,
-      "avgEntryPrice": 0.5980489453075293,
-      "currentPrice": 0.605,
-      "rankWeight": 0.20453271581706534,
-      "supporters": [
-        {
-          "rank": 89,
-          "name": "0x6db5…e279",
-          "wallet": "0x6db568e61e5e3de7d87f831431b673f38ce2e279",
-          "currentValue": 6222.9977,
-          "visibleAccountValue": 6222.9977,
-          "accountAllocation": 1,
-          "size": 9648.0585,
-          "avgPrice": 0.6025,
-          "pnl": 409.0844
-        },
-        {
-          "rank": 103,
-          "name": "sportmaster777",
-          "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
-          "currentValue": 1534.6549,
-          "visibleAccountValue": 8863.990399999999,
-          "accountAllocation": 0.17313363741910193,
-          "size": 2379.31,
-          "avgPrice": 0.58,
-          "pnl": 154.6551
-        }
-      ],
-      "decisionSide": "Indiana Fever",
-      "decisionChoice": "0",
-      "decisionOption": "0",
-      "decisionTarget": "Indiana Fever vs. Chicago Sky — 0",
-      "decisionText": "Select “0” → Buy Indiana Fever",
-      "decisionMeaning": "On Polymarket, choose the “0” option/row/card, then click Buy Indiana Fever. This applies only to the exact market question: “Indiana Fever vs. Chicago Sky — 0”.",
-      "category": "Other",
-      "liquidity": 232357.3311,
-      "volume24hr": 244405.40127999985,
-      "usAvailable": true,
-      "usMarketSlug": "aec-wnba-ind-chi-2026-08-23",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aec-wnba-ind-chi-2026-08-23"
     },
     {
       "conditionId": "0x5a49d7be46362712c7e8acf8168911fb88fdfdd5d5a779abec773ea2f3dea69b",
@@ -592,9 +680,9 @@
       "supporterCount": 2,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 263.1998,
-      "avgAccountAllocation": 0.011496266607070267,
-      "avgEntryPrice": 0.02346250144442034,
+      "totalCurrentValue": 283.53790000000004,
+      "avgAccountAllocation": 0.01204626155017428,
+      "avgEntryPrice": 0.023486710091783193,
       "currentPrice": 0.0235,
       "rankWeight": 0.1575317108495848,
       "supporters": [
@@ -603,8 +691,8 @@
           "name": "Joe-Biden",
           "wallet": "0x8b5a7da2fdf239b51b9c68a2a1a35bb156d200f2",
           "currentValue": 98.6995,
-          "visibleAccountValue": 37240.12460000001,
-          "accountAllocation": 0.0026503536457018187,
+          "visibleAccountValue": 37221.78100000001,
+          "accountAllocation": 0.002651659790271722,
           "size": 4199.98,
           "avgPrice": 0.0229,
           "pnl": 2.1005
@@ -613,12 +701,12 @@
           "rank": 270,
           "name": "betterfasterstronger",
           "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
-          "currentValue": 164.5003,
-          "visibleAccountValue": 8086.660499999981,
-          "accountAllocation": 0.020342179568438715,
-          "size": 7000.0146,
+          "currentValue": 184.8384,
+          "visibleAccountValue": 8620.846900000017,
+          "accountAllocation": 0.021440863310076837,
+          "size": 7865.4645,
           "avgPrice": 0.0238,
-          "pnl": -2.163
+          "pnl": -2.4304
         }
       ],
       "decisionSide": "YES",
@@ -628,7 +716,7 @@
       "decisionText": "Select “Atlético Madrid” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Atlético Madrid” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Atlético Madrid win the 2026-27 UEFA Champions League Championship?”.",
       "category": "Other",
-      "liquidity": 193592.45558,
+      "liquidity": 193501.88478,
       "volume24hr": 5308.313332999999,
       "usAvailable": true,
       "usMarketSlug": "tec-ucl-final-2026-06-05-w-ars",
@@ -637,13 +725,13 @@
       "marketUrl": "https://polymarket.us/market/tec-ucl-final-2026-06-05-w-ars"
     }
   ],
-  "recommendationsUpdatedAt": "2026-08-23T23:30:45.445Z",
-  "lastCheckedAt": "2026-08-23T23:30:45.524Z",
+  "recommendationsUpdatedAt": "2026-08-23T23:53:30.222Z",
+  "lastCheckedAt": "2026-08-23T23:53:30.289Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-23T22:55:36.110Z",
+  "previousRecommendationsReplacedAt": "2026-08-23T23:30:45.445Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-23T23:30:45.524Z",
+  "lastSuccessfulWorkflowAt": "2026-08-23T23:53:30.289Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
