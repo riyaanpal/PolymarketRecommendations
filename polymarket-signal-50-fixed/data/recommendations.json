@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-08-24T21:38:42.706Z",
-  "durationSeconds": 112,
+  "durationSeconds": 87,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -20,12 +20,12 @@
   },
   "stats": {
     "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 190,
-    "excludedBothOutcomes": 57,
+    "skippedNoPositions": 192,
+    "excludedBothOutcomes": 54,
     "positionFetchErrors": 0,
-    "eligibleTraders": 53,
+    "eligibleTraders": 54,
     "candidateMarkets": 399,
-    "marketsChecked": 237,
+    "marketsChecked": 238,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -67,7 +67,7 @@
       "name": "BreakTheBank",
       "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
       "pnl": 3572772.3417283655,
-      "activePositionCount": 49
+      "activePositionCount": 48
     },
     {
       "rank": 44,
@@ -82,6 +82,13 @@
       "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
       "pnl": 2463383.6677637673,
       "activePositionCount": 45
+    },
+    {
+      "rank": 57,
+      "name": "S-Works",
+      "wallet": "0xee00ba338c59557141789b127927a55f5cc5cea1",
+      "pnl": 2449004.771390801,
+      "activePositionCount": 1
     },
     {
       "rank": 58,
@@ -165,7 +172,7 @@
       "name": "sportmaster777",
       "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
       "pnl": 1576817.8769132004,
-      "activePositionCount": 4
+      "activePositionCount": 5
     },
     {
       "rank": 108,
@@ -210,13 +217,6 @@
       "activePositionCount": 2
     },
     {
-      "rank": 156,
-      "name": "0xE30E74595517de48f1FB19f4553dd3d9F1E96B87-1772612985000",
-      "wallet": "0xe30e74595517de48f1fb19f4553dd3d9f1e96b87",
-      "pnl": 1165713.3004128558,
-      "activePositionCount": 1
-    },
-    {
       "rank": 162,
       "name": "gatorr",
       "wallet": "0x93abbc022ce98d6f45d4444b594791cc4b7a9723",
@@ -242,14 +242,14 @@
       "name": "0xF201A19b43471261A3c1Ba9247335d55270e527e-1763824114616",
       "wallet": "0xf201a19b43471261a3c1ba9247335d55270e527e",
       "pnl": 1006536.3473276106,
-      "activePositionCount": 4
+      "activePositionCount": 3
     },
     {
       "rank": 186,
       "name": "matanovik",
       "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
       "pnl": 974855.913408647,
-      "activePositionCount": 2
+      "activePositionCount": 1
     },
     {
       "rank": 189,
@@ -354,14 +354,14 @@
       "name": "betterfasterstronger",
       "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
       "pnl": 751158.3579361861,
-      "activePositionCount": 222
+      "activePositionCount": 221
     },
     {
       "rank": 270,
       "name": "AnonymousUsername",
       "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
       "pnl": 742207.4989170213,
-      "activePositionCount": 243
+      "activePositionCount": 241
     },
     {
       "rank": 277,
@@ -375,7 +375,7 @@
       "name": "vitality-buterin",
       "wallet": "0xb0c85813a7a4428f1139ff91d3118a92c391fe7f",
       "pnl": 723914.0111997174,
-      "activePositionCount": 1794
+      "activePositionCount": 1774
     },
     {
       "rank": 279,
@@ -397,6 +397,13 @@
       "wallet": "0x033f0346c007323030eb420305ffede19a95618e",
       "pnl": 688854.3742662661,
       "activePositionCount": 12
+    },
+    {
+      "rank": 295,
+      "name": "0x228B8d11EBa89BF1c554f8879a9293B7106DaF4c-1765442354872",
+      "wallet": "0x228b8d11eba89bf1c554f8879a9293b7106daf4c",
+      "pnl": 683804.2925286909,
+      "activePositionCount": 1
     },
     {
       "rank": 298,
@@ -656,12 +663,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-24T21:38:42.706Z",
-  "lastCheckedAt": "2026-08-24T21:38:42.779Z",
+  "lastCheckedAt": "2026-08-24T21:58:42.124Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-24T20:00:34.560Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-24T21:38:42.779Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-08-24T21:58:42.075Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-08-24T21:58:42.124Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
