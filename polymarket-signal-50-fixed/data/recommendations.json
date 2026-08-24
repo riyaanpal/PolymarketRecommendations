@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-08-24T19:38:04.145Z",
-  "durationSeconds": 103,
+  "generatedAt": "2026-08-24T20:00:34.560Z",
+  "durationSeconds": 112,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -21,11 +21,11 @@
   "stats": {
     "leaderboardUsersInspected": 300,
     "skippedNoPositions": 188,
-    "excludedBothOutcomes": 56,
+    "excludedBothOutcomes": 55,
     "positionFetchErrors": 0,
-    "eligibleTraders": 56,
-    "candidateMarkets": 400,
-    "marketsChecked": 151,
+    "eligibleTraders": 57,
+    "candidateMarkets": 347,
+    "marketsChecked": 211,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -60,7 +60,7 @@
       "name": "BreakTheBank",
       "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
       "pnl": 4254582.851493048,
-      "activePositionCount": 57
+      "activePositionCount": 54
     },
     {
       "rank": 31,
@@ -103,6 +103,13 @@
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
       "pnl": 2354627.5846829405,
       "activePositionCount": 163
+    },
+    {
+      "rank": 65,
+      "name": "CandleHammerDrums",
+      "wallet": "0x7c1ee865a785de4c00ee90ed86a38489fb8bbab3",
+      "pnl": 2303129.6945542647,
+      "activePositionCount": 1
     },
     {
       "rank": 67,
@@ -210,66 +217,73 @@
       "activePositionCount": 2
     },
     {
+      "rank": 160,
+      "name": "0xE30E74595517de48f1FB19f4553dd3d9F1E96B87-1772612985000",
+      "wallet": "0xe30e74595517de48f1fb19f4553dd3d9f1e96b87",
+      "pnl": 1133573.0791646158,
+      "activePositionCount": 1
+    },
+    {
       "rank": 162,
       "name": "gatorr",
       "wallet": "0x93abbc022ce98d6f45d4444b594791cc4b7a9723",
-      "pnl": 1123940.8122521485,
+      "pnl": 1123554.4031693216,
       "activePositionCount": 6
     },
     {
       "rank": 163,
       "name": "occasionalAwareness",
       "wallet": "0x8a4c788f043023b8b28a762216d037e9f148532b",
-      "pnl": 1121478.1005950756,
+      "pnl": 1121420.5527630441,
       "activePositionCount": 49
     },
     {
       "rank": 174,
       "name": "Airpods123",
       "wallet": "0xb90494d9a5d8f71f1930b2aa4b599f95c344c255",
-      "pnl": 1023294.6490887923,
+      "pnl": 1023294.6490887924,
       "activePositionCount": 2
     },
     {
-      "rank": 186,
-      "name": "matanovik",
-      "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
-      "pnl": 973082.2064586475,
-      "activePositionCount": 3
-    },
-    {
-      "rank": 189,
+      "rank": 185,
       "name": "0xF201A19b43471261A3c1Ba9247335d55270e527e-1763824114616",
       "wallet": "0xf201a19b43471261a3c1ba9247335d55270e527e",
-      "pnl": 962355.5787583744,
+      "pnl": 975251.1449394381,
       "activePositionCount": 4
+    },
+    {
+      "rank": 187,
+      "name": "matanovik",
+      "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
+      "pnl": 973706.4464586469,
+      "activePositionCount": 2
     },
     {
       "rank": 191,
       "name": "johnbaster",
       "wallet": "0x31864feb9d25dee93728c6225ba891530967e9ca",
-      "pnl": 959958.4684645358,
+      "pnl": 960481.0166612775,
       "activePositionCount": 1
     },
     {
       "rank": 192,
       "name": "JnStrtPrdctnMrkts",
       "wallet": "0x1465b79bff7992bc703e1aafb3683b1089647072",
-      "pnl": 951403.7818220961,
+      "pnl": 954874.6433559246,
       "activePositionCount": 28
     },
     {
       "rank": 193,
       "name": "ROBBATTISTAFANDUELRETARD",
       "wallet": "0x13414a77a4be48988851c73dfd824d0168e70853",
-      "pnl": 946423.1865133991,
+      "pnl": 946421.6066083964,
       "activePositionCount": 11
     },
     {
       "rank": 198,
       "name": "Macks22",
       "wallet": "0x1057e7d3ddafc60a4aeb10a2bc5b543792449ea5",
-      "pnl": 933486.4556204211,
+      "pnl": 933281.3905604212,
       "activePositionCount": 8
     },
     {
@@ -312,7 +326,7 @@
       "name": "n.maga",
       "wallet": "0x73c5701afdefba2814193168448b2992306b2f80",
       "pnl": 863235.7093099232,
-      "activePositionCount": 2
+      "activePositionCount": 1
     },
     {
       "rank": 243,
@@ -371,18 +385,11 @@
       "activePositionCount": 217
     },
     {
-      "rank": 269,
-      "name": "AnonymousUsername",
-      "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-      "pnl": 749168.4641486033,
-      "activePositionCount": 240
-    },
-    {
       "rank": 276,
       "name": "vitality-buterin",
       "wallet": "0xb0c85813a7a4428f1139ff91d3118a92c391fe7f",
       "pnl": 722560.7745874596,
-      "activePositionCount": 1777
+      "activePositionCount": 1780
     },
     {
       "rank": 277,
@@ -417,7 +424,7 @@
       "name": "AvocadosFromMexico",
       "wallet": "0x033f0346c007323030eb420305ffede19a95618e",
       "pnl": 689096.7009662645,
-      "activePositionCount": 11
+      "activePositionCount": 12
     },
     {
       "rank": 297,
@@ -428,87 +435,6 @@
     }
   ],
   "recommendations": [
-    {
-      "conditionId": "0xe945f7138a82949a0cfa2afdfa4a52f935fb7960c294cdcd13b427ca2ec92357",
-      "title": "Will Chelsea FC win on 2026-08-24?",
-      "slug": "epl-ful-che-2026-08-24-che",
-      "eventSlug": "epl-ful-che-2026-08-24",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Repetitive-markets/premier+league.jpg",
-      "endDate": "2026-08-24",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will Chelsea FC win on 2026-08-24?",
-      "outcome": "No",
-      "outcomeKey": "1",
-      "supporterCount": 4,
-      "opposingSupporters": 1,
-      "consensusRate": 0.8,
-      "totalCurrentValue": 649180.4177,
-      "avgAccountAllocation": 0.5613270540044558,
-      "avgEntryPrice": 0.490455913645111,
-      "currentPrice": 0.595,
-      "rankWeight": 0.4390170379536023,
-      "supporters": [
-        {
-          "rank": 30,
-          "name": "BreakTheBank",
-          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 635693.1071,
-          "visibleAccountValue": 1438811.6224999982,
-          "accountAllocation": 0.4418181624050655,
-          "size": 1105553.2298,
-          "avgPrice": 0.49,
-          "pnl": 93972.0244
-        },
-        {
-          "rank": 60,
-          "name": "jtwyslljy",
-          "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
-          "currentValue": 6037.5,
-          "visibleAccountValue": 7735.1169,
-          "accountAllocation": 0.7805311901621035,
-          "size": 10500,
-          "avgPrice": 0.5,
-          "pnl": 787.5
-        },
-        {
-          "rank": 227,
-          "name": "n.maga",
-          "wallet": "0x73c5701afdefba2814193168448b2992306b2f80",
-          "currentValue": 2490.4356,
-          "visibleAccountValue": 2493.2133,
-          "accountAllocation": 0.9988858955629668,
-          "size": 4331.1924,
-          "avgPrice": 0.5846,
-          "pnl": -41.8593
-        },
-        {
-          "rank": 269,
-          "name": "AnonymousUsername",
-          "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-          "currentValue": 4959.375,
-          "visibleAccountValue": 206014.27390000017,
-          "accountAllocation": 0.024072967887687688,
-          "size": 8625,
-          "avgPrice": 0.49,
-          "pnl": 733.125
-        }
-      ],
-      "decisionSide": "NO",
-      "decisionChoice": "Chelsea FC",
-      "decisionOption": "Chelsea FC",
-      "decisionTarget": "Will Chelsea FC win on 2026-08-24?",
-      "decisionText": "Select “Chelsea FC” → Buy NO",
-      "decisionMeaning": "On Polymarket, choose the “Chelsea FC” option/row/card, then click Buy NO. This applies only to the exact market question: “Will Chelsea FC win on 2026-08-24?”.",
-      "category": "Other",
-      "liquidity": 317178.1319,
-      "volume24hr": 3310502.094027003,
-      "usAvailable": true,
-      "usMarketSlug": "astatc-epl-cfc-bha-2026-08-30-fh-ftts-cfc",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/astatc-epl-cfc-bha-2026-08-30-fh-ftts-cfc"
-    },
     {
       "conditionId": "0xdd6df6bc49de64cf38b2059cea20d00b86ef0c01b4c146e8930471d20f599cef",
       "title": "Will the Jacksonville Jaguars win the 2027 NFL league championship?",
@@ -525,7 +451,7 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 32.1743,
-      "avgAccountAllocation": 0.04103704028499391,
+      "avgAccountAllocation": 0.041136671317187595,
       "avgEntryPrice": 0.17331805716377638,
       "currentPrice": 0.0335,
       "rankWeight": 0.30088295074781213,
@@ -546,8 +472,8 @@
           "name": "betterfasterstronger",
           "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
           "currentValue": 1.6756,
-          "visibleAccountValue": 8961.452600000017,
-          "accountAllocation": 0.00018697861549811656,
+          "visibleAccountValue": 8963.07140000001,
+          "accountAllocation": 0.00018694484571438291,
           "size": 50.02,
           "avgPrice": 0.0303,
           "pnl": 0.1598
@@ -557,8 +483,8 @@
           "name": "vitality-buterin",
           "wallet": "0xb0c85813a7a4428f1139ff91d3118a92c391fe7f",
           "currentValue": 16.7503,
-          "visibleAccountValue": 993.8865999999947,
-          "accountAllocation": 0.016853331154681118,
+          "visibleAccountValue": 976.5652999999942,
+          "accountAllocation": 0.017152258021045905,
           "size": 500.0099,
           "avgPrice": 0.3069,
           "pnl": -136.7232
@@ -571,7 +497,7 @@
       "decisionText": "Select “Jacksonville Jaguars” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Jacksonville Jaguars” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Jacksonville Jaguars win the 2027 NFL league championship?”.",
       "category": "Other",
-      "liquidity": 112957.3865,
+      "liquidity": 112762.35906,
       "volume24hr": 5208.43,
       "usAvailable": true,
       "usMarketSlug": "tec-nfl-afcchamp-2027-01-31-w-jacjag",
@@ -595,7 +521,7 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 14822.0631,
-      "avgAccountAllocation": 0.03276427193614955,
+      "avgAccountAllocation": 0.03376809460231671,
       "avgEntryPrice": 0.35238579582617147,
       "currentPrice": 0.1665,
       "rankWeight": 0.2507736197821027,
@@ -605,8 +531,8 @@
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
           "currentValue": 8943.7677,
-          "visibleAccountValue": 1438811.6224999982,
-          "accountAllocation": 0.006216079686970983,
+          "visibleAccountValue": 1092639.862899998,
+          "accountAllocation": 0.008185467145837204,
           "size": 53716.3227,
           "avgPrice": 0.4089,
           "pnl": -13024.2745
@@ -616,8 +542,8 @@
           "name": "surfandturf",
           "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
           "currentValue": 5878.2954,
-          "visibleAccountValue": 99107.25310000002,
-          "accountAllocation": 0.059312464185328116,
+          "visibleAccountValue": 99043.36790000001,
+          "accountAllocation": 0.05935072205879622,
           "size": 35305.078,
           "avgPrice": 0.2664,
           "pnl": -3529.2303
@@ -630,7 +556,7 @@
       "decisionText": "Select “Lamine Yamal” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Lamine Yamal” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Lamine Yamal win the 2026 Ballon d'Or?”.",
       "category": "Other",
-      "liquidity": 170703.95033,
+      "liquidity": 170574.12804,
       "volume24hr": 11096.667267,
       "usAvailable": true,
       "usMarketSlug": "tec-uefa-bdor-2026-10-26-w-lamyam",
@@ -654,7 +580,7 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 103015.0886,
-      "avgAccountAllocation": 0.03663528913506654,
+      "avgAccountAllocation": 0.047975263255998324,
       "avgEntryPrice": 0.49993285813211297,
       "currentPrice": 0.515,
       "rankWeight": 0.24365890801320797,
@@ -664,8 +590,8 @@
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
           "currentValue": 103000,
-          "visibleAccountValue": 1438811.6224999982,
-          "accountAllocation": 0.0715868557004238,
+          "visibleAccountValue": 1092639.862899998,
+          "accountAllocation": 0.0942671080356025,
           "size": 200000,
           "avgPrice": 0.5,
           "pnl": 3000
@@ -675,8 +601,8 @@
           "name": "betterfasterstronger",
           "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
           "currentValue": 15.0886,
-          "visibleAccountValue": 8961.452600000017,
-          "accountAllocation": 0.001683722569709287,
+          "visibleAccountValue": 8963.07140000001,
+          "accountAllocation": 0.0016834184763941502,
           "size": 29.2983,
           "avgPrice": 0.0416,
           "pnl": 13.8678
@@ -689,22 +615,81 @@
       "decisionText": "Select “Arsenal” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Arsenal” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Arsenal win the 2026-27 English Premier League (EPL) Championship?”.",
       "category": "Other",
-      "liquidity": 261951.2329,
-      "volume24hr": 40564.18106399999,
+      "liquidity": 258759.8454,
+      "volume24hr": 41804.19259899999,
       "usAvailable": true,
       "usMarketSlug": "aachc-epl-2027-05-30-relegation-ars",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
       "marketUrl": "https://polymarket.us/market/aachc-epl-2027-05-30-relegation-ars"
+    },
+    {
+      "conditionId": "0x5a49d7be46362712c7e8acf8168911fb88fdfdd5d5a779abec773ea2f3dea69b",
+      "title": "Will Atlético Madrid win the 2026-27 UEFA Champions League Championship?",
+      "slug": "will-atletico-madrid-win-the-2026-27-uefa-champions-league-championship-20260701202025563",
+      "eventSlug": "uefa-champions-league-2027-champion-20260701202025549",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/uefa-champions-league-2025-26-which-teams-qualify-StbSIjaEx2St.png",
+      "endDate": "2027-05-30",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Will Atlético Madrid win the 2026-27 UEFA Champions League Championship?",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 2,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 312.2367,
+      "avgAccountAllocation": 0.013274520184005793,
+      "avgEntryPrice": 0.023510199955970926,
+      "currentPrice": 0.0235,
+      "rankWeight": 0.15775837108271895,
+      "supporters": [
+        {
+          "rank": 107,
+          "name": "Joe-Biden",
+          "wallet": "0x8b5a7da2fdf239b51b9c68a2a1a35bb156d200f2",
+          "currentValue": 100.5402,
+          "visibleAccountValue": 34310.605500000005,
+          "accountAllocation": 0.0029302951240542806,
+          "size": 4278.31,
+          "avgPrice": 0.0229,
+          "pnl": 2.1424
+        },
+        {
+          "rank": 268,
+          "name": "betterfasterstronger",
+          "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
+          "currentValue": 211.6965,
+          "visibleAccountValue": 8963.07140000001,
+          "accountAllocation": 0.023618745243957306,
+          "size": 9008.365,
+          "avgPrice": 0.0238,
+          "pnl": -2.7836
+        }
+      ],
+      "decisionSide": "YES",
+      "decisionChoice": "Atlético Madrid",
+      "decisionOption": "Atlético Madrid",
+      "decisionTarget": "Will Atlético Madrid win the 2026-27 UEFA Champions League Championship?",
+      "decisionText": "Select “Atlético Madrid” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “Atlético Madrid” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Atlético Madrid win the 2026-27 UEFA Champions League Championship?”.",
+      "category": "Other",
+      "liquidity": 200497.59719,
+      "volume24hr": 3169.996663,
+      "usAvailable": true,
+      "usMarketSlug": "tec-ucl-final-2026-06-05-w-ars",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.69,
+      "marketUrl": "https://polymarket.us/market/tec-ucl-final-2026-06-05-w-ars"
     }
   ],
-  "recommendationsUpdatedAt": "2026-08-24T19:38:04.145Z",
-  "lastCheckedAt": "2026-08-24T19:38:04.203Z",
+  "recommendationsUpdatedAt": "2026-08-24T20:00:34.560Z",
+  "lastCheckedAt": "2026-08-24T20:00:34.631Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-24T18:54:01.236Z",
+  "previousRecommendationsReplacedAt": "2026-08-24T19:38:04.145Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-24T19:38:04.203Z",
+  "lastSuccessfulWorkflowAt": "2026-08-24T20:00:34.631Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
