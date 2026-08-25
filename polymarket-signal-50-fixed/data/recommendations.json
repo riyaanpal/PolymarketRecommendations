@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-08-25T21:59:43.978Z",
-  "durationSeconds": 186,
+  "durationSeconds": 155,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -20,12 +20,12 @@
   },
   "stats": {
     "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 192,
-    "excludedBothOutcomes": 50,
+    "skippedNoPositions": 193,
+    "excludedBothOutcomes": 48,
     "positionFetchErrors": 0,
-    "eligibleTraders": 58,
-    "candidateMarkets": 1173,
-    "marketsChecked": 223,
+    "eligibleTraders": 59,
+    "candidateMarkets": 1228,
+    "marketsChecked": 247,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -60,7 +60,7 @@
       "name": "BreakTheBank",
       "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
       "pnl": 3552728.6089641904,
-      "activePositionCount": 48
+      "activePositionCount": 49
     },
     {
       "rank": 44,
@@ -189,6 +189,13 @@
       "activePositionCount": 1
     },
     {
+      "rank": 133,
+      "name": "0xE30E74595517de48f1FB19f4553dd3d9F1E96B87-1772612985000",
+      "wallet": "0xe30e74595517de48f1fb19f4553dd3d9f1e96b87",
+      "pnl": 1335569.1205259159,
+      "activePositionCount": 1
+    },
+    {
       "rank": 143,
       "name": "Wickier",
       "wallet": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
@@ -238,13 +245,6 @@
       "activePositionCount": 1
     },
     {
-      "rank": 169,
-      "name": "vito3corleone",
-      "wallet": "0x34dd4a4b70eaf79a17878f7938263c801d4dfd83",
-      "pnl": 1059453.8595218745,
-      "activePositionCount": 1
-    },
-    {
       "rank": 174,
       "name": "Airpods123",
       "wallet": "0xb90494d9a5d8f71f1930b2aa4b599f95c344c255",
@@ -280,6 +280,13 @@
       "activePositionCount": 8
     },
     {
+      "rank": 196,
+      "name": "Lilybaeum",
+      "wallet": "0x01c78f8873c0c86d6b6b92ff627e3802237ee995",
+      "pnl": 933615.5314081775,
+      "activePositionCount": 45
+    },
+    {
       "rank": 206,
       "name": "Anointed-Connect",
       "wallet": "0x8f037a2e4fd49d11267f4ab874ab7ba745ac64d6",
@@ -305,7 +312,7 @@
       "name": "easyclap",
       "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
       "pnl": 891858.6303767033,
-      "activePositionCount": 38
+      "activePositionCount": 39
     },
     {
       "rank": 220,
@@ -327,13 +334,6 @@
       "wallet": "0x80cd8310aa624521e9e1b2b53b568cafb0ef0273",
       "pnl": 872677.2876112476,
       "activePositionCount": 23
-    },
-    {
-      "rank": 227,
-      "name": "n.maga",
-      "wallet": "0x73c5701afdefba2814193168448b2992306b2f80",
-      "pnl": 868753.3053795167,
-      "activePositionCount": 2
     },
     {
       "rank": 244,
@@ -368,7 +368,7 @@
       "name": "vital-buttering",
       "wallet": "0xb0c85813a7a4428f1139ff91d3118a92c391fe7f",
       "pnl": 776309.818394732,
-      "activePositionCount": 1697
+      "activePositionCount": 1679
     },
     {
       "rank": 269,
@@ -382,7 +382,7 @@
       "name": "betterfasterstronger",
       "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
       "pnl": 751549.3306602179,
-      "activePositionCount": 229
+      "activePositionCount": 214
     },
     {
       "rank": 277,
@@ -399,6 +399,13 @@
       "activePositionCount": 5
     },
     {
+      "rank": 283,
+      "name": "AnonymousUsername",
+      "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
+      "pnl": 714546.6969307732,
+      "activePositionCount": 267
+    },
+    {
       "rank": 286,
       "name": "joblessfinalboss",
       "wallet": "0xba389f76b0119aed07c53c9029852664bd97e406",
@@ -410,7 +417,7 @@
       "name": "e46m3",
       "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
       "pnl": 702527.9858789155,
-      "activePositionCount": 3600
+      "activePositionCount": 3602
     },
     {
       "rank": 293,
@@ -424,7 +431,7 @@
       "name": "0x228B8d11EBa89BF1c554f8879a9293B7106DaF4c-1765442354872",
       "wallet": "0x228b8d11eba89bf1c554f8879a9293b7106daf4c",
       "pnl": 684164.0544468864,
-      "activePositionCount": 5
+      "activePositionCount": 11
     },
     {
       "rank": 299,
@@ -713,12 +720,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-08-25T21:59:43.978Z",
-  "lastCheckedAt": "2026-08-25T21:59:44.054Z",
+  "lastCheckedAt": "2026-08-25T22:38:25.355Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-25T21:43:28.766Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-25T21:59:44.054Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-08-25T22:38:25.288Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-08-25T22:38:25.355Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
