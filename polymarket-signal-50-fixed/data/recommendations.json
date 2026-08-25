@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-08-25T23:42:33.418Z",
-  "durationSeconds": 649,
+  "generatedAt": "2026-08-25T23:57:19.181Z",
+  "durationSeconds": 380,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -19,13 +19,13 @@
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
-    "leaderboardUsersInspected": 450,
-    "skippedNoPositions": 277,
-    "excludedBothOutcomes": 75,
+    "leaderboardUsersInspected": 400,
+    "skippedNoPositions": 247,
+    "excludedBothOutcomes": 65,
     "positionFetchErrors": 0,
-    "eligibleTraders": 98,
-    "candidateMarkets": 2486,
-    "marketsChecked": 202,
+    "eligibleTraders": 88,
+    "candidateMarkets": 2470,
+    "marketsChecked": 247,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -270,7 +270,7 @@
       "name": "matanovik",
       "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
       "pnl": 1005014.8357991308,
-      "activePositionCount": 1
+      "activePositionCount": 2
     },
     {
       "rank": 191,
@@ -291,7 +291,7 @@
       "name": "Lilybaeum",
       "wallet": "0x01c78f8873c0c86d6b6b92ff627e3802237ee995",
       "pnl": 933615.5314081775,
-      "activePositionCount": 37
+      "activePositionCount": 36
     },
     {
       "rank": 206,
@@ -382,7 +382,7 @@
       "name": "vital-buttering",
       "wallet": "0xb0c85813a7a4428f1139ff91d3118a92c391fe7f",
       "pnl": 776309.818394732,
-      "activePositionCount": 1669
+      "activePositionCount": 1664
     },
     {
       "rank": 269,
@@ -396,7 +396,7 @@
       "name": "betterfasterstronger",
       "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
       "pnl": 751549.3306602179,
-      "activePositionCount": 214
+      "activePositionCount": 215
     },
     {
       "rank": 277,
@@ -411,6 +411,13 @@
       "wallet": "0x7744bfd749a70020d16a1fcbac1d064761c9999e",
       "pnl": 719148.5988550371,
       "activePositionCount": 5
+    },
+    {
+      "rank": 283,
+      "name": "AnonymousUsername",
+      "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
+      "pnl": 714546.6969307732,
+      "activePositionCount": 266
     },
     {
       "rank": 286,
@@ -627,7 +634,7 @@
       "name": "JESUSCHRISTISGOD",
       "wallet": "0x160db9bb5bf012f21251a74737093bcdc36f5295",
       "pnl": 536532.6556263576,
-      "activePositionCount": 1
+      "activePositionCount": 2
     },
     {
       "rank": 398,
@@ -642,83 +649,6 @@
       "wallet": "0x7f9e2d1df78614564a70becc7fa14aa9a6623a0e",
       "pnl": 526662.3282459284,
       "activePositionCount": 32
-    },
-    {
-      "rank": 401,
-      "name": "0x50f7",
-      "wallet": "0xee65685de42f8de9a03b4c53ee77d56a20d2cfc9",
-      "pnl": 526345.2045055233,
-      "activePositionCount": 4
-    },
-    {
-      "rank": 411,
-      "name": "cocos228",
-      "wallet": "0x8e5c0cc55cda93d6cae14becb3b738a44dcaa68a",
-      "pnl": 510478.1624103988,
-      "activePositionCount": 9
-    },
-    {
-      "rank": 412,
-      "name": "unbribeableref",
-      "wallet": "0xf7429705e25b619338412967f0a70260b6e1e039",
-      "pnl": 508195.62779412896,
-      "activePositionCount": 19
-    },
-    {
-      "rank": 414,
-      "name": "phonesculptor",
-      "wallet": "0xf1528f12e645462c344799b62b1b421a6a4c64aa",
-      "pnl": 505830.25118340226,
-      "activePositionCount": 4
-    },
-    {
-      "rank": 420,
-      "name": "Gametheory-394",
-      "wallet": "0x8b3234f9027f4e994e949df4b48b90ab79015950",
-      "pnl": 499958.1141586674,
-      "activePositionCount": 2
-    },
-    {
-      "rank": 421,
-      "name": "ExhaustedBoyBilly",
-      "wallet": "0x96b59f71f635da5da031e3e93448c54fe226f5e7",
-      "pnl": 495043.62700312195,
-      "activePositionCount": 4
-    },
-    {
-      "rank": 427,
-      "name": "easypredict",
-      "wallet": "0x388537259dc9e693c1c9b96fdf07a63f6b7aca77",
-      "pnl": 488186.3210418312,
-      "activePositionCount": 24
-    },
-    {
-      "rank": 431,
-      "name": "Eatpraylove",
-      "wallet": "0xc02147dee42356b7a4edbb1c35ac4ffa95f61fa8",
-      "pnl": 487360.98851046804,
-      "activePositionCount": 106
-    },
-    {
-      "rank": 439,
-      "name": "OOOwhyOOO",
-      "wallet": "0x8546a601f7c7cc3dae7141f20b0e09e42bbf35b8",
-      "pnl": 477285.09999229177,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 443,
-      "name": "Flipadelphia",
-      "wallet": "0x448861155279dbf833d041b963e3ac854599e319",
-      "pnl": 471114.8450187864,
-      "activePositionCount": 36
-    },
-    {
-      "rank": 445,
-      "name": "wapol",
-      "wallet": "0xf7f0b0b1e9c0fe02ccad926916ee31aef74b912c",
-      "pnl": 468557.0921821584,
-      "activePositionCount": 67
     }
   ],
   "recommendations": [
@@ -737,9 +667,9 @@
       "supporterCount": 5,
       "opposingSupporters": 1,
       "consensusRate": 0.8333333333333334,
-      "totalCurrentValue": 6651.7576,
-      "avgAccountAllocation": 0.01476995916814754,
-      "avgEntryPrice": 0.07537397944954338,
+      "totalCurrentValue": 6711.3257,
+      "avgAccountAllocation": 0.015928327717101405,
+      "avgEntryPrice": 0.07497391384564529,
       "currentPrice": 0.085,
       "rankWeight": 0.39066400991244316,
       "supporters": [
@@ -748,8 +678,8 @@
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
           "currentValue": 6386.0496,
-          "visibleAccountValue": 899995.9133000002,
-          "accountAllocation": 0.007095642886404203,
+          "visibleAccountValue": 943330.0913000002,
+          "accountAllocation": 0.006769687152881348,
           "size": 75129.9964,
           "avgPrice": 0.075,
           "pnl": 746.8672
@@ -759,8 +689,8 @@
           "name": "vital-buttering",
           "wallet": "0xb0c85813a7a4428f1139ff91d3118a92c391fe7f",
           "currentValue": 42.5012,
-          "visibleAccountValue": 1066.5878000000218,
-          "accountAllocation": 0.039847821248282726,
+          "visibleAccountValue": 1042.3439000000253,
+          "accountAllocation": 0.04077464261075348,
           "size": 500.0144,
           "avgPrice": 0.3069,
           "pnl": -110.9897
@@ -769,20 +699,20 @@
           "rank": 270,
           "name": "betterfasterstronger",
           "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
-          "currentValue": 213.5169,
-          "visibleAccountValue": 8644.81760000001,
-          "accountAllocation": 0.024698832280741212,
-          "size": 2511.9644,
+          "currentValue": 273.085,
+          "visibleAccountValue": 9154.301200000018,
+          "accountAllocation": 0.029831332182952364,
+          "size": 3212.7654,
           "avgPrice": 0.0303,
-          "pnl": 137.3993
+          "pnl": 175.7317
         },
         {
           "rank": 290,
           "name": "e46m3",
           "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
           "currentValue": 0.102,
-          "visibleAccountValue": 23427.178199999955,
-          "accountAllocation": 0.00000435391745131303,
+          "visibleAccountValue": 23214.330899999884,
+          "accountAllocation": 0.000004393837601410278,
           "size": 1.2,
           "avgPrice": 5.3795,
           "pnl": -6.3534
@@ -792,8 +722,8 @@
           "name": "Mysaria",
           "wallet": "0xe40aaa5ce1dac0b7dc24c9d0284f27e17c3fe4a2",
           "currentValue": 9.5879,
-          "visibleAccountValue": 4351.914100000025,
-          "accountAllocation": 0.0022031455078582417,
+          "visibleAccountValue": 4239.4645000000255,
+          "accountAllocation": 0.0022615828013184073,
           "size": 112.7988,
           "avgPrice": 0.2455,
           "pnl": -18.1112
@@ -806,8 +736,8 @@
       "decisionText": "Select “Buffalo Bills” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Buffalo Bills” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Buffalo Bills win the 2027 NFL league championship?”.",
       "category": "Other",
-      "liquidity": 243368.0418,
-      "volume24hr": 4958.247326000001,
+      "liquidity": 243742.9421,
+      "volume24hr": 4958.247326,
       "usAvailable": true,
       "usMarketSlug": "tec-nfl-afcchamp-2027-01-31-w-bufbil",
       "usMatchMethod": "title_slug_similarity",
@@ -815,166 +745,74 @@
       "marketUrl": "https://polymarket.us/market/tec-nfl-afcchamp-2027-01-31-w-bufbil"
     },
     {
-      "conditionId": "0x67a633090f9ce7993fe2e310a591444f5a9e1ba74f60b9674ecaf7c42a0c7905",
-      "title": "Will Liverpool win the 2026-27 UEFA Champions League Championship?",
-      "slug": "will-liverpool-win-the-2026-27-uefa-champions-league-championship-20260701202025555",
-      "eventSlug": "uefa-champions-league-2027-champion-20260701202025549",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/uefa-champions-league-2025-26-which-teams-qualify-StbSIjaEx2St.png",
-      "endDate": "2027-05-30",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will Liverpool win the 2026-27 UEFA Champions League Championship?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 4,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 6407.8072,
-      "avgAccountAllocation": 0.08253117454421113,
-      "avgEntryPrice": 0.4345241253591,
-      "currentPrice": 0.065,
-      "rankWeight": 0.21713525936234696,
-      "supporters": [
-        {
-          "rank": 270,
-          "name": "betterfasterstronger",
-          "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
-          "currentValue": 881.0516,
-          "visibleAccountValue": 8644.81760000001,
-          "accountAllocation": 0.10191673679731532,
-          "size": 13554.6407,
-          "avgPrice": 0.0238,
-          "pnl": 558.3291
-        },
-        {
-          "rank": 332,
-          "name": "Mysaria",
-          "wallet": "0xe40aaa5ce1dac0b7dc24c9d0284f27e17c3fe4a2",
-          "currentValue": 0.65,
-          "visibleAccountValue": 4351.914100000025,
-          "accountAllocation": 0.00014935956571385364,
-          "size": 10,
-          "avgPrice": 0.5,
-          "pnl": -4.35
-        },
-        {
-          "rank": 368,
-          "name": "afkpnlucl",
-          "wallet": "0x55eca3687ea7d69632ffe0f297ea3d5158bb8c7d",
-          "currentValue": 4226.1082,
-          "visibleAccountValue": 19689.619100000004,
-          "accountAllocation": 0.2146363613504336,
-          "size": 65017.05,
-          "avgPrice": 0.5,
-          "pnl": -28282.4168
-        },
-        {
-          "rank": 412,
-          "name": "unbribeableref",
-          "wallet": "0xf7429705e25b619338412967f0a70260b6e1e039",
-          "currentValue": 1299.9974,
-          "visibleAccountValue": 96853.97929999996,
-          "accountAllocation": 0.01342224046338177,
-          "size": 19999.9615,
-          "avgPrice": 0.5,
-          "pnl": -8699.9833
-        }
-      ],
-      "decisionSide": "YES",
-      "decisionChoice": "Liverpool",
-      "decisionOption": "Liverpool",
-      "decisionTarget": "Will Liverpool win the 2026-27 UEFA Champions League Championship?",
-      "decisionText": "Select “Liverpool” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Liverpool” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Liverpool win the 2026-27 UEFA Champions League Championship?”.",
-      "category": "Other",
-      "liquidity": 305573.9432,
-      "volume24hr": 5.08,
-      "usAvailable": true,
-      "usMarketSlug": "aachc-epl-2027-05-30-relegation-liv",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aachc-epl-2027-05-30-relegation-liv"
-    },
-    {
-      "conditionId": "0x12dc2b61723b2a54fc1947a307389b5f32038e7a29a0e936ad1fe410b969d06a",
-      "title": "Will Harry Kane win the 2026 Ballon d'Or?",
-      "slug": "will-harry-kane-win-the-2026-ballon-dor",
+      "conditionId": "0xa34edb6c898232378a9cc08744842df2cd89d278ba45b012bed3ac10c7241c4d",
+      "title": "Will Lamine Yamal win the 2026 Ballon d'Or?",
+      "slug": "will-lamine-yamal-win-the-2026-ballon-dor",
       "eventSlug": "ballon-dor-winner-2026",
       "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/ballon-dor-winner-2025-vTCj-1ZkJzga.jpg",
       "endDate": "2026-10-31",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Will Harry Kane win the 2026 Ballon d'Or?",
+      "rawPositionTitle": "Will Lamine Yamal win the 2026 Ballon d'Or?",
       "outcome": "Yes",
       "outcomeKey": "0",
-      "supporterCount": 4,
-      "opposingSupporters": 1,
-      "consensusRate": 0.8,
-      "totalCurrentValue": 123661.799,
-      "avgAccountAllocation": 0.2739899706863834,
-      "avgEntryPrice": 0.453782011564652,
-      "currentPrice": 0.6125,
-      "rankWeight": 0.27440514613124334,
+      "supporterCount": 3,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 14021.174099999998,
+      "avgAccountAllocation": 0.02182961812933276,
+      "avgEntryPrice": 0.35237987071168686,
+      "currentPrice": 0.1575,
+      "rankWeight": 0.2813839646160286,
       "supporters": [
         {
-          "rank": 104,
-          "name": "DLEK",
-          "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
-          "currentValue": 36987.7171,
-          "visibleAccountValue": 172207.9655,
-          "accountAllocation": 0.2147851697371107,
-          "size": 60388.1096,
-          "avgPrice": 0.4991,
-          "pnl": 6845.4592
+          "rank": 42,
+          "name": "BreakTheBank",
+          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+          "currentValue": 8460.3208,
+          "visibleAccountValue": 943330.0913000002,
+          "accountAllocation": 0.008968568773567753,
+          "size": 53716.3227,
+          "avgPrice": 0.4089,
+          "pnl": -13507.7214
         },
         {
           "rank": 214,
           "name": "surfandturf",
           "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
-          "currentValue": 85750.3693,
+          "currentValue": 5560.5497,
           "visibleAccountValue": 98404.25580000001,
-          "accountAllocation": 0.8714091540337627,
-          "size": 140000.603,
-          "avgPrice": 0.4346,
-          "pnl": 24897.0085
+          "accountAllocation": 0.05650720748604045,
+          "size": 35305.078,
+          "avgPrice": 0.2664,
+          "pnl": -3846.976
         },
         {
           "rank": 290,
           "name": "e46m3",
           "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
-          "currentValue": 7.0577,
-          "visibleAccountValue": 23427.178199999955,
-          "accountAllocation": 0.00030126120780521546,
-          "size": 11.5228,
-          "avgPrice": 0.1145,
-          "pnl": 5.7379
-        },
-        {
-          "rank": 412,
-          "name": "unbribeableref",
-          "wallet": "0xf7429705e25b619338412967f0a70260b6e1e039",
-          "currentValue": 916.6549,
-          "visibleAccountValue": 96853.97929999996,
-          "accountAllocation": 0.009464297766854896,
-          "size": 1496.5794,
-          "avgPrice": 0.4222,
-          "pnl": 284.754
+          "currentValue": 0.3036,
+          "visibleAccountValue": 23214.330899999884,
+          "accountAllocation": 0.000013078128390080005,
+          "size": 1.928,
+          "avgPrice": 0.0788,
+          "pnl": 0.1515
         }
       ],
       "decisionSide": "YES",
-      "decisionChoice": "Harry Kane",
-      "decisionOption": "Harry Kane",
-      "decisionTarget": "Will Harry Kane win the 2026 Ballon d'Or?",
-      "decisionText": "Select “Harry Kane” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Harry Kane” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Harry Kane win the 2026 Ballon d'Or?”.",
+      "decisionChoice": "Lamine Yamal",
+      "decisionOption": "Lamine Yamal",
+      "decisionTarget": "Will Lamine Yamal win the 2026 Ballon d'Or?",
+      "decisionText": "Select “Lamine Yamal” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “Lamine Yamal” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Lamine Yamal win the 2026 Ballon d'Or?”.",
       "category": "Other",
-      "liquidity": 194526.14072,
-      "volume24hr": 23339.653492,
+      "liquidity": 155773.31925,
+      "volume24hr": 15319.910875000001,
       "usAvailable": true,
-      "usMarketSlug": "tec-uefa-bdor-2026-10-26-w-harkan",
+      "usMarketSlug": "tec-uefa-bdor-2026-10-26-w-lamyam",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/tec-uefa-bdor-2026-10-26-w-harkan"
+      "marketUrl": "https://polymarket.us/market/tec-uefa-bdor-2026-10-26-w-lamyam"
     },
     {
       "conditionId": "0x777c36cb439b5a8cf54d2449c2d355f91fc50d7c076caad4deaf97c749489392",
@@ -992,7 +830,7 @@
       "opposingSupporters": 0,
       "consensusRate": 1,
       "totalCurrentValue": 15000.301900000002,
-      "avgAccountAllocation": 0.0326054232877294,
+      "avgAccountAllocation": 0.031577799530310806,
       "avgEntryPrice": 0.32121371408464006,
       "currentPrice": 0.055,
       "rankWeight": 0.2652868826188189,
@@ -1002,8 +840,8 @@
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
           "currentValue": 8846.4804,
-          "visibleAccountValue": 899995.9133000002,
-          "accountAllocation": 0.009829467300093347,
+          "visibleAccountValue": 943330.0913000002,
+          "accountAllocation": 0.009377926646873624,
           "size": 160845.0982,
           "avgPrice": 0.5,
           "pnl": -71576.0687
@@ -1013,8 +851,8 @@
           "name": "betterfasterstronger",
           "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
           "currentValue": 0.5678,
-          "visibleAccountValue": 8644.81760000001,
-          "accountAllocation": 0.00006568096937059717,
+          "visibleAccountValue": 9154.301200000018,
+          "accountAllocation": 0.00006202548808422415,
           "size": 10.3251,
           "avgPrice": 0.0416,
           "pnl": 0.1375
@@ -1024,8 +862,8 @@
           "name": "dv-pm",
           "wallet": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
           "currentValue": 6153.2537,
-          "visibleAccountValue": 69986.0692,
-          "accountAllocation": 0.08792112159372426,
+          "visibleAccountValue": 72142.16279999999,
+          "accountAllocation": 0.08529344645597457,
           "size": 111877.34,
           "avgPrice": 0.0642,
           "pnl": -1030.628
@@ -1038,22 +876,92 @@
       "decisionText": "Select “Manchester United” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Manchester United” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Manchester United win the 2026-27 English Premier League (EPL) Championship?”.",
       "category": "Other",
-      "liquidity": 373962.4334,
-      "volume24hr": 19388.674392999998,
+      "liquidity": 373964.7042,
+      "volume24hr": 19488.674392999998,
       "usAvailable": true,
       "usMarketSlug": "aachc-epl-2027-05-30-relegation-mnu",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
       "marketUrl": "https://polymarket.us/market/aachc-epl-2027-05-30-relegation-mnu"
+    },
+    {
+      "conditionId": "0xf7f1f09848d3e6359c8456bce84dda772b202818dee7468f7e53de3a7451f140",
+      "title": "Tampa Bay Rays vs. Detroit Tigers: O/U 7.5",
+      "slug": "mlb-tb-det-2026-08-25-total-7pt5",
+      "eventSlug": "mlb-tb-det-2026-08-25",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Repetitive-markets/MLB.jpg",
+      "endDate": "2026-08-25",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Tampa Bay Rays vs. Detroit Tigers: O/U 7.5",
+      "outcome": "Under",
+      "outcomeKey": "1",
+      "supporterCount": 3,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 23046.2189,
+      "avgAccountAllocation": 0.13708144634409547,
+      "avgEntryPrice": 0.47664440882981957,
+      "currentPrice": 0.76,
+      "rankWeight": 0.20669788677521136,
+      "supporters": [
+        {
+          "rank": 106,
+          "name": "sportmaster777",
+          "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
+          "currentValue": 2298.3523,
+          "visibleAccountValue": 12073.0524,
+          "accountAllocation": 0.1903704402045004,
+          "size": 3127.01,
+          "avgPrice": 0.5,
+          "pnl": 734.8473
+        },
+        {
+          "rank": 283,
+          "name": "AnonymousUsername",
+          "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
+          "currentValue": 7039.7466,
+          "visibleAccountValue": 228129.71440000006,
+          "accountAllocation": 0.030858525460022223,
+          "size": 9577.8865,
+          "avgPrice": 0.4627,
+          "pnl": 2607.5508
+        },
+        {
+          "rank": 398,
+          "name": "dv-pm",
+          "wallet": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
+          "currentValue": 13708.12,
+          "visibleAccountValue": 72142.16279999999,
+          "accountAllocation": 0.19001537336776383,
+          "size": 18037,
+          "avgPrice": 0.48,
+          "pnl": 5050.36
+        }
+      ],
+      "decisionSide": "Under",
+      "decisionChoice": "O/U 7.5",
+      "decisionOption": "O/U 7.5",
+      "decisionTarget": "Tampa Bay Rays vs. Detroit Tigers: O/U 7.5 — O/U 7.5",
+      "decisionText": "Select “O/U 7.5” → Buy Under",
+      "decisionMeaning": "On Polymarket, choose the “O/U 7.5” option/row/card, then click Buy Under. This applies only to the exact market question: “Tampa Bay Rays vs. Detroit Tigers: O/U 7.5 — O/U 7.5”.",
+      "category": "Other",
+      "liquidity": 74997.6928,
+      "volume24hr": 304299.1896170001,
+      "usAvailable": true,
+      "usMarketSlug": "aec-mlb-tb-det-2026-08-25",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/aec-mlb-tb-det-2026-08-25"
     }
   ],
-  "recommendationsUpdatedAt": "2026-08-25T23:42:33.418Z",
-  "lastCheckedAt": "2026-08-25T23:42:33.490Z",
+  "recommendationsUpdatedAt": "2026-08-25T23:57:19.181Z",
+  "lastCheckedAt": "2026-08-25T23:57:19.241Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-08-25T23:02:04.558Z",
+  "previousRecommendationsReplacedAt": "2026-08-25T23:42:33.418Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-08-25T23:42:33.490Z",
+  "lastSuccessfulWorkflowAt": "2026-08-25T23:57:19.241Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
