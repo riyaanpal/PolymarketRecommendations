@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-09-14T22:44:33.030Z",
-  "durationSeconds": 130,
+  "generatedAt": "2026-09-15T01:44:55.628Z",
+  "durationSeconds": 1421,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -19,13 +19,13 @@
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
-    "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 191,
-    "excludedBothOutcomes": 53,
+    "leaderboardUsersInspected": 650,
+    "skippedNoPositions": 404,
+    "excludedBothOutcomes": 94,
     "positionFetchErrors": 0,
-    "eligibleTraders": 56,
-    "candidateMarkets": 1559,
-    "marketsChecked": 151,
+    "eligibleTraders": 152,
+    "candidateMarkets": 4127,
+    "marketsChecked": 285,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -45,655 +45,1624 @@
       "rank": 25,
       "name": "0x006cc834Cc092684F1B56626E23BEdB3835c16ea-1729683673397",
       "wallet": "0x006cc834cc092684f1b56626e23bedb3835c16ea",
-      "pnl": 4719388.933774866,
+      "pnl": 4719388.933772708,
       "activePositionCount": 1
     },
     {
       "rank": 31,
       "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
       "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-      "pnl": 4236957.042582029,
+      "pnl": 4236956.022582024,
       "activePositionCount": 4
     },
     {
       "rank": 43,
-      "name": "BreakTheBank",
-      "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-      "pnl": 3507011.111142699,
-      "activePositionCount": 48
-    },
-    {
-      "rank": 44,
       "name": "GCottrell93",
       "wallet": "0x94a428cfa4f84b264e01f70d93d02bc96cb36356",
       "pnl": 3460524.146036782,
       "activePositionCount": 2
     },
     {
+      "rank": 47,
+      "name": "00gringo00",
+      "wallet": "0x51698a47f840a242abc2ca0351371c7ffac41842",
+      "pnl": 3149707.1678976547,
+      "activePositionCount": 1
+    },
+    {
       "rank": 51,
       "name": "00gringo00",
       "wallet": "0x51698a47f840a242abc2ca0351371c7ffac41842",
-      "pnl": 2955550.0310612144,
+      "pnl": 2955550.031061214,
       "activePositionCount": 1
     },
     {
       "rank": 60,
       "name": "denizz",
       "wallet": "0xbaa2bcb5439e985ce4ccf815b4700027d1b92c73",
-      "pnl": 2448115.4343135976,
+      "pnl": 2447705.0940975803,
       "activePositionCount": 40
     },
     {
       "rank": 61,
       "name": "tdrhrhhd",
       "wallet": "0xd7f85d0eb0fe0732ca38d9107ad0d4d01b1289e4",
-      "pnl": 2427964.724639245,
+      "pnl": 2425579.9407185423,
       "activePositionCount": 7
     },
     {
       "rank": 64,
       "name": "0xf705…3ca7",
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
-      "pnl": 2352828.3001344446,
-      "activePositionCount": 164
+      "pnl": 2353019.555702998,
+      "activePositionCount": 170
     },
     {
       "rank": 68,
       "name": "0x7fB7Ad0d194D7123e711e7db6C9D418fAc14E33d-1750343282446",
       "wallet": "0x7fb7ad0d194d7123e711e7db6c9d418fac14e33d",
-      "pnl": 2282133.659216258,
+      "pnl": 2282133.6592162624,
       "activePositionCount": 1
     },
     {
       "rank": 69,
       "name": "The Spirit of Ukraine>UMA",
       "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
-      "pnl": 2260380.057648286,
+      "pnl": 2260695.9166143644,
       "activePositionCount": 98
     },
     {
       "rank": 73,
-      "name": "Talvez10",
-      "wallet": "0xa71093cafc0c099b4ccab24c3cb8018d817923c4",
-      "pnl": 2187305.931200454,
-      "activePositionCount": 4
-    },
-    {
-      "rank": 74,
       "name": "geniusMC",
       "wallet": "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44",
       "pnl": 2169609.512986419,
       "activePositionCount": 1
     },
     {
-      "rank": 76,
+      "rank": 75,
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "pnl": 2161115.5900042704,
-      "activePositionCount": 74
+      "pnl": 2157952.1559448717,
+      "activePositionCount": 70
+    },
+    {
+      "rank": 81,
+      "name": "Talvez10",
+      "wallet": "0xa71093cafc0c099b4ccab24c3cb8018d817923c4",
+      "pnl": 2097141.3739812137,
+      "activePositionCount": 3
+    },
+    {
+      "rank": 84,
+      "name": "balthazar",
+      "wallet": "0x5a218c7ad04135830a45c41aaed7294df7809318",
+      "pnl": 1995422.1340599987,
+      "activePositionCount": 5850
     },
     {
       "rank": 88,
       "name": "Pestle",
       "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
-      "pnl": 1908824.4408968668,
+      "pnl": 1908824.44089947,
       "activePositionCount": 60
     },
     {
       "rank": 104,
       "name": "DLEK",
       "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
-      "pnl": 1583361.7156723347,
+      "pnl": 1581274.0157532028,
       "activePositionCount": 13
     },
     {
       "rank": 106,
       "name": "scottilicious",
       "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
-      "pnl": 1563880.8430109448,
+      "pnl": 1563453.2573106743,
       "activePositionCount": 36
     },
     {
       "rank": 110,
       "name": "Joe-Biden",
       "wallet": "0x8b5a7da2fdf239b51b9c68a2a1a35bb156d200f2",
-      "pnl": 1538460.6122922152,
+      "pnl": 1538218.1627175184,
       "activePositionCount": 11
     },
     {
       "rank": 123,
       "name": "Kch-Temp",
       "wallet": "0x924379a79c64b77ad5816ad362122a5f6228658e",
-      "pnl": 1452096.9601390525,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 128,
-      "name": "THEHIGHLIFE",
-      "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
-      "pnl": 1434131.786051,
+      "pnl": 1458170.5873624156,
       "activePositionCount": 1
     },
     {
       "rank": 136,
       "name": "e46m3",
       "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
-      "pnl": 1358033.9997544684,
-      "activePositionCount": 4321
+      "pnl": 1358663.098288529,
+      "activePositionCount": 4357
     },
     {
       "rank": 144,
       "name": "0xd9670ea74384c1e1b9dc1e4267ffadaf4cdd140",
       "wallet": "0xd570e634aeb745d6501566dba5f81a555cc7e4f8",
-      "pnl": 1277636.9654677238,
+      "pnl": 1277637.0079877237,
       "activePositionCount": 42
-    },
-    {
-      "rank": 151,
-      "name": "Wickier",
-      "wallet": "0x1cc16713196d456f86fa9c7387dd326a7f73b8df",
-      "pnl": 1241943.3964627734,
-      "activePositionCount": 8
     },
     {
       "rank": 153,
       "name": "influenz.eth",
       "wallet": "0xe8dd7741ccb12350957ec71e9ee332e0d1e6ec86",
-      "pnl": 1236276.4106278664,
+      "pnl": 1236438.3964131563,
       "activePositionCount": 25
     },
     {
       "rank": 158,
       "name": "Hugewinner",
       "wallet": "0xc8ec6d4cef5c5fe8409ef69303c37f05b678e8f1",
-      "pnl": 1181225.5031866084,
+      "pnl": 1182579.7550483092,
       "activePositionCount": 1
     },
     {
-      "rank": 162,
+      "rank": 163,
       "name": "occasionalAwareness",
       "wallet": "0x8a4c788f043023b8b28a762216d037e9f148532b",
-      "pnl": 1152121.876644975,
+      "pnl": 1150838.3121665083,
       "activePositionCount": 45
+    },
+    {
+      "rank": 166,
+      "name": "one8tyfive",
+      "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
+      "pnl": 1133394.436985362,
+      "activePositionCount": 6
     },
     {
       "rank": 170,
       "name": "gatorr",
       "wallet": "0x93abbc022ce98d6f45d4444b594791cc4b7a9723",
-      "pnl": 1115074.6036370222,
+      "pnl": 1114881.399095608,
       "activePositionCount": 6
     },
     {
       "rank": 174,
       "name": "0x29b52d98ac9ef9414b04164246c95BC63d7",
       "wallet": "0x29b52d98ac9ef9414b04164246c95bc63d74cc6c",
-      "pnl": 1081691.7737800116,
-      "activePositionCount": 1
+      "pnl": 1081692.9682278577,
+      "activePositionCount": 2
     },
     {
       "rank": 175,
       "name": "maz26",
       "wallet": "0x67542c3219b37fd1610aad290676ff91cdbfe3bc",
-      "pnl": 1074411.6701029288,
+      "pnl": 1074415.1057029287,
       "activePositionCount": 1
     },
     {
       "rank": 183,
       "name": "Airpods123",
       "wallet": "0xb90494d9a5d8f71f1930b2aa4b599f95c344c255",
-      "pnl": 1023474.6470457519,
+      "pnl": 1023474.6470457538,
       "activePositionCount": 2
     },
     {
       "rank": 184,
       "name": "WTSA",
       "wallet": "0x04d5524a0a5af2eca6e39e03defc261d42fe66d8",
-      "pnl": 1022305.3792331773,
+      "pnl": 1022232.4922214423,
       "activePositionCount": 2
+    },
+    {
+      "rank": 190,
+      "name": "ethanaz",
+      "wallet": "0xf28e42d20e4826f2b10a24bc952001697947cab2",
+      "pnl": 995238.6126736535,
+      "activePositionCount": 1
     },
     {
       "rank": 194,
       "name": "Lilybaeum",
       "wallet": "0x01c78f8873c0c86d6b6b92ff627e3802237ee995",
-      "pnl": 982840.258745302,
-      "activePositionCount": 11
+      "pnl": 983154.8267431778,
+      "activePositionCount": 18
     },
     {
       "rank": 201,
       "name": "ROBBATTISTAFANDUELRETARD",
       "wallet": "0x13414a77a4be48988851c73dfd824d0168e70853",
-      "pnl": 946379.9759911485,
+      "pnl": 946379.9755070885,
       "activePositionCount": 5
     },
     {
       "rank": 206,
       "name": "Macks22",
       "wallet": "0x1057e7d3ddafc60a4aeb10a2bc5b543792449ea5",
-      "pnl": 934975.4835740371,
+      "pnl": 934941.6886465652,
       "activePositionCount": 7
     },
     {
       "rank": 216,
       "name": "bitcoin.gold",
       "wallet": "0xb0c85813a7a4428f1139ff91d3118a92c391fe7f",
-      "pnl": 923642.3638572335,
-      "activePositionCount": 2121
+      "pnl": 923684.9048373424,
+      "activePositionCount": 2134
     },
     {
       "rank": 218,
       "name": "Anointed-Connect",
       "wallet": "0x8f037a2e4fd49d11267f4ab874ab7ba745ac64d6",
-      "pnl": 921582.859335139,
+      "pnl": 921582.2836051389,
       "activePositionCount": 12
     },
     {
-      "rank": 219,
+      "rank": 221,
       "name": "easyclap",
       "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
-      "pnl": 919622.9115225875,
+      "pnl": 917560.5049670273,
       "activePositionCount": 32
     },
     {
       "rank": 224,
       "name": "foodenjoyer",
       "wallet": "0x7b02b2bac2a30ed5e40b7094e734f4c3dc2a4991",
-      "pnl": 911376.2060947265,
+      "pnl": 912781.2067161954,
       "activePositionCount": 11
     },
     {
       "rank": 226,
       "name": "HaileyWelch",
       "wallet": "0x80cd8310aa624521e9e1b2b53b568cafb0ef0273",
-      "pnl": 888395.6393129724,
+      "pnl": 888192.5229539934,
       "activePositionCount": 12
     },
     {
-      "rank": 228,
-      "name": "zerosmart",
-      "wallet": "0x275575bb11522eb29f82fe0a601d7c4dc94b5016",
-      "pnl": 881736.3377669132,
-      "activePositionCount": 12
+      "rank": 227,
+      "name": "AnonymousUsername",
+      "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
+      "pnl": 887998.8863194973,
+      "activePositionCount": 246
     },
     {
       "rank": 229,
+      "name": "zerosmart",
+      "wallet": "0x275575bb11522eb29f82fe0a601d7c4dc94b5016",
+      "pnl": 881791.6808050111,
+      "activePositionCount": 12
+    },
+    {
+      "rank": 230,
       "name": "Nexuus",
       "wallet": "0xce5bec63b40392845a9a504915f607c8e03a047a",
-      "pnl": 880238.0265819167,
+      "pnl": 880238.0265819307,
       "activePositionCount": 38
     },
     {
-      "rank": 231,
-      "name": "AnonymousUsername",
-      "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-      "pnl": 879232.7780842244,
-      "activePositionCount": 253
-    },
-    {
-      "rank": 234,
+      "rank": 242,
       "name": "JnStrtPrdctnMrkts",
       "wallet": "0x1465b79bff7992bc703e1aafb3683b1089647072",
-      "pnl": 871636.2924341926,
+      "pnl": 847137.3157321943,
       "activePositionCount": 20
     },
     {
       "rank": 248,
       "name": "Magamyman",
       "wallet": "0x4dfd481c16d9995b809780fd8a9808e8689f6e4a",
-      "pnl": 825127.303073207,
+      "pnl": 825136.303073207,
       "activePositionCount": 6
     },
     {
       "rank": 249,
       "name": "kingofcoinflips",
       "wallet": "0xe9c6312464b52aa3eff13d822b003282075995c9",
-      "pnl": 824598.6911699411,
-      "activePositionCount": 24
+      "pnl": 824153.3509674747,
+      "activePositionCount": 25
     },
     {
       "rank": 251,
       "name": "ckw",
       "wallet": "0x92672c80d36dcd08172aa1e51dface0f20b70f9a",
-      "pnl": 820481.2567240576,
+      "pnl": 820413.2383508775,
       "activePositionCount": 1
     },
     {
       "rank": 256,
       "name": "212121212121212121212",
       "wallet": "0x1bc0d88ca86b9049cf05d642e634836d5ddf4429",
-      "pnl": 809710.4605479224,
+      "pnl": 809723.5180516724,
       "activePositionCount": 7
     },
     {
-      "rank": 260,
+      "rank": 262,
       "name": "surfandturf",
       "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
-      "pnl": 797938.7245405292,
-      "activePositionCount": 9
-    },
-    {
-      "rank": 264,
-      "name": "0x228B8d11EBa89BF1c554f8879a9293B7106DaF4c-1765442354872",
-      "wallet": "0x228b8d11eba89bf1c554f8879a9293b7106daf4c",
-      "pnl": 786752.8163112715,
-      "activePositionCount": 1
+      "pnl": 792755.2848161637,
+      "activePositionCount": 10
     },
     {
       "rank": 266,
       "name": "matanovik",
       "wallet": "0x39d3c773be30fcc73161fc6768f46d563a779ef0",
-      "pnl": 782356.2377714822,
+      "pnl": 782376.7401234837,
       "activePositionCount": 1
     },
     {
-      "rank": 277,
+      "rank": 276,
       "name": "SlavaUkraini",
       "wallet": "0xe899b5ea69afb161da7a35597b6fe70398860899",
-      "pnl": 757713.2945383561,
+      "pnl": 758450.4075195263,
       "activePositionCount": 9
+    },
+    {
+      "rank": 278,
+      "name": "11122",
+      "wallet": "0x011f2d377e56119fb09196dffb0948ae55711122",
+      "pnl": 756946.5688926846,
+      "activePositionCount": 251
     },
     {
       "rank": 279,
       "name": "0xF201A19b43471261A3c1Ba9247335d55270e527e-1763824114616",
       "wallet": "0xf201a19b43471261a3c1ba9247335d55270e527e",
-      "pnl": 754663.9183906113,
-      "activePositionCount": 2
+      "pnl": 754670.9569766498,
+      "activePositionCount": 1
     },
     {
       "rank": 281,
       "name": "RJW1",
       "wallet": "0x85f031d069de300055900c4055c1baeb6bde3f67",
-      "pnl": 740639.2027928297,
+      "pnl": 740651.3491261799,
       "activePositionCount": 4
     },
     {
       "rank": 290,
       "name": "0x20d2…e29d",
       "wallet": "0x20d2309cd92b797ae7ca175ed828ed8a27fbe29d",
-      "pnl": 723394.5937190849,
-      "activePositionCount": 3
+      "pnl": 723466.7931771824,
+      "activePositionCount": 4
     },
     {
       "rank": 292,
       "name": "02-",
       "wallet": "0x10ff6cd4b1b5669d4ca87faebae0c869ad315088",
-      "pnl": 719532.0923672395,
+      "pnl": 719532.0923672406,
       "activePositionCount": 1
     },
     {
       "rank": 293,
       "name": "chungguskhan",
       "wallet": "0x7744bfd749a70020d16a1fcbac1d064761c9999e",
-      "pnl": 719104.3553285946,
+      "pnl": 719104.3553510171,
       "activePositionCount": 5
+    },
+    {
+      "rank": 306,
+      "name": "AvocadosFromMexico",
+      "wallet": "0x033f0346c007323030eb420305ffede19a95618e",
+      "pnl": 689316.993162528,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 308,
+      "name": "RenanPresidente.",
+      "wallet": "0x88c4919de76e526d55a32c1f8afb439dd1f1129a",
+      "pnl": 685128.7347498972,
+      "activePositionCount": 20
+    },
+    {
+      "rank": 313,
+      "name": "mr.ozi",
+      "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
+      "pnl": 682381.7705980095,
+      "activePositionCount": 25
+    },
+    {
+      "rank": 322,
+      "name": "AgricultureSecretary",
+      "wallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
+      "pnl": 660781.0184034039,
+      "activePositionCount": 30
+    },
+    {
+      "rank": 325,
+      "name": "betwick",
+      "wallet": "0xc851cd9bee7d262afd78674f861f9f576a12cd2a",
+      "pnl": 656610.6482440863,
+      "activePositionCount": 12
+    },
+    {
+      "rank": 333,
+      "name": "WordleAddict",
+      "wallet": "0xe25b9180f5687aa85bd94ee309bb72a464320f1b",
+      "pnl": 645011.5398413285,
+      "activePositionCount": 9
+    },
+    {
+      "rank": 336,
+      "name": "HongYunX",
+      "wallet": "0xc72d7dcdb23597d143a83536fb97b1d7db7efc21",
+      "pnl": 637740.2571260727,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 340,
+      "name": "keasiyo",
+      "wallet": "0xee67f4f549180f564dd5910b1024b8c6729cef38",
+      "pnl": 630333.0470780773,
+      "activePositionCount": 11
+    },
+    {
+      "rank": 342,
+      "name": "Avarice31",
+      "wallet": "0x781caf04d98a281712caf1677877c442789fdb68",
+      "pnl": 628993.335551716,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 343,
+      "name": "semi",
+      "wallet": "0xd3989ba133ab48b5b3a81e3dba9b37b5966a46d7",
+      "pnl": 625787.4064967699,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 354,
+      "name": "bestfriends",
+      "wallet": "0x7abe2e7eac6f63b1bf4c21eeae71b03e9bd9b47e",
+      "pnl": 615681.4385722774,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 356,
+      "name": "Kevindoto",
+      "wallet": "0xcd71fd5370880f3d92bb941e628c05840fe0d127",
+      "pnl": 615205.9533566951,
+      "activePositionCount": 26
+    },
+    {
+      "rank": 357,
+      "name": "farmyboi",
+      "wallet": "0x1823757d22022f81a8fa1536d63101fe458884d8",
+      "pnl": 612132.7316088798,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 359,
+      "name": "BrotherObama",
+      "wallet": "0x8a8685a792c184e5c2ee8c7d4d4baba7c2c94998",
+      "pnl": 610911.1735928181,
+      "activePositionCount": 3
+    },
+    {
+      "rank": 360,
+      "name": "Q96s3kwozynxpau",
+      "wallet": "0x2663daca3cecf3767ca1c3b126002a8578a8ed1f",
+      "pnl": 610879.8010029293,
+      "activePositionCount": 61
+    },
+    {
+      "rank": 373,
+      "name": "botbot",
+      "wallet": "0x226bf1220731af372b1e7d572959414f31b4cad6",
+      "pnl": 581646.1264726783,
+      "activePositionCount": 3
+    },
+    {
+      "rank": 375,
+      "name": "elPolloLoco",
+      "wallet": "0xa2f1fecf1cc7db65a46588f764b6691533052d22",
+      "pnl": 578668.9177100214,
+      "activePositionCount": 32
+    },
+    {
+      "rank": 379,
+      "name": "tourists",
+      "wallet": "0xc6dd722558dbfbd8fa780efcbe819ed8c6604b9f",
+      "pnl": 573751.6471403996,
+      "activePositionCount": 32
+    },
+    {
+      "rank": 383,
+      "name": "MEPP",
+      "wallet": "0x6d9fc316c3b8377060a44b852ba664adbfd59790",
+      "pnl": 565505.901598914,
+      "activePositionCount": 76
+    },
+    {
+      "rank": 386,
+      "name": "bin8888",
+      "wallet": "0xa80e3fe5e7a445fa047fe6de1e27f9a15217b94b",
+      "pnl": 564200.1639870931,
+      "activePositionCount": 6
+    },
+    {
+      "rank": 388,
+      "name": "0x50f7",
+      "wallet": "0xee65685de42f8de9a03b4c53ee77d56a20d2cfc9",
+      "pnl": 558707.9713181054,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 389,
+      "name": "Eatpraylove",
+      "wallet": "0xc02147dee42356b7a4edbb1c35ac4ffa95f61fa8",
+      "pnl": 555573.605513651,
+      "activePositionCount": 93
+    },
+    {
+      "rank": 394,
+      "name": "operationcastle",
+      "wallet": "0xd3a6e523c440f94f9259398fbcf7b5cc5ccffd55",
+      "pnl": 551207.3258314817,
+      "activePositionCount": 12
+    },
+    {
+      "rank": 396,
+      "name": "GoriIIa",
+      "wallet": "0xfffadf38a520cd5a0035ff52d7fceb436a08864b",
+      "pnl": 545010.2042888345,
+      "activePositionCount": 9
+    },
+    {
+      "rank": 397,
+      "name": "Chia",
+      "wallet": "0x2bd2574062fb6d8556ddb1050955f43dd9d4c21b",
+      "pnl": 543121.3637206922,
+      "activePositionCount": 8
+    },
+    {
+      "rank": 403,
+      "name": "whodissss",
+      "wallet": "0x5e6e2c3f06686f2607b86c90e35f536e81a1be00",
+      "pnl": 538634.7272283137,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 407,
+      "name": "cashy",
+      "wallet": "0x8f42ae0a01c0383c7ca8bd060b86a645ee74b88f",
+      "pnl": 535787.017764473,
+      "activePositionCount": 18
+    },
+    {
+      "rank": 410,
+      "name": "betterfasterstronger",
+      "wallet": "0x13fa4ce1b8a27dd0b7a72db6205a50ee6ff0954c",
+      "pnl": 531021.8079358716,
+      "activePositionCount": 93
+    },
+    {
+      "rank": 415,
+      "name": "0xfBd8C9C22cA76B3662d0e53A4f79719FDC684027-1779347618060",
+      "wallet": "0xfbd8c9c22ca76b3662d0e53a4f79719fdc684027",
+      "pnl": 522983.73802455096,
+      "activePositionCount": 1107
+    },
+    {
+      "rank": 416,
+      "name": "johnny234",
+      "wallet": "0xd38ad20037839959d89165cf448568d584b28d26",
+      "pnl": 522648.68238370307,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 419,
+      "name": "LulaVaiPerder",
+      "wallet": "0x7f9e2d1df78614564a70becc7fa14aa9a6623a0e",
+      "pnl": 519447.411099541,
+      "activePositionCount": 28
+    },
+    {
+      "rank": 422,
+      "name": "alwayslatetotheparty",
+      "wallet": "0xb687f00464e33934f5d591f224e71c3559ecaee5",
+      "pnl": 513760.8205770823,
+      "activePositionCount": 218
+    },
+    {
+      "rank": 424,
+      "name": "easypredict",
+      "wallet": "0x388537259dc9e693c1c9b96fdf07a63f6b7aca77",
+      "pnl": 512248.07494408137,
+      "activePositionCount": 17
+    },
+    {
+      "rank": 429,
+      "name": "cocos228",
+      "wallet": "0x8e5c0cc55cda93d6cae14becb3b738a44dcaa68a",
+      "pnl": 505912.1287720005,
+      "activePositionCount": 9
+    },
+    {
+      "rank": 437,
+      "name": "0xfC0847fe2Ea938D6e2624650eB29eF8d8142A137-1771999665274",
+      "wallet": "0xfc0847fe2ea938d6e2624650eb29ef8d8142a137",
+      "pnl": 495186.3100382049,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 446,
+      "name": "Flipadelphia",
+      "wallet": "0x448861155279dbf833d041b963e3ac854599e319",
+      "pnl": 486597.9405582759,
+      "activePositionCount": 46
+    },
+    {
+      "rank": 449,
+      "name": "wapol",
+      "wallet": "0xf7f0b0b1e9c0fe02ccad926916ee31aef74b912c",
+      "pnl": 484408.8532114363,
+      "activePositionCount": 45
+    },
+    {
+      "rank": 456,
+      "name": "DOLLAR-PRINTER",
+      "wallet": "0x661daf6af6d884012dd6db73c09d72e8be224dc6",
+      "pnl": 472772.50813586527,
+      "activePositionCount": 14
+    },
+    {
+      "rank": 458,
+      "name": "esports095",
+      "wallet": "0x40471b34671887546013ceb58740625c2efe7293",
+      "pnl": 467272.81249956874,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 465,
+      "name": "us391",
+      "wallet": "0x3f3aa7005f8006bfcc367d43a25cde25509fe8fd",
+      "pnl": 458373.96794884425,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 467,
+      "name": "failstober",
+      "wallet": "0x90ed5bffbffbfc344aa1195572d89719a398b5bc",
+      "pnl": 457423.6909102722,
+      "activePositionCount": 117
+    },
+    {
+      "rank": 469,
+      "name": "coali10",
+      "wallet": "0x7bc14171ccb0d3e6bac219ec6a76211826e28db4",
+      "pnl": 454543.7715868065,
+      "activePositionCount": 24
+    },
+    {
+      "rank": 471,
+      "name": "0x903221b1",
+      "wallet": "0x903221b1098263779ae19486028c844e8c338717",
+      "pnl": 453643.2549547296,
+      "activePositionCount": 3
+    },
+    {
+      "rank": 473,
+      "name": "Andromeda1",
+      "wallet": "0x39932ca2b7a1b8ab6cbf0b8f7419261b950ccded",
+      "pnl": 452152.7192477318,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 476,
+      "name": "Arbguy",
+      "wallet": "0x53e55bc7cb3d67ad177c023ce891ad076a9d6177",
+      "pnl": 447390.4215129038,
+      "activePositionCount": 27
+    },
+    {
+      "rank": 482,
+      "name": "Jargs",
+      "wallet": "0xf1649daae29c44bdb406a4dbb7f1748eac398fa4",
+      "pnl": 443307.1475333603,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 488,
+      "name": "FatDuckVision",
+      "wallet": "0xf23c5bc7b547867eb6532920144562718aa49f81",
+      "pnl": 437009.7368148764,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 490,
+      "name": "dv-pm",
+      "wallet": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
+      "pnl": 435829.40483584395,
+      "activePositionCount": 66
+    },
+    {
+      "rank": 491,
+      "name": "PEYZ-BIGGEST-FAN",
+      "wallet": "0xdaef2be2a19ad331737d06545f85615b094554e9",
+      "pnl": 435673.16363901173,
+      "activePositionCount": 28
+    },
+    {
+      "rank": 492,
+      "name": "PatienceCapital",
+      "wallet": "0x34f62ce5beaf9b3b325726ec4b6c733df8534535",
+      "pnl": 435450.0485957941,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 495,
+      "name": "xifutloong3",
+      "wallet": "0x2dc13c6bda81b202281e796953a7323de675b33c",
+      "pnl": 433396.84405974654,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 500,
+      "name": "riverskew",
+      "wallet": "0xa804390f80019699ab34a282c0df7528fba82a75",
+      "pnl": 427436.9764436345,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 505,
+      "name": "SlotinCap",
+      "wallet": "0xa5517ed74c6b07843946e0e69cad10a9fa94e050",
+      "pnl": 424572.1171954912,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 509,
+      "name": "Gooooooollllllllll",
+      "wallet": "0xda3a9b7afff7b44ad4fd75308723194e0a11381f",
+      "pnl": 421234.1854769878,
+      "activePositionCount": 7
+    },
+    {
+      "rank": 510,
+      "name": "Brokie",
+      "wallet": "0x1e1f17412069c0736adfaadf8ee7f46e5612c855",
+      "pnl": 419541.5347249433,
+      "activePositionCount": 71
+    },
+    {
+      "rank": 512,
+      "name": "TheyAreTakingTheHobitsToIsengard",
+      "wallet": "0x1058f156b207cafe61d102e97bf6796931d301c1",
+      "pnl": 418863.082874578,
+      "activePositionCount": 6
+    },
+    {
+      "rank": 516,
+      "name": "0xB595d09Ce5bBc4d39E3b3D04E80C402d2C8D5922-1769777706105",
+      "wallet": "0xb595d09ce5bbc4d39e3b3d04e80c402d2c8d5922",
+      "pnl": 414393.40505350067,
+      "activePositionCount": 28
+    },
+    {
+      "rank": 522,
+      "name": "CentralCasting",
+      "wallet": "0x0feb1bf966bc7f954c2da0293ae2fdc572c5db5d",
+      "pnl": 411512.16657857626,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 523,
+      "name": "SuperApe",
+      "wallet": "0x27aed7b479101b7436dcf04cd4a26f3d6bd8bf32",
+      "pnl": 411036.40761950787,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 527,
+      "name": "Llalalala",
+      "wallet": "0x05e26c775ecfe91b897d47f134c1bf5900ca6e12",
+      "pnl": 409879.7008096105,
+      "activePositionCount": 3
+    },
+    {
+      "rank": 535,
+      "name": "texasdolly",
+      "wallet": "0x2e69bb3db7ffcedc4f83b56fe3e6f93371d1858d",
+      "pnl": 405935.4028990594,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 544,
+      "name": "Gucky-45",
+      "wallet": "0xe613b515bd46b1585a8b137a4d291d9b80bd540e",
+      "pnl": 403903.7365107861,
+      "activePositionCount": 216
+    },
+    {
+      "rank": 547,
+      "name": "cqs",
+      "wallet": "0xdfe3fedc5c7679be42c3d393e99d4b55247b73c4",
+      "pnl": 402784.682869013,
+      "activePositionCount": 15
+    },
+    {
+      "rank": 549,
+      "name": "unbribeableref",
+      "wallet": "0xf7429705e25b619338412967f0a70260b6e1e039",
+      "pnl": 402411.82913549105,
+      "activePositionCount": 4
+    },
+    {
+      "rank": 552,
+      "name": "ProfessionalPunter",
+      "wallet": "0x22e4248bdb066f65c9f11cd66cdd3719a28eef1c",
+      "pnl": 401227.3617302162,
+      "activePositionCount": 29
+    },
+    {
+      "rank": 557,
+      "name": "Trump2028",
+      "wallet": "0x2e0b70d482e6b389e81dea528be57d825dd48070",
+      "pnl": 396839.93432960124,
+      "activePositionCount": 21
+    },
+    {
+      "rank": 561,
+      "name": "TheQuietRisk",
+      "wallet": "0x0a854897a06d4999e5b2dde5693609f1428ffe9d",
+      "pnl": 395446.57201990916,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 563,
+      "name": "HMLSF",
+      "wallet": "0x1610db79f753a80207e1d66716be9e91e627ae49",
+      "pnl": 392481.45870878873,
+      "activePositionCount": 6
+    },
+    {
+      "rank": 565,
+      "name": "0xe639e41094bbeae18g3e6d1790c17299183f082a",
+      "wallet": "0xe639e41094bbeae18f3e6d1790c17299183f082a",
+      "pnl": 390980.40951977397,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 573,
+      "name": "CamelUp",
+      "wallet": "0x17559efac103ac7f361be37ec0b93888d4c55aac",
+      "pnl": 386577.2802080405,
+      "activePositionCount": 92
+    },
+    {
+      "rank": 574,
+      "name": "Siziriv",
+      "wallet": "0x8e9eedf20dfa70956d49f608a205e402d9df38e4",
+      "pnl": 386236.3488900772,
+      "activePositionCount": 246
+    },
+    {
+      "rank": 578,
+      "name": "Longdemshiuchiha",
+      "wallet": "0xab51c55eb5cefec49c52a174acc10b3cd69e2473",
+      "pnl": 383658.59726098104,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 585,
+      "name": "0xa697d0b3FFf7D285a0F92d6Ee03a7f97809E59d5-1774326306031",
+      "wallet": "0xa697d0b3fff7d285a0f92d6ee03a7f97809e59d5",
+      "pnl": 380633.9562419704,
+      "activePositionCount": 67
+    },
+    {
+      "rank": 587,
+      "name": "SaylorMoon",
+      "wallet": "0xecb14ac6e9ca447ce2f2912e6217b43d7b655da3",
+      "pnl": 379196.2544516626,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 593,
+      "name": "zb8",
+      "wallet": "0x0224bb9eb0a5c9fd261ac9123a72cbdd5748292a",
+      "pnl": 374878.1694035249,
+      "activePositionCount": 12
+    },
+    {
+      "rank": 594,
+      "name": "pako",
+      "wallet": "0x71edffd0d70a1da823ff07a3c6fc81457294d338",
+      "pnl": 374680.38128887763,
+      "activePositionCount": 45
+    },
+    {
+      "rank": 595,
+      "name": "ArturitoFilito",
+      "wallet": "0x336bf6f91a4619d54f0711a20fe468adf4d71233",
+      "pnl": 374523.7149210686,
+      "activePositionCount": 15
+    },
+    {
+      "rank": 597,
+      "name": "HerrieDavis",
+      "wallet": "0xac4a1fabdac2438d6afa2a9e8e83845310a0bf1e",
+      "pnl": 373873.10937520565,
+      "activePositionCount": 2465
+    },
+    {
+      "rank": 598,
+      "name": "SportsPsychology101",
+      "wallet": "0x56e2c952f9b953521f08ef0eb0c15473a1fa4b88",
+      "pnl": 373208.0140006644,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 600,
+      "name": "pedroBala",
+      "wallet": "0x1df231bd33dae91463e1682927e8096b82c289a0",
+      "pnl": 373061.9291715109,
+      "activePositionCount": 1
+    },
+    {
+      "rank": 610,
+      "name": "torta.tech",
+      "wallet": "0x161a7f666ca49d592848cf415b42f49a84714103",
+      "pnl": 362598.9526545293,
+      "activePositionCount": 17
+    },
+    {
+      "rank": 615,
+      "name": "poorersob",
+      "wallet": "0x45bc74efa620b45c02308acaecdff1f7c06f978b",
+      "pnl": 360339.597357008,
+      "activePositionCount": 13
+    },
+    {
+      "rank": 620,
+      "name": "defillama7",
+      "wallet": "0x4c8cdcdd4c92bf44e74a642254f7414de14de36f",
+      "pnl": 355397.0056963003,
+      "activePositionCount": 4
+    },
+    {
+      "rank": 625,
+      "name": "kneelbeforetheking",
+      "wallet": "0xeb34b86ca3ca64eb3cee6c9a0cce668385df7268",
+      "pnl": 353138.56690129364,
+      "activePositionCount": 188
+    },
+    {
+      "rank": 626,
+      "name": "DimSumConnoisseur.",
+      "wallet": "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c",
+      "pnl": 352580.1926220535,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 627,
+      "name": "0xDc71bED951076a6dfd27f6A341C441B8543ED033-1760135940099",
+      "wallet": "0xdc71bed951076a6dfd27f6a341c441b8543ed033",
+      "pnl": 352066.99673503457,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 633,
+      "name": "Logan.",
+      "wallet": "0x510904c9a58f5c5ad799a1b44947077564175e9c",
+      "pnl": 345225.4185223239,
+      "activePositionCount": 108
+    },
+    {
+      "rank": 637,
+      "name": "yuhyuhyuhy352352",
+      "wallet": "0xbd0477e08d82d35a855ff19644a88a9213d8fbb0",
+      "pnl": 342745.0901169992,
+      "activePositionCount": 26
+    },
+    {
+      "rank": 638,
+      "name": "noovd",
+      "wallet": "0x063aeee10fbfd55b6def10da28e87a601e7deb4b",
+      "pnl": 342105.2512361926,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 639,
+      "name": "spendingmoney",
+      "wallet": "0x8806a6f1a847ba4360599ce0f54ce96167712e83",
+      "pnl": 341972.53315610776,
+      "activePositionCount": 5
+    },
+    {
+      "rank": 640,
+      "name": "J-E-R",
+      "wallet": "0x612f07e76abb9d4d1804264a088a37a666ecaa53",
+      "pnl": 341933.57284787495,
+      "activePositionCount": 89
+    },
+    {
+      "rank": 643,
+      "name": "0xC03cE4d8Af842Ca6251Ac57228B3Ffb166ed50A",
+      "wallet": "0xa3a417e434923aeaf97afe9a61b10ff9364e5106",
+      "pnl": 339727.6863221227,
+      "activePositionCount": 188
+    },
+    {
+      "rank": 644,
+      "name": "MisTKy",
+      "wallet": "0x35bbbad2415fe5e39b12da9a316cdc80b022009b",
+      "pnl": 339458.461461573,
+      "activePositionCount": 45
+    },
+    {
+      "rank": 648,
+      "name": "MrDouche",
+      "wallet": "0xc2c89e23a69936da2991ddffdc7c99d4f0bd5471",
+      "pnl": 338591.17110930395,
+      "activePositionCount": 3
+    },
+    {
+      "rank": 650,
+      "name": "crckr",
+      "wallet": "0x2b3d1e9bdf941d435dc91a8b974b86f7064c8db7",
+      "pnl": 335975.3162596239,
+      "activePositionCount": 1862
     }
   ],
   "recommendations": [
     {
-      "conditionId": "0xa34edb6c898232378a9cc08744842df2cd89d278ba45b012bed3ac10c7241c4d",
-      "title": "Will Lamine Yamal win the 2026 Ballon d'Or?",
-      "slug": "will-lamine-yamal-win-the-2026-ballon-dor",
-      "eventSlug": "ballon-dor-winner-2026",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/ballon-dor-winner-2025-vTCj-1ZkJzga.jpg",
-      "endDate": "2026-10-31",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will Lamine Yamal win the 2026 Ballon d'Or?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 3,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 18743.667,
-      "avgAccountAllocation": 0.010191726776527554,
-      "avgEntryPrice": 0.15102496259624687,
-      "currentPrice": 0.2,
-      "rankWeight": 0.3002652301984633,
-      "supporters": [
-        {
-          "rank": 43,
-          "name": "BreakTheBank",
-          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 10743.2645,
-          "visibleAccountValue": 1556611.8982999995,
-          "accountAllocation": 0.006901697534069275,
-          "size": 53716.3227,
-          "avgPrice": 0.0742,
-          "pnl": 6757.3522
-        },
-        {
-          "rank": 136,
-          "name": "e46m3",
-          "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
-          "currentValue": 0.3742,
-          "visibleAccountValue": 41815.34470000011,
-          "accountAllocation": 0.000008948867997732875,
-          "size": 1.8713,
-          "avgPrice": 0.0112,
-          "pnl": 0.3531
-        },
-        {
-          "rank": 260,
-          "name": "surfandturf",
-          "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
-          "currentValue": 8000.0283,
-          "visibleAccountValue": 338059.8293,
-          "accountAllocation": 0.023664533927515653,
-          "size": 40000.1419,
-          "avgPrice": 0.2542,
-          "pnl": -2169.2762
-        }
-      ],
-      "decisionSide": "YES",
-      "decisionChoice": "Lamine Yamal",
-      "decisionOption": "Lamine Yamal",
-      "decisionTarget": "Will Lamine Yamal win the 2026 Ballon d'Or?",
-      "decisionText": "Select “Lamine Yamal” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Lamine Yamal” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Lamine Yamal win the 2026 Ballon d'Or?”.",
-      "category": "Other",
-      "liquidity": 124228.58379,
-      "volume24hr": 40366.10931099999,
-      "usAvailable": true,
-      "usMarketSlug": "tec-uefa-bdor-2026-10-26-w-lamyam",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/tec-uefa-bdor-2026-10-26-w-lamyam"
-    },
-    {
-      "conditionId": "0x2e4b58fc18dbffd74d5275d89fb076943f21992763c45dcadd81391b83bde13c",
-      "title": "Will the Fed increase interest rates by 50+ bps after the September 2026 meeting?",
-      "slug": "will-the-fed-increase-interest-rates-by-50-bps-after-the-september-2026-meeting-664",
+      "conditionId": "0x876506d8b2bd7a0d3fa4fe18c024eee6e1dd81ee24c26795dadd6cfe4a7b5d0d",
+      "title": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
+      "slug": "will-the-fed-increase-interest-rates-by-25-bps-after-the-september-2026-meeting-649",
       "eventSlug": "fed-decision-in-september-762",
       "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/jerome+powell+glasses1.png",
       "endDate": "2026-09-16",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Will the Fed increase interest rates by 50+ bps after the September 2026 meeting?",
+      "rawPositionTitle": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
       "outcome": "Yes",
       "outcomeKey": "0",
-      "supporterCount": 3,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 20318.2266,
-      "avgAccountAllocation": 0.009652692391539973,
-      "avgEntryPrice": 0.03287449413917495,
-      "currentPrice": 0.0075,
-      "rankWeight": 0.2568695577056063,
+      "supporterCount": 17,
+      "opposingSupporters": 2,
+      "consensusRate": 0.8947368421052632,
+      "totalCurrentValue": 2687831.8982,
+      "avgAccountAllocation": 0.2899506987461392,
+      "avgEntryPrice": 0.4773221146194339,
+      "currentPrice": 0.875,
+      "rankWeight": 0.9056085902993501,
       "supporters": [
         {
-          "rank": 61,
-          "name": "tdrhrhhd",
-          "wallet": "0xd7f85d0eb0fe0732ca38d9107ad0d4d01b1289e4",
-          "currentValue": 144.9674,
-          "visibleAccountValue": 32262.812200000004,
-          "accountAllocation": 0.0044933280800611665,
-          "size": 19328.9967,
-          "avgPrice": 0.009,
-          "pnl": -28.9935
+          "rank": 69,
+          "name": "The Spirit of Ukraine>UMA",
+          "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
+          "currentValue": 279432.5224,
+          "visibleAccountValue": 1433937.768200001,
+          "accountAllocation": 0.19487074585584505,
+          "size": 319351.4542,
+          "avgPrice": 0.2241,
+          "pnl": 207847.9778
         },
         {
           "rank": 224,
           "name": "foodenjoyer",
           "wallet": "0x7b02b2bac2a30ed5e40b7094e734f4c3dc2a4991",
-          "currentValue": 15728.5018,
-          "visibleAccountValue": 1389823.4208000002,
-          "accountAllocation": 0.011316906568567158,
-          "size": 2097133.5791,
-          "avgPrice": 0.0397,
-          "pnl": -67580.5906
+          "currentValue": 397510.1113,
+          "visibleAccountValue": 1361896.1781000001,
+          "accountAllocation": 0.2918798934105034,
+          "size": 454297.27,
+          "avgPrice": 0.3617,
+          "pnl": 233162.5066
         },
         {
-          "rank": 260,
+          "rank": 262,
           "name": "surfandturf",
           "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
-          "currentValue": 4444.7574,
-          "visibleAccountValue": 338059.8293,
-          "accountAllocation": 0.013147842525991599,
-          "size": 592634.3233,
-          "avgPrice": 0.0095,
-          "pnl": -1223.4628
+          "currentValue": 21875.0901,
+          "visibleAccountValue": 232454.75100000002,
+          "accountAllocation": 0.09410472363285877,
+          "size": 25000.1029,
+          "avgPrice": 0.5299,
+          "pnl": 8625.5381
+        },
+        {
+          "rank": 313,
+          "name": "mr.ozi",
+          "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
+          "currentValue": 84998.3841,
+          "visibleAccountValue": 563069.2306999998,
+          "accountAllocation": 0.15095547663709344,
+          "size": 97141.0105,
+          "avgPrice": 0.5819,
+          "pnl": 28462.7204
+        },
+        {
+          "rank": 325,
+          "name": "betwick",
+          "wallet": "0xc851cd9bee7d262afd78674f861f9f576a12cd2a",
+          "currentValue": 119627.8213,
+          "visibleAccountValue": 287698.65419999993,
+          "accountAllocation": 0.4158094574082996,
+          "size": 136717.51,
+          "avgPrice": 0.7863,
+          "pnl": 12116.4246
+        },
+        {
+          "rank": 379,
+          "name": "tourists",
+          "wallet": "0xc6dd722558dbfbd8fa780efcbe819ed8c6604b9f",
+          "currentValue": 43965.242,
+          "visibleAccountValue": 518215.0105999999,
+          "accountAllocation": 0.08483976940207916,
+          "size": 50245.9909,
+          "avgPrice": 0.7939,
+          "pnl": 4074.2467
+        },
+        {
+          "rank": 383,
+          "name": "MEPP",
+          "wallet": "0x6d9fc316c3b8377060a44b852ba664adbfd59790",
+          "currentValue": 17500.0159,
+          "visibleAccountValue": 535074.539,
+          "accountAllocation": 0.03270575335672998,
+          "size": 20000.0181,
+          "avgPrice": 0.8049,
+          "pnl": 1400.0216
+        },
+        {
+          "rank": 389,
+          "name": "Eatpraylove",
+          "wallet": "0xc02147dee42356b7a4edbb1c35ac4ffa95f61fa8",
+          "currentValue": 112909.5493,
+          "visibleAccountValue": 310688.3327000003,
+          "accountAllocation": 0.3634174103635398,
+          "size": 129039.4849,
+          "avgPrice": 0.5028,
+          "pnl": 48019.933
+        },
+        {
+          "rank": 456,
+          "name": "DOLLAR-PRINTER",
+          "wallet": "0x661daf6af6d884012dd6db73c09d72e8be224dc6",
+          "currentValue": 24659.9358,
+          "visibleAccountValue": 78231.6285,
+          "accountAllocation": 0.31521695601670874,
+          "size": 28182.7837,
+          "avgPrice": 0.459,
+          "pnl": 11721.3324
+        },
+        {
+          "rank": 476,
+          "name": "Arbguy",
+          "wallet": "0x53e55bc7cb3d67ad177c023ce891ad076a9d6177",
+          "currentValue": 34019.9945,
+          "visibleAccountValue": 251277.6056,
+          "accountAllocation": 0.13538808768400648,
+          "size": 38879.9937,
+          "avgPrice": 0.4726,
+          "pnl": 15642.1786
+        },
+        {
+          "rank": 491,
+          "name": "PEYZ-BIGGEST-FAN",
+          "wallet": "0xdaef2be2a19ad331737d06545f85615b094554e9",
+          "currentValue": 43749.9237,
+          "visibleAccountValue": 280780.0369,
+          "accountAllocation": 0.15581564908612633,
+          "size": 49999.9128,
+          "avgPrice": 0.79,
+          "pnl": 4249.9925
+        },
+        {
+          "rank": 512,
+          "name": "TheyAreTakingTheHobitsToIsengard",
+          "wallet": "0x1058f156b207cafe61d102e97bf6796931d301c1",
+          "currentValue": 935877.1416,
+          "visibleAccountValue": 1330193.0156,
+          "accountAllocation": 0.7035649192443406,
+          "size": 1069573.8761,
+          "avgPrice": 0.4948,
+          "pnl": 406616.2941
+        },
+        {
+          "rank": 522,
+          "name": "CentralCasting",
+          "wallet": "0x0feb1bf966bc7f954c2da0293ae2fdc572c5db5d",
+          "currentValue": 114484.94,
+          "visibleAccountValue": 275408.0074,
+          "accountAllocation": 0.41569212558777624,
+          "size": 130839.9314,
+          "avgPrice": 0.6353,
+          "pnl": 31359.6743
+        },
+        {
+          "rank": 552,
+          "name": "ProfessionalPunter",
+          "wallet": "0x22e4248bdb066f65c9f11cd66cdd3719a28eef1c",
+          "currentValue": 106876.1137,
+          "visibleAccountValue": 225174.5126,
+          "accountAllocation": 0.4746368159786127,
+          "size": 122144.13,
+          "avgPrice": 0.8031,
+          "pnl": 8782.0702
+        },
+        {
+          "rank": 557,
+          "name": "Trump2028",
+          "wallet": "0x2e0b70d482e6b389e81dea528be57d825dd48070",
+          "currentValue": 101474.4937,
+          "visibleAccountValue": 558318.4871999999,
+          "accountAllocation": 0.181750194604697,
+          "size": 115970.85,
+          "avgPrice": 0.2309,
+          "pnl": 74690.214
+        },
+        {
+          "rank": 594,
+          "name": "pako",
+          "wallet": "0x71edffd0d70a1da823ff07a3c6fc81457294d338",
+          "currentValue": 243491.2965,
+          "visibleAccountValue": 317876.0425,
+          "accountAllocation": 0.7659944882445805,
+          "size": 278275.7674,
+          "avgPrice": 0.4392,
+          "pnl": 121253.8226
+        },
+        {
+          "rank": 633,
+          "name": "Logan.",
+          "wallet": "0x510904c9a58f5c5ad799a1b44947077564175e9c",
+          "currentValue": 5379.3223,
+          "visibleAccountValue": 35269.755000000085,
+          "accountAllocation": 0.152519412170569,
+          "size": 6147.797,
+          "avgPrice": 0.3193,
+          "pnl": 3416.31
         }
       ],
       "decisionSide": "YES",
-      "decisionChoice": "50+ bps increase",
-      "decisionOption": "50+ bps increase",
-      "decisionTarget": "Will the Fed increase interest rates by 50+ bps after the September 2026 meeting?",
-      "decisionText": "Select “50+ bps increase” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “50+ bps increase” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Fed increase interest rates by 50+ bps after the September 2026 meeting?”.",
+      "decisionChoice": "25 bps increase",
+      "decisionOption": "25 bps increase",
+      "decisionTarget": "Will the Fed increase interest rates by 25 bps after the September 2026 meeting?",
+      "decisionText": "Select “25 bps increase” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “25 bps increase” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Fed increase interest rates by 25 bps after the September 2026 meeting?”.",
       "category": "Other",
-      "liquidity": 2326639.24117,
-      "volume24hr": 3332290.4839950013,
+      "liquidity": 1447296.1462,
+      "volume24hr": 3231091.502698999,
       "usAvailable": true,
-      "usMarketSlug": "rdc-banxico-2026-09-24-hike50",
+      "usMarketSlug": "rdc-banxico-2026-09-24-hike25",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/rdc-banxico-2026-09-24-hike50"
+      "marketUrl": "https://polymarket.us/market/rdc-banxico-2026-09-24-hike25"
     },
     {
-      "conditionId": "0x87f0b061076a7309abeb719136246303ce17fe40b4e9c65aca4149bbdbdd3236",
-      "title": "Will the Chicago Bears win the 2027 NFL league championship?",
-      "slug": "will-the-chicago-bears-win-the-2027-nfl-league-championship",
-      "eventSlug": "pro-football-2027-champion-20260729185915366",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/football-logo.png",
-      "endDate": "2027-03-31",
+      "conditionId": "0x5e082f0b57f47a29044aa35b4c5658393122e659d5feae521c06b57cdd7f905c",
+      "title": "Will 1 Fed rate cut happen in 2026?",
+      "slug": "will-1-fed-rate-cut-happen-in-2026",
+      "eventSlug": "how-many-fed-rate-cuts-in-2026",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/how-many-fed-rate-cuts-in-2025-9qstZkSL1dn0.jpg",
+      "endDate": "2026-12-31",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Will the Chicago Bears win the 2027 NFL league championship?",
-      "outcome": "No",
-      "outcomeKey": "1",
-      "supporterCount": 2,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 9872.6251,
-      "avgAccountAllocation": 0.015269845843356668,
-      "avgEntryPrice": 0.9310170562537707,
-      "currentPrice": 0.9355,
-      "rankWeight": 0.23583190366593798,
+      "rawPositionTitle": "Will 1 Fed rate cut happen in 2026?",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 8,
+      "opposingSupporters": 1,
+      "consensusRate": 0.8888888888888888,
+      "totalCurrentValue": 2757.1378999999997,
+      "avgAccountAllocation": 0.12651802387976435,
+      "avgEntryPrice": 0.13303233239972795,
+      "currentPrice": 0.0425,
+      "rankWeight": 0.3748823363004373,
       "supporters": [
         {
-          "rank": 43,
-          "name": "BreakTheBank",
-          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 9867.9476,
-          "visibleAccountValue": 1556611.8982999995,
-          "accountAllocation": 0.006339375672752431,
-          "size": 10548.3139,
-          "avgPrice": 0.931,
-          "pnl": 47.4673
+          "rank": 224,
+          "name": "foodenjoyer",
+          "wallet": "0x7b02b2bac2a30ed5e40b7094e734f4c3dc2a4991",
+          "currentValue": 899.8788,
+          "visibleAccountValue": 1361896.1781000001,
+          "accountAllocation": 0.0006607543324304156,
+          "size": 21173.62,
+          "avgPrice": 0.1534,
+          "pnl": -2350.166
         },
         {
-          "rank": 144,
-          "name": "0xd9670ea74384c1e1b9dc1e4267ffadaf4cdd140",
-          "wallet": "0xd570e634aeb745d6501566dba5f81a555cc7e4f8",
-          "currentValue": 4.6775,
-          "visibleAccountValue": 193.2826,
-          "accountAllocation": 0.024200316013960905,
-          "size": 5,
-          "avgPrice": 0.967,
-          "pnl": -0.1575
+          "rank": 357,
+          "name": "farmyboi",
+          "wallet": "0x1823757d22022f81a8fa1536d63101fe458884d8",
+          "currentValue": 464.8951,
+          "visibleAccountValue": 464.8951,
+          "accountAllocation": 1,
+          "size": 10938.7086,
+          "avgPrice": 0.1883,
+          "pnl": -1595.6487
+        },
+        {
+          "rank": 389,
+          "name": "Eatpraylove",
+          "wallet": "0xc02147dee42356b7a4edbb1c35ac4ffa95f61fa8",
+          "currentValue": 477.2928,
+          "visibleAccountValue": 310688.3327000003,
+          "accountAllocation": 0.001536243076307833,
+          "size": 11230.42,
+          "avgPrice": 0.1055,
+          "pnl": -708.0123
+        },
+        {
+          "rank": 574,
+          "name": "Siziriv",
+          "wallet": "0x8e9eedf20dfa70956d49f608a205e402d9df38e4",
+          "currentValue": 63.098,
+          "visibleAccountValue": 10360.824299999973,
+          "accountAllocation": 0.0060900559813566344,
+          "size": 1484.659,
+          "avgPrice": 0.0769,
+          "pnl": -51.1064
+        },
+        {
+          "rank": 594,
+          "name": "pako",
+          "wallet": "0x71edffd0d70a1da823ff07a3c6fc81457294d338",
+          "currentValue": 2.2368,
+          "visibleAccountValue": 317876.0425,
+          "accountAllocation": 0.0000070367051961772185,
+          "size": 52.6315,
+          "avgPrice": 0.1899,
+          "pnl": -7.7631
+        },
+        {
+          "rank": 595,
+          "name": "ArturitoFilito",
+          "wallet": "0x336bf6f91a4619d54f0711a20fe468adf4d71233",
+          "currentValue": 2.1488,
+          "visibleAccountValue": 20867.930500000006,
+          "accountAllocation": 0.00010297139910447754,
+          "size": 50.56,
+          "avgPrice": 0.25,
+          "pnl": -10.4912
+        },
+        {
+          "rank": 597,
+          "name": "HerrieDavis",
+          "wallet": "0xac4a1fabdac2438d6afa2a9e8e83845310a0bf1e",
+          "currentValue": 780.3464,
+          "visibleAccountValue": 423952.4112000006,
+          "accountAllocation": 0.0018406462126049088,
+          "size": 18361.093,
+          "avgPrice": 0.0659,
+          "pnl": -429.9066
+        },
+        {
+          "rank": 633,
+          "name": "Logan.",
+          "wallet": "0x510904c9a58f5c5ad799a1b44947077564175e9c",
+          "currentValue": 67.2412,
+          "visibleAccountValue": 35269.755000000085,
+          "accountAllocation": 0.001906483331114714,
+          "size": 1582.148,
+          "avgPrice": 0.4999,
+          "pnl": -723.8312
         }
       ],
-      "decisionSide": "NO",
-      "decisionChoice": "Chicago Bears",
-      "decisionOption": "Chicago Bears",
-      "decisionTarget": "Will the Chicago Bears win the 2027 NFL league championship?",
-      "decisionText": "Select “Chicago Bears” → Buy NO",
-      "decisionMeaning": "On Polymarket, choose the “Chicago Bears” option/row/card, then click Buy NO. This applies only to the exact market question: “Will the Chicago Bears win the 2027 NFL league championship?”.",
+      "decisionSide": "YES",
+      "decisionChoice": "1 (25 bps)",
+      "decisionOption": "1 (25 bps)",
+      "decisionTarget": "Will 1 Fed rate cut happen in 2026? — 1 (25 bps)",
+      "decisionText": "Select “1 (25 bps)” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “1 (25 bps)” option/row/card, then click Buy YES. This applies only to the exact market question: “Will 1 Fed rate cut happen in 2026? — 1 (25 bps)”.",
       "category": "Other",
-      "liquidity": 152285.95437,
-      "volume24hr": 77763.75931099999,
+      "liquidity": 357553.3768,
+      "volume24hr": 2995.1245260000005,
       "usAvailable": true,
-      "usMarketSlug": "aachc-nba-2027-04-11-bestrecord-chi",
+      "usMarketSlug": "cbpac-usfed-2026-cut",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aachc-nba-2027-04-11-bestrecord-chi"
+      "marketUrl": "https://polymarket.us/market/cbpac-usfed-2026-cut"
     },
     {
-      "conditionId": "0x3d0a685d16be5856fa39c7d605869bd461d007a5c747d3b8fff21505c78fec4c",
-      "title": "New York Yankees vs. Minnesota Twins: O/U 8.5",
-      "slug": "mlb-nyy-min-2026-09-14-total-8pt5",
-      "eventSlug": "mlb-nyy-min-2026-09-14",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Repetitive-markets/MLB.jpg",
-      "endDate": "2026-09-14",
+      "conditionId": "0xf2b6f22346703c11acb9038e87c7354fa07dfd0ef6a73e5c12f80ce524eb911e",
+      "title": "Baltimore Orioles vs. New York Mets",
+      "slug": "mlb-bal-nym-2026-09-14",
+      "eventSlug": "mlb-bal-nym-2026-09-14",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/league-icons/mlb-f4060398.png",
+      "endDate": "2026-09-21",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "New York Yankees vs. Minnesota Twins: O/U 8.5",
-      "outcome": "Over",
+      "rawPositionTitle": "Baltimore Orioles vs. New York Mets",
+      "outcome": "Baltimore Orioles",
       "outcomeKey": "0",
-      "supporterCount": 2,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 6630.315699999999,
-      "avgAccountAllocation": 0.01985630846525296,
-      "avgEntryPrice": 0.4798768258111173,
-      "currentPrice": 0.485,
-      "rankWeight": 0.18283631669210748,
+      "supporterCount": 6,
+      "opposingSupporters": 1,
+      "consensusRate": 0.8571428571428571,
+      "totalCurrentValue": 58740.58550000001,
+      "avgAccountAllocation": 0.15964628002040535,
+      "avgEntryPrice": 0.4434789670778351,
+      "currentPrice": 0.825,
+      "rankWeight": 0.2775119905619606,
       "supporters": [
         {
-          "rank": 73,
-          "name": "Talvez10",
-          "wallet": "0xa71093cafc0c099b4ccab24c3cb8018d817923c4",
-          "currentValue": 6459.5911,
-          "visibleAccountValue": 165591.5153,
-          "accountAllocation": 0.03900919131211066,
-          "size": 13318.7446,
-          "avgPrice": 0.4799,
-          "pnl": 66.6414
-        },
-        {
-          "rank": 231,
+          "rank": 227,
           "name": "AnonymousUsername",
           "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-          "currentValue": 170.7246,
-          "visibleAccountValue": 242704.5526000003,
-          "accountAllocation": 0.0007034256183952596,
-          "size": 352.0096,
-          "avgPrice": 0.479,
-          "pnl": 2.107
+          "currentValue": 17227.0852,
+          "visibleAccountValue": 262333.81910000026,
+          "accountAllocation": 0.06566856404218752,
+          "size": 37047.4951,
+          "avgPrice": 0.4425,
+          "pnl": 831.7162
+        },
+        {
+          "rank": 449,
+          "name": "wapol",
+          "wallet": "0xf7f0b0b1e9c0fe02ccad926916ee31aef74b912c",
+          "currentValue": 143.8664,
+          "visibleAccountValue": 26260.97870000001,
+          "accountAllocation": 0.0054783335245612895,
+          "size": 204.0658,
+          "avgPrice": 0.45,
+          "pnl": 52.0367
+        },
+        {
+          "rank": 563,
+          "name": "HMLSF",
+          "wallet": "0x1610db79f753a80207e1d66716be9e91e627ae49",
+          "currentValue": 29303.9242,
+          "visibleAccountValue": 110197.3815,
+          "accountAllocation": 0.2659221462535387,
+          "size": 35094.52,
+          "avgPrice": 0.4634,
+          "pnl": 13039.6223
+        },
+        {
+          "rank": 585,
+          "name": "0xa697d0b3FFf7D285a0F92d6Ee03a7f97809E59d5-1774326306031",
+          "wallet": "0xa697d0b3fff7d285a0f92d6ee03a7f97809e59d5",
+          "currentValue": 3963.7438,
+          "visibleAccountValue": 43282.3471,
+          "accountAllocation": 0.0915787628346985,
+          "size": 4746.9986,
+          "avgPrice": 0.4333,
+          "pnl": 1906.4657
+        },
+        {
+          "rank": 610,
+          "name": "torta.tech",
+          "wallet": "0x161a7f666ca49d592848cf415b42f49a84714103",
+          "currentValue": 129.425,
+          "visibleAccountValue": 5502.148499999998,
+          "accountAllocation": 0.023522629387411127,
+          "size": 155,
+          "avgPrice": 0.5899,
+          "pnl": 37.9751
+        },
+        {
+          "rank": 626,
+          "name": "DimSumConnoisseur.",
+          "wallet": "0xe3c9c84c9917d21351902f3bfde3420543ea4b9c",
+          "currentValue": 7972.5409,
+          "visibleAccountValue": 15765.1309,
+          "accountAllocation": 0.5057072440800349,
+          "size": 9547.9532,
+          "avgPrice": 0.3766,
+          "pnl": 4376.2794
         }
       ],
-      "decisionSide": "Over",
-      "decisionChoice": "O/U 8.5",
-      "decisionOption": "O/U 8.5",
-      "decisionTarget": "New York Yankees vs. Minnesota Twins: O/U 8.5 — O/U 8.5",
-      "decisionText": "Select “O/U 8.5” → Buy Over",
-      "decisionMeaning": "On Polymarket, choose the “O/U 8.5” option/row/card, then click Buy Over. This applies only to the exact market question: “New York Yankees vs. Minnesota Twins: O/U 8.5 — O/U 8.5”.",
+      "decisionSide": "Baltimore Orioles",
+      "decisionChoice": "0",
+      "decisionOption": "0",
+      "decisionTarget": "Baltimore Orioles vs. New York Mets — 0",
+      "decisionText": "Select “0” → Buy Baltimore Orioles",
+      "decisionMeaning": "On Polymarket, choose the “0” option/row/card, then click Buy Baltimore Orioles. This applies only to the exact market question: “Baltimore Orioles vs. New York Mets — 0”.",
       "category": "Other",
-      "liquidity": 248345.5021,
-      "volume24hr": 35662.264922,
+      "liquidity": 85332.384,
+      "volume24hr": 515829.67570299946,
       "usAvailable": true,
-      "usMarketSlug": "aachc-mlb-2026-09-27-br-min",
+      "usMarketSlug": "aachc-mlb-2026-09-27-br-bal",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aachc-mlb-2026-09-27-br-min"
+      "marketUrl": "https://polymarket.us/market/aachc-mlb-2026-09-27-br-bal"
+    },
+    {
+      "conditionId": "0xce9a13ac1f6f4e537c03fbe0421d2f26ab5b29ebc14dd4661283a5eb8f220de6",
+      "title": "Broncos vs. Chiefs",
+      "slug": "nfl-den-kc-2026-09-15",
+      "eventSlug": "nfl-den-kc-2026-09-15",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/nfl.png",
+      "endDate": "2026-09-15",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Broncos vs. Chiefs",
+      "outcome": "Chiefs",
+      "outcomeKey": "1",
+      "supporterCount": 6,
+      "opposingSupporters": 5,
+      "consensusRate": 0.5454545454545454,
+      "totalCurrentValue": 5218177.9208,
+      "avgAccountAllocation": 0.4352701131019265,
+      "avgEntryPrice": 0.5551721912922141,
+      "currentPrice": 0.755,
+      "rankWeight": 0.38832390651961324,
+      "supporters": [
+        {
+          "rank": 47,
+          "name": "00gringo00",
+          "wallet": "0x51698a47f840a242abc2ca0351371c7ffac41842",
+          "currentValue": 5096624.8418,
+          "visibleAccountValue": 2548312.4209,
+          "accountAllocation": 1,
+          "size": 9707856.8418,
+          "avgPrice": 0.5551,
+          "pnl": -292996.544
+        },
+        {
+          "rank": 262,
+          "name": "surfandturf",
+          "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
+          "currentValue": 82286.6227,
+          "visibleAccountValue": 232454.75100000002,
+          "accountAllocation": 0.3539898511259079,
+          "size": 156736.4242,
+          "avgPrice": 0.56,
+          "pnl": -5485.7748
+        },
+        {
+          "rank": 416,
+          "name": "johnny234",
+          "wallet": "0xd38ad20037839959d89165cf448568d584b28d26",
+          "currentValue": 11417.397,
+          "visibleAccountValue": 11467.331300000002,
+          "accountAllocation": 0.9956455169303428,
+          "size": 17169.0181,
+          "avgPrice": 0.5499,
+          "pnl": 1974.4541
+        },
+        {
+          "rank": 490,
+          "name": "dv-pm",
+          "wallet": "0x56acab44cfca2e88bb9b3406890aea7bfa0cd77e",
+          "currentValue": 4697.44,
+          "visibleAccountValue": 33296.95899999999,
+          "accountAllocation": 0.14107714761579282,
+          "size": 6908,
+          "avgPrice": 0.57,
+          "pnl": 759.88
+        },
+        {
+          "rank": 491,
+          "name": "PEYZ-BIGGEST-FAN",
+          "wallet": "0xdaef2be2a19ad331737d06545f85615b094554e9",
+          "currentValue": 21183.9429,
+          "visibleAccountValue": 280780.0369,
+          "accountAllocation": 0.07544675588010082,
+          "size": 31152.8572,
+          "avgPrice": 0.5539,
+          "pnl": 3928.344
+        },
+        {
+          "rank": 585,
+          "name": "0xa697d0b3FFf7D285a0F92d6Ee03a7f97809E59d5-1774326306031",
+          "wallet": "0xa697d0b3fff7d285a0f92d6ee03a7f97809e59d5",
+          "currentValue": 1967.6764,
+          "visibleAccountValue": 43282.3471,
+          "accountAllocation": 0.045461407059415225,
+          "size": 2714.0364,
+          "avgPrice": 0.5448,
+          "pnl": 488.9607
+        }
+      ],
+      "decisionSide": "Chiefs",
+      "decisionChoice": "0",
+      "decisionOption": "0",
+      "decisionTarget": "Broncos vs. Chiefs — 0",
+      "decisionText": "Select “0” → Buy Chiefs",
+      "decisionMeaning": "On Polymarket, choose the “0” option/row/card, then click Buy Chiefs. This applies only to the exact market question: “Broncos vs. Chiefs — 0”.",
+      "category": "Other",
+      "liquidity": 1186400.008,
+      "volume24hr": 7494851.379980034,
+      "usAvailable": true,
+      "usMarketSlug": "aec-nfl-den-kc-2026-09-14",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/aec-nfl-den-kc-2026-09-14"
     }
   ],
-  "recommendationsUpdatedAt": "2026-09-14T22:44:33.030Z",
-  "lastCheckedAt": "2026-09-14T22:44:33.105Z",
+  "recommendationsUpdatedAt": "2026-09-15T01:44:55.628Z",
+  "lastCheckedAt": "2026-09-15T01:44:55.699Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-09-14T19:20:25.560Z",
+  "previousRecommendationsReplacedAt": "2026-09-14T22:44:33.030Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-09-14T22:44:33.105Z",
+  "lastSuccessfulWorkflowAt": "2026-09-15T01:44:55.699Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
