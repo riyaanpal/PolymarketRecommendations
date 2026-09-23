@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-09-23T09:54:56.977Z",
-  "durationSeconds": 127,
+  "generatedAt": "2026-09-23T14:54:46.713Z",
+  "durationSeconds": 131,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -14,7 +14,7 @@
     "ranking": "Supporter count first, then same-side consensus rate, rank-weighted support, and combined current position value.",
     "activeMarketRule": "Only Gamma markets that are active, not closed or archived, and accepting orders are shown.",
     "usAvailabilityRule": "Only markets that match the daily Polymarket US catalog by exact slug or high-confidence title/slug similarity, and are active, not closed, not archived, not hidden, and with a tradable side, are shown.",
-    "usMarketCatalogGeneratedAt": "2026-09-22T13:24:33.451Z",
+    "usMarketCatalogGeneratedAt": "2026-09-23T13:38:20.807Z",
     "distinctMarketRule": "Only one recommendation is shown per Polymarket event; the highest-ranked qualifying child market is kept.",
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
@@ -24,13 +24,13 @@
     "excludedBothOutcomes": 53,
     "positionFetchErrors": 0,
     "eligibleTraders": 64,
-    "candidateMarkets": 1895,
-    "marketsChecked": 174,
+    "candidateMarkets": 259,
+    "marketsChecked": 193,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
     "usMarketCatalogUsed": true,
-    "usMarketCatalogGeneratedAt": "2026-09-22T13:24:33.451Z",
+    "usMarketCatalogGeneratedAt": "2026-09-23T13:38:20.807Z",
     "usMarketCatalogCount": 20250
   },
   "eligibleTraders": [
@@ -80,8 +80,8 @@
       "rank": 64,
       "name": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
-      "pnl": 2261072.593687,
-      "activePositionCount": 190
+      "pnl": 2262702.046067,
+      "activePositionCount": 194
     },
     {
       "rank": 69,
@@ -98,17 +98,24 @@
       "activePositionCount": 40
     },
     {
+      "rank": 79,
+      "name": "jtwyslljy",
+      "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
+      "pnl": 1966893.561872,
+      "activePositionCount": 1
+    },
+    {
       "rank": 81,
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "pnl": 1940615.589285,
+      "pnl": 1941038.001755,
       "activePositionCount": 72
     },
     {
       "rank": 88,
       "name": "The Spirit of Ukraine>UMA",
       "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
-      "pnl": 1778300.610713,
+      "pnl": 1778354.631684,
       "activePositionCount": 107
     },
     {
@@ -127,45 +134,45 @@
     },
     {
       "rank": 103,
-      "name": "THEHIGHLIFE",
-      "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
-      "pnl": 1554002.528833,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 104,
       "name": "scottilicious",
       "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
       "pnl": 1551563.318052,
       "activePositionCount": 42
     },
     {
-      "rank": 106,
+      "rank": 105,
       "name": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
       "wallet": "0x6e82b93eb57b01a63027bd0c6d2f3f04934a752c",
       "pnl": 1528460.931062,
       "activePositionCount": 13
     },
     {
-      "rank": 107,
+      "rank": 106,
       "name": "Joe-Biden",
       "wallet": "0x8b5a7da2fdf239b51b9c68a2a1a35bb156d200f2",
       "pnl": 1519706.446005,
       "activePositionCount": 11
     },
     {
+      "rank": 110,
+      "name": "THEHIGHLIFE",
+      "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
+      "pnl": 1501534.349099,
+      "activePositionCount": 2
+    },
+    {
       "rank": 125,
       "name": "sportmaster777",
       "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
-      "pnl": 1394319.77237,
-      "activePositionCount": 2
+      "pnl": 1394248.773716,
+      "activePositionCount": 3
     },
     {
       "rank": 129,
       "name": "curie",
       "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
-      "pnl": 1359885.2248290007,
-      "activePositionCount": 27
+      "pnl": 1357219.4629290001,
+      "activePositionCount": 26
     },
     {
       "rank": 140,
@@ -173,6 +180,13 @@
       "wallet": "0xd570e634aeb745d6501566dba5f81a555cc7e4f8",
       "pnl": 1237464.308194,
       "activePositionCount": 40
+    },
+    {
+      "rank": 148,
+      "name": "maz26",
+      "wallet": "0x67542c3219b37fd1610aad290676ff91cdbfe3bc",
+      "pnl": 1187790.222361,
+      "activePositionCount": 1
     },
     {
       "rank": 153,
@@ -206,8 +220,8 @@
       "rank": 163,
       "name": "one8tyfive",
       "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
-      "pnl": 1038051.633618,
-      "activePositionCount": 7
+      "pnl": 1038906.755517,
+      "activePositionCount": 8
     },
     {
       "rank": 171,
@@ -245,13 +259,6 @@
       "activePositionCount": 7
     },
     {
-      "rank": 206,
-      "name": "johnbaster",
-      "wallet": "0x31864feb9d25dee93728c6225ba891530967e9ca",
-      "pnl": 895553.067628,
-      "activePositionCount": 1
-    },
-    {
       "rank": 210,
       "name": "ROBBATTISTAFANDUELRETARD",
       "wallet": "0x13414a77a4be48988851c73dfd824d0168e70853",
@@ -262,8 +269,8 @@
       "rank": 213,
       "name": "HaileyWelch",
       "wallet": "0x80cd8310aa624521e9e1b2b53b568cafb0ef0273",
-      "pnl": 881276.918578,
-      "activePositionCount": 16
+      "pnl": 881361.164829,
+      "activePositionCount": 18
     },
     {
       "rank": 215,
@@ -273,11 +280,11 @@
       "activePositionCount": 12
     },
     {
-      "rank": 221,
+      "rank": 222,
       "name": "easyclap",
       "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
-      "pnl": 850023.553959,
-      "activePositionCount": 40
+      "pnl": 850025.39328,
+      "activePositionCount": 46
     },
     {
       "rank": 232,
@@ -304,15 +311,15 @@
       "rank": 240,
       "name": "eanvanezygv",
       "wallet": "0x9d94f602535e518ee1cb6aade0ca9569f1b1017d",
-      "pnl": 790185.506513,
-      "activePositionCount": 3
+      "pnl": 790187.643169,
+      "activePositionCount": 1
     },
     {
-      "rank": 251,
-      "name": "donthackme",
-      "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-      "pnl": 746335.832685,
-      "activePositionCount": 3867
+      "rank": 253,
+      "name": "AgricultureSecretary",
+      "wallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
+      "pnl": 735735.94591,
+      "activePositionCount": 19
     },
     {
       "rank": 258,
@@ -325,29 +332,29 @@
       "rank": 260,
       "name": "mr.ozi",
       "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
-      "pnl": 718990.705908,
+      "pnl": 719016.448115,
       "activePositionCount": 22
     },
     {
       "rank": 262,
       "name": "kingofcoinflips",
       "wallet": "0xe9c6312464b52aa3eff13d822b003282075995c9",
-      "pnl": 715602.730885,
-      "activePositionCount": 38
+      "pnl": 715810.19027,
+      "activePositionCount": 42
     },
     {
       "rank": 273,
       "name": "e46m3",
       "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
-      "pnl": 690433.699718,
-      "activePositionCount": 4715
+      "pnl": 694350.609176,
+      "activePositionCount": 4751
     },
     {
       "rank": 280,
       "name": "betwick",
       "wallet": "0xc851cd9bee7d262afd78674f861f9f576a12cd2a",
       "pnl": 674264.955789,
-      "activePositionCount": 19
+      "activePositionCount": 21
     },
     {
       "rank": 287,
@@ -364,7 +371,7 @@
       "activePositionCount": 1
     },
     {
-      "rank": 297,
+      "rank": 298,
       "name": "keasiyo",
       "wallet": "0xee67f4f549180f564dd5910b1024b8c6729cef38",
       "pnl": 639988.7977669999,
@@ -406,74 +413,67 @@
       "activePositionCount": 1
     },
     {
-      "rank": 321,
-      "name": "Wiretransferxyz",
-      "wallet": "0x30c7ac0158499ddc6761047f7f69bcf7d036ac3b",
-      "pnl": 611792.191719,
-      "activePositionCount": 7
-    },
-    {
-      "rank": 323,
+      "rank": 322,
       "name": "tourists",
       "wallet": "0xc6dd722558dbfbd8fa780efcbe819ed8c6604b9f",
       "pnl": 611099.384405,
       "activePositionCount": 28
     },
     {
-      "rank": 324,
+      "rank": 323,
       "name": "AnonymousUsername",
       "wallet": "0x9703676286b93c2eca71ca96e8757104519a69c2",
-      "pnl": 609226.47929,
-      "activePositionCount": 208
+      "pnl": 608765.863747,
+      "activePositionCount": 220
     },
     {
-      "rank": 325,
+      "rank": 324,
       "name": "RenanPresidente.",
       "wallet": "0x88c4919de76e526d55a32c1f8afb439dd1f1129a",
-      "pnl": 606626.210578,
-      "activePositionCount": 22
+      "pnl": 606593.179842,
+      "activePositionCount": 23
     },
     {
       "rank": 329,
-      "name": "Malfunction.",
-      "wallet": "0xfc25f141ed27bb1787338d2c4e7f51e3a15e1f7f",
-      "pnl": 601745.063117,
-      "activePositionCount": 2
+      "name": "Wiretransferxyz",
+      "wallet": "0x30c7ac0158499ddc6761047f7f69bcf7d036ac3b",
+      "pnl": 602601.365032,
+      "activePositionCount": 4
     },
     {
-      "rank": 333,
-      "name": "0x29b52d98ac9ef9414b04164246c95BC63d7",
-      "wallet": "0x29b52d98ac9ef9414b04164246c95bc63d74cc6c",
-      "pnl": 596889.934518,
-      "activePositionCount": 17
-    },
-    {
-      "rank": 339,
+      "rank": 338,
       "name": "0x448861155279dbf833d041b963e3ac854599e319",
       "wallet": "0x448861155279dbf833d041b963e3ac854599e319",
       "pnl": 579316.6994929999,
       "activePositionCount": 6
     },
     {
-      "rank": 342,
+      "rank": 339,
       "name": "trgparking",
       "wallet": "0xe3611dada6c5ea53af7bf22e80e07c005f48ae44",
-      "pnl": 577350.836075,
-      "activePositionCount": 6
+      "pnl": 579012.81815,
+      "activePositionCount": 4
     },
     {
-      "rank": 345,
+      "rank": 344,
       "name": "Kevindoto",
       "wallet": "0xcd71fd5370880f3d92bb941e628c05840fe0d127",
       "pnl": 569674.87166,
       "activePositionCount": 25
     },
     {
-      "rank": 346,
+      "rank": 345,
       "name": "ArturitoFilito",
       "wallet": "0x336bf6f91a4619d54f0711a20fe468adf4d71233",
       "pnl": 569024.0709279999,
       "activePositionCount": 7
+    },
+    {
+      "rank": 349,
+      "name": "0x29b52d98ac9ef9414b04164246c95BC63d7",
+      "wallet": "0x29b52d98ac9ef9414b04164246c95bc63d74cc6c",
+      "pnl": 563982.672537,
+      "activePositionCount": 13
     },
     {
       "rank": 350,
@@ -484,6 +484,124 @@
     }
   ],
   "recommendations": [
+    {
+      "conditionId": "0x87f0b061076a7309abeb719136246303ce17fe40b4e9c65aca4149bbdbdd3236",
+      "title": "Will the Chicago Bears win the 2027 NFL league championship?",
+      "slug": "will-the-chicago-bears-win-the-2027-nfl-league-championship",
+      "eventSlug": "pro-football-2027-champion-20260729185915366",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/football-logo.png",
+      "endDate": "2027-04-01",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Will the Chicago Bears win the 2027 NFL league championship?",
+      "outcome": "No",
+      "outcomeKey": "1",
+      "supporterCount": 2,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 22452.5141,
+      "avgAccountAllocation": 0.03060567575899384,
+      "avgEntryPrice": 0.9310078365388892,
+      "currentPrice": 0.9775,
+      "rankWeight": 0.20403828640629101,
+      "supporters": [
+        {
+          "rank": 70,
+          "name": "BreakTheBank",
+          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+          "currentValue": 22447.6266,
+          "visibleAccountValue": 643972.8796,
+          "accountAllocation": 0.034858030999602364,
+          "size": 22964.3239,
+          "avgPrice": 0.931,
+          "pnl": 1067.841
+        },
+        {
+          "rank": 140,
+          "name": "0xd9670ea74384c1e1b9dc1e4267ffadaf4cdd140",
+          "wallet": "0xd570e634aeb745d6501566dba5f81a555cc7e4f8",
+          "currentValue": 4.8875,
+          "visibleAccountValue": 185.46050000000002,
+          "accountAllocation": 0.026353320518385313,
+          "size": 5,
+          "avgPrice": 0.967,
+          "pnl": 0.0525
+        }
+      ],
+      "decisionSide": "NO",
+      "decisionChoice": "Chicago Bears",
+      "decisionOption": "Chicago Bears",
+      "decisionTarget": "Will the Chicago Bears win the 2027 NFL league championship?",
+      "decisionText": "Select “Chicago Bears” → Buy NO",
+      "decisionMeaning": "On Polymarket, choose the “Chicago Bears” option/row/card, then click Buy NO. This applies only to the exact market question: “Will the Chicago Bears win the 2027 NFL league championship?”.",
+      "category": "Other",
+      "liquidity": 131894.82417,
+      "volume24hr": 70666.99510200002,
+      "usAvailable": true,
+      "usMarketSlug": "aachc-nba-2027-04-11-bestrecord-chi",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/aachc-nba-2027-04-11-bestrecord-chi"
+    },
+    {
+      "conditionId": "0x4769e6eb48b0e587abc7972c12c0b70f513b4f973f2b9fd30e3040d13f9b67c2",
+      "title": "Lindsay Clancy convicted of murder by December 31, 2026?",
+      "slug": "lindsay-clancy-convicted-of-murder",
+      "eventSlug": "lindsay-clancy-convicted-of-murder",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/lindsay-clancy-convicted-of-murder-copy-2p3uXeP4zEtT.jpg",
+      "endDate": "2027-01-01",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Lindsay Clancy convicted of murder by December 31, 2026?",
+      "outcome": "No",
+      "outcomeKey": "1",
+      "supporterCount": 2,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 71521.3352,
+      "avgAccountAllocation": 0.06556288948179863,
+      "avgEntryPrice": 0.9398208699939022,
+      "currentPrice": 0.946,
+      "rankWeight": 0.1605167447795244,
+      "supporters": [
+        {
+          "rank": 88,
+          "name": "The Spirit of Ukraine>UMA",
+          "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
+          "currentValue": 18660.4075,
+          "visibleAccountValue": 1345244.2584999998,
+          "accountAllocation": 0.013871389810507045,
+          "size": 19725.5893,
+          "avgPrice": 0.9226,
+          "pnl": 460.6861
+        },
+        {
+          "rank": 344,
+          "name": "Kevindoto",
+          "wallet": "0xcd71fd5370880f3d92bb941e628c05840fe0d127",
+          "currentValue": 52860.9277,
+          "visibleAccountValue": 450822.5924999999,
+          "accountAllocation": 0.11725438915309022,
+          "size": 55878.359,
+          "avgPrice": 0.9459,
+          "pnl": 2.4332
+        }
+      ],
+      "decisionSide": "NO",
+      "decisionChoice": "December 31, 2026",
+      "decisionOption": "December 31, 2026",
+      "decisionTarget": "Lindsay Clancy convicted of murder by December 31, 2026?",
+      "decisionText": "Select “December 31, 2026” → Buy NO",
+      "decisionMeaning": "On Polymarket, choose the “December 31, 2026” option/row/card, then click Buy NO. This applies only to the exact market question: “Lindsay Clancy convicted of murder by December 31, 2026?”.",
+      "category": "Other",
+      "liquidity": 40419.33266,
+      "volume24hr": 66.31,
+      "usAvailable": true,
+      "usMarketSlug": "aimc-anthr-haiku-nxt-2026-12-31",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/aimc-anthr-haiku-nxt-2026-12-31"
+    },
     {
       "conditionId": "0xc4b07998e8f9bf6b95f079d6dc0529f3c6f59698d4e168817ad5f99304de6c57",
       "title": "Will Spider-Man: Brand New Day be the top grossing movie of 2026?",
@@ -496,44 +614,33 @@
       "rawPositionTitle": "Will Spider-Man: Brand New Day be the top grossing movie of 2026?",
       "outcome": "Yes",
       "outcomeKey": "0",
-      "supporterCount": 3,
+      "supporterCount": 2,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 16309.6123,
-      "avgAccountAllocation": 0.03786685274707137,
-      "avgEntryPrice": 0.6360452555507744,
+      "totalCurrentValue": 13599.9209,
+      "avgAccountAllocation": 0.043637172615061906,
+      "avgEntryPrice": 0.7556599503484615,
       "currentPrice": 0.935,
-      "rankWeight": 0.20666299939272748,
+      "rankWeight": 0.1435435590829472,
       "supporters": [
         {
           "rank": 140,
           "name": "0xd9670ea74384c1e1b9dc1e4267ffadaf4cdd140",
           "wallet": "0xd570e634aeb745d6501566dba5f81a555cc7e4f8",
           "currentValue": 4.675,
-          "visibleAccountValue": 186.05060000000006,
-          "accountAllocation": 0.025127572821587237,
+          "visibleAccountValue": 185.46050000000002,
+          "accountAllocation": 0.02520752397410769,
           "size": 5,
           "avgPrice": 0.93,
           "pnl": 0.025
-        },
-        {
-          "rank": 251,
-          "name": "donthackme",
-          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 2709.6914,
-          "visibleAccountValue": 102117.41700000016,
-          "accountAllocation": 0.02653505620887371,
-          "size": 2898.0657,
-          "avgPrice": 0.0357,
-          "pnl": 2606.1898
         },
         {
           "rank": 287,
           "name": "WordleAddict",
           "wallet": "0xe25b9180f5687aa85bd94ee309bb72a464320f1b",
           "currentValue": 13595.2459,
-          "visibleAccountValue": 219497.90820000006,
-          "accountAllocation": 0.06193792921075316,
+          "visibleAccountValue": 219042.08440000005,
+          "accountAllocation": 0.06206682125601612,
           "size": 14540.37,
           "avgPrice": 0.7556,
           "pnl": 2607.6381
@@ -546,8 +653,8 @@
       "decisionText": "Select “Spider-Man: Brand New Day” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Spider-Man: Brand New Day” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Spider-Man: Brand New Day be the top grossing movie of 2026?”.",
       "category": "Other",
-      "liquidity": 86416.7821,
-      "volume24hr": 97.732979,
+      "liquidity": 84212.8005,
+      "volume24hr": 96.422979,
       "usAvailable": true,
       "usMarketSlug": "tac-oscars-nom-2027-01-31-bestpic-spiday",
       "usMatchMethod": "title_slug_similarity",
@@ -555,212 +662,72 @@
       "marketUrl": "https://polymarket.us/market/tac-oscars-nom-2027-01-31-bestpic-spiday"
     },
     {
-      "conditionId": "0xdd6df6bc49de64cf38b2059cea20d00b86ef0c01b4c146e8930471d20f599cef",
-      "title": "Will the Jacksonville Jaguars win the 2027 NFL league championship?",
-      "slug": "will-the-jacksonville-jaguars-win-the-2027-nfl-league-championship",
-      "eventSlug": "pro-football-2027-champion-20260729185915366",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/football-logo.png",
-      "endDate": "2027-04-01",
+      "conditionId": "0x2a4fcda5c1598fc8621cf96cabc410f9f23a2d0336c3bff5070a37a663d39e94",
+      "title": "NATO x Russia military clash by October 31, 2026?",
+      "slug": "nato-x-russia-military-clash-by-october-31-2026",
+      "eventSlug": "nato-x-russia-military-clash-in-2025",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/nato-x-russia-military-clash-in-2025-DteCDkmbVLj_.jpg",
+      "endDate": "2026-11-01",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Will the Jacksonville Jaguars win the 2027 NFL league championship?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 3,
-      "opposingSupporters": 1,
-      "consensusRate": 0.75,
-      "totalCurrentValue": 1128.1029,
-      "avgAccountAllocation": 0.03258202452096013,
-      "avgEntryPrice": 0.032912778358061376,
-      "currentPrice": 0.0285,
-      "rankWeight": 0.3541408863857285,
-      "supporters": [
-        {
-          "rank": 34,
-          "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
-          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-          "currentValue": 11.6964,
-          "visibleAccountValue": 121.97489999999999,
-          "accountAllocation": 0.09589185971867983,
-          "size": 410.4,
-          "avgPrice": 0.028,
-          "pnl": 0.2052
-        },
-        {
-          "rank": 70,
-          "name": "BreakTheBank",
-          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 1101.624,
-          "visibleAccountValue": 644430.3217999999,
-          "accountAllocation": 0.0017094540134656962,
-          "size": 38653.4738,
-          "avgPrice": 0.033,
-          "pnl": -173.9406
-        },
-        {
-          "rank": 251,
-          "name": "donthackme",
-          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 14.7825,
-          "visibleAccountValue": 102117.41700000016,
-          "accountAllocation": 0.00014475983073484886,
-          "size": 518.6874,
-          "avgPrice": 0.0303,
-          "pnl": -0.9352
-        }
-      ],
-      "decisionSide": "YES",
-      "decisionChoice": "Jacksonville Jaguars",
-      "decisionOption": "Jacksonville Jaguars",
-      "decisionTarget": "Will the Jacksonville Jaguars win the 2027 NFL league championship?",
-      "decisionText": "Select “Jacksonville Jaguars” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Jacksonville Jaguars” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Jacksonville Jaguars win the 2027 NFL league championship?”.",
-      "category": "Other",
-      "liquidity": 174843.11133,
-      "volume24hr": 4363.444829,
-      "usAvailable": true,
-      "usMarketSlug": "tec-nfl-afcchamp-2027-01-31-w-jacjag",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/tec-nfl-afcchamp-2027-01-31-w-jacjag"
-    },
-    {
-      "conditionId": "0x5e082f0b57f47a29044aa35b4c5658393122e659d5feae521c06b57cdd7f905c",
-      "title": "Will 1 Fed rate cut happen in 2026?",
-      "slug": "will-1-fed-rate-cut-happen-in-2026",
-      "eventSlug": "how-many-fed-rate-cuts-in-2026",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/how-many-fed-rate-cuts-in-2025-9qstZkSL1dn0.jpg",
-      "endDate": "2027-01-01",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will 1 Fed rate cut happen in 2026?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 3,
-      "opposingSupporters": 1,
-      "consensusRate": 0.75,
-      "totalCurrentValue": 134.12869999999998,
-      "avgAccountAllocation": 0.33340941429072996,
-      "avgEntryPrice": 0.17297848132937693,
-      "currentPrice": 0.0105,
-      "rankWeight": 0.17278147280432207,
-      "supporters": [
-        {
-          "rank": 251,
-          "name": "donthackme",
-          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 18.7415,
-          "visibleAccountValue": 102117.41700000016,
-          "accountAllocation": 0.00018352892729356804,
-          "size": 1784.9141,
-          "avgPrice": 0.0769,
-          "pnl": -118.5594
-        },
-        {
-          "rank": 320,
-          "name": "farmyboi",
-          "wallet": "0x1823757d22022f81a8fa1536d63101fe458884d8",
-          "currentValue": 114.8564,
-          "visibleAccountValue": 114.8564,
-          "accountAllocation": 1,
-          "size": 10938.7086,
-          "avgPrice": 0.1883,
-          "pnl": -1945.6874
-        },
-        {
-          "rank": 346,
-          "name": "ArturitoFilito",
-          "wallet": "0x336bf6f91a4619d54f0711a20fe468adf4d71233",
-          "currentValue": 0.5308,
-          "visibleAccountValue": 11871.017,
-          "accountAllocation": 0.00004471394489621235,
-          "size": 50.56,
-          "avgPrice": 0.25,
-          "pnl": -12.1092
-        }
-      ],
-      "decisionSide": "YES",
-      "decisionChoice": "1 (25 bps)",
-      "decisionOption": "1 (25 bps)",
-      "decisionTarget": "Will 1 Fed rate cut happen in 2026? — 1 (25 bps)",
-      "decisionText": "Select “1 (25 bps)” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “1 (25 bps)” option/row/card, then click Buy YES. This applies only to the exact market question: “Will 1 Fed rate cut happen in 2026? — 1 (25 bps)”.",
-      "category": "Other",
-      "liquidity": 203881.52687,
-      "volume24hr": 15640.419091,
-      "usAvailable": true,
-      "usMarketSlug": "cbpac-usfed-2026-cut",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/cbpac-usfed-2026-cut"
-    },
-    {
-      "conditionId": "0x849be83aad0311ca155a2ad0c1a86bf5cdf0313672c1de414bfaa902f351030a",
-      "title": "Will Liverpool win the 2026-27 English Premier League (EPL) Championship?",
-      "slug": "will-liverpool-win-the-2026-27-english-premier-league-epl-championship-20260701200428760",
-      "eventSlug": "epl-2027-champion-20260701200428749",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/epl-2027-champion-20260701200428749-KFJD-iJWObEe.png",
-      "endDate": "2027-05-30",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will Liverpool win the 2026-27 English Premier League (EPL) Championship?",
+      "rawPositionTitle": "NATO x Russia military clash by October 31, 2026?",
       "outcome": "Yes",
       "outcomeKey": "0",
       "supporterCount": 2,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 19800.0931,
-      "avgAccountAllocation": 0.015362861471961852,
-      "avgEntryPrice": 0.03080005079756107,
-      "currentPrice": 0.0495,
-      "rankWeight": 0.18264230124321967,
+      "totalCurrentValue": 2227.029,
+      "avgAccountAllocation": 0.009435288592615096,
+      "avgEntryPrice": 0.15058154024238224,
+      "currentPrice": 0.165,
+      "rankWeight": 0.12263089181291283,
       "supporters": [
         {
-          "rank": 70,
-          "name": "BreakTheBank",
-          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 19800,
-          "visibleAccountValue": 644430.3217999999,
-          "accountAllocation": 0.030724811248321375,
-          "size": 400000,
-          "avgPrice": 0.0308,
-          "pnl": 7452.5915
+          "rank": 253,
+          "name": "AgricultureSecretary",
+          "wallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
+          "currentValue": 363,
+          "visibleAccountValue": 28801.6043,
+          "accountAllocation": 0.012603464592422028,
+          "size": 2200,
+          "avgPrice": 0.17,
+          "pnl": -11
         },
         {
-          "rank": 251,
-          "name": "donthackme",
-          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 0.0931,
-          "visibleAccountValue": 102117.41700000016,
-          "accountAllocation": 9.11695602328052e-7,
-          "size": 1.8814,
-          "avgPrice": 0.0416,
-          "pnl": 0.0147
+          "rank": 280,
+          "name": "betwick",
+          "wallet": "0xc851cd9bee7d262afd78674f861f9f576a12cd2a",
+          "currentValue": 1864.029,
+          "visibleAccountValue": 297430.2714999999,
+          "accountAllocation": 0.006267112592808162,
+          "size": 11297.1458,
+          "avgPrice": 0.1468,
+          "pnl": 205.269
         }
       ],
       "decisionSide": "YES",
-      "decisionChoice": "Liverpool",
-      "decisionOption": "Liverpool",
-      "decisionTarget": "Will Liverpool win the 2026-27 English Premier League (EPL) Championship?",
-      "decisionText": "Select “Liverpool” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Liverpool” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Liverpool win the 2026-27 English Premier League (EPL) Championship?”.",
+      "decisionChoice": "October 31",
+      "decisionOption": "October 31",
+      "decisionTarget": "NATO x Russia military clash by October 31, 2026?",
+      "decisionText": "Select “October 31” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “October 31” option/row/card, then click Buy YES. This applies only to the exact market question: “NATO x Russia military clash by October 31, 2026?”.",
       "category": "Other",
-      "liquidity": 161509.76742,
-      "volume24hr": 4904.38,
+      "liquidity": 191467.5547,
+      "volume24hr": 82537.363217,
       "usAvailable": true,
-      "usMarketSlug": "aachc-epl-2027-05-30-relegation-liv",
+      "usMarketSlug": "aimc-anthr-opus-nxt-2026-10-31",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aachc-epl-2027-05-30-relegation-liv"
+      "marketUrl": "https://polymarket.us/market/aimc-anthr-opus-nxt-2026-10-31"
     }
   ],
-  "recommendationsUpdatedAt": "2026-09-23T09:54:56.977Z",
-  "lastCheckedAt": "2026-09-23T09:54:57.052Z",
+  "recommendationsUpdatedAt": "2026-09-23T14:54:46.713Z",
+  "lastCheckedAt": "2026-09-23T14:54:46.790Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-09-23T05:06:19.615Z",
+  "previousRecommendationsReplacedAt": "2026-09-23T09:54:56.977Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-09-23T09:54:57.052Z",
+  "lastSuccessfulWorkflowAt": "2026-09-23T14:54:46.790Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
