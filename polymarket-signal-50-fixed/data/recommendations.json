@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-09-24T11:37:31.126Z",
-  "durationSeconds": 134,
+  "durationSeconds": 118,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -14,23 +14,23 @@
     "ranking": "Supporter count first, then same-side consensus rate, rank-weighted support, and combined current position value.",
     "activeMarketRule": "Only Gamma markets that are active, not closed or archived, and accepting orders are shown.",
     "usAvailabilityRule": "Only markets that match the daily Polymarket US catalog by exact slug or high-confidence title/slug similarity, and are active, not closed, not archived, not hidden, and with a tradable side, are shown.",
-    "usMarketCatalogGeneratedAt": "2026-09-23T13:38:20.807Z",
+    "usMarketCatalogGeneratedAt": "2026-09-24T13:33:02.380Z",
     "distinctMarketRule": "Only one recommendation is shown per Polymarket event; the highest-ranked qualifying child market is kept.",
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
     "leaderboardUsersInspected": 300,
     "skippedNoPositions": 200,
-    "excludedBothOutcomes": 45,
+    "excludedBothOutcomes": 46,
     "positionFetchErrors": 0,
-    "eligibleTraders": 55,
-    "candidateMarkets": 1684,
-    "marketsChecked": 124,
+    "eligibleTraders": 54,
+    "candidateMarkets": 1687,
+    "marketsChecked": 123,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
     "usMarketCatalogUsed": true,
-    "usMarketCatalogGeneratedAt": "2026-09-23T13:38:20.807Z",
+    "usMarketCatalogGeneratedAt": "2026-09-24T13:33:02.380Z",
     "usMarketCatalogCount": 20250
   },
   "eligibleTraders": [
@@ -52,8 +52,8 @@
       "rank": 29,
       "name": "ndb1",
       "wallet": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
-      "pnl": 4166566.750599,
-      "activePositionCount": 362
+      "pnl": 4166164.96755,
+      "activePositionCount": 361
     },
     {
       "rank": 34,
@@ -101,7 +101,7 @@
       "rank": 64,
       "name": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
-      "pnl": 2263365.625825,
+      "pnl": 2262195.544759,
       "activePositionCount": 197
     },
     {
@@ -129,14 +129,14 @@
       "rank": 81,
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "pnl": 1938740.632719,
-      "activePositionCount": 74
+      "pnl": 1939851.926942,
+      "activePositionCount": 75
     },
     {
       "rank": 88,
       "name": "The Spirit of Ukraine>UMA",
       "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
-      "pnl": 1782271.112563,
+      "pnl": 1782373.717968,
       "activePositionCount": 109
     },
     {
@@ -144,7 +144,7 @@
       "name": "Talvez10",
       "wallet": "0xa71093cafc0c099b4ccab24c3cb8018d817923c4",
       "pnl": 1694424.328263,
-      "activePositionCount": 1
+      "activePositionCount": 3
     },
     {
       "rank": 98,
@@ -175,24 +175,24 @@
       "activePositionCount": 11
     },
     {
-      "rank": 117,
-      "name": "THEHIGHLIFE",
-      "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
-      "pnl": 1461345.168289,
-      "activePositionCount": 3
+      "rank": 116,
+      "name": "RegardedMoney",
+      "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
+      "pnl": 1475371.117145,
+      "activePositionCount": 1
     },
     {
       "rank": 125,
       "name": "sportmaster777",
       "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
-      "pnl": 1395044.210902,
-      "activePositionCount": 5
+      "pnl": 1396404.241,
+      "activePositionCount": 4
     },
     {
       "rank": 129,
       "name": "curie",
       "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
-      "pnl": 1346051.35073,
+      "pnl": 1346272.328811,
       "activePositionCount": 26
     },
     {
@@ -207,7 +207,7 @@
       "name": "maz26",
       "wallet": "0x67542c3219b37fd1610aad290676ff91cdbfe3bc",
       "pnl": 1188915.161823,
-      "activePositionCount": 3
+      "activePositionCount": 5
     },
     {
       "rank": 153,
@@ -241,8 +241,8 @@
       "rank": 163,
       "name": "one8tyfive",
       "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
-      "pnl": 1047375.880159,
-      "activePositionCount": 7
+      "pnl": 1049437.5844,
+      "activePositionCount": 9
     },
     {
       "rank": 171,
@@ -280,13 +280,6 @@
       "activePositionCount": 7
     },
     {
-      "rank": 208,
-      "name": "johnbaster",
-      "wallet": "0x31864feb9d25dee93728c6225ba891530967e9ca",
-      "pnl": 891210.497084,
-      "activePositionCount": 2
-    },
-    {
       "rank": 210,
       "name": "ROBBATTISTAFANDUELRETARD",
       "wallet": "0x13414a77a4be48988851c73dfd824d0168e70853",
@@ -297,8 +290,8 @@
       "rank": 213,
       "name": "HaileyWelch",
       "wallet": "0x80cd8310aa624521e9e1b2b53b568cafb0ef0273",
-      "pnl": 882079.982674,
-      "activePositionCount": 14
+      "pnl": 881744.596361,
+      "activePositionCount": 15
     },
     {
       "rank": 215,
@@ -311,8 +304,8 @@
       "rank": 223,
       "name": "easyclap",
       "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
-      "pnl": 849834.529545,
-      "activePositionCount": 43
+      "pnl": 848633.176489,
+      "activePositionCount": 44
     },
     {
       "rank": 232,
@@ -346,50 +339,50 @@
       "rank": 249,
       "name": "donthackme",
       "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-      "pnl": 755948.309105,
-      "activePositionCount": 3878
+      "pnl": 760467.837788,
+      "activePositionCount": 3916
     },
     {
-      "rank": 254,
+      "rank": 253,
       "name": "AgricultureSecretary",
       "wallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
-      "pnl": 735796.680124,
-      "activePositionCount": 20
+      "pnl": 737074.8122619999,
+      "activePositionCount": 23
     },
     {
-      "rank": 259,
+      "rank": 258,
       "name": "SlavaUkraini",
       "wallet": "0xe899b5ea69afb161da7a35597b6fe70398860899",
-      "pnl": 720011.508297,
+      "pnl": 720537.137663,
       "activePositionCount": 18
     },
     {
-      "rank": 260,
+      "rank": 259,
       "name": "mr.ozi",
       "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
-      "pnl": 719160.858401,
-      "activePositionCount": 22
+      "pnl": 719168.16452,
+      "activePositionCount": 23
     },
     {
-      "rank": 262,
+      "rank": 261,
       "name": "kingofcoinflips",
       "wallet": "0xe9c6312464b52aa3eff13d822b003282075995c9",
-      "pnl": 717848.398549,
-      "activePositionCount": 38
+      "pnl": 717846.865462,
+      "activePositionCount": 40
     },
     {
       "rank": 266,
       "name": "e46m3",
       "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
-      "pnl": 704773.7860920001,
-      "activePositionCount": 4509
+      "pnl": 704677.450362,
+      "activePositionCount": 4504
     },
     {
       "rank": 279,
       "name": "betwick",
       "wallet": "0xc851cd9bee7d262afd78674f861f9f576a12cd2a",
-      "pnl": 674541.899796,
-      "activePositionCount": 21
+      "pnl": 675587.049795,
+      "activePositionCount": 22
     },
     {
       "rank": 287,
@@ -692,12 +685,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-09-24T11:37:31.126Z",
-  "lastCheckedAt": "2026-09-24T11:37:31.200Z",
+  "lastCheckedAt": "2026-09-24T15:55:38.427Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-09-24T06:04:47.670Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-09-24T11:37:31.200Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-09-24T15:55:38.360Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-09-24T15:55:38.427Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
