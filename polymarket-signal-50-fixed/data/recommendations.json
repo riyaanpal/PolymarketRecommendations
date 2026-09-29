@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-09-29T17:01:05.671Z",
-  "durationSeconds": 158,
+  "generatedAt": "2026-09-29T21:22:45.628Z",
+  "durationSeconds": 143,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -20,12 +20,12 @@
   },
   "stats": {
     "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 201,
-    "excludedBothOutcomes": 45,
+    "skippedNoPositions": 197,
+    "excludedBothOutcomes": 46,
     "positionFetchErrors": 0,
-    "eligibleTraders": 54,
-    "candidateMarkets": 1982,
-    "marketsChecked": 196,
+    "eligibleTraders": 57,
+    "candidateMarkets": 2082,
+    "marketsChecked": 205,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -34,13 +34,6 @@
     "usMarketCatalogCount": 20250
   },
   "eligibleTraders": [
-    {
-      "rank": 16,
-      "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
-      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-      "pnl": 6818439.346586,
-      "activePositionCount": 13
-    },
     {
       "rank": 19,
       "name": "beachboy4",
@@ -52,8 +45,8 @@
       "rank": 25,
       "name": "BreakTheBank",
       "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-      "pnl": 4714040.852589,
-      "activePositionCount": 41
+      "pnl": 4713854.343789,
+      "activePositionCount": 44
     },
     {
       "rank": 26,
@@ -91,11 +84,18 @@
       "activePositionCount": 1
     },
     {
+      "rank": 64,
+      "name": "ImJustKen",
+      "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
+      "pnl": 2264692.326541,
+      "activePositionCount": 410
+    },
+    {
       "rank": 65,
       "name": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
-      "pnl": 2246493.320983,
-      "activePositionCount": 183
+      "pnl": 2246136.780273,
+      "activePositionCount": 185
     },
     {
       "rank": 70,
@@ -108,14 +108,14 @@
       "rank": 80,
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "pnl": 1951400.60875,
-      "activePositionCount": 73
+      "pnl": 1946825.888075,
+      "activePositionCount": 71
     },
     {
       "rank": 85,
       "name": "The Spirit of Ukraine>UMA",
       "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
-      "pnl": 1814603.872561,
+      "pnl": 1814699.916876,
       "activePositionCount": 114
     },
     {
@@ -123,7 +123,7 @@
       "name": "Talvez10",
       "wallet": "0xa71093cafc0c099b4ccab24c3cb8018d817923c4",
       "pnl": 1674115.727583,
-      "activePositionCount": 2
+      "activePositionCount": 1
     },
     {
       "rank": 99,
@@ -133,18 +133,25 @@
       "activePositionCount": 74
     },
     {
+      "rank": 102,
+      "name": "THEHIGHLIFE",
+      "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
+      "pnl": 1559234.103609,
+      "activePositionCount": 1
+    },
+    {
       "rank": 104,
+      "name": "Soarin22",
+      "wallet": "0x84dbb7103982e3617704a2ed7d5b39691952aeeb",
+      "pnl": 1551992.657619,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 105,
       "name": "scottilicious",
       "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
       "pnl": 1551563.318052,
       "activePositionCount": 50
-    },
-    {
-      "rank": 106,
-      "name": "THEHIGHLIFE",
-      "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
-      "pnl": 1548984.610829,
-      "activePositionCount": 2
     },
     {
       "rank": 107,
@@ -161,25 +168,25 @@
       "activePositionCount": 11
     },
     {
+      "rank": 123,
+      "name": "RegardedMoney",
+      "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
+      "pnl": 1430280.732527,
+      "activePositionCount": 2
+    },
+    {
       "rank": 125,
       "name": "curie",
       "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
-      "pnl": 1402077.291796,
-      "activePositionCount": 18
+      "pnl": 1401795.4408560004,
+      "activePositionCount": 24
     },
     {
       "rank": 127,
       "name": "sportmaster777",
       "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
-      "pnl": 1396175.627071,
-      "activePositionCount": 2
-    },
-    {
-      "rank": 139,
-      "name": "justaluckydude",
-      "wallet": "0xbca08c1bc204a34f2fddbe47b438b9bd42ac9705",
-      "pnl": 1256987.568566,
-      "activePositionCount": 2
+      "pnl": 1395980.631074,
+      "activePositionCount": 1
     },
     {
       "rank": 141,
@@ -217,11 +224,11 @@
       "activePositionCount": 42
     },
     {
-      "rank": 162,
+      "rank": 163,
       "name": "one8tyfive",
       "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
-      "pnl": 1058736.618979,
-      "activePositionCount": 7
+      "pnl": 1048352.816737,
+      "activePositionCount": 6
     },
     {
       "rank": 167,
@@ -236,6 +243,13 @@
       "wallet": "0xb90494d9a5d8f71f1930b2aa4b599f95c344c255",
       "pnl": 1010002.944768,
       "activePositionCount": 2
+    },
+    {
+      "rank": 178,
+      "name": "gambamaster",
+      "wallet": "0x9ee8bbc36d378af72e5f6b8e2ea2eb67c05a89de",
+      "pnl": 984527.097241,
+      "activePositionCount": 1
     },
     {
       "rank": 200,
@@ -256,21 +270,21 @@
       "name": "gmpm2",
       "wallet": "0x67542c3219b37fd1610aad290676ff91cdbfe3bc",
       "pnl": 896222.601777,
-      "activePositionCount": 2
+      "activePositionCount": 8
     },
     {
-      "rank": 207,
+      "rank": 208,
       "name": "johnbaster",
       "wallet": "0x31864feb9d25dee93728c6225ba891530967e9ca",
-      "pnl": 896135.118,
+      "pnl": 894814.127367,
       "activePositionCount": 3
     },
     {
       "rank": 209,
       "name": "HaileyWelch",
       "wallet": "0x80cd8310aa624521e9e1b2b53b568cafb0ef0273",
-      "pnl": 890758.878156,
-      "activePositionCount": 12
+      "pnl": 891187.157391,
+      "activePositionCount": 13
     },
     {
       "rank": 211,
@@ -312,14 +326,14 @@
       "name": "surfandturf",
       "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
       "pnl": 805309.079664,
-      "activePositionCount": 6
+      "activePositionCount": 8
     },
     {
       "rank": 237,
       "name": "easyclap",
       "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
-      "pnl": 804526.154721,
-      "activePositionCount": 27
+      "pnl": 795935.393328,
+      "activePositionCount": 28
     },
     {
       "rank": 239,
@@ -329,25 +343,32 @@
       "activePositionCount": 1
     },
     {
+      "rank": 251,
+      "name": "n.maga",
+      "wallet": "0x73c5701afdefba2814193168448b2992306b2f80",
+      "pnl": 757549.48784,
+      "activePositionCount": 4
+    },
+    {
       "rank": 253,
-      "name": "AgricultureSecretary",
-      "wallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
-      "pnl": 737183.70761,
-      "activePositionCount": 22
+      "name": "donthackme",
+      "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
+      "pnl": 738620.84307,
+      "activePositionCount": 4021
     },
     {
       "rank": 254,
-      "name": "donthackme",
-      "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-      "pnl": 736765.270903,
-      "activePositionCount": 4017
+      "name": "AgricultureSecretary",
+      "wallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
+      "pnl": 737777.793218,
+      "activePositionCount": 23
     },
     {
       "rank": 260,
       "name": "mr.ozi",
       "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
       "pnl": 722952.800742,
-      "activePositionCount": 20
+      "activePositionCount": 22
     },
     {
       "rank": 261,
@@ -357,18 +378,18 @@
       "activePositionCount": 18
     },
     {
-      "rank": 263,
+      "rank": 262,
       "name": "kingofcoinflips",
       "wallet": "0xe9c6312464b52aa3eff13d822b003282075995c9",
-      "pnl": 718898.330642,
-      "activePositionCount": 26
+      "pnl": 719589.839063,
+      "activePositionCount": 27
     },
     {
-      "rank": 274,
+      "rank": 271,
       "name": "e46m3",
       "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
-      "pnl": 695942.504055,
-      "activePositionCount": 4753
+      "pnl": 699404.6022010001,
+      "activePositionCount": 4774
     },
     {
       "rank": 279,
@@ -382,7 +403,7 @@
       "name": "GamblingOdyssey",
       "wallet": "0xe5241830e8876c115d7dc8311ad9f43d85fdd34f",
       "pnl": 677515.327457,
-      "activePositionCount": 2
+      "activePositionCount": 1
     },
     {
       "rank": 282,
@@ -396,7 +417,7 @@
       "name": "Wiretransferxyz",
       "wallet": "0x30c7ac0158499ddc6761047f7f69bcf7d036ac3b",
       "pnl": 663944.427803,
-      "activePositionCount": 3
+      "activePositionCount": 4
     },
     {
       "rank": 289,
@@ -415,74 +436,155 @@
   ],
   "recommendations": [
     {
-      "conditionId": "0xdd6df6bc49de64cf38b2059cea20d00b86ef0c01b4c146e8930471d20f599cef",
-      "title": "Will the Jacksonville Jaguars win the 2027 NFL league championship?",
-      "slug": "will-the-jacksonville-jaguars-win-the-2027-nfl-league-championship",
+      "conditionId": "0x8e6d892346600222b7cb8350acd0e97dda1ae616259ba117ea2e9b59bbe038a1",
+      "title": "Will the Seattle Seahawks win the 2027 NFL league championship?",
+      "slug": "will-the-seattle-seahawks-win-the-2027-nfl-league-championship",
       "eventSlug": "pro-football-2027-champion-20260729185915366",
       "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/football-logo.png",
       "endDate": "2027-04-01",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Will the Jacksonville Jaguars win the 2027 NFL league championship?",
+      "rawPositionTitle": "Will the Seattle Seahawks win the 2027 NFL league championship?",
+      "outcome": "No",
+      "outcomeKey": "1",
+      "supporterCount": 4,
+      "opposingSupporters": 1,
+      "consensusRate": 0.8,
+      "totalCurrentValue": 2728.4247,
+      "avgAccountAllocation": 0.051250249876421246,
+      "avgEntryPrice": 0.9262931775258366,
+      "currentPrice": 0.925,
+      "rankWeight": 0.3504106984516408,
+      "supporters": [
+        {
+          "rank": 64,
+          "name": "ImJustKen",
+          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
+          "currentValue": 157.1637,
+          "visibleAccountValue": 789085.862099999,
+          "accountAllocation": 0.0001991718614521103,
+          "size": 169.9067,
+          "avgPrice": 0.87,
+          "pnl": 9.3448
+        },
+        {
+          "rank": 141,
+          "name": "0xd9670ea74384c1e1b9dc1e4267ffadaf4cdd140",
+          "wallet": "0xd570e634aeb745d6501566dba5f81a555cc7e4f8",
+          "currentValue": 4.625,
+          "visibleAccountValue": 187.30019999999996,
+          "accountAllocation": 0.02469297950562787,
+          "size": 5,
+          "avgPrice": 0.93,
+          "pnl": -0.025
+        },
+        {
+          "rank": 163,
+          "name": "one8tyfive",
+          "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
+          "currentValue": 2520.6897,
+          "visibleAccountValue": 14026.449,
+          "accountAllocation": 0.17970975405107878,
+          "size": 2725.07,
+          "avgPrice": 0.9299,
+          "pnl": -13.6226
+        },
+        {
+          "rank": 253,
+          "name": "donthackme",
+          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
+          "currentValue": 45.9463,
+          "visibleAccountValue": 115126.4863,
+          "accountAllocation": 0.00039909408752623416,
+          "size": 49.6717,
+          "avgPrice": 0.9206,
+          "pnl": 0.2166
+        }
+      ],
+      "decisionSide": "NO",
+      "decisionChoice": "Seattle Seahawks",
+      "decisionOption": "Seattle Seahawks",
+      "decisionTarget": "Will the Seattle Seahawks win the 2027 NFL league championship?",
+      "decisionText": "Select “Seattle Seahawks” → Buy NO",
+      "decisionMeaning": "On Polymarket, choose the “Seattle Seahawks” option/row/card, then click Buy NO. This applies only to the exact market question: “Will the Seattle Seahawks win the 2027 NFL league championship?”.",
+      "category": "Other",
+      "liquidity": 225944.9783,
+      "volume24hr": 79.79,
+      "usAvailable": true,
+      "usMarketSlug": "tec-nfl-champ-2027-02-14-w-seasea",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/tec-nfl-champ-2027-02-14-w-seasea"
+    },
+    {
+      "conditionId": "0xc4b07998e8f9bf6b95f079d6dc0529f3c6f59698d4e168817ad5f99304de6c57",
+      "title": "Will Spider-Man: Brand New Day be the top grossing movie of 2026?",
+      "slug": "will-spider-man-brand-new-day-be-the-top-grossing-movie-of-2026",
+      "eventSlug": "highest-grossing-movie-in-2026",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/highest-grossing-movie-in-2025-23YRHKqq6Ete.jpg",
+      "endDate": "2027-01-08",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Will Spider-Man: Brand New Day be the top grossing movie of 2026?",
       "outcome": "Yes",
       "outcomeKey": "0",
       "supporterCount": 3,
-      "opposingSupporters": 1,
-      "consensusRate": 0.75,
-      "totalCurrentValue": 1954.3889,
-      "avgAccountAllocation": 0.046020751466256234,
-      "avgEntryPrice": 0.032044445293154124,
-      "currentPrice": 0.0415,
-      "rankWeight": 0.43177643145951916,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 3887.7330999999995,
+      "avgAccountAllocation": 0.016821820684365454,
+      "avgEntryPrice": 0.2932499710658959,
+      "currentPrice": 0.945,
+      "rankWeight": 0.27208465345284505,
       "supporters": [
         {
-          "rank": 25,
-          "name": "BreakTheBank",
-          "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 1915.8318,
-          "visibleAccountValue": 813424.8940000004,
-          "accountAllocation": 0.0023552657585618458,
-          "size": 46164.6238,
-          "avgPrice": 0.0321,
-          "pnl": 430.1157
+          "rank": 64,
+          "name": "ImJustKen",
+          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
+          "currentValue": 1144.336,
+          "visibleAccountValue": 789085.862099999,
+          "accountAllocation": 0.0014502046671506339,
+          "size": 1210.9376,
+          "avgPrice": 0.907,
+          "pnl": 45.9392
         },
         {
-          "rank": 35,
-          "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
-          "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
-          "currentValue": 17.0316,
-          "visibleAccountValue": 125.6789,
-          "accountAllocation": 0.13551678125763356,
-          "size": 410.4,
-          "avgPrice": 0.028,
-          "pnl": 5.5404
+          "rank": 141,
+          "name": "0xd9670ea74384c1e1b9dc1e4267ffadaf4cdd140",
+          "wallet": "0xd570e634aeb745d6501566dba5f81a555cc7e4f8",
+          "currentValue": 4.725,
+          "visibleAccountValue": 187.30019999999996,
+          "accountAllocation": 0.02522688176520901,
+          "size": 5,
+          "avgPrice": 0.93,
+          "pnl": 0.075
         },
         {
-          "rank": 254,
+          "rank": 253,
           "name": "donthackme",
           "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 21.5255,
-          "visibleAccountValue": 113168.58319999994,
-          "accountAllocation": 0.00019020738257329365,
-          "size": 518.6874,
-          "avgPrice": 0.0303,
-          "pnl": 5.8077
+          "currentValue": 2738.6721,
+          "visibleAccountValue": 115126.4863,
+          "accountAllocation": 0.023788375620736716,
+          "size": 2898.0657,
+          "avgPrice": 0.0357,
+          "pnl": 2635.1705
         }
       ],
       "decisionSide": "YES",
-      "decisionChoice": "Jacksonville Jaguars",
-      "decisionOption": "Jacksonville Jaguars",
-      "decisionTarget": "Will the Jacksonville Jaguars win the 2027 NFL league championship?",
-      "decisionText": "Select “Jacksonville Jaguars” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Jacksonville Jaguars” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Jacksonville Jaguars win the 2027 NFL league championship?”.",
+      "decisionChoice": "Spider-Man: Brand New Day",
+      "decisionOption": "Spider-Man: Brand New Day",
+      "decisionTarget": "Will Spider-Man: Brand New Day be the top grossing movie of 2026?",
+      "decisionText": "Select “Spider-Man: Brand New Day” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “Spider-Man: Brand New Day” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Spider-Man: Brand New Day be the top grossing movie of 2026?”.",
       "category": "Other",
-      "liquidity": 183175.18516,
-      "volume24hr": 1426.605349,
+      "liquidity": 60252.2192,
+      "volume24hr": 83.51,
       "usAvailable": true,
-      "usMarketSlug": "tec-nfl-afcchamp-2027-01-31-w-jacjag",
+      "usMarketSlug": "tac-oscars-nom-2027-01-31-bestpic-spiday",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/tec-nfl-afcchamp-2027-01-31-w-jacjag"
+      "marketUrl": "https://polymarket.us/market/tac-oscars-nom-2027-01-31-bestpic-spiday"
     },
     {
       "conditionId": "0x849be83aad0311ca155a2ad0c1a86bf5cdf0313672c1de414bfaa902f351030a",
@@ -499,33 +601,33 @@
       "supporterCount": 2,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 26626.7251,
-      "avgAccountAllocation": 0.01646869485034062,
+      "totalCurrentValue": 29029.1364,
+      "avgAccountAllocation": 0.017864049009964005,
       "avgEntryPrice": 0.030810839906907587,
-      "currentPrice": 0.0665,
-      "rankWeight": 0.26274558051381586,
+      "currentPrice": 0.0725,
+      "rankWeight": 0.26286946134619316,
       "supporters": [
         {
           "rank": 25,
           "name": "BreakTheBank",
           "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-          "currentValue": 26600,
-          "visibleAccountValue": 813424.8940000004,
-          "accountAllocation": 0.03270123670446701,
+          "currentValue": 29000,
+          "visibleAccountValue": 817476.7191000001,
+          "accountAllocation": 0.03547501637958266,
           "size": 400000,
           "avgPrice": 0.0308,
-          "pnl": 14252.5915
+          "pnl": 16652.5915
         },
         {
-          "rank": 254,
+          "rank": 253,
           "name": "donthackme",
           "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 26.7251,
-          "visibleAccountValue": 113168.58319999994,
-          "accountAllocation": 0.0002361529962142357,
+          "currentValue": 29.1364,
+          "visibleAccountValue": 115126.4863,
+          "accountAllocation": 0.0002530816403453459,
           "size": 401.8814,
           "avgPrice": 0.0416,
-          "pnl": 9.9807
+          "pnl": 12.392
         }
       ],
       "decisionSide": "YES",
@@ -535,8 +637,8 @@
       "decisionText": "Select “Liverpool” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Liverpool” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Liverpool win the 2026-27 English Premier League (EPL) Championship?”.",
       "category": "Other",
-      "liquidity": 168073.80822,
-      "volume24hr": 52206.478089000004,
+      "liquidity": 183004.70582,
+      "volume24hr": 53757.360000000015,
       "usAvailable": true,
       "usMarketSlug": "aachc-epl-2027-05-30-relegation-liv",
       "usMatchMethod": "title_slug_similarity",
@@ -544,117 +646,58 @@
       "marketUrl": "https://polymarket.us/market/aachc-epl-2027-05-30-relegation-liv"
     },
     {
-      "conditionId": "0xd9121fe8396b86e4a35fcc812f1ff2699ecf4ccfad909dfba7b269f413d7ee84",
-      "title": "Will Bayern Munich win the 2026-27 UEFA Champions League Championship?",
-      "slug": "will-bayern-munich-win-the-2026-27-uefa-champions-league-championship-20260701202025565",
-      "eventSlug": "uefa-champions-league-2027-champion-20260701202025549",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/uefa-champions-league-2025-26-which-teams-qualify-StbSIjaEx2St.png",
-      "endDate": "2027-06-20",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will Bayern Munich win the 2026-27 UEFA Champions League Championship?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 2,
-      "opposingSupporters": 0,
-      "consensusRate": 1,
-      "totalCurrentValue": 4644.8771,
-      "avgAccountAllocation": 0.09158518621009633,
-      "avgEntryPrice": 0.14986061072142662,
-      "currentPrice": 0.145,
-      "rankWeight": 0.15766138008906577,
-      "supporters": [
-        {
-          "rank": 111,
-          "name": "Joe-Biden",
-          "wallet": "0x8b5a7da2fdf239b51b9c68a2a1a35bb156d200f2",
-          "currentValue": 4643.4263,
-          "visibleAccountValue": 25352.087499999998,
-          "accountAllocation": 0.1831575526078474,
-          "size": 32023.63,
-          "avgPrice": 0.1499,
-          "pnl": -160.0861
-        },
-        {
-          "rank": 254,
-          "name": "donthackme",
-          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 1.4508,
-          "visibleAccountValue": 113168.58319999994,
-          "accountAllocation": 0.000012819812345233999,
-          "size": 10.0062,
-          "avgPrice": 0.0238,
-          "pnl": 1.2125
-        }
-      ],
-      "decisionSide": "YES",
-      "decisionChoice": "Bayern Munich",
-      "decisionOption": "Bayern Munich",
-      "decisionTarget": "Will Bayern Munich win the 2026-27 UEFA Champions League Championship?",
-      "decisionText": "Select “Bayern Munich” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Bayern Munich” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Bayern Munich win the 2026-27 UEFA Champions League Championship?”.",
-      "category": "Other",
-      "liquidity": 218763.9653,
-      "volume24hr": 441.726669,
-      "usAvailable": true,
-      "usMarketSlug": "tec-ucl-final-2026-06-05-w-aek1",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.69,
-      "marketUrl": "https://polymarket.us/market/tec-ucl-final-2026-06-05-w-aek1"
-    },
-    {
-      "conditionId": "0xc4b07998e8f9bf6b95f079d6dc0529f3c6f59698d4e168817ad5f99304de6c57",
-      "title": "Will Spider-Man: Brand New Day be the top grossing movie of 2026?",
-      "slug": "will-spider-man-brand-new-day-be-the-top-grossing-movie-of-2026",
-      "eventSlug": "highest-grossing-movie-in-2026",
+      "conditionId": "0x76c1a69f2b0a7fcfa97b56ddbeaad1981a8cb3d8f24c1adce62ffa2d010ebbe0",
+      "title": "Will Spider-Man: Brand New Day have the best domestic opening weekend in 2026?",
+      "slug": "will-spider-man-brand-new-day-have-the-best-domestic-opening-weekend-in-2026",
+      "eventSlug": "which-movie-has-biggest-opening-weekend-in-2026",
       "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/highest-grossing-movie-in-2025-23YRHKqq6Ete.jpg",
-      "endDate": "2027-01-08",
+      "endDate": "2027-02-01",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Will Spider-Man: Brand New Day be the top grossing movie of 2026?",
+      "rawPositionTitle": "Will Spider-Man: Brand New Day have the best domestic opening weekend in 2026?",
       "outcome": "Yes",
       "outcomeKey": "0",
       "supporterCount": 2,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 2743.3970999999997,
-      "avgAccountAllocation": 0.024806169893994402,
-      "avgEntryPrice": 0.03724026827570592,
-      "currentPrice": 0.945,
-      "rankWeight": 0.14696077262046775,
+      "totalCurrentValue": 10340.9106,
+      "avgAccountAllocation": 0.011184452553689904,
+      "avgEntryPrice": 0.4593014362151251,
+      "currentPrice": 0.555,
+      "rankWeight": 0.18786946134619315,
       "supporters": [
         {
-          "rank": 141,
-          "name": "0xd9670ea74384c1e1b9dc1e4267ffadaf4cdd140",
-          "wallet": "0xd570e634aeb745d6501566dba5f81a555cc7e4f8",
-          "currentValue": 4.725,
-          "visibleAccountValue": 185.9328,
-          "accountAllocation": 0.025412407063197025,
-          "size": 5,
-          "avgPrice": 0.93,
-          "pnl": 0.075
+          "rank": 64,
+          "name": "ImJustKen",
+          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
+          "currentValue": 9092.1953,
+          "visibleAccountValue": 789085.862099999,
+          "accountAllocation": 0.011522441012696496,
+          "size": 16382.3339,
+          "avgPrice": 0.5173,
+          "pnl": 616.2218
         },
         {
-          "rank": 254,
+          "rank": 253,
           "name": "donthackme",
           "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 2738.6721,
-          "visibleAccountValue": 113168.58319999994,
-          "accountAllocation": 0.02419993272479178,
-          "size": 2898.0657,
-          "avgPrice": 0.0357,
-          "pnl": 2635.1705
+          "currentValue": 1248.7153,
+          "visibleAccountValue": 115126.4863,
+          "accountAllocation": 0.01084646409468331,
+          "size": 2249.9375,
+          "avgPrice": 0.037,
+          "pnl": 1165.3866
         }
       ],
       "decisionSide": "YES",
       "decisionChoice": "Spider-Man: Brand New Day",
       "decisionOption": "Spider-Man: Brand New Day",
-      "decisionTarget": "Will Spider-Man: Brand New Day be the top grossing movie of 2026?",
+      "decisionTarget": "Will Spider-Man: Brand New Day have the best domestic opening weekend in 2026?",
       "decisionText": "Select “Spider-Man: Brand New Day” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Spider-Man: Brand New Day” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Spider-Man: Brand New Day be the top grossing movie of 2026?”.",
+      "decisionMeaning": "On Polymarket, choose the “Spider-Man: Brand New Day” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Spider-Man: Brand New Day have the best domestic opening weekend in 2026?”.",
       "category": "Other",
-      "liquidity": 58903.3414,
-      "volume24hr": 127.30000000000001,
+      "liquidity": 12131.3335,
+      "volume24hr": 186.253334,
       "usAvailable": true,
       "usMarketSlug": "tac-oscars-nom-2027-01-31-bestpic-spiday",
       "usMatchMethod": "title_slug_similarity",
@@ -662,13 +705,13 @@
       "marketUrl": "https://polymarket.us/market/tac-oscars-nom-2027-01-31-bestpic-spiday"
     }
   ],
-  "recommendationsUpdatedAt": "2026-09-29T17:01:05.671Z",
-  "lastCheckedAt": "2026-09-29T17:01:05.755Z",
+  "recommendationsUpdatedAt": "2026-09-29T21:22:45.628Z",
+  "lastCheckedAt": "2026-09-29T21:22:45.733Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-09-29T11:34:23.449Z",
+  "previousRecommendationsReplacedAt": "2026-09-29T17:01:05.671Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-09-29T17:01:05.755Z",
+  "lastSuccessfulWorkflowAt": "2026-09-29T21:22:45.733Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
