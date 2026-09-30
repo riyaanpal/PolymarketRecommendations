@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "status": "ok",
   "generatedAt": "2026-09-29T21:22:45.628Z",
-  "durationSeconds": 143,
+  "durationSeconds": 116,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -20,12 +20,12 @@
   },
   "stats": {
     "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 197,
-    "excludedBothOutcomes": 46,
+    "skippedNoPositions": 198,
+    "excludedBothOutcomes": 47,
     "positionFetchErrors": 0,
-    "eligibleTraders": 57,
-    "candidateMarkets": 2082,
-    "marketsChecked": 205,
+    "eligibleTraders": 55,
+    "candidateMarkets": 2045,
+    "marketsChecked": 206,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
@@ -43,17 +43,17 @@
     },
     {
       "rank": 25,
-      "name": "BreakTheBank",
-      "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
-      "pnl": 4713854.343789,
-      "activePositionCount": 44
-    },
-    {
-      "rank": 26,
       "name": "0x006cc834Cc092684F1B56626E23BEdB3835c16ea-1729683673397",
       "wallet": "0x006cc834cc092684f1b56626e23bedb3835c16ea",
       "pnl": 4705161.373263,
       "activePositionCount": 1
+    },
+    {
+      "rank": 26,
+      "name": "BreakTheBank",
+      "wallet": "0xf0318c32136c2db7fec88b84869aee6a1106c80c",
+      "pnl": 4598039.084724,
+      "activePositionCount": 40
     },
     {
       "rank": 35,
@@ -87,14 +87,14 @@
       "rank": 64,
       "name": "ImJustKen",
       "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
-      "pnl": 2264692.326541,
+      "pnl": 2267014.91237,
       "activePositionCount": 410
     },
     {
       "rank": 65,
       "name": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
-      "pnl": 2246136.780273,
+      "pnl": 2245971.796143,
       "activePositionCount": 185
     },
     {
@@ -108,22 +108,29 @@
       "rank": 80,
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "pnl": 1946825.888075,
-      "activePositionCount": 71
+      "pnl": 1946827.706383,
+      "activePositionCount": 69
     },
     {
       "rank": 85,
       "name": "The Spirit of Ukraine>UMA",
       "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
-      "pnl": 1814699.916876,
+      "pnl": 1814699.841979,
       "activePositionCount": 114
+    },
+    {
+      "rank": 93,
+      "name": "PowerSupplyUnit",
+      "wallet": "0x6db568e61e5e3de7d87f831431b673f38ce2e279",
+      "pnl": 1680011.510212,
+      "activePositionCount": 1
     },
     {
       "rank": 95,
       "name": "Talvez10",
       "wallet": "0xa71093cafc0c099b4ccab24c3cb8018d817923c4",
-      "pnl": 1674115.727583,
-      "activePositionCount": 1
+      "pnl": 1657107.797469,
+      "activePositionCount": 3
     },
     {
       "rank": 99,
@@ -137,21 +144,21 @@
       "name": "THEHIGHLIFE",
       "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
       "pnl": 1559234.103609,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 104,
-      "name": "Soarin22",
-      "wallet": "0x84dbb7103982e3617704a2ed7d5b39691952aeeb",
-      "pnl": 1551992.657619,
       "activePositionCount": 2
     },
     {
-      "rank": 105,
+      "rank": 104,
       "name": "scottilicious",
       "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
       "pnl": 1551563.318052,
       "activePositionCount": 50
+    },
+    {
+      "rank": 105,
+      "name": "Soarin22",
+      "wallet": "0x84dbb7103982e3617704a2ed7d5b39691952aeeb",
+      "pnl": 1550622.031912,
+      "activePositionCount": 3
     },
     {
       "rank": 107,
@@ -168,18 +175,18 @@
       "activePositionCount": 11
     },
     {
-      "rank": 123,
+      "rank": 114,
       "name": "RegardedMoney",
       "wallet": "0x5c3a1a602848565bb16165fcd460b00c3d43020b",
-      "pnl": 1430280.732527,
-      "activePositionCount": 2
+      "pnl": 1488030.732527,
+      "activePositionCount": 1
     },
     {
       "rank": 125,
       "name": "curie",
       "wallet": "0xd1ed12197b7dc22dede923727e9b714024dbd7cb",
-      "pnl": 1401795.4408560004,
-      "activePositionCount": 24
+      "pnl": 1399985.9522820003,
+      "activePositionCount": 27
     },
     {
       "rank": 127,
@@ -245,21 +252,14 @@
       "activePositionCount": 2
     },
     {
-      "rank": 178,
-      "name": "gambamaster",
-      "wallet": "0x9ee8bbc36d378af72e5f6b8e2ea2eb67c05a89de",
-      "pnl": 984527.097241,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 200,
+      "rank": 201,
       "name": "Anointed-Connect",
       "wallet": "0x8f037a2e4fd49d11267f4ab874ab7ba745ac64d6",
       "pnl": 918419.240186,
       "activePositionCount": 12
     },
     {
-      "rank": 203,
+      "rank": 204,
       "name": "WTSA",
       "wallet": "0x04d5524a0a5af2eca6e39e03defc261d42fe66d8",
       "pnl": 901930.008113,
@@ -273,17 +273,10 @@
       "activePositionCount": 8
     },
     {
-      "rank": 208,
-      "name": "johnbaster",
-      "wallet": "0x31864feb9d25dee93728c6225ba891530967e9ca",
-      "pnl": 894814.127367,
-      "activePositionCount": 3
-    },
-    {
       "rank": 209,
       "name": "HaileyWelch",
       "wallet": "0x80cd8310aa624521e9e1b2b53b568cafb0ef0273",
-      "pnl": 891187.157391,
+      "pnl": 891015.968346,
       "activePositionCount": 13
     },
     {
@@ -301,74 +294,67 @@
       "activePositionCount": 12
     },
     {
-      "rank": 232,
+      "rank": 216,
+      "name": "surfandturf",
+      "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
+      "pnl": 874361.547523,
+      "activePositionCount": 7
+    },
+    {
+      "rank": 233,
       "name": "ckw",
       "wallet": "0x92672c80d36dcd08172aa1e51dface0f20b70f9a",
       "pnl": 812385.692658,
       "activePositionCount": 1
     },
     {
-      "rank": 233,
+      "rank": 234,
       "name": "Magamyman",
       "wallet": "0x4dfd481c16d9995b809780fd8a9808e8689f6e4a",
       "pnl": 808577.482079,
       "activePositionCount": 6
     },
     {
-      "rank": 235,
+      "rank": 236,
       "name": "212121212121212121212",
       "wallet": "0x1bc0d88ca86b9049cf05d642e634836d5ddf4429",
       "pnl": 807694.429034,
       "activePositionCount": 7
     },
     {
-      "rank": 236,
-      "name": "surfandturf",
-      "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
-      "pnl": 805309.079664,
-      "activePositionCount": 8
-    },
-    {
-      "rank": 237,
+      "rank": 238,
       "name": "easyclap",
       "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
       "pnl": 795935.393328,
       "activePositionCount": 28
     },
     {
-      "rank": 239,
+      "rank": 240,
       "name": "eanvanezygv",
       "wallet": "0x9d94f602535e518ee1cb6aade0ca9569f1b1017d",
       "pnl": 790187.643169,
       "activePositionCount": 1
     },
     {
-      "rank": 251,
-      "name": "n.maga",
-      "wallet": "0x73c5701afdefba2814193168448b2992306b2f80",
-      "pnl": 757549.48784,
-      "activePositionCount": 4
-    },
-    {
       "rank": 253,
       "name": "donthackme",
       "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-      "pnl": 738620.84307,
-      "activePositionCount": 4021
+      "pnl": 740215.019281,
+      "activePositionCount": 3955
     },
     {
       "rank": 254,
       "name": "AgricultureSecretary",
       "wallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
-      "pnl": 737777.793218,
-      "activePositionCount": 23
+      "pnl": 737809.987777,
+      "activePositionCount": 22
     },
     {
       "rank": 260,
       "name": "mr.ozi",
       "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
-      "pnl": 722952.800742,
-      "activePositionCount": 22
+      "pnl": 724579.851102,
+      "activePositionCount": 23
     },
     {
       "rank": 261,
@@ -381,29 +367,29 @@
       "rank": 262,
       "name": "kingofcoinflips",
       "wallet": "0xe9c6312464b52aa3eff13d822b003282075995c9",
-      "pnl": 719589.839063,
+      "pnl": 719591.970073,
       "activePositionCount": 27
     },
     {
-      "rank": 271,
+      "rank": 270,
       "name": "e46m3",
       "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
-      "pnl": 699404.6022010001,
-      "activePositionCount": 4774
+      "pnl": 702373.4423410001,
+      "activePositionCount": 4695
     },
     {
       "rank": 279,
-      "name": "betwick",
-      "wallet": "0xc851cd9bee7d262afd78674f861f9f576a12cd2a",
-      "pnl": 678525.620742,
-      "activePositionCount": 25
+      "name": "GamblingOdyssey",
+      "wallet": "0xe5241830e8876c115d7dc8311ad9f43d85fdd34f",
+      "pnl": 679960.861658,
+      "activePositionCount": 1
     },
     {
       "rank": 280,
-      "name": "GamblingOdyssey",
-      "wallet": "0xe5241830e8876c115d7dc8311ad9f43d85fdd34f",
-      "pnl": 677515.327457,
-      "activePositionCount": 1
+      "name": "betwick",
+      "wallet": "0xc851cd9bee7d262afd78674f861f9f576a12cd2a",
+      "pnl": 677669.56658,
+      "activePositionCount": 24
     },
     {
       "rank": 282,
@@ -706,12 +692,14 @@
     }
   ],
   "recommendationsUpdatedAt": "2026-09-29T21:22:45.628Z",
-  "lastCheckedAt": "2026-09-29T21:22:45.733Z",
+  "lastCheckedAt": "2026-09-30T00:45:12.725Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-09-29T17:01:05.671Z",
-  "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-09-29T21:22:45.733Z",
+  "refreshMode": "checked_recommendations_unchanged",
+  "notes": [
+    "Checked at 2026-09-30T00:45:12.666Z. The scanner found the same recommendation set, so the published cards were left unchanged."
+  ],
+  "lastSuccessfulWorkflowAt": "2026-09-30T00:45:12.725Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
