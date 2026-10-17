@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-10-17T08:46:18.666Z",
-  "durationSeconds": 88,
+  "generatedAt": "2026-10-17T12:55:13.566Z",
+  "durationSeconds": 102,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -14,23 +14,23 @@
     "ranking": "Supporter count first, then same-side consensus rate, rank-weighted support, and combined current position value.",
     "activeMarketRule": "Only Gamma markets that are active, not closed or archived, and accepting orders are shown.",
     "usAvailabilityRule": "Only markets that match the daily Polymarket US catalog by exact slug or high-confidence title/slug similarity, and are active, not closed, not archived, not hidden, and with a tradable side, are shown.",
-    "usMarketCatalogGeneratedAt": "2026-10-16T13:14:51.501Z",
+    "usMarketCatalogGeneratedAt": "2026-10-17T12:10:51.204Z",
     "distinctMarketRule": "Only one recommendation is shown per Polymarket event; the highest-ranked qualifying child market is kept.",
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
     "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 196,
-    "excludedBothOutcomes": 49,
+    "skippedNoPositions": 191,
+    "excludedBothOutcomes": 51,
     "positionFetchErrors": 0,
-    "eligibleTraders": 55,
-    "candidateMarkets": 1771,
-    "marketsChecked": 84,
+    "eligibleTraders": 58,
+    "candidateMarkets": 280,
+    "marketsChecked": 137,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
     "usMarketCatalogUsed": true,
-    "usMarketCatalogGeneratedAt": "2026-10-16T13:14:51.501Z",
+    "usMarketCatalogGeneratedAt": "2026-10-17T12:10:51.204Z",
     "usMarketCatalogCount": 20250
   },
   "eligibleTraders": [
@@ -80,15 +80,15 @@
       "rank": 49,
       "name": "ndb1",
       "wallet": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
-      "pnl": 3120809.441791,
-      "activePositionCount": 650
+      "pnl": 3120810.350791,
+      "activePositionCount": 651
     },
     {
       "rank": 51,
       "name": "Kch-Temp",
       "wallet": "0x924379a79c64b77ad5816ad362122a5f6228658e",
       "pnl": 3105226.8658820004,
-      "activePositionCount": 1
+      "activePositionCount": 2
     },
     {
       "rank": 60,
@@ -108,7 +108,7 @@
       "rank": 69,
       "name": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
-      "pnl": 2224609.156647,
+      "pnl": 2224522.658224,
       "activePositionCount": 162
     },
     {
@@ -119,46 +119,53 @@
       "activePositionCount": 1
     },
     {
-      "rank": 83,
+      "rank": 82,
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
-      "pnl": 1976446.304681,
+      "pnl": 1976442.748017,
       "activePositionCount": 58
+    },
+    {
+      "rank": 83,
+      "name": "THEHIGHLIFE",
+      "wallet": "0x8c0b024c17831a0dde038547b7e791ae6a0d7aa5",
+      "pnl": 1972500.858903,
+      "activePositionCount": 1
     },
     {
       "rank": 88,
       "name": "The Spirit of Ukraine>UMA",
       "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
-      "pnl": 1829753.813655,
+      "pnl": 1829752.64833,
       "activePositionCount": 106
     },
     {
-      "rank": 98,
-      "name": "gmpm2",
-      "wallet": "0x67542c3219b37fd1610aad290676ff91cdbfe3bc",
-      "pnl": 1655814.584271,
-      "activePositionCount": 10
-    },
-    {
-      "rank": 101,
-      "name": "jtwyslljy",
-      "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
-      "pnl": 1638369.515633,
+      "rank": 94,
+      "name": "Talvez10",
+      "wallet": "0xa71093cafc0c099b4ccab24c3cb8018d817923c4",
+      "pnl": 1718416.561394,
       "activePositionCount": 1
     },
     {
+      "rank": 98,
+      "name": "Diabolical-Prize",
+      "wallet": "0x7c37b52eb226bcb9411375ec48b0169663fb6aeb",
+      "pnl": 1673254.591495,
+      "activePositionCount": 19
+    },
+    {
       "rank": 102,
+      "name": "jtwyslljy",
+      "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
+      "pnl": 1634275.359785,
+      "activePositionCount": 2
+    },
+    {
+      "rank": 103,
       "name": "gopfan2",
       "wallet": "0xf2f6af4f27ec2dcf4072095ab804016e14cd5817",
       "pnl": 1588082.00237,
       "activePositionCount": 65
-    },
-    {
-      "rank": 110,
-      "name": "Diabolical-Prize",
-      "wallet": "0x7c37b52eb226bcb9411375ec48b0169663fb6aeb",
-      "pnl": 1535821.667539,
-      "activePositionCount": 20
     },
     {
       "rank": 111,
@@ -182,14 +189,7 @@
       "activePositionCount": 51
     },
     {
-      "rank": 129,
-      "name": "sportmaster777",
-      "wallet": "0x32ed517a571c01b6e9adecf61ba81ca48ff2f960",
-      "pnl": 1395263.68772,
-      "activePositionCount": 17
-    },
-    {
-      "rank": 132,
+      "rank": 131,
       "name": "justaluckydude",
       "wallet": "0xbca08c1bc204a34f2fddbe47b438b9bd42ac9705",
       "pnl": 1379884.233259,
@@ -207,7 +207,7 @@
       "name": "totoro3miyazaki",
       "wallet": "0x0f6f76ced62a911bccef92f50faaff143854d977",
       "pnl": 1213779.411704,
-      "activePositionCount": 1
+      "activePositionCount": 2
     },
     {
       "rank": 156,
@@ -238,25 +238,32 @@
       "activePositionCount": 4
     },
     {
+      "rank": 164,
+      "name": "gambamaster",
+      "wallet": "0x9ee8bbc36d378af72e5f6b8e2ea2eb67c05a89de",
+      "pnl": 1075919.363907,
+      "activePositionCount": 1
+    },
+    {
       "rank": 169,
       "name": "one8tyfive",
       "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
-      "pnl": 1056936.2539400002,
-      "activePositionCount": 7
+      "pnl": 1055499.1910030001,
+      "activePositionCount": 6
     },
     {
-      "rank": 174,
+      "rank": 173,
+      "name": "0xC03cE4d8Af842Ca6251Ac57228B3Ffb166ed50A",
+      "wallet": "0xa3a417e434923aeaf97afe9a61b10ff9364e5106",
+      "pnl": 1029959.905037,
+      "activePositionCount": 260
+    },
+    {
+      "rank": 175,
       "name": "Macks22",
       "wallet": "0x1057e7d3ddafc60a4aeb10a2bc5b543792449ea5",
       "pnl": 1027191.203656,
       "activePositionCount": 8
-    },
-    {
-      "rank": 175,
-      "name": "0xC03cE4d8Af842Ca6251Ac57228B3Ffb166ed50A",
-      "wallet": "0xa3a417e434923aeaf97afe9a61b10ff9364e5106",
-      "pnl": 1025576.410932,
-      "activePositionCount": 262
     },
     {
       "rank": 176,
@@ -294,31 +301,38 @@
       "activePositionCount": 8
     },
     {
+      "rank": 232,
+      "name": "theowalcott",
+      "wallet": "0x7ad71d79a3bb90d0a87a06500fa0fe11663842aa",
+      "pnl": 837802.218059,
+      "activePositionCount": 1
+    },
+    {
       "rank": 236,
+      "name": "e46m3",
+      "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
+      "pnl": 813982.609442,
+      "activePositionCount": 4618
+    },
+    {
+      "rank": 237,
       "name": "easyclap",
       "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
       "pnl": 813924.542663,
       "activePositionCount": 17
     },
     {
-      "rank": 239,
+      "rank": 240,
       "name": "ckw",
       "wallet": "0x92672c80d36dcd08172aa1e51dface0f20b70f9a",
       "pnl": 812385.692658,
       "activePositionCount": 1
     },
     {
-      "rank": 240,
-      "name": "e46m3",
-      "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
-      "pnl": 812054.393948,
-      "activePositionCount": 4598
-    },
-    {
       "rank": 241,
       "name": "Parz1vaI",
       "wallet": "0xb10047d6a254b2ebb306d7a7d13bf59171ab6461",
-      "pnl": 811232.556805,
+      "pnl": 811327.201325,
       "activePositionCount": 108
     },
     {
@@ -346,22 +360,15 @@
       "rank": 251,
       "name": "mr.ozi",
       "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
-      "pnl": 769974.506079,
+      "pnl": 769150.570798,
       "activePositionCount": 33
     },
     {
-      "rank": 254,
-      "name": "donthackme",
-      "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-      "pnl": 764790.880679,
-      "activePositionCount": 3367
-    },
-    {
-      "rank": 255,
+      "rank": 261,
       "name": "Wiretransferxyz",
       "wallet": "0x30c7ac0158499ddc6761047f7f69bcf7d036ac3b",
-      "pnl": 762988.975018,
-      "activePositionCount": 4
+      "pnl": 732135.924013,
+      "activePositionCount": 6
     },
     {
       "rank": 264,
@@ -371,18 +378,25 @@
       "activePositionCount": 19
     },
     {
+      "rank": 266,
+      "name": "GamblingOdyssey",
+      "wallet": "0xe5241830e8876c115d7dc8311ad9f43d85fdd34f",
+      "pnl": 725104.972707,
+      "activePositionCount": 1
+    },
+    {
       "rank": 267,
       "name": "kingofcoinflips",
       "wallet": "0xe9c6312464b52aa3eff13d822b003282075995c9",
       "pnl": 719804.214146,
-      "activePositionCount": 14
+      "activePositionCount": 15
     },
     {
-      "rank": 272,
+      "rank": 271,
       "name": "Woaifacai",
       "wallet": "0x9b89ef1f344d3e17b37ccdff3bccf62d04f04244",
-      "pnl": 710088.00332,
-      "activePositionCount": 1
+      "pnl": 713056.05332,
+      "activePositionCount": 3
     },
     {
       "rank": 273,
@@ -392,11 +406,18 @@
       "activePositionCount": 21
     },
     {
+      "rank": 277,
+      "name": "AgricultureSecretary",
+      "wallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
+      "pnl": 702589.7564,
+      "activePositionCount": 27
+    },
+    {
       "rank": 292,
       "name": "AvocadosFromMexico",
       "wallet": "0x033f0346c007323030eb420305ffede19a95618e",
-      "pnl": 661762.275164,
-      "activePositionCount": 18
+      "pnl": 661776.750164,
+      "activePositionCount": 21
     },
     {
       "rank": 293,
@@ -406,21 +427,102 @@
       "activePositionCount": 1
     },
     {
-      "rank": 294,
-      "name": "Sunshine.Smile",
-      "wallet": "0xd3b034d7bfb2473fb252d0414646d9786bac329e",
-      "pnl": 657377.907252,
-      "activePositionCount": 1
-    },
-    {
-      "rank": 300,
+      "rank": 299,
       "name": "0x448861155279dbf833d041b963e3ac854599e319",
       "wallet": "0x448861155279dbf833d041b963e3ac854599e319",
       "pnl": 651755.259445,
-      "activePositionCount": 26
+      "activePositionCount": 27
+    },
+    {
+      "rank": 300,
+      "name": "WordleAddict",
+      "wallet": "0xe25b9180f5687aa85bd94ee309bb72a464320f1b",
+      "pnl": 650648.83805,
+      "activePositionCount": 15
     }
   ],
   "recommendations": [
+    {
+      "conditionId": "0xdf9bf27ee5757c55b44b8b9826ddc9ec3a8809aa3278634c45edbb7fc8f1a3e3",
+      "title": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+      "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031",
+      "eventSlug": "fed-decision-in-october-20260617190323537",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/fed-decision-in-september-762-c4RyWuxRPo1L.jpg",
+      "endDate": "2026-10-29",
+      "groupItemTitle": "",
+      "groupItemThreshold": "",
+      "rawPositionTitle": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+      "outcome": "Yes",
+      "outcomeKey": "0",
+      "supporterCount": 4,
+      "opposingSupporters": 0,
+      "consensusRate": 1,
+      "totalCurrentValue": 43660.04159999999,
+      "avgAccountAllocation": 0.012144356099053684,
+      "avgEntryPrice": 0.36782063799149234,
+      "currentPrice": 0.865,
+      "rankWeight": 0.35411651851107506,
+      "supporters": [
+        {
+          "rank": 49,
+          "name": "ndb1",
+          "wallet": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
+          "currentValue": 41489.5433,
+          "visibleAccountValue": 1914733.0089000019,
+          "accountAllocation": 0.021668578912647143,
+          "size": 47964.79,
+          "avgPrice": 0.35,
+          "pnl": 24701.8668
+        },
+        {
+          "rank": 145,
+          "name": "0xd9670ea74384c1e1b9dc1e4267ffadaf4cdd140",
+          "wallet": "0xd570e634aeb745d6501566dba5f81a555cc7e4f8",
+          "currentValue": 4.325,
+          "visibleAccountValue": 188.57600000000002,
+          "accountAllocation": 0.022935050059392496,
+          "size": 5,
+          "avgPrice": 0.71,
+          "pnl": 0.775
+        },
+        {
+          "rank": 236,
+          "name": "e46m3",
+          "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
+          "currentValue": 6.5286,
+          "visibleAccountValue": 38594.49150000021,
+          "accountAllocation": 0.000169158855221605,
+          "size": 7.5476,
+          "avgPrice": 0.2,
+          "pnl": 5.019
+        },
+        {
+          "rank": 251,
+          "name": "mr.ozi",
+          "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
+          "currentValue": 2159.6447,
+          "visibleAccountValue": 567634.9529999999,
+          "accountAllocation": 0.0038046365689534986,
+          "size": 2496.6991,
+          "avgPrice": 0.71,
+          "pnl": 386.9834
+        }
+      ],
+      "decisionSide": "YES",
+      "decisionChoice": "No change",
+      "decisionOption": "No change",
+      "decisionTarget": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+      "decisionText": "Select “No change” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “No change” option/row/card, then click Buy YES. This applies only to the exact market question: “Will there be no change in Fed interest rates after the October 2026 meeting?”.",
+      "category": "Other",
+      "liquidity": 758744.4352,
+      "volume24hr": 294714.48318399995,
+      "usAvailable": true,
+      "usMarketSlug": "rdc-bcb-2026-11-04-nochng",
+      "usMatchMethod": "title_slug_similarity",
+      "usMatchScore": 0.92,
+      "marketUrl": "https://polymarket.us/market/rdc-bcb-2026-11-04-nochng"
+    },
     {
       "conditionId": "0x23858cc44dce48e23f754240a0a71595f38f5c66d9a0eaf612eb5a737ad1e66d",
       "title": "Will Google have the best AI model at the end of October 2026?",
@@ -433,58 +535,47 @@
       "rawPositionTitle": "Will Google have the best AI model at the end of October 2026?",
       "outcome": "Yes",
       "outcomeKey": "0",
-      "supporterCount": 4,
+      "supporterCount": 3,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 19166.9564,
-      "avgAccountAllocation": 0.016359317371705522,
-      "avgEntryPrice": 0.5735517888685814,
-      "currentPrice": 0.7255,
-      "rankWeight": 0.2548304059004695,
+      "totalCurrentValue": 17374.4983,
+      "avgAccountAllocation": 0.016119902671239448,
+      "avgEntryPrice": 0.6572028532958879,
+      "currentPrice": 0.7565,
+      "rankWeight": 0.19262955844027532,
       "supporters": [
         {
-          "rank": 240,
+          "rank": 236,
           "name": "e46m3",
           "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
-          "currentValue": 102.7039,
-          "visibleAccountValue": 38191.49130000018,
-          "accountAllocation": 0.0026891827604542773,
+          "currentValue": 107.4463,
+          "visibleAccountValue": 38594.49150000021,
+          "accountAllocation": 0.0027839801957229935,
           "size": 141.563,
           "avgPrice": 0.0312,
-          "pnl": 98.28
+          "pnl": 103.0224
         },
         {
           "rank": 241,
           "name": "Parz1vaI",
           "wallet": "0xb10047d6a254b2ebb306d7a7d13bf59171ab6461",
-          "currentValue": 13601.0283,
-          "visibleAccountValue": 349457.49589999986,
-          "accountAllocation": 0.03892040794538299,
+          "currentValue": 14229.0564,
+          "visibleAccountValue": 353748.0358,
+          "accountAllocation": 0.040223704331872924,
           "size": 18747.11,
           "avgPrice": 0.6541,
-          "pnl": 1338.2756
+          "pnl": 1966.3037
         },
         {
           "rank": 251,
           "name": "mr.ozi",
           "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
-          "currentValue": 2901.9958,
-          "visibleAccountValue": 563172.7259999997,
-          "accountAllocation": 0.0051529409469307326,
+          "currentValue": 3037.9956,
+          "visibleAccountValue": 567634.9529999999,
+          "accountAllocation": 0.005352023486122429,
           "size": 3999.9942,
           "avgPrice": 0.6939,
-          "pnl": 126.0084
-        },
-        {
-          "rank": 254,
-          "name": "donthackme",
-          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 2561.2284,
-          "visibleAccountValue": 137149.3631000004,
-          "accountAllocation": 0.018674737834054093,
-          "size": 3530.2942,
-          "avgPrice": 0.0312,
-          "pnl": 2450.9067
+          "pnl": 262.0082
         }
       ],
       "decisionSide": "YES",
@@ -494,8 +585,8 @@
       "decisionText": "Select “Google” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Google” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Google have the best AI model at the end of October 2026?”.",
       "category": "Other",
-      "liquidity": 24680.06074,
-      "volume24hr": 10389.881898999998,
+      "liquidity": 26847.11087,
+      "volume24hr": 11601.069030999999,
       "usAvailable": true,
       "usMarketSlug": "aimrc-cmpny-china-1-2026-10-31-zai",
       "usMatchMethod": "title_slug_similarity",
@@ -514,14 +605,14 @@
       "rawPositionTitle": "Will the Jacksonville Jaguars win the 2027 NFL league championship?",
       "outcome": "Yes",
       "outcomeKey": "0",
-      "supporterCount": 4,
+      "supporterCount": 3,
       "opposingSupporters": 1,
-      "consensusRate": 0.8,
-      "totalCurrentValue": 2166.3668000000002,
-      "avgAccountAllocation": 0.3043091475816661,
-      "avgEntryPrice": 0.04843967842207809,
+      "consensusRate": 0.75,
+      "totalCurrentValue": 2129.7994000000003,
+      "avgAccountAllocation": 0.40569731488485167,
+      "avgEntryPrice": 0.048751126527775836,
       "currentPrice": 0.0705,
-      "rankWeight": 0.3827471622058055,
+      "rankWeight": 0.32043727921711473,
       "supporters": [
         {
           "rank": 35,
@@ -535,12 +626,12 @@
           "pnl": 17.442
         },
         {
-          "rank": 175,
+          "rank": 173,
           "name": "0xC03cE4d8Af842Ca6251Ac57228B3Ffb166ed50A",
           "wallet": "0xa3a417e434923aeaf97afe9a61b10ff9364e5106",
           "currentValue": 7.05,
-          "visibleAccountValue": 16844.937200000015,
-          "accountAllocation": 0.0004185233768636427,
+          "visibleAccountValue": 13043.421600000005,
+          "accountAllocation": 0.0005405023479421992,
           "size": 100,
           "avgPrice": 0.0303,
           "pnl": 4.0197
@@ -555,17 +646,6 @@
           "size": 29699.5209,
           "avgPrice": 0.0491,
           "pnl": 633.6085
-        },
-        {
-          "rank": 254,
-          "name": "donthackme",
-          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 36.5674,
-          "visibleAccountValue": 137149.3631000004,
-          "accountAllocation": 0.00026662464318800684,
-          "size": 518.6874,
-          "avgPrice": 0.0303,
-          "pnl": 20.8496
         }
       ],
       "decisionSide": "YES",
@@ -575,8 +655,8 @@
       "decisionText": "Select “Jacksonville Jaguars” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Jacksonville Jaguars” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Jacksonville Jaguars win the 2027 NFL league championship?”.",
       "category": "Other",
-      "liquidity": 148781.73873,
-      "volume24hr": 760.399557,
+      "liquidity": 140881.7773,
+      "volume24hr": 891.549557,
       "usAvailable": true,
       "usMarketSlug": "tec-nfl-afcchamp-2027-01-31-w-jacjag",
       "usMatchMethod": "title_slug_similarity",
@@ -584,164 +664,72 @@
       "marketUrl": "https://polymarket.us/market/tec-nfl-afcchamp-2027-01-31-w-jacjag"
     },
     {
-      "conditionId": "0xdf9bf27ee5757c55b44b8b9826ddc9ec3a8809aa3278634c45edbb7fc8f1a3e3",
-      "title": "Will there be no change in Fed interest rates after the October 2026 meeting?",
-      "slug": "will-there-be-no-change-in-fed-interest-rates-after-the-october-2026-meeting-20260617190324031",
-      "eventSlug": "fed-decision-in-october-20260617190323537",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/fed-decision-in-september-762-c4RyWuxRPo1L.jpg",
-      "endDate": "2026-10-29",
+      "conditionId": "0xe67f4d31f0eba1b009b49d7a7739b2a5f53a2d7d979a0902b465a510492c33bb",
+      "title": "Will 2026 be the hottest year on record?",
+      "slug": "will-2026-be-the-hottest-year-on-record",
+      "eventSlug": "where-will-2026-rank-among-the-hottest-years-on-record",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/earth+on+fire.png",
+      "endDate": "2027-03-02",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Will there be no change in Fed interest rates after the October 2026 meeting?",
+      "rawPositionTitle": "Will 2026 be the hottest year on record?",
       "outcome": "Yes",
       "outcomeKey": "0",
-      "supporterCount": 4,
-      "opposingSupporters": 1,
-      "consensusRate": 0.8,
-      "totalCurrentValue": 43660.04159999999,
-      "avgAccountAllocation": 0.012232318252433717,
-      "avgEntryPrice": 0.36782063799149234,
-      "currentPrice": 0.865,
-      "rankWeight": 0.3535717854574534,
-      "supporters": [
-        {
-          "rank": 49,
-          "name": "ndb1",
-          "wallet": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
-          "currentValue": 41489.5433,
-          "visibleAccountValue": 1887891.4674999989,
-          "accountAllocation": 0.021976657034708497,
-          "size": 47964.79,
-          "avgPrice": 0.35,
-          "pnl": 24701.8668
-        },
-        {
-          "rank": 145,
-          "name": "0xd9670ea74384c1e1b9dc1e4267ffadaf4cdd140",
-          "wallet": "0xd570e634aeb745d6501566dba5f81a555cc7e4f8",
-          "currentValue": 4.325,
-          "visibleAccountValue": 188.4787,
-          "accountAllocation": 0.02294689001993329,
-          "size": 5,
-          "avgPrice": 0.71,
-          "pnl": 0.775
-        },
-        {
-          "rank": 240,
-          "name": "e46m3",
-          "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
-          "currentValue": 6.5286,
-          "visibleAccountValue": 38191.49130000018,
-          "accountAllocation": 0.00017094383533538447,
-          "size": 7.5476,
-          "avgPrice": 0.2,
-          "pnl": 5.019
-        },
-        {
-          "rank": 251,
-          "name": "mr.ozi",
-          "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
-          "currentValue": 2159.6447,
-          "visibleAccountValue": 563172.7259999997,
-          "accountAllocation": 0.003834782119757698,
-          "size": 2496.6991,
-          "avgPrice": 0.71,
-          "pnl": 386.9834
-        }
-      ],
-      "decisionSide": "YES",
-      "decisionChoice": "No change",
-      "decisionOption": "No change",
-      "decisionTarget": "Will there be no change in Fed interest rates after the October 2026 meeting?",
-      "decisionText": "Select “No change” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “No change” option/row/card, then click Buy YES. This applies only to the exact market question: “Will there be no change in Fed interest rates after the October 2026 meeting?”.",
-      "category": "Other",
-      "liquidity": 808080.8649,
-      "volume24hr": 299670.34351800004,
-      "usAvailable": true,
-      "usMarketSlug": "rdc-bcb-2026-11-04-nochng",
-      "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/rdc-bcb-2026-11-04-nochng"
-    },
-    {
-      "conditionId": "0xf44cf137562b90cf6205e0b81a03aa63001c491e4d8f04c0098bfb9233f9d04f",
-      "title": "Will Philadelphia 76ers win the 2027 NBA Finals?",
-      "slug": "will-philadelphia-76ers-win-the-2027-nba-finals",
-      "eventSlug": "nba-2027-champion",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/nba-2027-champion-cBr9CT4AcdfN.jpg",
-      "endDate": "2027-07-01",
-      "groupItemTitle": "",
-      "groupItemThreshold": "",
-      "rawPositionTitle": "Will Philadelphia 76ers win the 2027 NBA Finals?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
-      "supporterCount": 3,
+      "supporterCount": 2,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 1015.5088000000001,
-      "avgAccountAllocation": 0.024186395711909666,
-      "avgEntryPrice": 0.11810000099323606,
-      "currentPrice": 0.0985,
-      "rankWeight": 0.2152615520387382,
+      "totalCurrentValue": 12644.7358,
+      "avgAccountAllocation": 0.02472819180557943,
+      "avgEntryPrice": 0.16580137488015728,
+      "currentPrice": 0.795,
+      "rankWeight": 0.16362738330684126,
       "supporters": [
         {
-          "rank": 169,
-          "name": "one8tyfive",
-          "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
-          "currentValue": 985,
-          "visibleAccountValue": 13714.114800000001,
-          "accountAllocation": 0.07182381177092086,
-          "size": 10000,
-          "avgPrice": 0.1209,
-          "pnl": -224.9844
+          "rank": 103,
+          "name": "gopfan2",
+          "wallet": "0xf2f6af4f27ec2dcf4072095ab804016e14cd5817",
+          "currentValue": 12623.0046,
+          "visibleAccountValue": 258174.4277,
+          "accountAllocation": 0.0488933188017676,
+          "size": 15877.9932,
+          "avgPrice": 0.1658,
+          "pnl": 9990.0476
         },
         {
-          "rank": 175,
-          "name": "0xC03cE4d8Af842Ca6251Ac57228B3Ffb166ed50A",
-          "wallet": "0xa3a417e434923aeaf97afe9a61b10ff9364e5106",
-          "currentValue": 9.85,
-          "visibleAccountValue": 16844.937200000015,
-          "accountAllocation": 0.0005847454272492028,
-          "size": 100.0001,
-          "avgPrice": 0.0277,
-          "pnl": 7.0723
-        },
-        {
-          "rank": 254,
-          "name": "donthackme",
-          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 20.6588,
-          "visibleAccountValue": 137149.3631000004,
-          "accountAllocation": 0.00015062993755892942,
-          "size": 209.7343,
-          "avgPrice": 0.0277,
-          "pnl": 14.833
+          "rank": 236,
+          "name": "e46m3",
+          "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
+          "currentValue": 21.7312,
+          "visibleAccountValue": 38594.49150000021,
+          "accountAllocation": 0.0005630648093912543,
+          "size": 27.3349,
+          "avgPrice": 0.1666,
+          "pnl": 17.1753
         }
       ],
       "decisionSide": "YES",
-      "decisionChoice": "Philadelphia 76ers",
-      "decisionOption": "Philadelphia 76ers",
-      "decisionTarget": "Will Philadelphia 76ers win the 2027 NBA Finals?",
-      "decisionText": "Select “Philadelphia 76ers” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Philadelphia 76ers” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Philadelphia 76ers win the 2027 NBA Finals?”.",
+      "decisionChoice": "1",
+      "decisionOption": "1",
+      "decisionTarget": "Will 2026 be the hottest year on record? — 1",
+      "decisionText": "Select “1” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “1” option/row/card, then click Buy YES. This applies only to the exact market question: “Will 2026 be the hottest year on record? — 1”.",
       "category": "Other",
-      "liquidity": 283807.32911,
-      "volume24hr": 1560.6244530000001,
+      "liquidity": 12462.1771,
+      "volume24hr": 2943.95077,
       "usAvailable": true,
-      "usMarketSlug": "tec-nba-champ-2027-06-18-w-phi",
+      "usMarketSlug": "trc-yr-httst-rnk-glbl-2026-1st",
       "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/tec-nba-champ-2027-06-18-w-phi"
+      "usMatchScore": 0.69,
+      "marketUrl": "https://polymarket.us/market/trc-yr-httst-rnk-glbl-2026-1st"
     }
   ],
-  "recommendationsUpdatedAt": "2026-10-17T08:46:18.666Z",
-  "lastCheckedAt": "2026-10-17T08:46:18.745Z",
+  "recommendationsUpdatedAt": "2026-10-17T12:55:13.566Z",
+  "lastCheckedAt": "2026-10-17T12:55:13.629Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "previousRecommendationsReplacedAt": "2026-10-17T04:11:07.429Z",
+  "previousRecommendationsReplacedAt": "2026-10-17T08:46:18.666Z",
   "refreshMode": "recommendations_updated",
-  "lastSuccessfulWorkflowAt": "2026-10-17T08:46:18.745Z",
+  "lastSuccessfulWorkflowAt": "2026-10-17T12:55:13.629Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
