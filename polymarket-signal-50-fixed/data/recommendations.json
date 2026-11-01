@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
   "status": "ok",
-  "generatedAt": "2026-11-01T06:45:15.985Z",
-  "durationSeconds": 139,
+  "generatedAt": "2026-11-01T19:08:26.332Z",
+  "durationSeconds": 136,
   "methodology": {
     "leaderboard": "OVERALL / ALL time / ordered by PNL",
     "eligibleTraderMinimumBeforeSelecting": 50,
@@ -14,23 +14,23 @@
     "ranking": "Supporter count first, then same-side consensus rate, rank-weighted support, and combined current position value.",
     "activeMarketRule": "Only Gamma markets that are active, not closed or archived, and accepting orders are shown.",
     "usAvailabilityRule": "Only markets that match the daily Polymarket US catalog by exact slug or high-confidence title/slug similarity, and are active, not closed, not archived, not hidden, and with a tradable side, are shown.",
-    "usMarketCatalogGeneratedAt": "2026-10-31T14:31:34.813Z",
+    "usMarketCatalogGeneratedAt": "2026-11-01T15:05:58.782Z",
     "distinctMarketRule": "Only one recommendation is shown per Polymarket event; the highest-ranked qualifying child market is kept.",
     "scanUntilRule": "After at least 50 clean traders are collected, the scanner continues down the leaderboard until 4 distinct markets are produced or 300 eligible traders have been inspected."
   },
   "stats": {
     "leaderboardUsersInspected": 300,
-    "skippedNoPositions": 193,
-    "excludedBothOutcomes": 46,
+    "skippedNoPositions": 192,
+    "excludedBothOutcomes": 48,
     "positionFetchErrors": 0,
-    "eligibleTraders": 61,
-    "candidateMarkets": 2270,
-    "marketsChecked": 130,
+    "eligibleTraders": 60,
+    "candidateMarkets": 2325,
+    "marketsChecked": 179,
     "recommendationsReturned": 4,
     "recommendationTarget": 4,
     "fullRecommendationSetFound": true,
     "usMarketCatalogUsed": true,
-    "usMarketCatalogGeneratedAt": "2026-10-31T14:31:34.813Z",
+    "usMarketCatalogGeneratedAt": "2026-11-01T15:05:58.782Z",
     "usMarketCatalogCount": 20250
   },
   "eligibleTraders": [
@@ -49,25 +49,11 @@
       "activePositionCount": 1
     },
     {
-      "rank": 30,
-      "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
-      "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-      "pnl": 4385776.388182,
-      "activePositionCount": 19
-    },
-    {
       "rank": 35,
       "name": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
       "wallet": "0x2a2c53bd278c04da9962fcf96490e17f3dfb9bc1",
       "pnl": 3915054.813028,
       "activePositionCount": 4
-    },
-    {
-      "rank": 45,
-      "name": "primm",
-      "wallet": "0xd38b71f3e8ed1af71983e5c309eac3dfa9b35029",
-      "pnl": 3402475.722364,
-      "activePositionCount": 1
     },
     {
       "rank": 46,
@@ -81,14 +67,14 @@
       "name": "ndb1",
       "wallet": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
       "pnl": 2761971.949577,
-      "activePositionCount": 641
+      "activePositionCount": 639
     },
     {
       "rank": 59,
       "name": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
       "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
       "pnl": 2456590.80706,
-      "activePositionCount": 119
+      "activePositionCount": 124
     },
     {
       "rank": 61,
@@ -112,6 +98,13 @@
       "activePositionCount": 1
     },
     {
+      "rank": 71,
+      "name": "ImJustKen",
+      "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
+      "pnl": 2273204.267589,
+      "activePositionCount": 417
+    },
+    {
       "rank": 73,
       "name": "geniusMC",
       "wallet": "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44",
@@ -126,18 +119,32 @@
       "activePositionCount": 7
     },
     {
+      "rank": 83,
+      "name": "googleplay",
+      "wallet": "0xe9b710551dd82a44e79203c2394a2b10163ace7b",
+      "pnl": 1987182.377965,
+      "activePositionCount": 1
+    },
+    {
       "rank": 84,
       "name": "justdance",
       "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
       "pnl": 1982986.70106,
-      "activePositionCount": 65
+      "activePositionCount": 69
+    },
+    {
+      "rank": 87,
+      "name": "gmpm2",
+      "wallet": "0x67542c3219b37fd1610aad290676ff91cdbfe3bc",
+      "pnl": 1882228.796497,
+      "activePositionCount": 9
     },
     {
       "rank": 89,
       "name": "The Spirit of Ukraine>UMA",
       "wallet": "0x0c0e270cf879583d6a0142fc817e05b768d0434e",
       "pnl": 1851469.11666,
-      "activePositionCount": 106
+      "activePositionCount": 107
     },
     {
       "rank": 100,
@@ -158,7 +165,7 @@
       "name": "jtwyslljy",
       "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
       "pnl": 1657262.522115,
-      "activePositionCount": 3
+      "activePositionCount": 2
     },
     {
       "rank": 110,
@@ -179,7 +186,7 @@
       "name": "scottilicious",
       "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
       "pnl": 1505085.138013,
-      "activePositionCount": 45
+      "activePositionCount": 46
     },
     {
       "rank": 119,
@@ -249,7 +256,7 @@
       "name": "monkeymashingkeyboard",
       "wallet": "0x684baa57c338c2549aec0aa3f034f695d72a8409",
       "pnl": 1085829.756622,
-      "activePositionCount": 6
+      "activePositionCount": 16
     },
     {
       "rank": 175,
@@ -273,18 +280,11 @@
       "activePositionCount": 2
     },
     {
-      "rank": 187,
-      "name": "takeormake",
-      "wallet": "0xa38a455bbdd4b68486548b7e19da99903f4f821d",
-      "pnl": 986382.0459929999,
-      "activePositionCount": 45
-    },
-    {
       "rank": 188,
       "name": "e46m3",
       "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
       "pnl": 986284.639454,
-      "activePositionCount": 5487
+      "activePositionCount": 5479
     },
     {
       "rank": 191,
@@ -298,14 +298,14 @@
       "name": "0x448861155279dbf833d041b963e3ac854599e319",
       "wallet": "0x448861155279dbf833d041b963e3ac854599e319",
       "pnl": 968713.66207,
-      "activePositionCount": 30
+      "activePositionCount": 35
     },
     {
       "rank": 199,
       "name": "0xC03cE4d8Af842Ca6251Ac57228B3Ffb166ed50A",
       "wallet": "0xa3a417e434923aeaf97afe9a61b10ff9364e5106",
       "pnl": 941337.370615,
-      "activePositionCount": 248
+      "activePositionCount": 247
     },
     {
       "rank": 215,
@@ -319,35 +319,35 @@
       "name": "aHjCz",
       "wallet": "0x2b5920274740ca61745eeb077587bf5bb4ff9db6",
       "pnl": 914500.512043,
-      "activePositionCount": 1128
+      "activePositionCount": 1116
     },
     {
       "rank": 218,
       "name": "ScottyNooo",
       "wallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
       "pnl": 909643.748921,
-      "activePositionCount": 181
+      "activePositionCount": 180
     },
     {
       "rank": 219,
       "name": "mr.ozi",
       "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
       "pnl": 905755.951028,
-      "activePositionCount": 17
+      "activePositionCount": 18
     },
     {
       "rank": 228,
       "name": "zerosmart",
       "wallet": "0x275575bb11522eb29f82fe0a601d7c4dc94b5016",
       "pnl": 875765.447882,
-      "activePositionCount": 16
+      "activePositionCount": 18
     },
     {
       "rank": 230,
       "name": "HaileyWelch",
       "wallet": "0x80cd8310aa624521e9e1b2b53b568cafb0ef0273",
       "pnl": 868119.79331,
-      "activePositionCount": 7
+      "activePositionCount": 5
     },
     {
       "rank": 244,
@@ -361,7 +361,7 @@
       "name": "donthackme",
       "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
       "pnl": 833545.701687,
-      "activePositionCount": 2991
+      "activePositionCount": 2981
     },
     {
       "rank": 251,
@@ -389,35 +389,21 @@
       "name": "easyclap",
       "wallet": "0x71a70f24538d885d1b45f9cea158a2cdf2e56fcf",
       "pnl": 797447.772872,
-      "activePositionCount": 27
-    },
-    {
-      "rank": 260,
-      "name": "raybanman",
-      "wallet": "0xcbc666209b4c17ea84c03c0dda71b5dab9e4ec62",
-      "pnl": 792146.64366,
-      "activePositionCount": 1
+      "activePositionCount": 20
     },
     {
       "rank": 264,
       "name": "Wiretransferxyz",
       "wallet": "0x30c7ac0158499ddc6761047f7f69bcf7d036ac3b",
       "pnl": 772313.752931,
-      "activePositionCount": 5
+      "activePositionCount": 4
     },
     {
       "rank": 266,
       "name": "Tokor",
       "wallet": "0xa19cbababc312f9df185e49d7004c249ed1ade6b",
       "pnl": 770390.643633,
-      "activePositionCount": 96
-    },
-    {
-      "rank": 271,
-      "name": "Sunshine.Smile",
-      "wallet": "0xd3b034d7bfb2473fb252d0414646d9786bac329e",
-      "pnl": 756991.580857,
-      "activePositionCount": 1
+      "activePositionCount": 90
     },
     {
       "rank": 272,
@@ -431,7 +417,7 @@
       "name": "kingofcoinflips",
       "wallet": "0xe9c6312464b52aa3eff13d822b003282075995c9",
       "pnl": 743007.334927,
-      "activePositionCount": 20
+      "activePositionCount": 16
     },
     {
       "rank": 279,
@@ -445,7 +431,14 @@
       "name": "PEYZ-BIGGEST-FAN",
       "wallet": "0xdaef2be2a19ad331737d06545f85615b094554e9",
       "pnl": 707890.714191,
-      "activePositionCount": 32
+      "activePositionCount": 46
+    },
+    {
+      "rank": 290,
+      "name": "GamblingOdyssey",
+      "wallet": "0xe5241830e8876c115d7dc8311ad9f43d85fdd34f",
+      "pnl": 698625.225041,
+      "activePositionCount": 2
     },
     {
       "rank": 296,
@@ -478,66 +471,66 @@
       "supporterCount": 5,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 20309.1201,
-      "avgAccountAllocation": 0.2065454785961252,
+      "totalCurrentValue": 19556.9303,
+      "avgAccountAllocation": 0.20476549903500546,
       "avgEntryPrice": 0.19889000616694882,
-      "currentPrice": 0.135,
+      "currentPrice": 0.13,
       "rankWeight": 0.3275770667847674,
       "supporters": [
         {
           "rank": 188,
           "name": "e46m3",
           "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
-          "currentValue": 321.2477,
-          "visibleAccountValue": 59690.57929999983,
-          "accountAllocation": 0.005381882765543891,
+          "currentValue": 309.3496,
+          "visibleAccountValue": 60439.30189999987,
+          "accountAllocation": 0.0051183516399947145,
           "size": 2379.6129,
           "avgPrice": 0.0277,
-          "pnl": 255.1491
+          "pnl": 243.251
         },
         {
           "rank": 199,
           "name": "0xC03cE4d8Af842Ca6251Ac57228B3Ffb166ed50A",
           "wallet": "0xa3a417e434923aeaf97afe9a61b10ff9364e5106",
-          "currentValue": 13.5012,
-          "visibleAccountValue": 22167.812900000008,
-          "accountAllocation": 0.0006090451981395059,
+          "currentValue": 13.0011,
+          "visibleAccountValue": 27942.204400000013,
+          "accountAllocation": 0.00046528540890639227,
           "size": 100.009,
           "avgPrice": 0.0277,
-          "pnl": 10.7234
+          "pnl": 10.2233
         },
         {
           "rank": 245,
           "name": "donthackme",
           "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 81.52,
-          "visibleAccountValue": 118815.72120000022,
-          "accountAllocation": 0.0006861044917008831,
+          "currentValue": 78.5007,
+          "visibleAccountValue": 118301.0459000001,
+          "accountAllocation": 0.0006635672525360143,
           "size": 603.8519,
           "avgPrice": 0.0277,
-          "pnl": 64.748
+          "pnl": 61.7287
         },
         {
           "rank": 272,
           "name": "drainedandpoor",
           "wallet": "0x5e6e2c3f06686f2607b86c90e35f536e81a1be00",
-          "currentValue": 11074.2994,
-          "visibleAccountValue": 11074.2994,
+          "currentValue": 10664.1401,
+          "visibleAccountValue": 10664.1401,
           "accountAllocation": 1,
           "size": 82031.8474,
           "avgPrice": 0.1917,
-          "pnl": -4657.7683
+          "pnl": -5067.9276
         },
         {
           "rank": 285,
           "name": "PEYZ-BIGGEST-FAN",
           "wallet": "0xdaef2be2a19ad331737d06545f85615b094554e9",
-          "currentValue": 8818.5518,
-          "visibleAccountValue": 338519.3764,
-          "accountAllocation": 0.026050360525241706,
+          "currentValue": 8491.9388,
+          "visibleAccountValue": 483037.44580000004,
+          "accountAllocation": 0.017580290873590074,
           "size": 65322.6061,
           "avgPrice": 0.216,
-          "pnl": -5292.8948
+          "pnl": -5619.5078
         }
       ],
       "decisionSide": "YES",
@@ -547,8 +540,8 @@
       "decisionText": "Select “Oklahoma City Thunder” → Buy YES",
       "decisionMeaning": "On Polymarket, choose the “Oklahoma City Thunder” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Oklahoma City Thunder win the 2027 NBA Finals?”.",
       "category": "Other",
-      "liquidity": 221655.2341,
-      "volume24hr": 14248.947096999998,
+      "liquidity": 239032.8133,
+      "volume24hr": 19708.363454,
       "usAvailable": true,
       "usMarketSlug": "aqc-nba-wcf-2027-05-29-q-okc",
       "usMatchMethod": "title_slug_similarity",
@@ -556,247 +549,245 @@
       "marketUrl": "https://polymarket.us/market/aqc-nba-wcf-2027-05-29-q-okc"
     },
     {
-      "conditionId": "0xe96dbaceb816e80063bec945a76ac915cba4341bdf1ef704f722bfc9054aad09",
-      "title": "Will Anthropic have the highest IPO Market Cap 2026?",
-      "slug": "will-anthropic-have-the-highest-ipo-market-cap-2026-673",
-      "eventSlug": "largest-ipo-by-market-cap-in-2026-287",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-anthropic-have-the-highest-ipo-market-cap-2026-CMLAdzVPAFHC.png",
-      "endDate": "2027-01-02",
+      "conditionId": "0xc4b07998e8f9bf6b95f079d6dc0529f3c6f59698d4e168817ad5f99304de6c57",
+      "title": "Will Spider-Man: Brand New Day be the top grossing movie of 2026?",
+      "slug": "will-spider-man-brand-new-day-be-the-top-grossing-movie-of-2026",
+      "eventSlug": "highest-grossing-movie-in-2026",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/highest-grossing-movie-in-2025-23YRHKqq6Ete.jpg",
+      "endDate": "2027-01-08",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Will Anthropic have the highest IPO Market Cap 2026?",
+      "rawPositionTitle": "Will Spider-Man: Brand New Day be the top grossing movie of 2026?",
       "outcome": "Yes",
       "outcomeKey": "0",
       "supporterCount": 4,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 48834.8216,
-      "avgAccountAllocation": 0.04293932971194859,
-      "avgEntryPrice": 0.4796541089499135,
-      "currentPrice": 0.463,
-      "rankWeight": 0.4010851221480146,
+      "totalCurrentValue": 6209.115400000001,
+      "avgAccountAllocation": 0.013493465094132545,
+      "avgEntryPrice": 0.5827715456656138,
+      "currentPrice": 0.925,
+      "rankWeight": 0.3333398483209789,
       "supporters": [
         {
-          "rank": 30,
-          "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
-          "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
-          "currentValue": 8596.9609,
-          "visibleAccountValue": 433003.2366,
-          "accountAllocation": 0.01985426475678219,
-          "size": 18547.92,
-          "avgPrice": 0.4799,
-          "pnl": -306.0221
+          "rank": 71,
+          "name": "ImJustKen",
+          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
+          "currentValue": 1120.1172,
+          "visibleAccountValue": 726218.2516999986,
+          "accountAllocation": 0.0015423974781381856,
+          "size": 1210.9376,
+          "avgPrice": 0.907,
+          "pnl": 21.7204
         },
         {
-          "rank": 165,
-          "name": "occasionalAwareness",
-          "wallet": "0x8a4c788f043023b8b28a762216d037e9f148532b",
-          "currentValue": 39873.8824,
-          "visibleAccountValue": 264463.90169999993,
-          "accountAllocation": 0.15077249539043616,
-          "size": 86027.7937,
-          "avgPrice": 0.4799,
-          "pnl": -1419.4586
-        },
-        {
-          "rank": 188,
-          "name": "e46m3",
-          "wallet": "0x4f1d5ae26fc31472966e951af3183308736d8de2",
-          "currentValue": 8.7623,
-          "visibleAccountValue": 59690.57929999983,
-          "accountAllocation": 0.00014679535871081796,
-          "size": 18.9046,
-          "avgPrice": 0.0135,
-          "pnl": 8.5068
+          "rank": 145,
+          "name": "0xd9670ea74384c1e1b9dc1e4267ffadaf4cdd140",
+          "wallet": "0xd570e634aeb745d6501566dba5f81a555cc7e4f8",
+          "currentValue": 4.625,
+          "visibleAccountValue": 185.8463,
+          "accountAllocation": 0.02488615592562241,
+          "size": 5,
+          "avgPrice": 0.93,
+          "pnl": -0.025
         },
         {
           "rank": 218,
           "name": "ScottyNooo",
           "wallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
-          "currentValue": 355.216,
-          "visibleAccountValue": 361078.71159999986,
-          "accountAllocation": 0.0009837633418652094,
-          "size": 766.3776,
-          "avgPrice": 0.4576,
-          "pnl": 4.4764
+          "currentValue": 2715.7389,
+          "visibleAccountValue": 360981.1136999999,
+          "accountAllocation": 0.007523216026910941,
+          "size": 2935.934,
+          "avgPrice": 0.9256,
+          "pnl": -1.7645
+        },
+        {
+          "rank": 245,
+          "name": "donthackme",
+          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
+          "currentValue": 2368.6343,
+          "visibleAccountValue": 118301.0459000001,
+          "accountAllocation": 0.020022090945858648,
+          "size": 2560.6857,
+          "avgPrice": 0.0357,
+          "pnl": 2277.1819
         }
       ],
       "decisionSide": "YES",
-      "decisionChoice": "Anthropic",
-      "decisionOption": "Anthropic",
-      "decisionTarget": "Will Anthropic have the highest IPO Market Cap 2026?",
-      "decisionText": "Select “Anthropic” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Anthropic” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Anthropic have the highest IPO Market Cap 2026?”.",
+      "decisionChoice": "Spider-Man: Brand New Day",
+      "decisionOption": "Spider-Man: Brand New Day",
+      "decisionTarget": "Will Spider-Man: Brand New Day be the top grossing movie of 2026?",
+      "decisionText": "Select “Spider-Man: Brand New Day” → Buy YES",
+      "decisionMeaning": "On Polymarket, choose the “Spider-Man: Brand New Day” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Spider-Man: Brand New Day be the top grossing movie of 2026?”.",
       "category": "Other",
-      "liquidity": 53145.96009,
-      "volume24hr": 12978.331979,
+      "liquidity": 32864.7997,
+      "volume24hr": 992.566957,
       "usAvailable": true,
-      "usMarketSlug": "aimrc-code1-2026-12-31-anthro",
+      "usMarketSlug": "gsrc-gsearch-1movie-2026-spiman",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aimrc-code1-2026-12-31-anthro"
+      "marketUrl": "https://polymarket.us/market/gsrc-gsearch-1movie-2026-spiman"
     },
     {
-      "conditionId": "0x7f1d878b72e5de3691768ef8fdc0f811405717166e2161e7e490c347980d9b8e",
-      "title": "Will the Houston Texans win the 2027 NFL league championship?",
-      "slug": "will-the-houston-texans-win-the-2027-nfl-league-championship",
+      "conditionId": "0x8e6d892346600222b7cb8350acd0e97dda1ae616259ba117ea2e9b59bbe038a1",
+      "title": "Will the Seattle Seahawks win the 2027 NFL league championship?",
+      "slug": "will-the-seattle-seahawks-win-the-2027-nfl-league-championship",
       "eventSlug": "pro-football-2027-champion-20260729185915366",
       "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/football-logo.png",
       "endDate": "2027-04-01",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Will the Houston Texans win the 2027 NFL league championship?",
-      "outcome": "Yes",
-      "outcomeKey": "0",
+      "rawPositionTitle": "Will the Seattle Seahawks win the 2027 NFL league championship?",
+      "outcome": "No",
+      "outcomeKey": "1",
       "supporterCount": 4,
       "opposingSupporters": 1,
       "consensusRate": 0.8,
-      "totalCurrentValue": 627.8737,
-      "avgAccountAllocation": 0.2534502981257869,
-      "avgEntryPrice": 0.03350831022295198,
-      "currentPrice": 0.0175,
-      "rankWeight": 0.2750468922916538,
+      "totalCurrentValue": 2728.43,
+      "avgAccountAllocation": 0.11456676449935875,
+      "avgEntryPrice": 0.9263201133583765,
+      "currentPrice": 0.925,
+      "rankWeight": 0.3379687627023615,
       "supporters": [
         {
-          "rank": 168,
-          "name": "monkeymashingkeyboard",
-          "wallet": "0x684baa57c338c2549aec0aa3f034f695d72a8409",
-          "currentValue": 377.8991,
-          "visibleAccountValue": 27711.843699999994,
-          "accountAllocation": 0.01363673612232448,
-          "size": 21594.2368,
-          "avgPrice": 0.027,
-          "pnl": -206.9318
+          "rank": 71,
+          "name": "ImJustKen",
+          "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
+          "currentValue": 157.1637,
+          "visibleAccountValue": 726218.2516999986,
+          "accountAllocation": 0.0002164138668122107,
+          "size": 169.9067,
+          "avgPrice": 0.87,
+          "pnl": 9.3448
         },
         {
-          "rank": 199,
-          "name": "0xC03cE4d8Af842Ca6251Ac57228B3Ffb166ed50A",
-          "wallet": "0xa3a417e434923aeaf97afe9a61b10ff9364e5106",
-          "currentValue": 1.75,
-          "visibleAccountValue": 22167.812900000008,
-          "accountAllocation": 0.00007894328628152574,
-          "size": 100,
-          "avgPrice": 0.0303,
-          "pnl": -1.2803
+          "rank": 145,
+          "name": "0xd9670ea74384c1e1b9dc1e4267ffadaf4cdd140",
+          "wallet": "0xd570e634aeb745d6501566dba5f81a555cc7e4f8",
+          "currentValue": 4.625,
+          "visibleAccountValue": 185.8463,
+          "accountAllocation": 0.02488615592562241,
+          "size": 5,
+          "avgPrice": 0.93,
+          "pnl": -0.025
+        },
+        {
+          "rank": 191,
+          "name": "one8tyfive",
+          "wallet": "0xcf6c5492124794394dd9eac46498a8babbe47e66",
+          "currentValue": 2520.6897,
+          "visibleAccountValue": 5824.4666,
+          "accountAllocation": 0.43277605884116493,
+          "size": 2725.07,
+          "avgPrice": 0.9299,
+          "pnl": -13.6226
         },
         {
           "rank": 245,
           "name": "donthackme",
           "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 10.1603,
-          "visibleAccountValue": 118815.72120000022,
-          "accountAllocation": 0.00008551309454156627,
-          "size": 580.5893,
-          "avgPrice": 0.0303,
-          "pnl": -7.4327
-        },
-        {
-          "rank": 251,
-          "name": "ckw",
-          "wallet": "0x92672c80d36dcd08172aa1e51dface0f20b70f9a",
-          "currentValue": 238.0643,
-          "visibleAccountValue": 238.0643,
-          "accountAllocation": 1,
-          "size": 13603.6746,
-          "avgPrice": 0.044,
-          "pnl": -360.5034
+          "currentValue": 45.9516,
+          "visibleAccountValue": 118301.0459000001,
+          "accountAllocation": 0.00038842936383540427,
+          "size": 49.6774,
+          "avgPrice": 0.9222,
+          "pnl": 0.1371
         }
       ],
-      "decisionSide": "YES",
-      "decisionChoice": "Houston Texans",
-      "decisionOption": "Houston Texans",
-      "decisionTarget": "Will the Houston Texans win the 2027 NFL league championship?",
-      "decisionText": "Select “Houston Texans” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Houston Texans” option/row/card, then click Buy YES. This applies only to the exact market question: “Will the Houston Texans win the 2027 NFL league championship?”.",
+      "decisionSide": "NO",
+      "decisionChoice": "Seattle Seahawks",
+      "decisionOption": "Seattle Seahawks",
+      "decisionTarget": "Will the Seattle Seahawks win the 2027 NFL league championship?",
+      "decisionText": "Select “Seattle Seahawks” → Buy NO",
+      "decisionMeaning": "On Polymarket, choose the “Seattle Seahawks” option/row/card, then click Buy NO. This applies only to the exact market question: “Will the Seattle Seahawks win the 2027 NFL league championship?”.",
       "category": "Other",
-      "liquidity": 131825.19721,
-      "volume24hr": 0,
+      "liquidity": 120051.4104,
+      "volume24hr": 6058.689342,
       "usAvailable": true,
-      "usMarketSlug": "tec-cbb-champ-2027-04-05-w-hou",
+      "usMarketSlug": "tec-nfl-champ-2027-02-14-w-seasea",
       "usMatchMethod": "title_slug_similarity",
       "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/tec-cbb-champ-2027-04-05-w-hou"
+      "marketUrl": "https://polymarket.us/market/tec-nfl-champ-2027-02-14-w-seasea"
     },
     {
-      "conditionId": "0x282ce6c97ce923e33bbe05eaa72d64d1fa9179e72f7a6de7cc30840106d5fb39",
-      "title": "Will Paris Saint-Germain win the 2026-27 UEFA Champions League Championship?",
-      "slug": "will-paris-saint-germain-win-the-2026-27-uefa-champions-league-championship-20260701202025550",
-      "eventSlug": "uefa-champions-league-2027-champion-20260701202025549",
-      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/uefa-champions-league-2025-26-which-teams-qualify-StbSIjaEx2St.png",
-      "endDate": "2027-05-30",
+      "conditionId": "0xfa8bd8b518a9b1a5f733c41a01e69bd83b3749b66892fb50b580e63d5f081441",
+      "title": "Titans vs. Bengals: O/U 46.5",
+      "slug": "nfl-ten-cin-2026-11-01-total-46pt5",
+      "eventSlug": "nfl-ten-cin-2026-11-01",
+      "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/nfl.png",
+      "endDate": "2026-11-01",
       "groupItemTitle": "",
       "groupItemThreshold": "",
-      "rawPositionTitle": "Will Paris Saint-Germain win the 2026-27 UEFA Champions League Championship?",
-      "outcome": "Yes",
+      "rawPositionTitle": "Titans vs. Bengals: O/U 46.5",
+      "outcome": "Over",
       "outcomeKey": "0",
       "supporterCount": 3,
       "opposingSupporters": 0,
       "consensusRate": 1,
-      "totalCurrentValue": 8942.1165,
-      "avgAccountAllocation": 0.008964468939460932,
-      "avgEntryPrice": 0.1574725889170949,
-      "currentPrice": 0.165,
-      "rankWeight": 0.2675441578278969,
+      "totalCurrentValue": 75980.09790000001,
+      "avgAccountAllocation": 0.1422468072275733,
+      "avgEntryPrice": 0.48041480793324215,
+      "currentPrice": 0.735,
+      "rankWeight": 0.2796738446741483,
       "supporters": [
         {
-          "rank": 54,
-          "name": "ndb1",
-          "wallet": "0xfea31bc088000ff909be1dfd8d0e3f2c7ef2d227",
-          "currentValue": 2169.8473,
-          "visibleAccountValue": 5513223.643499995,
-          "accountAllocation": 0.0003935714275908644,
-          "size": 13150.59,
-          "avgPrice": 0.15,
-          "pnl": 197.2588
+          "rank": 78,
+          "name": "Kch-Temp",
+          "wallet": "0x924379a79c64b77ad5816ad362122a5f6228658e",
+          "currentValue": 8628.6165,
+          "visibleAccountValue": 640014.0425999999,
+          "accountAllocation": 0.013481917466915282,
+          "size": 11901.54,
+          "avgPrice": 0.4799,
+          "pnl": 2915.8892
         },
         {
-          "rank": 219,
-          "name": "mr.ozi",
-          "wallet": "0x614dc8d3542c12103d2c6a3553fd761e391d1546",
-          "currentValue": 6770.6182,
-          "visibleAccountValue": 255630.6561,
-          "accountAllocation": 0.026485939923228168,
-          "size": 41034.05,
-          "avgPrice": 0.1599,
-          "pnl": 205.2112
+          "rank": 87,
+          "name": "gmpm2",
+          "wallet": "0x67542c3219b37fd1610aad290676ff91cdbfe3bc",
+          "currentValue": 63836.25,
+          "visibleAccountValue": 157239.4407,
+          "accountAllocation": 0.4059811566093926,
+          "size": 88050,
+          "avgPrice": 0.48,
+          "pnl": 21572.25
         },
         {
-          "rank": 245,
-          "name": "donthackme",
-          "wallet": "0x03805a13a0b3e058f55f6c6af95389d4f431073d",
-          "currentValue": 1.651,
-          "visibleAccountValue": 118815.72120000022,
-          "accountAllocation": 0.000013895467563765434,
-          "size": 10.0062,
-          "avgPrice": 0.0238,
-          "pnl": 1.4127
+          "rank": 285,
+          "name": "PEYZ-BIGGEST-FAN",
+          "wallet": "0xdaef2be2a19ad331737d06545f85615b094554e9",
+          "currentValue": 3515.2314,
+          "visibleAccountValue": 483037.44580000004,
+          "accountAllocation": 0.007277347606412007,
+          "size": 4449.66,
+          "avgPrice": 0.49,
+          "pnl": 1334.898
         }
       ],
-      "decisionSide": "YES",
-      "decisionChoice": "Paris Saint-Germain",
-      "decisionOption": "Paris Saint-Germain",
-      "decisionTarget": "Will Paris Saint-Germain win the 2026-27 UEFA Champions League Championship?",
-      "decisionText": "Select “Paris Saint-Germain” → Buy YES",
-      "decisionMeaning": "On Polymarket, choose the “Paris Saint-Germain” option/row/card, then click Buy YES. This applies only to the exact market question: “Will Paris Saint-Germain win the 2026-27 UEFA Champions League Championship?”.",
+      "decisionSide": "Over",
+      "decisionChoice": "O/U 46.5",
+      "decisionOption": "O/U 46.5",
+      "decisionTarget": "Titans vs. Bengals: O/U 46.5",
+      "decisionText": "Select “O/U 46.5” → Buy Over",
+      "decisionMeaning": "On Polymarket, choose the “O/U 46.5” option/row/card, then click Buy Over. This applies only to the exact market question: “Titans vs. Bengals: O/U 46.5”.",
       "category": "Other",
-      "liquidity": 463073.3784,
-      "volume24hr": 30090.800003000004,
+      "liquidity": 60481.6619,
+      "volume24hr": 183599.64113000003,
       "usAvailable": true,
-      "usMarketSlug": "aqc-ucl-2027-06-05-finalq-psg",
+      "usMarketSlug": "aec-nfl-ten-cin-2026-11-01",
       "usMatchMethod": "title_slug_similarity",
-      "usMatchScore": 0.92,
-      "marketUrl": "https://polymarket.us/market/aqc-ucl-2027-06-05-finalq-psg"
+      "usMatchScore": 0.789,
+      "marketUrl": "https://polymarket.us/market/aec-nfl-ten-cin-2026-11-01"
     }
   ],
-  "recommendationsUpdatedAt": "2026-11-01T06:45:15.985Z",
-  "lastCheckedAt": "2026-11-01T14:15:20.369Z",
+  "recommendationsUpdatedAt": "2026-11-01T19:08:26.332Z",
+  "lastCheckedAt": "2026-11-01T19:08:26.394Z",
   "lastCheckStatus": "ok",
   "lastCheckRecommendationCount": 4,
-  "refreshMode": "checked_recommendations_unchanged",
-  "notes": [
-    "Checked at 2026-11-01T14:15:20.306Z. The scanner found the same recommendation set, so the published cards were left unchanged."
-  ],
-  "lastSuccessfulWorkflowAt": "2026-11-01T14:15:20.369Z",
+  "previousRecommendationsReplacedAt": "2026-11-01T06:45:15.985Z",
+  "refreshMode": "recommendations_updated",
+  "lastSuccessfulWorkflowAt": "2026-11-01T19:08:26.394Z",
   "refreshCadence": "every 30 minutes",
   "timestampOnlyUpdate": true
 }
